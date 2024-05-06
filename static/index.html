@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <meta charset="utf-8" />
+    <title>Mapbox Directions</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mapbox/polyline@1.2.1/src/polyline.min.js"></script>
+    <style>
+      body, html {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+      .mapboxgl-ctrl-top-left {
+          display: none;
+      }
+      #controls {
+          display: flex;
+          background-color: #f4f4f4;
+          gap: 70px;
+          padding: 10px;
+          background-color: #f4f4f4;k
+      }
+
+      #container {
+          display: flex;
+          flex: 1;
+          height: 100%;
+      }
+
+      #map {
+          flex: 3;
+          height: 100%;
+      }
+
+      #info-panel {
+          flex: 1;
+          height: 100%;
+          overflow-y: auto;
+          padding: 10px;
+          background-color: #f4f4f4;
+      }
+
+      .waypoint-info {
+          border-bottom: 1px solid #ddd;
+          padding: 10px;
+      }
+
+      .custom-marker {
+          background-color: #555;
+          border-radius: 50%;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 30px;
+          width: 30px;
+          font-size: 14px;
+          text-align: center;
+          line-height: 30px;
+      }
+      .slider-container {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+      }
+
+      #distance-slider {
+          width: 200px;
+          -webkit-appearance: none;
+          appearance: none;
+          height: 10px;
+          background: #d3d3d3;
+          outline: none;
+          border-radius: 5px;
+          overflow: hidden;
+      }
+
+      #distance-slider::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 20px;
+          height: 20px;
+          background: #4CAF50;
+          cursor: pointer;
+          border-radius: 50%;
+      }
+
+      #distance-slider::-moz-range-thumb {
+          width: 20px;
+          height: 20px;
+          background: #4CAF50;
+          cursor: pointer;
+          border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+      <button id="refresh-button">Randomise Route</button>
+
+      <div id="marker-container">
+        <label for="num-markers">Number of Markers:</label>
+        <select id="num-markers">
+          <!-- Options will be populated with JavaScript -->
+        </select>
+      </div>
+
+      <div class="slider-container">
+        <label for="distance-slider">Distance:</label>
+        <input
+          type="range"
+          id="distance-slider"
+          min="1"
+          max="5"
+          step="0.1"
+          value="2.5"
+        />
+        <span id="distance-value">2.5km</span>
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="map"></div>
+      <div id="info-panel">
+        <!-- Dynamic waypoint information will be inserted here -->
+      </div>
+    </div>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiamFtZXNrMTQwMjIiLCJhIjoiY2x2cnZqZnV5MHdnYTJxcXpkOHUybzdrZCJ9.UVs8BFzWjaZVrz7Gc0_Wpg";
+
+      const refreshButton = document.getElementById("refresh-button");
+      // Populate the dropdown
+      const numMarkersSelect = document.getElementById("num-markers");
+      for (let i = 2; i <= 20; i++) {
+        let option = document.createElement("option");
+        option.value = i;
+        option.textContent = i;
+        numMarkersSelect.appendChild(option);
+      }
+      numMarkersSelect.value = 3;
+
+      // Update the distance value display
+      const distanceSlider = document.getElementById("distance-slider");
+      const distanceValue = document.getElementById("distance-value");
+      distanceSlider.addEventListener("input", () => {
+        distanceValue.textContent = distanceSlider.value + "km";
+      });
+
+      const map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [4.89714, 52.3663],
+        zoom: 12,
+      });
+
+      const directions = new MapboxDirections({
+        accessToken: mapboxgl.accessToken,
+        unit: "metric",
+        profile: "mapbox/walking",
+      });
+
+      map.addControl(directions, "top-left");
+      var currentMarkers = [];
+
+      const clearInfo = () => {
+        directions.removeRoutes();
+        document.getElementById("info-panel").innerHTML = "";
+        if (currentMarkers !== null) {
+          for (var i = currentMarkers.length - 1; i >= 0; i--) {
+            currentMarkers[i].remove();
+          }
+        }
+      };
+
+      const checkOverlap = (route) => {
+        const overlappingSections = [];
+
+        for (const leg of route.legs) {
+          const seenPoints = new Set();
+
+          for (const step of leg.steps) {
+            for (const rawPoint of step.geometry) {
+              const point = polyline.decode(rawPoint);
+
+              const pointKey = `${point[0]},${point[1]}`;
+
+              if (seenPoints.has(pointKey)) {
+                overlappingSections.push(point);
+              } else {
+                seenPoints.add(pointKey);
+              }
+            }
+          }
+        }
+        console.log("Overlapping sections: ", overlappingSections);
+      };
+
+      const buildMap = () => {
+        clearInfo();
+
+        fetch(
+          `http://127.0.0.1:8080/pubs/?target_n=${numMarkersSelect.value}&target_dist=${distanceSlider.value}`,
+        )
+          .then((response) => response.json())
+          .then((waypoints) => {
+            console.log(waypoints);
+            waypoints.forEach((waypoint, index) => {
+              // Create a custom marker element
+              const el = document.createElement("div");
+              el.className = "custom-marker";
+              el.textContent = String.fromCharCode(65 + index); // Labels A, B, C, etc.
+
+              // Create the marker
+              m = new mapboxgl.Marker(el);
+              m.setLngLat([waypoint.longitude, waypoint.latitude])
+                .addTo(map)
+                .getElement()
+                .addEventListener("click", () => {
+                  displayInfo(index);
+                });
+
+              currentMarkers.push(m);
+
+              // Add waypoint info to the info panel
+              const infoDiv = document.createElement("div");
+              infoDiv.className = "waypoint-info";
+              infoDiv.href = infoDiv.id = `info-${index}`;
+              infoDiv.innerHTML = `<strong>Point ${String.fromCharCode(
+                65 + index,
+              )}</strong><br>${waypoint.name}`;
+              document.getElementById("info-panel").appendChild(infoDiv);
+            });
+
+            function displayInfo(index) {
+              // Scroll to the relevant info div
+              document
+                .getElementById(`info-${index}`)
+                .scrollIntoView({ behavior: "smooth" });
+            }
+
+            console.log(waypoints[0]);
+            // Set the origin and destination
+            directions.setOrigin([
+              waypoints[0].longitude,
+              waypoints[0].latitude,
+            ]);
+            directions.setDestination([
+              waypoints[waypoints.length - 1].longitude,
+              waypoints[waypoints.length - 1].latitude,
+            ]);
+
+            // Add the middle waypoints
+            waypoints.slice(1, -1).forEach((waypoint_mid, index) => {
+              directions.addWaypoint(index, [
+                waypoint_mid.longitude,
+                waypoint_mid.latitude,
+              ]);
+            });
+            directions.on("route", (e) => {
+              const route = e.route[0];
+              console.log(route);
+              // Now you have the first route from the response.
+              checkOverlap(route);
+            });
+          });
+      };
+
+      window.onload = buildMap;
+      refreshButton.addEventListener("click", buildMap);
+    </script>
+  </body>
+</html>
