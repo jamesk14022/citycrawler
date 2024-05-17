@@ -2,17 +2,20 @@ package main
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"math/rand"
 	"net/http"
-	"path/filepath"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/gorilla/mux"
 )
+
+const cacheDir = "static/"
 
 type Geometry struct {
 	Coordinates [][]float64 `json:"coordinates"`
@@ -23,14 +26,65 @@ type Route struct {
 }
 
 type Location struct {
-	ID        int     `json:"id"`
-	Name      string  `json:"name"`
-	Latitude  float64 `json:"latitude"`
-	Longitude float64 `json:"longitude"`
+	ID       string `json:"place_id"`
+	Name     string `json:"name"`
+	Geometry struct {
+		Location struct {
+			Latitude  float64 `json:"lat"`
+			Longitude float64 `json:"lng"`
+		}
+	}
 }
 
 type DistanceMatrix [][]float64
 type RoutesMatrix [][]Route
+
+func contains(slice []string, val string) bool {
+	for _, item := range slice {
+		if item == val {
+			return true // Return true if the value is found
+		}
+	}
+	return false // Return false if the value is not found after checking all items
+}
+
+// check which directories exist in given directory
+func checkCachedLocations() []string {
+	files, err := ioutil.ReadDir(cacheDir)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	names := make([]string, len(files))
+	for i := range files {
+		names[i] = files[i].Name()
+	}
+	return names
+}
+
+func loadLocationInformation(location string) ([]Location, DistanceMatrix, RoutesMatrix, error) {
+	var cachedLocations = checkCachedLocations()
+	if !contains(cachedLocations, location) {
+		fmt.Println("Location not found")
+		return nil, nil, nil, errors.New("Location not found")
+	} else {
+
+		var enrichedData []Location
+		var D DistanceMatrix
+		var R RoutesMatrix
+
+		file, _ := ioutil.ReadFile(cacheDir + location + "/info.json")
+		json.Unmarshal(file, &enrichedData)
+
+		file, _ = ioutil.ReadFile(cacheDir + location + "/D.json")
+		json.Unmarshal(file, &D)
+
+		file, _ = ioutil.ReadFile(cacheDir + location + "/R.json")
+		json.Unmarshal(file, &R)
+
+		return enrichedData, D, R, nil
+	}
+}
 
 func checkOverlap(path []int, R RoutesMatrix) bool {
 	localPoints := make(map[[2]float64]bool)
@@ -63,7 +117,7 @@ func adjacentLengthMeetConstraint(path []int, D DistanceMatrix) bool {
 }
 
 func equalLengthMeetConstraint(path []int, D DistanceMatrix, targetDist float64) bool {
-	margin := (targetDist / float64(len(path))) * 2.2
+	margin := (targetDist / float64(len(path)-1)) * 1.5
 	for i := 0; i < len(path)-1; i++ {
 		if D[path[i]][path[i+1]] > margin {
 			return false
@@ -89,14 +143,18 @@ func getEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatri
 		if len(path) > targetN {
 			return
 		}
+
 		if len(path) == targetN && currentDist > targetDist-0.5 && currentDist < targetDist+0.5 {
-			newPath := make([]int, len(path))
-			copy(newPath, path)
-			eligiblePaths = append(eligiblePaths, newPath)
+			eligiblePaths = append(eligiblePaths, path)
 			return
 		}
 		for i := 0; i < size; i++ {
+			// fmt.Println(targetDist / float64(targetN-1) * 2.5)
+			// fmt.Println(D[node])
 			if i != node && !visited[i] {
+				if D[node][i] > (targetDist/float64(targetN-1))*2.6 {
+					return
+				}
 				visited[i] = true
 				dfs(i, append(path, i), currentDist+D[node][i], visited)
 				visited[i] = false
@@ -117,30 +175,23 @@ func getEvaluation(w http.ResponseWriter, r *http.Request) {
 	// Parse query parameters
 	targetN, _ := strconv.Atoi(r.URL.Query().Get("target_n"))
 	targetDist, _ := strconv.ParseFloat(r.URL.Query().Get("target_dist"), 64)
+	location := strings.ToLower((r.URL.Query().Get("location")))
 
-	fmt.Println("Target N:", targetN)
-	fmt.Println("Target Dist:", targetDist)
+	// fmt.Println("Target N:", targetN)
+	// fmt.Println("Target Dist:", targetDist)
 
-	// Load enriched data
-	var enrichedData []Location
-	file, _ := ioutil.ReadFile("info.json")
-	json.Unmarshal(file, &enrichedData)
+	var emptyResponse = make([]Location, 0)
 
-	fmt.Println("Enriched data:", enrichedData)
+	enrichedData, D, R, err := loadLocationInformation(location)
+	if err != nil {
+		json.NewEncoder(w).Encode(emptyResponse)
+	}
 
-	// Load D and R matrices
-	var D DistanceMatrix
-	file, _ = ioutil.ReadFile(filepath.Join("static", "D.json"))
-	json.Unmarshal(file, &D)
-
-	var R RoutesMatrix
-	file, _ = ioutil.ReadFile(filepath.Join("static", "R.json"))
-	json.Unmarshal(file, &R)
+	fmt.Println("Distance matrix:", D)
+	fmt.Println("Routes matrix:", R)
 
 	size := len(enrichedData)
 	eligiblePaths := getEligiblePaths(size, targetN, targetDist, D)
-
-	fmt.Println("All paths:", eligiblePaths)
 
 	eligiblePaths = filterPaths(eligiblePaths, func(e []int) bool {
 		return !checkOverlap(e, R)
@@ -150,25 +201,28 @@ func getEvaluation(w http.ResponseWriter, r *http.Request) {
 		return adjacentLengthMeetConstraint(e, D)
 	})
 
-	eligiblePaths = filterPaths(eligiblePaths, func(e []int) bool {
-		return equalLengthMeetConstraint(e, D, targetDist)
-	})
+	// eligiblePaths = filterPaths(eligiblePaths, func(e []int) bool {
+	// 	return equalLengthMeetConstraint(e, D, targetDist)
+	// })
 
-	fmt.Println("Eligible paths:", eligiblePaths)
+	w.Header().Set("Content-Type", "application/json")
+	if len(eligiblePaths) == 0 {
+		json.NewEncoder(w).Encode(emptyResponse)
+	} else {
 
-	// Select a random path from eligible paths
-	rand.Seed(time.Now().UnixNano())
-	path := eligiblePaths[rand.Intn(len(eligiblePaths))]
-	selectedLocations := make([]Location, len(path))
-	for i, p := range path {
-		selectedLocations[i] = enrichedData[p]
+		// Select a random path from eligible paths
+		rand.Seed(time.Now().UnixNano())
+		path := eligiblePaths[rand.Intn(len(eligiblePaths))]
+		var selectedLocations = make([]Location, len(path))
+
+		for i, p := range path {
+			selectedLocations[i] = enrichedData[p]
+		}
+
+		fmt.Println("Selected locations:", selectedLocations)
+		json.NewEncoder(w).Encode(selectedLocations)
 	}
 
-	fmt.Println("Selected locations:", selectedLocations)
-
-	// Respond with the selected locations
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(selectedLocations)
 }
 
 func filterPaths(paths [][]int, condition func([]int) bool) [][]int {
@@ -203,3 +257,6 @@ func main() {
 	log.Println("Starting server on :8080")
 	log.Fatal(server.ListenAndServe())
 }
+
+// # prune paths by applying constraints early in dfs
+// # check out pg geo stuff
