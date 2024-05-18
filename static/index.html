@@ -26,227 +26,248 @@
     />
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@mapbox/polyline@1.2.1/src/polyline.min.js"></script>
     <style>
-      body, html {
-          margin: 0;
-          padding: 0;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
       }
       .mapboxgl-ctrl-top-left {
-          display: none;
+        display: none;
       }
       #controls {
-          display: flex;
-          background-color: #f4f4f4;
-          gap: 70px;
-          padding: 10px;
-          background-color: #f4f4f4;k
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: inline-flex;
+        background-color: #f4f4f4;
+        gap: 30px;
+        padding: 10px;
+        /* width: 1500px; */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        z-index: 1;
       }
-
+      #route-info{
+        background-color: #f4f4f4;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        z-index: 1;
+      }
+      #marker-container {
+        display: inline-flex;
+        align-items: center;
+      }
+      #slider-container {
+        display: inline-flex;
+        align-items: center;
+      }
       #container {
-          display: flex;
-          flex: 1;
-          height: 100%;
+        display: flex;
+        flex: 1;
+        height: 100%;
       }
 
       #map {
-          flex: 3;
-          height: 100%;
-          position: relative;
+        flex: 3;
+        height: 100%;
+        position: relative;
       }
 
       .waypoint-info {
-          border-bottom: 1px solid #ddd;
-          padding: 10px;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
       }
 
       .custom-marker {
-          background-color: #555;
-          border-radius: 50%;
-          color: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 30px;
-          width: 30px;
-          font-size: 14px;
-          text-align: center;
-          line-height: 30px;
+        background-color: #555;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 30px;
       }
-      .slider-container {
-          display: flex;
-          align-items: center;
-          gap: 5px;
-      }
-
       #distance-slider {
-          width: 200px;
-          -webkit-appearance: none;
-          appearance: none;
-          height: 10px;
-          background: #d3d3d3;
-          outline: none;
-          border-radius: 5px;
-          overflow: hidden;
+        width: 200px;
+        -webkit-appearance: none;
+        appearance: none;
+        height: 10px;
+        background: #d3d3d3;
+        outline: none;
+        border-radius: 5px;
+        overflow: hidden;
       }
 
       #distance-slider::-webkit-slider-thumb {
-          -webkit-appearance: none;
-          appearance: none;
-          width: 20px;
-          height: 20px;
-          background: #4CAF50;
-          cursor: pointer;
-          border-radius: 50%;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background: #4caf50;
+        cursor: pointer;
+        border-radius: 50%;
       }
 
       #distance-slider::-moz-range-thumb {
-          width: 20px;
-          height: 20px;
-          background: #4CAF50;
-          cursor: pointer;
-          border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background: #4caf50;
+        cursor: pointer;
+        border-radius: 50%;
       }
       /* Spinner and overlay */
       .loading-spinner {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          border: 5px solid #f3f3f3;
-          border-top: 5px solid #555;
-          border-radius: 50%;
-          width: 40px;
-          height: 40px;
-          animation: spin 1s linear infinite;
-          display: none;
-          z-index: 1000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #555;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        display: none;
+        z-index: 1000;
       }
 
       @keyframes spin {
-          0% { transform: translate(-50%, -50%) rotate(0deg); }
-          100% { transform: translate(-50%, -50%) rotate(360deg); }
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
       }
 
       .loading-overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(255, 255, 255, 0.7);
-          z-index: 500;
-          display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        z-index: 500;
+        display: none;
       }
 
       .blurred {
-          filter: blur(5px);
+        filter: blur(5px);
       }
       #search-box {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 200px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            z-index: 1;
+        width: 200px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+      }
+      #refresh-button {
+        background-color: #008cba;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      #shareButton {
+        z-index: 1;
+        background-color: #008cba;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
       }
       #locations {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 200px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            z-index: 1;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 200px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+      }
+      #rightBar {
+        position: absolute;
+        top: 200px;
+        right: 25px;
+        z-index: 1;
       }
       .listing-group {
         font:
-            12px/20px 'Helvetica Neue',
-            Arial,
-            Helvetica,
-            sans-serif;
+          12px/20px "Helvetica Neue",
+          Arial,
+          Helvetica,
+          sans-serif;
         font-weight: 600;
-        position: absolute;
-        top: 10px;
-        right: 25px;
-        z-index: 1;
         border-radius: 3px;
-        max-width: 20%;
         color: #fff;
       }
-      .listing-group input[type='button']:first-child + label {
+      .listing-group input[type="button"]:first-child + label {
         border-radius: 3px 3px 0 0;
-    }
+      }
 
-    .listing-group label:last-child {
+      .listing-group label:last-child {
         border-radius: 0 0 3px 3px;
         border: none;
-    }
+      }
 
-    .listing-group input[type='button'] {
+      .listing-group input[type="button"] {
         display: none;
-    }
+      }
 
-    .listing-group input[type='button'] + label {
+      .listing-group input[type="button"] + label {
         background-color: #3386c0;
         display: block;
         cursor: pointer;
         padding: 10px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-    }
+      }
 
-    .listing-group input[type='button'] + label {
+      .listing-group input[type="button"] + label {
         background-color: #3386c0;
         text-transform: capitalize;
-    }
+      }
 
-    .listing-group input[type='button'] + label:hover,
-    .listing-group input[type='button']:checked + label {
+      .listing-group input[type="button"] + label:hover,
+      .listing-group input[type="button"]:checked + label {
         background-color: #4ea0da;
-    }
+      }
 
-    .listing-group input[type='button']:checked + label:before {
-        content: '✔';
+      .listing-group input[type="button"]:checked + label:before {
+        content: "✔";
         margin-right: 5px;
-    }
-
+      }
     </style>
   </head>
   <body>
-    <div id="controls">
-      <button id="refresh-button">Randomise Route</button>
-
-      <div id="marker-container">
-        <label for="num-markers">Number of Markers:</label>
-        <select id="num-markers">
-          <!-- Options will be populated with JavaScript -->
-        </select>
-      </div>
-
-      <div class="slider-container">
-        <label for="distance-slider">Distance:</label>
-        <input
-          type="range"
-          id="distance-slider"
-          min="1"
-          max="5"
-          step="0.1"
-          value="2.5"
-        />
-        <span id="distance-value">2.5km</span>
-      </div>
-    </div>
-
     <div id="container">
       <div
         id="no-results"
@@ -258,11 +279,43 @@
         </p>
       </div>
       <div id="map">
-        <input type="text" id="search-box" list="locations" placeholder="Search location..." />
-        <datalist id="locations">
-        </datalist>
-        <nav id="listing-group" class="listing-group"></nav>
-      
+        <div id="controls">
+          <input
+            type="text"
+            id="search-box"
+            list="locations"
+            placeholder="Search location..."
+          />
+
+          <div id="marker-container">
+            <label for="num-markers">Number of Markers:</label>
+            <select id="num-markers">
+              <!-- Options will be populated with JavaScript -->
+            </select>
+          </div>
+
+          <div id="slider-container">
+            <label for="distance-slider">Distance:</label>
+            <input
+              type="range"
+              id="distance-slider"
+              min="1"
+              max="5"
+              step="0.1"
+              value="2.5"
+            />
+            <span id="distance-value">2.5km</span>
+            <button type="button" id="refresh-button">Randomise Route</button>
+          </div>
+        </div>
+
+        <datalist id="locations"></datalist>
+
+        <div id="rightBar">
+          <div id="route-info"><p>Total route distance is <span id="route-length">10</span>km</p></div>
+          <nav id="listing-group" class="listing-group"></nav>
+          <button type="button" id="shareButton">Copy sharing link</button>
+        </div>
       </div>
     </div>
     <div class="loading-overlay"></div>

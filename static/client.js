@@ -32,6 +32,7 @@ mapboxgl.accessToken =
         "pk.eyJ1IjoiamFtZXNrMTQwMjIiLCJhIjoiY2x2cnZqZnV5MHdnYTJxcXpkOHUybzdrZCJ9.UVs8BFzWjaZVrz7Gc0_Wpg";
 
       const refreshButton = document.getElementById("refresh-button");
+      const shareButton = document.getElementById("shareButton");
       // Populate the dropdown
       const numMarkersSelect = document.getElementById("num-markers");
       for (let i = 2; i <= 6; i++) {
@@ -94,8 +95,34 @@ mapboxgl.accessToken =
       document.querySelector(".loading-spinner").style.display = "none";
       document.getElementById("container").classList.remove("blurred");
     }
+
+    function copyLink() {
+      // Get the current URL
+      var url = window.location.href;
+
+      // Copy the URL to the clipboard
+      navigator.clipboard.writeText(url).then(function() {
+          // Change the button text to "Copied ✔️"
+          var button = document.getElementById("shareButton");
+          button.textContent = "Copied ✔️";
+          button.classList.add("copied");
+
+          // Revert the button text after 2 seconds
+          setTimeout(function() {
+              button.textContent = "Share Link";
+              button.classList.remove("copied");
+          }, 2000);
+      }, function(err) {
+          console.error('Could not copy text: ', err);
+      });
+    }
     
     function pageStart() {
+
+      clearInfo();
+      showLoading();
+      hideNoResults();
+      addLocations();
 
       // Check if the URL contains a query string
       const urlParams = new URLSearchParams(window.location.search);
@@ -109,9 +136,91 @@ mapboxgl.accessToken =
         for (let i = 1; i <= targetN; i++) {
           markers.push(urlParams.get(`marker${i}`));
         }
-        
+
+        // post request with fetch
+        fetch(  
+          `http://127.0.0.1:8080/crawls/?location=${currentLocation}`,{
+            method: "POST", // or 'PUT'
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({place_ids: markers}),
+          })
+          .then((response) => response.json())
+          .then((waypoints) => {
+            document.getElementById("distance-slider").value = targetDistance;
+            document.getElementById("distance-value").textContent = targetDistance + "km";
+            document.getElementById("num-markers").value = targetN;
+            renderRoute(waypoints);
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
       }else{
         buildMap();
+      }
+    }
+
+    function renderRoute(waypoints){
+      waypoints.forEach((waypoint, index) => {
+        // Create a custom marker element
+        const el = document.createElement("div");
+        el.className = "custom-marker";
+        el.textContent = String.fromCharCode(65 + index); // Labels A, B, C, etc.
+
+        // Create the marker
+        m = new mapboxgl.Marker(el);
+        m.setLngLat([waypoint.Geometry.Location.lng, waypoint.Geometry.Location.lat])
+          .addTo(map)
+          .getElement()
+          .addEventListener("click", () => {
+            displayInfo(index);
+          });
+
+        currentMarkers.push(m);
+
+        const input = document.createElement("input");
+        input.type = "button";
+        input.id = `marker-${index}`;
+        const label = document.createElement("label");
+        label.htmlFor = `marker-${index}`;
+        label.innerHTML = `<strong>Point ${String.fromCharCode(65 + index,)}</strong><br>${waypoint.name}`;
+        const nav = document.getElementById("listing-group");
+        nav.appendChild(input);
+        nav.appendChild(label);
+
+        hideLoading();
+      });
+
+      if (waypoints.length !== 0) {
+        function displayInfo(index) {
+          // Scroll to the relevant info div
+          document
+            .getElementById(`info-${index}`)
+            .scrollIntoView({ behavior: "smooth" });
+        }
+
+        // Set the origin and destination
+        directions.setOrigin([
+          waypoints[0].Geometry.Location.lng,
+          waypoints[0].Geometry.Location.lat,
+        ]);
+
+        directions.setDestination([
+          waypoints[waypoints.length - 1].Geometry.Location.lng,
+          waypoints[waypoints.length - 1].Geometry.Location.lat,
+        ]);
+
+        // Add the middle waypoints
+        waypoints.slice(1, -1).forEach((waypoint_mid, index) => {
+          directions.addWaypoint(index, [
+            waypoint_mid.Geometry.Location.lng,
+            waypoint_mid.Geometry.Location.lat,
+          ]);
+        });
+        updateURL(currentLocation, distanceSlider.value, numMarkersSelect.value, ...waypoints.map(waypoint => waypoint.place_id));
+      }else{
+        showNoResults();
       }
     }
 
@@ -148,10 +257,11 @@ mapboxgl.accessToken =
     }
 
     const buildMap = () => {
-        clearInfo();
-        showLoading();
-        hideNoResults();
-        addLocations();
+
+      clearInfo();
+      showLoading();
+      hideNoResults();
+      addLocations();
 
         document.getElementById('search-box').addEventListener('input', function(e) {
           var inputVal = e.target.value;
@@ -170,70 +280,10 @@ mapboxgl.accessToken =
         )
           .then((response) => response.json())
           .then((waypoints) => {
-            console.log(waypoints);
-            waypoints.forEach((waypoint, index) => {
-              // Create a custom marker element
-              const el = document.createElement("div");
-              el.className = "custom-marker";
-              el.textContent = String.fromCharCode(65 + index); // Labels A, B, C, etc.
-
-              // Create the marker
-              m = new mapboxgl.Marker(el);
-              m.setLngLat([waypoint.Geometry.Location.lng, waypoint.Geometry.Location.lat])
-                .addTo(map)
-                .getElement()
-                .addEventListener("click", () => {
-                  displayInfo(index);
-                });
-
-              currentMarkers.push(m);
-
-              const input = document.createElement("input");
-              input.type = "button";
-              input.id = `marker-${index}`;
-              const label = document.createElement("label");
-              label.htmlFor = `marker-${index}`;
-              label.innerHTML = `<strong>Point ${String.fromCharCode(65 + index,)}</strong><br>${waypoint.name}`;
-              const nav = document.getElementById("listing-group");
-              nav.appendChild(input);
-              nav.appendChild(label);
-
-              hideLoading();
-            });
-
-            if (waypoints.length !== 0) {
-              function displayInfo(index) {
-                // Scroll to the relevant info div
-                document
-                  .getElementById(`info-${index}`)
-                  .scrollIntoView({ behavior: "smooth" });
-              }
-
-              // Set the origin and destination
-              directions.setOrigin([
-                waypoints[0].Geometry.Location.lng,
-                waypoints[0].Geometry.Location.lat,
-              ]);
-
-              directions.setDestination([
-                waypoints[waypoints.length - 1].Geometry.Location.lng,
-                waypoints[waypoints.length - 1].Geometry.Location.lat,
-              ]);
-
-              // Add the middle waypoints
-              waypoints.slice(1, -1).forEach((waypoint_mid, index) => {
-                directions.addWaypoint(index, [
-                  waypoint_mid.Geometry.Location.lng,
-                  waypoint_mid.Geometry.Location.lat,
-                ]);
-              });
-
-              updateURL(currentLocation, distanceSlider.value, numMarkersSelect.value, ...waypoints.map(waypoint => waypoint.place_id));
-            }else{
-              showNoResults();
-            }
+            renderRoute(waypoints);
           });
       };
 
-      window.onload = buildMap;
+      window.onload = pageStart;
       refreshButton.addEventListener("click", buildMap);
+      shareButton.addEventListener("click", copyLink);

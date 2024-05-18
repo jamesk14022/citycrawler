@@ -25,6 +25,10 @@ type Route struct {
 	Geometry Geometry `json:"geometry"`
 }
 
+type PlaceIDs struct {
+	PlaceIDs []string `json:"place_ids"`
+}
+
 type Location struct {
 	ID       string `json:"place_id"`
 	Name     string `json:"name"`
@@ -225,6 +229,37 @@ func getEvaluation(w http.ResponseWriter, r *http.Request) {
 
 }
 
+func postCrawl(w http.ResponseWriter, r *http.Request) {
+
+	location := strings.ToLower((r.URL.Query().Get("location")))
+	var ids PlaceIDs
+	err := json.NewDecoder(r.Body).Decode(&ids)
+	if err != nil {
+		fmt.Println("Error parsing markers")
+	}
+
+	enrichedData, _, _, err := loadLocationInformation(location)
+	var emptyResponse = make([]Location, 0)
+	if err != nil {
+		fmt.Println("Error loading location information")
+		json.NewEncoder(w).Encode(emptyResponse)
+	}
+
+	var selectedLocations = make([]Location, len(ids.PlaceIDs))
+	for i, id := range ids.PlaceIDs {
+		for _, loc := range enrichedData {
+			if loc.ID == id {
+				selectedLocations[i] = loc
+				break
+			}
+		}
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	fmt.Println("Selected locations:", selectedLocations)
+	json.NewEncoder(w).Encode(selectedLocations)
+}
+
 func filterPaths(paths [][]int, condition func([]int) bool) [][]int {
 	var result [][]int
 	for _, path := range paths {
@@ -247,6 +282,7 @@ func main() {
 		Handler(http.StripPrefix(staticDir, http.FileServer(http.Dir("."+staticDir))))
 
 	router.HandleFunc("/pubs/", getEvaluation).Methods("GET")
+	router.HandleFunc("/crawls/", postCrawl).Methods("POST")
 
 	// Set up the server
 	server := &http.Server{
