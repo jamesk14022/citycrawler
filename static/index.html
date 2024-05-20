@@ -31,6 +31,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@mapbox/polyline@1.2.1/src/polyline.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
       body,
       html {
@@ -101,34 +102,6 @@
         font-size: 14px;
         text-align: center;
         line-height: 30px;
-      }
-      #distance-slider {
-        width: 200px;
-        -webkit-appearance: none;
-        appearance: none;
-        height: 10px;
-        background: #d3d3d3;
-        outline: none;
-        border-radius: 5px;
-        overflow: hidden;
-      }
-
-      #distance-slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 20px;
-        height: 20px;
-        background: #4caf50;
-        cursor: pointer;
-        border-radius: 50%;
-      }
-
-      #distance-slider::-moz-range-thumb {
-        width: 20px;
-        height: 20px;
-        background: #4caf50;
-        cursor: pointer;
-        border-radius: 50%;
       }
       /* Spinner and overlay */
       .loading-spinner {
@@ -265,6 +238,50 @@
         content: "✔";
         margin-right: 5px;
       }
+              /* Style for the info emblem */
+              .info-emblem {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #007BFF;
+        }
+
+        /* Style for the tooltip text */
+        .tooltip-text {
+            visibility: hidden;
+            width: 200px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position the tooltip above the emblem */
+            left: 50%;
+            margin-left: -100px; /* Center the tooltip */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Show the tooltip text when hovering over the info emblem */
+        .info-emblem:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Arrow below the tooltip text */
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%; /* At the bottom of the tooltip */
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
     </style>
   </head>
   <body>
@@ -295,16 +312,10 @@
           </div>
 
           <div id="slider-container">
-            <label for="distance-slider">Distance:</label>
-            <input
-              type="range"
-              id="distance-slider"
-              min="1"
-              max="5"
-              step="0.1"
-              value="2.5"
-            />
-            <span id="distance-value">2.5km</span>
+            <label for="distance-slider">Distance (km):</label>
+            <select id="distance-slider">
+              <!-- Options will be populated with JavaScript -->
+            </select>
             <button type="button" id="refresh-button">Randomise Route</button>
           </div>
         </div>
@@ -312,7 +323,14 @@
         <datalist id="locations"></datalist>
 
         <div id="rightBar">
-          <div id="route-info"><p>Total route distance is <span id="route-length">10</span>km</p></div>
+          <div id="route-info">
+            <div class="info-emblem">
+              <i class="fas fa-info-circle"></i>
+              <span class="tooltip-text">This is the tooltip text that provides more information.</span>
+          </div>
+            <p>Total route distance is <span id="route-length">10</span>km</p>
+            <p>Total route duration is <span id="route-duration">50</span> minutes</p>
+          </div>
           <nav id="listing-group" class="listing-group"></nav>
           <button type="button" id="shareButton">Copy sharing link</button>
         </div>
