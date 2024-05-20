@@ -262,6 +262,17 @@ func postCrawl(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(selectedLocations)
 }
 
+func getAllPoints(w http.ResponseWriter, r *http.Request) {
+	location := strings.ToLower((r.URL.Query().Get("location")))
+	enrichedData, _, _, err := loadLocationInformation(location)
+	if err != nil {
+		fmt.Println("Error loading location information")
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(enrichedData)
+}
+
 func filterPaths(paths [][]int, condition func([]int) bool) [][]int {
 	var result [][]int
 	for _, path := range paths {
@@ -284,6 +295,7 @@ func main() {
 		Handler(http.StripPrefix(staticDir, http.FileServer(http.Dir("."+staticDir))))
 
 	router.HandleFunc("/pubs/", getEvaluation).Methods("GET")
+	router.HandleFunc("/citypoints/", getAllPoints).Methods("GET")
 	router.HandleFunc("/crawls/", postCrawl).Methods("POST")
 
 	// Set up the server

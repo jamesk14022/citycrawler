@@ -137,6 +137,35 @@ function updateRouteDetails(e) {
   }
 }
 
+function addCityMarkers() {
+
+  // post request with fetch
+  fetch(`http://127.0.0.1:8080/citypoints/?location=${currentLocation}`, {
+    method: "POST", // or 'PUT'
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ place_ids: markers }),
+  })
+    .then((response) => response.json())
+    .then((waypoints) => {
+      // add markers to map
+      for (const waypoint of waypoints) {
+        // create a HTML element for each feature
+        const el = document.createElement('div');
+        el.className = 'marker';
+
+        // make a marker for each feature and add to the map
+        new mapboxgl.Marker(el).setLngLat([feature.Geometry.Location.Longitude, feature.Geometry.Location.Latitude]).addTo(map);
+      }
+  })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+
+
+}
+
 function pageStart() {
   clearInfo();
   showLoading();
@@ -184,6 +213,7 @@ function pageStart() {
 }
 
 function renderRoute(waypoints) {
+  addCityMarkers();
   waypoints.forEach((waypoint, index) => {
     // Create a custom marker element
     const el = document.createElement("div");
