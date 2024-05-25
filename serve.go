@@ -158,9 +158,9 @@ func getEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatri
 			// fmt.Println(targetDist / float64(targetN-1) * 2.5)
 			// fmt.Println(D[node])
 			if i != node && !visited[i] {
-				if D[node][i] > (targetDist/float64(targetN-1))*2.6 {
-					return
-				}
+				// if D[node][i] > (targetDist/float64(targetN-1))*2.6 {
+				// 	return
+				// }
 				visited[i] = true
 				dfs(i, append(path, i), currentDist+D[node][i], visited)
 				visited[i] = false
@@ -193,8 +193,8 @@ func getEvaluation(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(emptyResponse)
 	}
 
-	fmt.Println("Distance matrix:", D)
-	fmt.Println("Routes matrix:", R)
+	// fmt.Println("Distance matrix:", D)
+	// fmt.Println("Routes matrix:", R)
 
 	size := len(enrichedData)
 	eligiblePaths := getEligiblePaths(size, targetN, targetDist, D)
@@ -258,7 +258,7 @@ func postCrawl(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	fmt.Println("Selected locations:", selectedLocations)
+	// fmt.Println("Selected locations:", selectedLocations)
 	json.NewEncoder(w).Encode(selectedLocations)
 }
 
