@@ -15,7 +15,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-const cacheDir = "static/"
+const cacheDir = "static/data/"
 
 type Geometry struct {
 	Coordinates [][]float64 `json:"coordinates"`
@@ -150,17 +150,19 @@ func getEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatri
 			return
 		}
 
-		if len(path) == targetN && currentDist > targetDist-0.5 && currentDist < targetDist+0.5 {
+		if len(path) == targetN && currentDist > targetDist-(targetDist*0.5) && currentDist < targetDist+(targetDist*0.5) {
 			eligiblePaths = append(eligiblePaths, path)
 			return
+		} else {
+			fmt.Println("Path length:", len(path), "Current distance:", currentDist, "Target distance:", targetDist)
 		}
 		for i := 0; i < size; i++ {
 			// fmt.Println(targetDist / float64(targetN-1) * 2.5)
 			// fmt.Println(D[node])
 			if i != node && !visited[i] {
-				// if D[node][i] > (targetDist/float64(targetN-1))*2.6 {
-				// 	return
-				// }
+				if D[node][i] > (targetDist/float64(targetN-1))*2.6 {
+					return
+				}
 				visited[i] = true
 				dfs(i, append(path, i), currentDist+D[node][i], visited)
 				visited[i] = false

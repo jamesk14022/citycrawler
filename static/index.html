@@ -25,7 +25,7 @@
       crossorigin="anonymous"
     />
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.js"></script>
+    <script src="./mapbox-gl-directions.js"></script>
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
       rel="stylesheet"
@@ -316,15 +316,13 @@
           margin: auto 0;
           width: 300px;
           height: 200px;
-          background-color: #999999;
-          border: 3px solid darkgray;
+          background-color: lightgray;
+          border: 3px solid #999999;
           text-align: center;
-          padding: 20px;
+          padding: 20px 40px;
         }
         #exit {
-          position: absolute;
-          top: 5px;
-          right: 5px;
+          display: block;
         }
         #distance-slider{
           margin-right: 10px;
@@ -341,7 +339,7 @@
         id="no-results"
       >
         <div class="modal_content">
-          <div id="exit">X</div>
+          
         <p id="no_pubs">
           No routes found within the specified distance. Please try adjusting the
           distance or number of markers.
@@ -349,6 +347,7 @@
         <p id="city_not_found">
           City not found. Please try again.
         </p>
+        <div id="exit"><input type="button" value="Close" /></div>
       </div>
       </div>
       <div id="map">
@@ -397,6 +396,8 @@
     <div class="loading-overlay"></div>
     <div class="loading-spinner"></div>
 
-    <script src="client.js"></script>
+    <script type="module" src="utils.js"></script>
+    <script type="module" src="constants.js"></script>
+    <script type="module" src="client.js"></script>
   </body>
 </html>
