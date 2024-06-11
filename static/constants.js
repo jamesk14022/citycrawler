@@ -98,6 +98,8 @@ const CITY_POINTS = {
     Graz: [15.4395, 47.0707],
     Montpellier: [3.877, 43.6119],
     Augsburg: [10.8978, 48.3705],
+    London: [-0.1278, 51.5072],
+    Dublin: [-6.2603, 53.3498]
   };
 
 const TIME_SPENT_BAR = 30;

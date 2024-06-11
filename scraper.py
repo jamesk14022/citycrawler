@@ -1,87 +1,8 @@
 import requests 
 import json
-import pickle
 import codecs
 import time 
 import os
-
-# curl -L -X GET 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=52.3542&2c4.8991&radius=1500&type=pub&keyword=pub&key=AIzaSyCE8g8gMrtfdurzaHZeAzUxukhkYx_36p4'
-
-
-
- # print(state)
-
-    # enriched_data = []
-    # # response in json
-    # for place in state:
-    #     try:
-    #         url = f'https://api.content.tripadvisor.com/api/v1/location/{place["location_id"]}/details?key=C44F8A9FE8F6460C9B28570F373CBBC5&language=en&currency=EUR'
-    #         headers = {"accept": "application/json"}
-    #         response = requests.get(url, headers=headers)
-    #         print(response.text)
-    #         place["latitude"] = float(json.loads(response.text)["latitude"])
-    #         place["longitude"] = float(json.loads(response.text)["longitude"])
-    #         enriched_data.append(place)
-    #     except Exception as e:
-    #         print("Exception: ", e)
-
-
-    # b = D.tolist() # nested lists with same data, indices
-    # file_path = "D.json" ## your path variable
-    # json.dump(b, codecs.open(file_path, 'w', encoding='utf-8'), 
-    #       separators=(',', ':'), 
-    #       sort_keys=True, 
-    #       indent=4) ### this save
-
-    # b = R.tolist() # nested lists with same data, indices
-    # file_path = "R.json" ## your path variable
-    # json.dump(b, codecs.open(file_path, 'w', encoding='utf-8'), 
-    #         separators=(',', ':'), 
-    #         sort_keys=True, 
-    #         indent=4) ### this save
-
-
-# url = "https://api.content.tripadvisor.com/api/v1/location/search?key=C44F8A9FE8F6460C9B28570F373CBBC5&searchQuery=pub&latLong=52.377956%2C4.897070&radius=15&radiusUnit=km&language=en&limit=200"
-# headers = {"accept": "application/json"}
-# response = requests.get(url, headers=headers)
-# pub = json.loads(response.text)["data"]
-
-
-# url = "https://api.content.tripadvisor.com/api/v1/location/search?key=C44F8A9FE8F6460C9B28570F373CBBC5&searchQuery=bar&latLong=52.377956%2C4.897070&radius=10&radiusUnit=km&language=en&limit=200"
-# headers = {"accept": "application/json"}
-# response = requests.get(url, headers=headers)
-# enriched_data = []
-# bar = json.loads(response.text)["data"]
-
-# url = "https://api.content.tripadvisor.com/api/v1/location/search?key=C44F8A9FE8F6460C9B28570F373CBBC5&searchQuery=local%20bar&latLong=52.377956%2C4.897070&radius=10&radiusUnit=km&language=en&limit=200"
-# headers = {"accept": "application/json"}
-# response = requests.get(url, headers=headers)
-# enriched_data = []
-# local_beers = json.loads(response.text)["data"]
-
-# with open("info.pkl", "wb") as f: # "wb" because we want to write in binary mode
-#     pickle.dump(pub + bar + local_beers, f)
-
-
-
-# enriched_data = []
-# # response in json
-# for place in state:
-#     try:
-#         url = f'https://api.content.tripadvisor.com/api/v1/location/{place["location_id"]}/details?key=C44F8A9FE8F6460C9B28570F373CBBC5&language=en&currency=EUR'
-#         headers = {"accept": "application/json"}
-#         response = requests.get(url, headers=headers)
-#         print(response.text)
-#         place["latitude"] = float(json.loads(response.text)["latitude"])
-#         place["longitude"] = float(json.loads(response.text)["longitude"])
-#         enriched_data.append(place)
-#     except Exception as e:
-#         print("Exception: ", e)
-
-# print(enriched_data)
-
-# with open("new_info_enriched.json", "w") as f: # "rb" because we want to read in binary mode
-#     f.write(json.dumps(enriched_data))
 
 import numpy as np
 import requests
@@ -182,27 +103,27 @@ def create_directory_if_not_exists(directory_path):
         print("Directory already exists:", directory_path)
 
 existing_biggest_cities_eu_coords = {
-    "Madrid": (40.4168, -3.7038),
-    "Rome": (41.9028, 12.4964),
-    "Paris": (48.8566, 2.3522),
-    "Bucharest": (44.4268, 26.1025),
-    "Vienna": (48.2082, 16.3738),
-    "Hamburg": (53.5511, 9.9937),
-    "Warsaw": (52.2297, 21.0122),
-    "Budapest": (47.4979, 19.0402),
-    "Barcelona": (41.3851, 2.1734),
-    "Munich": (48.1351, 11.5820),
-    "Milan": (45.4642, 9.1900),
-    "Prague": (50.0755, 14.4378),
-    "Sofia": (42.6977, 23.3219),
-    "Brussels": (50.8503, 4.3517),
-    "Birmingham": (52.4862, -1.8904),  # UK, historically part of the EU list
-    "Cologne": (50.9375, 6.9603),
-    "Naples": (40.8518, 14.2681),
-    "Stockholm": (59.3293, 18.0686),
-    "Turin": (45.0703, 7.6869), 
-    "London": (51.5072, 0.1278),  # UK, historically part of the EU list
-    "Dublin": (53.3498, 6.2603),
+    # "Madrid": (40.4168, -3.7038),
+    # "Rome": (41.9028, 12.4964),
+    # "Paris": (48.8566, 2.3522),
+    # "Bucharest": (44.4268, 26.1025),
+    # "Vienna": (48.2082, 16.3738),
+    # "Hamburg": (53.5511, 9.9937),
+    # "Warsaw": (52.2297, 21.0122),
+    # "Budapest": (47.4979, 19.0402),
+    # "Barcelona": (41.3851, 2.1734),
+    # "Munich": (48.1351, 11.5820),
+    # "Milan": (45.4642, 9.1900),
+    # "Prague": (50.0755, 14.4378),
+    # "Sofia": (42.6977, 23.3219), # new run reached here
+    # "Brussels": (50.8503, 4.3517),
+    # "Birmingham": (52.4862, -1.8904),  # UK, historically part of the EU list
+    # "Cologne": (50.9375, 6.9603),
+    # "Naples": (40.8518, 14.2681),
+    # "Stockholm": (59.3293, 18.0686),
+    # "Turin": (45.0703, 7.6869), 
+    "London": (51.5072, -0.1278),  # UK, historically part of the EU list
+    "Dublin": (53.3498, -6.2603),
 }
 
 # more_cities_coords = {
@@ -306,7 +227,7 @@ for name, coords in existing_biggest_cities_eu_coords.items():
     name = name.lower()
 
     state = location_search(coords, 2250)
-    create_directory_if_not_exists("static/scrape_may25/" + name)
+    create_directory_if_not_exists("static/" + name)
 
     with open(f"static/{name}/info.json", "w") as f: # "rb" because we want to read in binary mode
         f.write(json.dumps(state))

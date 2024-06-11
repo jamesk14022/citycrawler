@@ -13,6 +13,7 @@ mapboxgl.accessToken = MAPBOX_TOKEN;
 var currentLocation = "Belfast";
 var currentMarkers = [];
 
+const container = document.getElementById("container")
 const refreshButton = document.getElementById("refresh-button");
 const shareButton = document.getElementById("shareButton");
 const searchBox = document.getElementById("search-box");
@@ -23,6 +24,8 @@ const rightBar = document.getElementById("rightBar");
 const distanceSelect = document.getElementById("distance-slider");
 const numMarkersSelect = document.getElementById("num-markers");
 const nav = document.getElementById("listing-group");
+const dataList = document.getElementById("locations");
+
 
 function populateMarkerOptions() {
   // Populate the dropdown
@@ -72,19 +75,24 @@ map.addControl(directions, "top-left");
 
 const clearExistingRoute = () => {
   directions.removeRoutes();
-  const nav = (document.getElementById("listing-group").innerHTML = "");
+  nav.innerHTML = "";
   if (currentMarkers !== null) {
     for (var i = currentMarkers.length - 1; i >= 0; i--) {
       currentMarkers[i].remove();
     }
     currentMarkers = [];
   }
+
+  if (map.getSource("places")) {
+    map.removeLayer("places");
+    map.removeSource("places");
+  }
 };
 
 function showLoading() {
   document.querySelector(".loading-spinner").style.display = "block";
   document.querySelector(".loading-overlay").style.display = "block";
-  document.getElementById("container").classList.add("blurred");
+  container.classList.add("blurred");
 }
 
 function hideRightBar() {
@@ -98,7 +106,7 @@ function showRightBar() {
 function hideLoading() {
   document.querySelector(".loading-spinner").style.display = "none";
   document.querySelector(".loading-overlay").style.display = "none";
-  document.getElementById("container").classList.remove("blurred");
+  container.classList.remove("blurred");
 }
 
 function copyLink() {
@@ -137,18 +145,6 @@ function updateRouteMetrics(e) {
   }
 }
 
-function renderAlternativeBarMarker(waypoint) {
-  // create a HTML element for each feature
-  const el = document.createElement("div");
-  el.className = "marker";
-
-  // make a marker for each feature and add to the map
-  var marker = new mapboxgl.Marker(el)
-    .setLngLat([waypoint.Geometry.Location.lng, waypoint.Geometry.Location.lat])
-    .addTo(map);
-  currentMarkers.push(marker);
-}
-
 function renderRouteMarker(waypoint, index) {
   // Create a custom marker element
   const el = document.createElement("div");
@@ -167,6 +163,30 @@ function renderRouteMarker(waypoint, index) {
   currentMarkers.push(m);
 }
 
+function convertToGeoJSON(dataArray) {
+  return {
+      'type': 'geojson',
+      'data': {
+          'type': 'FeatureCollection',
+          'features': dataArray.map(item => ({
+              'type': 'Feature',
+              'properties': {
+                  'name': item.name,
+                  'place_id': item.place_id,
+                  'price_level': item.price_level,
+                  'rating': item.rating
+              },
+              'geometry': {
+                  'type': 'Point',
+                  'coordinates': [item.Geometry.Location.lng, item.Geometry.Location.lat]
+              }
+          }))
+      }
+  };
+}
+
+
+
 function addAlternativeBarMarkers(route_points) {
   fetch(`${BASE_URL}/citypoints/?location=${currentLocation}`, {
     method: "GET",
@@ -176,17 +196,52 @@ function addAlternativeBarMarkers(route_points) {
   })
     .then((response) => response.json())
     .then((waypoints) => {
-      for (const waypoint of waypoints) {
-        if (
-          containsObject(
-            waypoint.place_id,
-            route_points.map((x) => x.place_id),
-          )
-        ) {
-          continue;
+      waypoints = waypoints.filter(waypoint => !containsObject(waypoint.place_id, route_points.map(x => x.place_id)));
+      let convertedGEOJSON = convertToGeoJSON(waypoints);
+      map.addSource('places', convertedGEOJSON);
+      map.addLayer({
+        'id': 'places',
+        'type': 'circle',
+        'source': 'places',
+        'paint': {
+            'circle-color': '#4264fb',
+            'circle-radius': 6,
+            'circle-stroke-width': 2,
+            'circle-stroke-color': '#ffffff'
         }
-        renderAlternativeBarMarker(waypoint);
-      }
+      });
+
+      const popup = new mapboxgl.Popup({
+          closeButton: false,
+          closeOnClick: false
+      });
+
+      map.on('mouseenter', 'places', (e) => {
+        // Change the cursor style as a UI indicator.
+        map.getCanvas().style.cursor = 'pointer';
+    
+        // Copy coordinates array.
+        const coordinates = e.features[0].geometry.coordinates.slice();
+        // description to name for now
+        const description = e.features[0].properties.name;
+    
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+    
+        // Populate the popup and set its coordinates
+        // based on the feature found.
+        popup.setLngLat(coordinates).setHTML(description).addTo(map);
+        
+      });
+    
+      map.on('mouseleave', 'places', () => {
+          map.getCanvas().style.cursor = '';
+          popup.remove();
+      });
     })
     .catch((error) => {
       console.error("Error:", error);
@@ -238,6 +293,7 @@ function renderBarInformationBox(waypoint, index) {
 }
 
 function registerRoute(waypoints) {
+
   directions.setOrigin([
     waypoints[0].Geometry.Location.lng,
     waypoints[0].Geometry.Location.lat,
@@ -261,7 +317,6 @@ function pageStart() {
   populateMarkerOptions();
   populateDistanceOptions();
 
-  clearExistingRoute();
   showLoading();
   addLocations();
 
@@ -293,8 +348,9 @@ function pageStart() {
     })
       .then((response) => response.json())
       .then((waypoints) => {
-        document.getElementById("distance-slider").value = targetDistance;
-        document.getElementById("num-markers").value = targetN;
+        console.log(waypoints); 
+        distanceSelect.value = targetDistance;
+        numMarkersSelect.value = targetN;
         renderRoute(waypoints);
         updateRouteMetrics();
       })
@@ -370,7 +426,6 @@ function updateURL(location, targetDistance, targetN, ...markers) {
 }
 
 function addLocations() {
-  const dataList = document.getElementById("locations");
   dataList.innerHTML = "";
   for (const city in CITY_POINTS) {
     const option = document.createElement("option");
@@ -384,9 +439,6 @@ const buildMap = () => {
   showLoading();
   addLocations();
 
-  console.log(`${BASE_URL}/pubs/?target_n=${numMarkersSelect.value}&target_dist=${distanceSelect.value}&location=${currentLocation}`)
-
-
   fetch(
     `${BASE_URL}/pubs/?target_n=${numMarkersSelect.value}&target_dist=${distanceSelect.value}&location=${currentLocation}`,
   )
@@ -394,7 +446,6 @@ const buildMap = () => {
     .then((waypoints) => {
       renderRoute(waypoints);
     });
-
   updateRouteMetrics();
 };
 
