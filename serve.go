@@ -125,9 +125,8 @@ func adjacentLengthMeetConstraint(path []int, D DistanceMatrix) bool {
 
 func equalLengthMeetConstraint(path []int, D DistanceMatrix, targetDist float64) bool {
 	margin := (targetDist / float64(len(path)-1)) * 0.8
-	fmt.Append()
-	fmt.Println("Margin:", margin)
-	fmt.Println("Gap:", D[path[0]][path[len(path)-1]])
+	// fmt.Println("Margin:", margin)
+	// fmt.Println("Gap:", D[path[0]][path[len(path)-1]])
 	for i := 0; i < len(path)-1; i++ {
 		if D[path[i]][path[i+1]] > margin {
 			return false
@@ -148,9 +147,10 @@ func getEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatri
 		if len(path) == targetN && currentDist > targetDist-(targetDist*0.5) && currentDist < targetDist+(targetDist*0.5) {
 			eligiblePaths = append(eligiblePaths, path)
 			return
-		} else {
-			fmt.Println("Path length:", len(path), "Current distance:", currentDist, "Target distance:", targetDist)
 		}
+		// else {
+		// 	fmt.Println("Path length:", len(path), "Current distance:", currentDist, "Target distance:", targetDist)
+		// }
 		for i := 0; i < size; i++ {
 			if i != node && !visited[i] {
 				// if D[node][i] > (targetDist/float64(targetN-1))*2.6 {
@@ -172,7 +172,7 @@ func getEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatri
 	return eligiblePaths
 }
 
-func getEvaluation(w http.ResponseWriter, r *http.Request) {
+func getRandomCrawl(w http.ResponseWriter, r *http.Request) {
 
 	targetN, _ := strconv.Atoi(r.URL.Query().Get("target_n"))
 	targetDist, _ := strconv.ParseFloat(r.URL.Query().Get("target_dist"), 64)
@@ -246,7 +246,7 @@ func postCrawl(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(selectedLocations)
 }
 
-func getAllPoints(w http.ResponseWriter, r *http.Request) {
+func getAllCityPoints(w http.ResponseWriter, r *http.Request) {
 	location := strings.ToLower((r.URL.Query().Get("location")))
 	enrichedData, _, _, err := loadLocationInformation(location)
 	if err != nil {
@@ -276,9 +276,9 @@ func main() {
 		PathPrefix(staticDir).
 		Handler(http.StripPrefix(staticDir, http.FileServer(http.Dir("."+staticDir))))
 
-	router.HandleFunc("/pubs/", getEvaluation).Methods("GET")
-	router.HandleFunc("/citypoints/", getAllPoints).Methods("GET")
-	router.HandleFunc("/crawls/", postCrawl).Methods("POST")
+	router.HandleFunc("/pubs/", getRandomCrawl).Methods("GET")
+	router.HandleFunc("/citypoints/", getAllCityPoints).Methods("GET")
+	router.HandleFunc("/crawl/", postCrawl).Methods("POST")
 
 	// Set up the server
 	server := &http.Server{

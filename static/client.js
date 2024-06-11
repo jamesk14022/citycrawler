@@ -50,7 +50,7 @@ function populateDistanceOptions() {
     option.textContent = i;
     distanceSelect.appendChild(option);
   }
-  distanceSelect.value = 3;
+  distanceSelect.value = 1;
 }
 
 // Update the distance value display
@@ -68,6 +68,7 @@ const directions = new MapboxDirections({
 });
 
 directions.on("route", (e) => {
+  console.log(e.route);
   updateRouteMetrics(e.route);
 });
 
@@ -294,23 +295,24 @@ function renderBarInformationBox(waypoint, index) {
 
 function registerRoute(waypoints) {
 
-  directions.setOrigin([
-    waypoints[0].Geometry.Location.lng,
-    waypoints[0].Geometry.Location.lat,
-  ]);
-
-  directions.setDestination([
-    waypoints[waypoints.length - 1].Geometry.Location.lng,
-    waypoints[waypoints.length - 1].Geometry.Location.lat,
-  ]);
-
-  // Add the middle waypoints
-  waypoints.slice(1, -1).forEach((waypoint_mid, index) => {
-    directions.addWaypoint(index, [
-      waypoint_mid.Geometry.Location.lng,
-      waypoint_mid.Geometry.Location.lat,
+  console.log(directions)
+    directions.setOrigin([
+      waypoints[0].Geometry.Location.lng,
+      waypoints[0].Geometry.Location.lat,
     ]);
-  });
+
+    directions.setDestination([
+      waypoints[waypoints.length - 1].Geometry.Location.lng,
+      waypoints[waypoints.length - 1].Geometry.Location.lat,
+    ]);
+
+    // Add the middle waypoints
+    waypoints.slice(1, -1).forEach((waypoint_mid, index) => {
+      directions.addWaypoint(index, [
+        waypoint_mid.Geometry.Location.lng,
+        waypoint_mid.Geometry.Location.lat,
+      ]);
+    });
 }
 
 function pageStart() {
@@ -339,7 +341,7 @@ function pageStart() {
 
     currentLocation = location;
 
-    fetch(`${BASE_URL}/crawls/?location=${currentLocation}`, {
+    fetch(`${BASE_URL}/crawl/?location=${currentLocation}`, {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
@@ -348,11 +350,12 @@ function pageStart() {
     })
       .then((response) => response.json())
       .then((waypoints) => {
-        console.log(waypoints); 
         distanceSelect.value = targetDistance;
         numMarkersSelect.value = targetN;
-        renderRoute(waypoints);
         updateRouteMetrics();
+        map.on("load", function () {
+          renderRoute(waypoints)
+        });
       })
       .catch((error) => {
         console.error("Error:", error);
