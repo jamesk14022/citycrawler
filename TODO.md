@@ -1,0 +1,4 @@
+- remove red marker for pubs on route
+- pop up photo/details for red markers
+- remove A&B mapbox-GL markers
+- error messaged are greyed

@@ -28,6 +28,8 @@ CITY_COORDS = {
     "Denver": (39.76, -104.88),
 }
 
+SEARCH_RADIUS = 2250
+
 GOOGLE_MAPS_BASE_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
 GOOGLE_MAPS_NEXT_PAGE_DELAY = 2.5
 
@@ -41,8 +43,6 @@ def walking_distance(start_latitude, start_longitude, end_latitude, end_longitud
     params = {"access_token": os.environ["MAPBOX_TOKEN"], "geometries": "geojson"}
     response = requests.get(url, params=params)
     data = response.json()
-
-    print(data)
 
     # Extract distance and duration
     route = data["routes"][0]
@@ -117,7 +117,7 @@ def save_matrices(D, R, location_name):
         separators=(",", ":"),
         sort_keys=True,
         indent=4,
-    )  ### this save
+    )
 
     b = D.tolist()  # nested lists with same data, indices
     file_path = f"static/{location_name}/D.json"  ## your path variable
@@ -127,13 +127,12 @@ def save_matrices(D, R, location_name):
         separators=(",", ":"),
         sort_keys=True,
         indent=4,
-    )  ### this save
+    ) 
 
 
 def create_directory_if_not_exists(directory_path):
     # Check if the directory already exists
     if not os.path.exists(directory_path):
-        # Create the directory
         os.makedirs(directory_path)
         print("Directory created:", directory_path)
     else:
@@ -143,7 +142,7 @@ def create_directory_if_not_exists(directory_path):
 for name, coords in CITY_COORDS.items():
     name = name.lower()
 
-    state = location_search(coords, 2250)
+    state = location_search(coords, SEARCH_RADIUS)
     create_directory_if_not_exists("static/" + name)
 
     with open(
