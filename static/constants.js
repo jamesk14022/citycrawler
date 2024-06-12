@@ -1,7 +1,6 @@
 const CITY_POINTS = {
     Amsterdam: [4.9041, 52.3676],
     Belfast: [-5.9301, 54.5973],
-    "New York": [-74.006, 40.7128],
     Berlin: [13.407705, 52.517424],
     Madrid: [-3.7038, 40.4168],
     Rome: [12.4964, 41.9028],
@@ -99,7 +98,26 @@ const CITY_POINTS = {
     Montpellier: [3.877, 43.6119],
     Augsburg: [10.8978, 48.3705],
     London: [-0.1278, 51.5072],
-    Dublin: [-6.2603, 53.3498]
+    Dublin: [-6.2603, 53.3498],
+    "New York": [-73.94, 40.66],
+    "Los Angeles": [-118.41, 34.02],
+    "Chicago": [-87.68, 41.84],
+    "Houston": [-95.39, 29.79],
+    "Phoenix": [-112.09, 33.57],
+    "Philadelphia": [-75.13, 40.01],
+    "San Antonio": [-98.52, 29.46],
+    "San Diego": [-117.14, 32.81],
+    "Dallas": [-96.77, 32.79],
+    "Jacksonville": [-81.66, 30.34],
+    "Austin": [-97.75, 30.30],
+    "Fort Worth": [-97.35, 32.78],
+    "San Jose": [-121.81, 37.30],
+    "Columbus": [-82.99, 39.99],
+    "Charlotte": [-80.83, 35.21],
+    "Indianapolis": [-86.15, 39.78],
+    "San Francisco": [-123.03, 37.73],
+    "Seattle": [-122.35, 47.62],
+    "Denver": [-104.88, 39.76]
   };
 
 const TIME_SPENT_BAR = 30;
