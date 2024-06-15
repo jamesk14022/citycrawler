@@ -13,4 +13,4 @@ make build
 make run
 ```
 
-![alt text](https://github.com/jamesk14022/barcrawler/blob/main/web/static/Screenshot 2024-06-08 at 22.11.56.png?raw=true)
+![alt text](https://github.com/jamesk14022/barcrawler/blob/main/web/static/screenshot.png?raw=true)
