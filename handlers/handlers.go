@@ -15,7 +15,7 @@ import (
 	"github.com/jamesk14022/barcrawler/utils"
 )
 
-const cacheDir = "static/data/"
+const cacheDir = "web/static/data/"
 
 // check which directories exist in given directory
 func checkCachedLocations() []string {

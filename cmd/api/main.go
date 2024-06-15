@@ -8,7 +8,7 @@ import (
 	"github.com/jamesk14022/barcrawler/handlers"
 )
 
-const staticDir = "/static/"
+const staticDir = "/web/static/"
 const port = ":8080"
 
 func main() {
