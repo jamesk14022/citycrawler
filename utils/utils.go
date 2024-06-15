@@ -1,6 +1,6 @@
-package main
+package utils
 
-func remove(slice []int, s int) []int {
+func Remove(slice []int, s int) []int {
 	for i, v := range slice {
 		if v == s {
 			return append(slice[:i], slice[i+1:]...)
@@ -9,7 +9,7 @@ func remove(slice []int, s int) []int {
 	return slice
 }
 
-func contains(slice []string, val string) bool {
+func Contains(slice []string, val string) bool {
 	for _, item := range slice {
 		if item == val {
 			return true

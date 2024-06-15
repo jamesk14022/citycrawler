@@ -28,6 +28,7 @@ CITY_COORDS = {
     "Denver": (39.76, -104.88),
 }
 
+BASE_PATH = "../static"
 SEARCH_RADIUS = 2250
 
 GOOGLE_MAPS_BASE_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
@@ -110,7 +111,7 @@ def build_matrices(state):
 
 def save_matrices(D, R, location_name):
     b = R.tolist()  # nested lists with same data, indices
-    file_path = f"static/{location_name}/R.json"  ## your path variable
+    file_path = f"{BASE_PATH}/{location_name}/R.json"  ## your path variable
     json.dump(
         b,
         codecs.open(file_path, "w", encoding="utf-8"),
@@ -120,7 +121,7 @@ def save_matrices(D, R, location_name):
     )
 
     b = D.tolist()  # nested lists with same data, indices
-    file_path = f"static/{location_name}/D.json"  ## your path variable
+    file_path = f"{BASE_PATH}/{location_name}/D.json"  ## your path variable
     json.dump(
         b,
         codecs.open(file_path, "w", encoding="utf-8"),
@@ -146,7 +147,7 @@ for name, coords in CITY_COORDS.items():
     create_directory_if_not_exists("static/" + name)
 
     with open(
-        f"static/{name}/info.json", "w"
+        f"{BASE_PATH}/{name}/info.json", "w"
     ) as f:  # "rb" because we want to read in binary mode
         f.write(json.dumps(state))
 

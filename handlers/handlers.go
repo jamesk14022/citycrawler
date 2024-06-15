@@ -1,4 +1,4 @@
-package main
+package handlers
 
 import (
 	"encoding/json"
@@ -11,40 +11,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gorilla/mux"
+	. "github.com/jamesk14022/barcrawler/types"
+	"github.com/jamesk14022/barcrawler/utils"
 )
 
 const cacheDir = "static/data/"
-const staticDir = "/static/"
-const port = ":8080"
-
-type Geometry struct {
-	Coordinates [][]float64 `json:"coordinates"`
-}
-
-type Route struct {
-	Geometry Geometry `json:"geometry"`
-}
-
-type PlaceIDs struct {
-	PlaceIDs []string `json:"place_ids"`
-}
-
-type Location struct {
-	ID       string  `json:"place_id"`
-	Name     string  `json:"name"`
-	Price    float32 `json:"price_level"`
-	Rating   float32 `json:"rating"`
-	Geometry struct {
-		Location struct {
-			Latitude  float64 `json:"lat"`
-			Longitude float64 `json:"lng"`
-		}
-	}
-}
-
-type DistanceMatrix [][]float64
-type RoutesMatrix [][]Route
 
 // check which directories exist in given directory
 func checkCachedLocations() []string {
@@ -62,7 +33,7 @@ func checkCachedLocations() []string {
 
 func loadLocationInformation(location string) ([]Location, DistanceMatrix, RoutesMatrix, error) {
 	var cachedLocations = checkCachedLocations()
-	if !contains(cachedLocations, location) {
+	if !utils.Contains(cachedLocations, location) {
 		fmt.Println("Location not found")
 		return nil, nil, nil, errors.New("Location not found")
 	} else {
@@ -111,8 +82,8 @@ func adjacentLengthMeetConstraint(path []int, D DistanceMatrix) bool {
 	for i := 0; i < len(path)-1; i++ {
 		points := make([]int, len(path))
 		copy(points, path)
-		points = remove(points, path[i+1])
-		points = remove(points, path[i])
+		points = utils.Remove(points, path[i+1])
+		points = utils.Remove(points, path[i])
 		distToNext := D[path[i]][path[i+1]]
 		for _, p := range points {
 			if distToNext > D[path[i]][p] {
@@ -172,7 +143,7 @@ func getEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatri
 	return eligiblePaths
 }
 
-func getRandomCrawl(w http.ResponseWriter, r *http.Request) {
+func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 
 	targetN, _ := strconv.Atoi(r.URL.Query().Get("target_n"))
 	targetDist, _ := strconv.ParseFloat(r.URL.Query().Get("target_dist"), 64)
@@ -216,7 +187,7 @@ func getRandomCrawl(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func postCrawl(w http.ResponseWriter, r *http.Request) {
+func PostCrawl(w http.ResponseWriter, r *http.Request) {
 
 	location := strings.ToLower((r.URL.Query().Get("location")))
 	var ids PlaceIDs
@@ -246,7 +217,7 @@ func postCrawl(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(selectedLocations)
 }
 
-func getAllCityPoints(w http.ResponseWriter, r *http.Request) {
+func GetAllCityPoints(w http.ResponseWriter, r *http.Request) {
 	location := strings.ToLower((r.URL.Query().Get("location")))
 	enrichedData, _, _, err := loadLocationInformation(location)
 	if err != nil {
@@ -267,25 +238,4 @@ func filterPaths(paths [][]int, condition func([]int) bool) [][]int {
 		}
 	}
 	return result
-}
-
-func main() {
-	router := mux.NewRouter()
-
-	router.
-		PathPrefix(staticDir).
-		Handler(http.StripPrefix(staticDir, http.FileServer(http.Dir("."+staticDir))))
-
-	router.HandleFunc("/pubs/", getRandomCrawl).Methods("GET")
-	router.HandleFunc("/citypoints/", getAllCityPoints).Methods("GET")
-	router.HandleFunc("/crawl/", postCrawl).Methods("POST")
-
-	// Set up the server
-	server := &http.Server{
-		Addr:    port,
-		Handler: router,
-	}
-
-	log.Println("Starting server on ", port)
-	log.Fatal(server.ListenAndServe())
 }
