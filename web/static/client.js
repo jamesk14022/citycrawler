@@ -12,6 +12,8 @@ mapboxgl.accessToken = MAPBOX_TOKEN;
 // appplication state
 var currentLocation = "Belfast";
 var currentMarkers = [];
+var selectedDistance = 2;
+var selectedMarkers = 4;
 
 const container = document.getElementById("container")
 const refreshButton = document.getElementById("refresh-button");
@@ -21,37 +23,54 @@ const modalExitButton = document.getElementById("exit");
 const noPubsConent = document.getElementById("no_pubs");
 const cityNotFound = document.getElementById("city_not_found");
 const rightBar = document.getElementById("rightBar");
-const distanceSelect = document.getElementById("distance-slider");
-const numMarkersSelect = document.getElementById("num-markers");
 const nav = document.getElementById("listing-group");
 const dataList = document.getElementById("locations");
 
+const markerMinus = document.querySelectorAll(".marker-quantity-btn-minus");
+const markerPlus = document.querySelectorAll(".marker-quantity-btn-plus");
+const distanceMinus = document.querySelectorAll(".distance-quantity-btn-minus");
+const distancePlus = document.querySelectorAll(".distance-quantity-btn-plus");
+const distanceCounter = document.querySelectorAll(".num-distance");
+const markerCounter = document.querySelectorAll(".num-markers");
 
-function populateMarkerOptions() {
-  // Populate the dropdown
-  for (let i = 2; i <= 8; i++) {
-    let option = document.createElement("option");
-    option.value = i;
-    option.textContent = i;
-    numMarkersSelect.appendChild(option);
-  }
-  numMarkersSelect.value = 3;
-}
+const sidebar = document.getElementById('collap-sidebar');
+const sidebarToggle = document.getElementById('sidebarToggle');
+const closeBtn = sidebar.querySelector('.close-btn');
 
-function populateDistanceOptions() {
-  // add distance options
-  let option = document.createElement("option");
-  option.value = 0.25;
-  option.textContent = 0.25;
-  distanceSelect.appendChild(option);
-  for (let i = 0.5; i <= 3; i += 0.5) {
-    let option = document.createElement("option");
-    option.value = i;
-    option.textContent = i;
-    distanceSelect.appendChild(option);
+markerMinus.forEach((btn) => {
+btn.addEventListener('click', () => {
+  if (selectedMarkers === 1) {
+    return;
   }
-  distanceSelect.value = 1;
-}
+  selectedMarkers -= parseInt(1);
+  setMarkersDisplay(selectedMarkers);
+});
+});
+
+markerPlus.forEach((btn) => {
+btn.addEventListener('click', () => {
+  selectedMarkers += parseInt(1);
+  setMarkersDisplay(selectedMarkers);
+});
+});
+
+distanceMinus.forEach((btn) => {
+btn.addEventListener('click', () => {
+  if (selectedDistance === 0.25) {
+    return;
+  } 
+  selectedDistance -= parseFloat(0.5);
+  setDistanceDisplay(selectedDistance);
+});
+});
+
+distancePlus.forEach((btn) => {
+btn.addEventListener('click', () => {
+  selectedDistance += parseFloat(0.5);
+  distanceCounter.textContent = parseFloat(selectedDistance);
+  setDistanceDisplay(selectedDistance);
+});
+});
 
 // Update the distance value display
 const map = new mapboxgl.Map({
@@ -73,6 +92,47 @@ directions.on("route", (e) => {
 });
 
 map.addControl(directions, "top-left");
+
+function openSidebar() {
+  sidebar.style.width = '500px';
+}
+
+function closeSidebar() {
+  sidebar.style.width = '0';
+}
+
+sidebarToggle.addEventListener('click', openSidebar);
+closeBtn.addEventListener('click', closeSidebar);
+
+// Close sidebar when clicking outside of it
+document.addEventListener('click', function(event) {
+  if (!sidebar.contains(event.target) && event.target !== sidebarToggle) {
+    closeSidebar();
+  }
+});
+
+// Check screen width and adjust visibility
+function checkWidth() {
+  if (window.innerWidth >= 800) {
+    sidebarToggle.style.display = 'none';
+    closeSidebar();
+  } else {
+    sidebarToggle.style.display = 'block';
+  }
+}
+
+
+const setDistanceDisplay = (distance) => {
+  distanceCounter.forEach((element) => {
+    element.textContent = parseFloat(distance);
+  });
+}
+
+const setMarkersDisplay = (markers) => {
+  markerCounter.forEach((element) => {
+    element.textContent = parseInt(markers);
+  });
+}
 
 const clearExistingRoute = () => {
   directions.removeRoutes();
@@ -141,7 +201,7 @@ function updateRouteMetrics(e) {
 
     const routeDurationElement = document.getElementById("route-duration");
     routeDurationElement.textContent = parseInt(
-      e[0].duration / 60 + numMarkersSelect.value * TIME_SPENT_BAR,
+      e[0].duration / 60 + selectedMarkers * TIME_SPENT_BAR,
     );
   }
 }
@@ -263,6 +323,7 @@ function renderBarInformationBox(waypoint, index) {
   };
   const label = document.createElement("label");
   label.htmlFor = `marker-${index}`;
+  label.classList.add("marker-label");
   label.innerHTML = `<strong>Point ${String.fromCharCode(
     65 + index,
   )}</strong><br>${waypoint.name}`;
@@ -316,11 +377,12 @@ function registerRoute(waypoints) {
 }
 
 function pageStart() {
-  populateMarkerOptions();
-  populateDistanceOptions();
 
   showLoading();
   addLocations();
+
+  setDistanceDisplay(selectedDistance);
+  setMarkersDisplay(selectedMarkers);
 
   // Check if the URL contains a query string
   const urlParams = new URLSearchParams(window.location.search);
@@ -350,8 +412,8 @@ function pageStart() {
     })
       .then((response) => response.json())
       .then((waypoints) => {
-        distanceSelect.value = targetDistance;
-        numMarkersSelect.value = targetN;
+        selectedDistance = parseFloat(targetDistance);
+        selectedMarkers = parseInt(targetN);
         updateRouteMetrics();
         map.on("load", function () {
           renderRoute(waypoints)
@@ -382,8 +444,8 @@ function renderRoute(waypoints) {
 
     updateURL(
       currentLocation,
-      distanceSelect.value,
-      numMarkersSelect.value,
+      selectedDistance,
+      selectedMarkers,
       ...waypoints.map((waypoint) => waypoint.place_id),
     );
   } else {
@@ -443,7 +505,7 @@ const buildMap = () => {
   addLocations();
 
   fetch(
-    `${BASE_URL}/pubs/?target_n=${numMarkersSelect.value}&target_dist=${distanceSelect.value}&location=${currentLocation}`,
+    `${BASE_URL}/pubs/?target_n=${selectedMarkers}&target_dist=${selectedDistance}&location=${currentLocation}`,
   )
     .then((response) => response.json())
     .then((waypoints) => {

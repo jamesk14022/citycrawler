@@ -52,7 +52,7 @@
         display: inline-flex;
         background-color: #f4f4f4;
         gap: 20px;
-        padding: 10px;
+        padding: 10px 5px;
         /* width: 1500px; */
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -195,11 +195,13 @@
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         z-index: 1;
       }
-      #rightBar {
-        position: absolute;
-        top: 200px;
-        right: 25px;
-        z-index: 1;
+      @media screen and (min-width: 799px) {
+        #rightBar {
+          position: absolute;
+          top: 200px;
+          right: 25px;
+          z-index: 1;
+        }
       }
       .listing-group {
         font:
@@ -338,6 +340,76 @@
             Helvetica,
             sans-serif;
         }
+        .toggle-btn {
+          font-size: 30px;
+          cursor: pointer;
+          background-color: white;
+          color: black;
+          padding: 10px 15px;
+          border: none;
+          display: none;
+        }
+
+        .sidebar {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: white;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+
+        .marker-label{
+          margin: 2px;
+          border-radius: 2px;
+        }
+
+        .sidebar button:hover {
+          color: #f1f1f1;
+        }
+
+        .sidebar .close-btn {
+          font-size: 36px;
+          margin-left: 50px;
+          background-color: #008cba;
+          color: white;
+          text-decoration: none;
+          margin: 50px 4px;
+          cursor: pointer;
+          border-radius: 5px;
+          padding: 10px;
+          display: block;
+        }
+
+        @media screen and (max-width: 799px) {
+          .toggle-btn {
+            display: block;
+          }
+          div#marker-container.top-bar{
+            display: none;
+          }
+          div#slider-container.top-bar{
+            display: none;
+          }
+          #rightBar {
+            position: absolute;
+            bottom: 75px;
+            left: 25px;
+            height: 200px;
+            z-index: 1;
+            width: 90%;
+          }
+          #controls {
+            width: 95%;
+          }
+          .listing-group{
+            display: inline-flex;
+          }
+        }
     </style>
   </head>
   <body>
@@ -367,23 +439,28 @@
             placeholder="Search location..."
           />
 
-          <div id="marker-container">
-            <label for="num-markers">Number of Markers:</label>
-            <select id="num-markers">
-              <!-- Options will be populated with JavaScript -->
-            </select>
+          <div id="marker-container" class="top-bar">
+            <label for="distance-slider">Markers:</label>
+            <button class="marker-quantity-btn-minus">-</button>
+            <span class="num-markers"></span>
+            <button class="marker-quantity-btn-plus">+</button>
           </div>
 
-          <div id="slider-container">
+          <div id="slider-container" class="top-bar">
             <label for="distance-slider">Distance (km):</label>
-            <select id="distance-slider">
-              <!-- Options will be populated with JavaScript -->
-            </select>
-            <button type="button" id="refresh-button">Randomise Route</button>
+            <button class="distance-quantity-btn-minus">-</button>
+            <span class="num-distance"></span>
+            <button class="distance-quantity-btn-plus">+</button>
+          </div>
+          <button type="button" id="refresh-button">Randomise Route</button>
+          <div id="toggleBar">
+            <button id="sidebarToggle" class="toggle-btn">☰</button>
           </div>
         </div>
 
         <datalist id="locations"></datalist>
+
+
 
         <div id="rightBar">
           <div id="route-info">
@@ -401,6 +478,23 @@
         
       </div>
     </div>
+    <div id="collap-sidebar" class="sidebar">
+      <div id="marker-container">
+        <label for="distance-slider">Markers:</label>
+        <button class="marker-quantity-btn-minus">-</button>
+        <span class="num-markers"></span>
+        <button class="marker-quantity-btn-plus">+</button>
+      </div>
+
+      <div id="slider-container">
+        <label for="distance-slider">Distance (km):</label>
+        <button class="distance-quantity-btn-minus">-</button>
+        <span class="num-distance"></span>
+        <button class="distance-quantity-btn-plus">+</button>
+      </div>
+      <button class="close-btn">Close</button>
+    </div>
+
     <div class="loading-overlay"></div>
     <div class="loading-spinner"></div>
 
