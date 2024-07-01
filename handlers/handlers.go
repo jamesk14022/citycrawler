@@ -115,7 +115,7 @@ func getEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatri
 			return
 		}
 
-		if len(path) == targetN && currentDist > targetDist-(targetDist*0.5) && currentDist < targetDist+(targetDist*0.5) {
+		if len(path) == targetN && currentDist > min(targetDist-(targetDist*0.5), 1) && currentDist < min(targetDist+(targetDist*0.5), 1) {
 			eligiblePaths = append(eligiblePaths, path)
 			return
 		}

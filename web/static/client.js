@@ -39,7 +39,7 @@ const closeBtn = sidebar.querySelector('.close-btn');
 
 markerMinus.forEach((btn) => {
 btn.addEventListener('click', () => {
-  if (selectedMarkers === 1) {
+  if (selectedMarkers === 2) {
     return;
   }
   selectedMarkers -= parseInt(1);
@@ -49,6 +49,9 @@ btn.addEventListener('click', () => {
 
 markerPlus.forEach((btn) => {
 btn.addEventListener('click', () => {
+  if (selectedMarkers === 8) {
+    return;
+  }
   selectedMarkers += parseInt(1);
   setMarkersDisplay(selectedMarkers);
 });
@@ -56,7 +59,7 @@ btn.addEventListener('click', () => {
 
 distanceMinus.forEach((btn) => {
 btn.addEventListener('click', () => {
-  if (selectedDistance === 0.25) {
+  if (selectedDistance === 0.5) {
     return;
   } 
   selectedDistance -= parseFloat(0.5);
@@ -66,6 +69,9 @@ btn.addEventListener('click', () => {
 
 distancePlus.forEach((btn) => {
 btn.addEventListener('click', () => {
+  if (selectedDistance === 7) {
+    return;
+  } 
   selectedDistance += parseFloat(0.5);
   distanceCounter.textContent = parseFloat(selectedDistance);
   setDistanceDisplay(selectedDistance);

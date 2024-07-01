@@ -52,8 +52,7 @@
         display: inline-flex;
         background-color: #f4f4f4;
         gap: 20px;
-        padding: 10px 5px;
-        /* width: 1500px; */
+        padding: 10px 30px;
         border: 1px solid #ccc;
         border-radius: 5px;
         z-index: 1;
@@ -341,12 +340,13 @@
             sans-serif;
         }
         .toggle-btn {
+          background-color: #008cba;
+          color: white;
           font-size: 30px;
           cursor: pointer;
-          background-color: white;
-          color: black;
           padding: 10px 15px;
           border: none;
+          border-radius: 5px;
           display: none;
         }
 
@@ -373,16 +373,17 @@
         }
 
         .sidebar .close-btn {
-          font-size: 36px;
-          margin-left: 50px;
+          font-size: 20px;
+          text-align: center;
           background-color: #008cba;
           color: white;
           text-decoration: none;
-          margin: 50px 4px;
           cursor: pointer;
           border-radius: 5px;
           padding: 10px;
           display: block;
+          margin: 10% auto;
+          width: 40%;
         }
 
         @media screen and (max-width: 799px) {
@@ -408,6 +409,14 @@
           }
           .listing-group{
             display: inline-flex;
+          }
+          .sidebar-label{
+            width: 200px;
+            padding-left: 10%;
+          }
+          .btn-side{
+            width: 40px;
+            height: 40px;
           }
         }
     </style>
@@ -480,17 +489,18 @@
     </div>
     <div id="collap-sidebar" class="sidebar">
       <div id="marker-container">
-        <label for="distance-slider">Markers:</label>
-        <button class="marker-quantity-btn-minus">-</button>
+        <label class="sidebar-label" for="distance-slider">Markers:</label>
+        <button class="btn-side marker-quantity-btn-minus">-</button>
         <span class="num-markers"></span>
-        <button class="marker-quantity-btn-plus">+</button>
+        <button class="btn-side marker-quantity-btn-plus">+</button>
       </div>
-
+    </br>
+    </br>
       <div id="slider-container">
-        <label for="distance-slider">Distance (km):</label>
-        <button class="distance-quantity-btn-minus">-</button>
+        <label class="sidebar-label" for="distance-slider">Distance (km):</label>
+        <button class="btn-side distance-quantity-btn-minus">-</button>
         <span class="num-distance"></span>
-        <button class="distance-quantity-btn-plus">+</button>
+        <button class="btn-side distance-quantity-btn-plus">+</button>
       </div>
       <button class="close-btn">Close</button>
     </div>
