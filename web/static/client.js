@@ -13,7 +13,7 @@ mapboxgl.accessToken = MAPBOX_TOKEN;
 var currentLocation = "Belfast";
 var currentMarkers = [];
 var selectedDistance = 2;
-var selectedMarkers = 4;
+var selectedMarkers = 2;
 
 const container = document.getElementById("container")
 const refreshButton = document.getElementById("refresh-button");
@@ -36,6 +36,8 @@ const markerCounter = document.querySelectorAll(".num-markers");
 const sidebar = document.getElementById('collap-sidebar');
 const sidebarToggle = document.getElementById('sidebarToggle');
 const closeBtn = sidebar.querySelector('.close-btn');
+
+shareButton.addEventListener("click", copyLink);
 
 markerMinus.forEach((btn) => {
 btn.addEventListener('click', () => {
@@ -100,7 +102,7 @@ directions.on("route", (e) => {
 map.addControl(directions, "top-left");
 
 function openSidebar() {
-  sidebar.style.width = '500px';
+  sidebar.style.width = '400px';
 }
 
 function closeSidebar() {
@@ -116,17 +118,6 @@ document.addEventListener('click', function(event) {
     closeSidebar();
   }
 });
-
-// Check screen width and adjust visibility
-function checkWidth() {
-  if (window.innerWidth >= 800) {
-    sidebarToggle.style.display = 'none';
-    closeSidebar();
-  } else {
-    sidebarToggle.style.display = 'block';
-  }
-}
-
 
 const setDistanceDisplay = (distance) => {
   distanceCounter.forEach((element) => {
@@ -176,22 +167,67 @@ function hideLoading() {
   container.classList.remove("blurred");
 }
 
+function copy(text) {
+  return new Promise((resolve, reject) => {
+      if (typeof navigator !== "undefined" && typeof navigator.clipboard !== "undefined" && navigator.permissions !== "undefined") {
+          const type = "text/plain";
+          const blob = new Blob([text], { type });
+          const data = [new ClipboardItem({ [type]: blob })];
+          navigator.permissions.query({name: "clipboard-write"}).then((permission) => {
+              if (permission.state === "granted" || permission.state === "prompt") {
+                  navigator.clipboard.write(data).then(resolve, reject).catch(reject);
+              }
+              else {
+                  reject(new Error("Permission not granted!"));
+              }
+          });
+      }
+      else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+          var textarea = document.createElement("textarea");
+          textarea.textContent = text;
+          textarea.style.position = "fixed";
+          textarea.style.width = '2em';
+          textarea.style.height = '2em';
+          textarea.style.padding = 0;
+          textarea.style.border = 'none';
+          textarea.style.outline = 'none';
+          textarea.style.boxShadow = 'none';
+          textarea.style.background = 'transparent';
+          document.body.appendChild(textarea);
+          textarea.focus();
+          textarea.select();
+          try {
+              document.execCommand("copy");
+              document.body.removeChild(textarea);
+              resolve();
+          }
+          catch (e) {
+              document.body.removeChild(textarea);
+              reject(e);
+          }
+      }
+      else {
+          reject(new Error("None of copying methods are supported by this browser!"));
+      }
+  });
+  
+}
+
 function copyLink() {
   // Get the current URL
   var url = window.location.href;
 
   // Copy the URL to the clipboard
-  navigator.clipboard.writeText(url).then(
+  copy(url).then(
     function () {
       // Change the button text to "Copied ✔️"
-      var button = document.getElementById("shareButton");
-      button.textContent = "Copied ✔️";
-      button.classList.add("copied");
+      shareButton.textContent = "Copied ✔️";
+      shareButton.classList.add("copied");
 
       // Revert the button text after 2 seconds
       setTimeout(function () {
-        button.textContent = "Share Link";
-        button.classList.remove("copied");
+        shareButton.textContent = "Share Link";
+        shareButton.classList.remove("copied");
       }, 2000);
     },
     function (err) {
@@ -398,6 +434,10 @@ function pageStart() {
     urlParams.has("target_n") &&
     urlParams.has("marker1")
   ) {
+
+    setDistanceDisplay(parseFloat(urlParams.get("target_dist")));
+    setMarkersDisplay(parseInt(urlParams.get("target_n")));
+
     // Get the query string values
     const location = urlParams.get("location");
     const targetDistance = urlParams.get("target_dist");
@@ -523,7 +563,6 @@ const buildMap = () => {
 window.onload = pageStart;
 
 refreshButton.addEventListener("click", buildMap);
-shareButton.addEventListener("click", copyLink);
 modalExitButton.addEventListener("click", toggleNoPubsResults);
 searchBox.addEventListener("keypress", function (e) {
   var inputVal = e.target.value;

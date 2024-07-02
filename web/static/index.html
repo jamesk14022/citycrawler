@@ -30,6 +30,8 @@
       href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
       rel="stylesheet"
     />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/eruda"></script> -->
+<!-- <script>eruda.init();</script> -->
     <script src="https://cdn.jsdelivr.net/npm/@mapbox/polyline@1.2.1/src/polyline.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -56,7 +58,6 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         z-index: 1;
-        justify-content: center;
         align-items:center;
       }
       #route-info{
@@ -149,40 +150,15 @@
         filter: blur(5px);
       }
       #search-box {
-        width: 200px;
+        width: 95%;
         padding: 8px;
         border: 1px solid #ccc;
         border-radius: 5px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         z-index: 1;
       }
-      #refresh-button {
-        background-color: #008cba;
-        border: none;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 14px;
-        margin: 8px 4px;
-        cursor: pointer;
-        border-radius: 5px;
-        padding: 10px;
-      }
-      #shareButton {
-        z-index: 1;
-        background-color: #008cba;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 14px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 5px;
-      }
+
+
       #locations {
         position: absolute;
         top: 10px;
@@ -200,6 +176,33 @@
           top: 200px;
           right: 25px;
           z-index: 1;
+        }
+        #refresh-button {
+          background-color: #008cba;
+          border: none;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          margin: 8px 4px;
+          cursor: pointer;
+          border-radius: 5px;
+          padding: 10px;
+        }
+        #shareButton {
+          z-index: 1;
+          background-color: #008cba;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 5px;
         }
       }
       .listing-group {
@@ -351,7 +354,7 @@
         }
 
         .sidebar {
-          height: 100%;
+          height: 90%;
           width: 0;
           position: fixed;
           z-index: 1;
@@ -359,8 +362,10 @@
           left: 0;
           background-color: white;
           overflow-x: hidden;
-          transition: 0.5s;
+          transition: 0.1s;
           padding-top: 60px;
+          align-items: center;
+          box-shadow: #555;
         }
 
         .marker-label{
@@ -381,12 +386,47 @@
           cursor: pointer;
           border-radius: 5px;
           padding: 10px;
-          display: block;
           margin: 10% auto;
           width: 40%;
+          position: absolute;
+          bottom: 30%;
+          left: 50%;
+          transform: translateX(-50%);
         }
 
         @media screen and (max-width: 799px) {
+          #refresh-button {
+            background-color: #008cba;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 8px 4px;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            top: 60px; /* Adjust this value to set the distance from the top */
+            right: 0px; /* Adjust this value to set the distance from the right */
+          }
+          #shareButton {
+            z-index: 1;
+            background-color: #008cba;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 8px 4px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 60px; /* Adjust this value to set the distance from the top */
+            right: 150px; /* Adjust this value to set the distance from the right */
+        }
           .toggle-btn {
             display: block;
           }
@@ -398,7 +438,7 @@
           }
           #rightBar {
             position: absolute;
-            bottom: 75px;
+            bottom: 0px;
             left: 25px;
             height: 200px;
             z-index: 1;
@@ -461,6 +501,7 @@
             <span class="num-distance"></span>
             <button class="distance-quantity-btn-plus">+</button>
           </div>
+          <button type="button" id="shareButton">Copy sharing link</button>
           <button type="button" id="refresh-button">Randomise Route</button>
           <div id="toggleBar">
             <button id="sidebarToggle" class="toggle-btn">☰</button>
@@ -481,7 +522,6 @@
           </div>
           </div>
           <nav id="listing-group" class="listing-group"></nav>
-          <button type="button" id="shareButton">Copy sharing link</button>
         </div>
 
         
