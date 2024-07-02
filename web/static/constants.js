@@ -125,6 +125,6 @@ const TIME_SPENT_BAR = 30;
 // token scoped and safe for FE use
 const MAPBOX_TOKEN = "pk.eyJ1IjoiamFtZXNrMTQwMjIiLCJhIjoiY2x2cnZqZnV5MHdnYTJxcXpkOHUybzdrZCJ9.UVs8BFzWjaZVrz7Gc0_Wpg";
 
-const BASE_URL = "https://barcrawler-morning-snow-6675.fly.dev";
+const BASE_URL = "https://barcrawler-morning-snow-6675.fly.dev:8080";
 
 export {CITY_POINTS, TIME_SPENT_BAR, MAPBOX_TOKEN, BASE_URL}
