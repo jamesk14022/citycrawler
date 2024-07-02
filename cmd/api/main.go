@@ -1,14 +1,17 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 
 	"github.com/gorilla/mux"
 	"github.com/jamesk14022/barcrawler/handlers"
+
+	"io/ioutil"
 )
 
-const staticDir = "/web/static/"
+const staticDir = "/usr/local/web/static/"
 const port = ":8080"
 
 func enableCORS(next http.Handler) http.Handler {
@@ -44,5 +47,13 @@ func main() {
 	}
 
 	log.Println("Starting server on ", port)
+	files, err := ioutil.ReadDir("." + staticDir)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, file := range files {
+		fmt.Println(file.Name(), file.IsDir())
+	}
 	log.Fatal(server.ListenAndServe())
 }
