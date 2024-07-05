@@ -1,14 +1,14 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/gorilla/mux"
 	"github.com/jamesk14022/barcrawler/handlers"
 
-	"io/ioutil"
+	gorillaHandlers "github.com/gorilla/handlers"
 )
 
 const staticDir = "/usr/local/web/static/"
@@ -34,26 +34,19 @@ func main() {
 		PathPrefix(staticDir).
 		Handler(http.StripPrefix(staticDir, http.FileServer(http.Dir("."+staticDir))))
 
-	router.HandleFunc("/pubs/", handlers.GetRandomCrawl).Methods("GET")
-	router.HandleFunc("/citypoints/", handlers.GetAllCityPoints).Methods("GET")
-	router.HandleFunc("/crawl/", handlers.PostCrawl).Methods("POST")
+	router.HandleFunc("/pubs", handlers.GetRandomCrawl).Methods("GET")
+	router.HandleFunc("/citypoints", handlers.GetAllCityPoints).Methods("GET")
+	router.HandleFunc("/crawl", handlers.PostCrawl).Methods("POST")
 
 	corsRouter := enableCORS(router)
+	loggedRouter := gorillaHandlers.LoggingHandler(os.Stdout, corsRouter)
 
 	// Set up the server
 	server := &http.Server{
 		Addr:    port,
-		Handler: corsRouter,
+		Handler: loggedRouter,
 	}
 
 	log.Println("Starting server on ", port)
-	files, err := ioutil.ReadDir("." + staticDir)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	for _, file := range files {
-		fmt.Println(file.Name(), file.IsDir())
-	}
 	log.Fatal(server.ListenAndServe())
 }

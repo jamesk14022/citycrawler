@@ -15,7 +15,7 @@ import (
 	"github.com/jamesk14022/barcrawler/utils"
 )
 
-const cacheDir = "web/static/data/"
+const cacheDir = "usr/local/web/static/data/"
 
 // check which directories exist in given directory
 func checkCachedLocations() []string {
@@ -35,7 +35,7 @@ func loadLocationInformation(location string) ([]Location, DistanceMatrix, Route
 	var cachedLocations = checkCachedLocations()
 	if !utils.Contains(cachedLocations, location) {
 		fmt.Println("Location not found")
-		return nil, nil, nil, errors.New("Location not found")
+		return nil, nil, nil, errors.New("location not found")
 	} else {
 
 		var enrichedData []Location
@@ -48,13 +48,13 @@ func loadLocationInformation(location string) ([]Location, DistanceMatrix, Route
 		}
 		json.Unmarshal(file, &enrichedData)
 
-		file, _ = os.ReadFile(cacheDir + location + "/D.json")
+		file, err = os.ReadFile(cacheDir + location + "/D.json")
 		if err != nil {
 			fmt.Println("Error reading file", err)
 		}
 		json.Unmarshal(file, &D)
 
-		file, _ = os.ReadFile(cacheDir + location + "/R.json")
+		file, err = os.ReadFile(cacheDir + location + "/R.json")
 		if err != nil {
 			fmt.Println("Error reading file", err)
 		}
@@ -144,12 +144,19 @@ func getEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatri
 }
 
 func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
-
-	targetN, _ := strconv.Atoi(r.URL.Query().Get("target_n"))
-	targetDist, _ := strconv.ParseFloat(r.URL.Query().Get("target_dist"), 64)
-	location := strings.ToLower((r.URL.Query().Get("location")))
-
 	var emptyResponse = make([]Location, 0)
+
+	targetN, err := strconv.Atoi(r.URL.Query().Get("target_n"))
+	if err != nil {
+		fmt.Println("Error getting targetN", err)
+		json.NewEncoder(w).Encode(emptyResponse)
+	}
+	targetDist, err := strconv.ParseFloat(r.URL.Query().Get("target_dist"), 64)
+	if err != nil {
+		fmt.Println("Error getting targetDist", err)
+		json.NewEncoder(w).Encode(emptyResponse)
+	}
+	location := strings.ToLower((r.URL.Query().Get("location")))
 
 	enrichedData, D, R, err := loadLocationInformation(location)
 	if err != nil {

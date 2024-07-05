@@ -10,10 +10,10 @@ import { containsObject } from "/usr/local/web/static/utils.js";
 mapboxgl.accessToken = MAPBOX_TOKEN;
 
 // appplication state
-var currentLocation = "Belfast";
+var currentLocation = "Amsterdam";
 var currentMarkers = [];
-var selectedDistance = 2;
-var selectedMarkers = 2;
+var selectedDistance = 1.5;
+var selectedMarkers = 3;
 
 const container = document.getElementById("container")
 const refreshButton = document.getElementById("refresh-button");
@@ -218,22 +218,17 @@ function copyLink() {
   var url = window.location.href;
 
   // Copy the URL to the clipboard
-  copy(url).then(
-    function () {
-      // Change the button text to "Copied ✔️"
-      shareButton.textContent = "Copied ✔️";
-      shareButton.classList.add("copied");
+  copy(url)
+  // Change the button text to "Copied ✔️"
+  shareButton.textContent = "Copied ✔️";
+  shareButton.classList.add("copied");
 
-      // Revert the button text after 2 seconds
-      setTimeout(function () {
-        shareButton.textContent = "Share Link";
-        shareButton.classList.remove("copied");
-      }, 2000);
-    },
-    function (err) {
-      console.error("Could not copy text: ", err);
-    },
-  );
+  // Revert the button text after 2 seconds
+  setTimeout(function () {
+    shareButton.textContent = "Share Link";
+    shareButton.classList.remove("copied");
+  }, 2000);
+
 }
 
 function updateRouteMetrics(e) {
@@ -291,7 +286,7 @@ function convertToGeoJSON(dataArray) {
 
 
 function addAlternativeBarMarkers(route_points) {
-  fetch(`${BASE_URL}/citypoints/?location=${currentLocation}`, {
+  fetch(`${BASE_URL}/citypoints?location=${currentLocation}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -352,13 +347,16 @@ function addAlternativeBarMarkers(route_points) {
 }
 
 function renderBarInformationBox(waypoint, index) {
+
+  console.log(waypoint)
+
   const input = document.createElement("input");
   input.type = "button";
   input.id = `marker-${index}`;
   input.onclick = () => {
     window
       .open(
-        "https://www.google.com/maps/place/?q=place_id:" + waypoint.place_id,
+        "https://maps.google.com/?q=" + waypoint.Geometry.Location.lat + "," + waypoint.Geometry.Location.lng,
         "_blank",
       )
       .focus();
@@ -449,7 +447,7 @@ function pageStart() {
 
     currentLocation = location;
 
-    fetch(`${BASE_URL}/crawl/?location=${currentLocation}`, {
+    fetch(`${BASE_URL}/crawl?location=${currentLocation}`, {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
@@ -469,7 +467,9 @@ function pageStart() {
         console.error("Error:", error);
       });
   } else {
-    buildMap();
+    map.on("load", function () {
+      buildMap();
+    });
   }
 }
 
@@ -551,7 +551,7 @@ const buildMap = () => {
   addLocations();
 
   fetch(
-    `${BASE_URL}/pubs/?target_n=${selectedMarkers}&target_dist=${selectedDistance}&location=${currentLocation}`,
+    `${BASE_URL}/pubs?target_n=${selectedMarkers}&target_dist=${selectedDistance}&location=${currentLocation}`,
   )
     .then((response) => response.json())
     .then((waypoints) => {
