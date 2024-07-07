@@ -1,1 +1,3250 @@
-[{"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.34547420000001, "lng": -6.2641937}, "viewport": {"northeast": {"lat": 53.34683477989272, "lng": -6.263216470107278}, "southwest": {"lat": 53.34413512010727, "lng": -6.265916129892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Temple Bar Pub", "opening_hours": {"open_now": true}, "photos": [{"height": 3000, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/113658015637908388482\">Matt</a>"], "photo_reference": "AUGGfZnKZbscxDtHKSjyhuvSX_yUhSgD_48dhdLMAQcjigI2lm5PgZ0No-a_7SjlxRcdk4g5XCu_oWxfQcK-9MfGUcQqLGvFzJvGqw1jFhE82oHAII-t80UgNSQEbRaGC0F8UmvUa0FmO1mW5bhZ9BG2ZzGiPWaJJNEZDNSF-q7mPaaBUlmb", "width": 4000}], "place_id": "ChIJR9mP8ScMZ0gRWDrL2dfqLBA", "plus_code": {"compound_code": "8PWP+58 Dublin 2, Ireland", "global_code": "9C5M8PWP+58"}, "price_level": 3, "rating": 4.6, "reference": "ChIJR9mP8ScMZ0gRWDrL2dfqLBA", "scope": "GOOGLE", "types": ["clothing_store", "bar", "restaurant", "store", "food", "point_of_interest", "establishment"], "user_ratings_total": 34335, "vicinity": "47-48 Temple Bar, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.34494, "lng": -6.2763738}, "viewport": {"northeast": {"lat": 53.34628247989272, "lng": -6.274857320107278}, "southwest": {"lat": 53.34358282010728, "lng": -6.277556979892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Brazen Head", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/104538276097898219946\">Zac Rister</a>"], "photo_reference": "AUGGfZkd1hFZkdYepxgFMDh51eiWiZ-d3tgh_iocjevg-8WFXIKdf0e6n1cZDeOT3N28GCbP4ZfoPSfdPiI5tiPtmJE0u37AH3MHSj4dTJB4ghIsbbfh_HyKKnlbhDiBIpLVUqK0cKSnCA1mrfZG1MpEAacFQxrkkxox3DxUmhkOTMD6yLc6", "width": 4032}], "place_id": "ChIJ5wqZWS8MZ0gRq5auJO7NbDE", "plus_code": {"compound_code": "8PVF+XF Dublin, Ireland", "global_code": "9C5M8PVF+XF"}, "price_level": 2, "rating": 4.5, "reference": "ChIJ5wqZWS8MZ0gRq5auJO7NbDE", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 16443, "vicinity": "20 Lower Bridge St, Usher's Quay, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.345176, "lng": -6.262646}, "viewport": {"northeast": {"lat": 53.34637282989272, "lng": -6.261358120107278}, "southwest": {"lat": 53.34367317010727, "lng": -6.264057779892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Old Storehouse Bar and Restaurant", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/108783165664929699675\">Cabal</a>"], "photo_reference": "AUGGfZlnD83Sr0lmqigJTSinQd3eRcNGWJN_19b4GPYtQcmQoDbWk2bKYV8Mm1q6XjsNF4TQb_qsuS2MLgUiQOsAjNKbaOLycHeZbWG7QFgkEvzaiBNO-K0nOJJniLEHeJU_wXoT7IrGxsNQi0qeQ6okjJchoSpQ5p0ep0T-_YQWHf_Np0ff", "width": 4032}], "place_id": "ChIJiTBhtJwOZ0gRQVe4FWJj5Kg", "plus_code": {"compound_code": "8PWP+3W Dublin, Ireland", "global_code": "9C5M8PWP+3W"}, "price_level": 2, "rating": 4.6, "reference": "ChIJiTBhtJwOZ0gRQVe4FWJj5Kg", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 6841, "vicinity": "3 Crown Alley, Temple Bar, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.35056290000001, "lng": -6.255004599999999}, "viewport": {"northeast": {"lat": 53.35195127989272, "lng": -6.253685770107278}, "southwest": {"lat": 53.34925162010728, "lng": -6.256385429892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Celt", "opening_hours": {"open_now": true}, "photos": [{"height": 2268, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/110094419978479662785\">A Google User</a>"], "photo_reference": "AUGGfZnDRhXe4VRIFBequfcCuk13LK3qLTxKZ5WI_DwmhJyb55_YbP2mgzPYrM2ke8h2sdzShpfB3ZSs58TMLkgAqFjkl0IcmAWPHOr9XxyeVDBSdftvB9Xd9B_XTxyovEiD-_GlNILmEJ4WRjVKssUrz7Ia4T9Mbu0OTZqqT3NAQsDBiaSH", "width": 4032}], "place_id": "ChIJZwg6WI8OZ0gRuDskFjw5m84", "plus_code": {"compound_code": "9P2V+6X Dublin, Ireland", "global_code": "9C5M9P2V+6X"}, "price_level": 2, "rating": 4.6, "reference": "ChIJZwg6WI8OZ0gRuDskFjw5m84", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 6402, "vicinity": "81 Talbot St, North City, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3438308, "lng": -6.2638646}, "viewport": {"northeast": {"lat": 53.34518182989272, "lng": -6.262451120107278}, "southwest": {"lat": 53.34248217010727, "lng": -6.265150779892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Dame Tavern", "opening_hours": {"open_now": true}, "photos": [{"height": 3000, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/116864211971507410162\">Johannes Sowinski</a>"], "photo_reference": "AUGGfZmX_ff310BFWoQ1d_SkhsQIWj29xHV4-8gZQs_Kwv-pqMUmzLqxcoFmQVgW0LCH2OP2d6m1wEsAQHyhyw2PongwrDfE8MB3r69istbP1n3u6Y3bUo5WGe3Vdw2jW08YsE8J-fUd87kH64pUs1MrUEqxfeEI7ra6w2iohr5EIKLXlzs_", "width": 4000}], "place_id": "ChIJtaDa5pwOZ0gRGE1TdBU_Y64", "plus_code": {"compound_code": "8PVP+GF Dublin 2, Ireland", "global_code": "9C5M8PVP+GF"}, "price_level": 2, "rating": 4.5, "reference": "ChIJtaDa5pwOZ0gRGE1TdBU_Y64", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 973, "vicinity": "18 Dame Ct, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3450877, "lng": -6.2674185}, "viewport": {"northeast": {"lat": 53.34642977989272, "lng": -6.266129020107278}, "southwest": {"lat": 53.34373012010727, "lng": -6.268828679892723}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Porterhouse Temple Bar", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/112312367238125873288\">A Google User</a>"], "photo_reference": "AUGGfZnN4FSsK40pD0YiNNCKiDKM4n8wCbW10s4T4EKKYO94In8p9HHV3C_w0y62niQm1Mw4Z43cC2G4y2zJaMg5fgMfXJE9cXhcKIoO4R-RHCRNDrEHPem9wOfUEyj7scqoo4rl34n13xHZsI4MDlohY8Gk56eSPRVrEXUtNbPw4dleuD9M", "width": 4032}], "place_id": "ChIJISjK0PEMZ0gRZz3RsNSfxjQ", "plus_code": {"compound_code": "8PWM+22 Dublin 8, Ireland", "global_code": "9C5M8PWM+22"}, "price_level": 2, "rating": 4.5, "reference": "ChIJISjK0PEMZ0gRZz3RsNSfxjQ", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 9669, "vicinity": "16-18 Parliament St, Temple Bar, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3480188, "lng": -6.2577998}, "viewport": {"northeast": {"lat": 53.34929812989272, "lng": -6.256487120107278}, "southwest": {"lat": 53.34659847010727, "lng": -6.259186779892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The James Connolly Pub", "opening_hours": {"open_now": true}, "photos": [{"height": 3072, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/100793377739197992232\">Chris Carless</a>"], "photo_reference": "AUGGfZlDz8v8qYZm-MDD_QlWf9_VJ-0m_2slzbjWIItylRcQDxogTV7lZceOWj2dq-lXTe_235A5crul7J9z83hsqMpJTtx2IgC26YagU-Th3I-d63cLWJEZdgl9hrGzDwoyqhX0cspzc_3mmlSvnYWAAIKUQ1BG1FRVJO89HXldaTSOZ-sQ", "width": 4080}], "place_id": "ChIJK-E4BIUOZ0gRd-kUnF2f98U", "plus_code": {"compound_code": "8PXR+6V Dublin, Ireland", "global_code": "9C5M8PXR+6V"}, "price_level": 2, "rating": 4.4, "reference": "ChIJK-E4BIUOZ0gRd-kUnF2f98U", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1523, "vicinity": "11 Eden Quay, North City, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3522459, "lng": -6.261993}, "viewport": {"northeast": {"lat": 53.35359732989271, "lng": -6.260677520107278}, "southwest": {"lat": 53.35089767010727, "lng": -6.263377179892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Parnell Heritage Pub & Grill", "opening_hours": {"open_now": true}, "photos": [{"height": 1365, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/109039416160213042652\">The Parnell Heritage Bar and Grill</a>"], "photo_reference": "AUGGfZmGFEIUAXviWNXz1-H2o4BGIPET2B3VQbTKvL6v6tA-R4ABDSTFugDoR-HN8YE896lpQFYfDFiXSpwasZJtVpG2U34XsxYLF5B63fs9LklD0V6PSPhJfr-V2C1MEaiWZC4EIs2GtluM82SXlcdK75nfdrXZKgK6woSD0eBeg7QEIxFM", "width": 2048}], "place_id": "ChIJ1wjst4YOZ0gR_pg-hMy3dhM", "plus_code": {"compound_code": "9P2Q+V6 Dublin 1, Ireland", "global_code": "9C5M9P2Q+V6"}, "price_level": 2, "rating": 4.3, "reference": "ChIJ1wjst4YOZ0gR_pg-hMy3dhM", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 2760, "vicinity": "72-74 Parnell St, North City, Dublin 1"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3504172, "lng": -6.2597671}, "viewport": {"northeast": {"lat": 53.35178507989273, "lng": -6.258422420107278}, "southwest": {"lat": 53.34908542010729, "lng": -6.261122079892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Brannigans", "opening_hours": {"open_now": true}, "photos": [{"height": 3072, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/116114370562059242293\">Marc Araujo</a>"], "photo_reference": "AUGGfZlD2Osoq80NnCOQZkRZP1DQkwPejZeTS1HFwQHAAi5aIDbxQrp88Qke3v0j_hQCf_UWx9xThvBIh7TNqQQ1jyrJjrVud1oUEczvr7YmKKprYsk0Dh24sxV_Dg6sBq_pLDqIIY6y-bPFmP00F4oP7J1TvO6ZEi6SuAQl-cdN7lKBtAjC", "width": 4080}], "place_id": "ChIJVQ-AJYQOZ0gR1BjChczzOcM", "plus_code": {"compound_code": "9P2R+53 Dublin, Ireland", "global_code": "9C5M9P2R+53"}, "price_level": 2, "rating": 4.6, "reference": "ChIJVQ-AJYQOZ0gR1BjChczzOcM", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 2043, "vicinity": "9 Cathedral St, North City, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.34383829999999, "lng": -6.2636601}, "viewport": {"northeast": {"lat": 53.34520657989272, "lng": -6.262201520107278}, "southwest": {"lat": 53.34250692010728, "lng": -6.264901179892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Stags Head", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/113659263326146653913\">Ed Burczyk</a>"], "photo_reference": "AUGGfZlSgJQ5EKBqHb7FZKC7_G-Na5Hs1VIeGvoLX-16yM7WU-b5JMSJJvLWxbli9MokN0XkO-QVAQ3BYeCVyMd_bDdB63ijrq9K-75Xbx7J-opdQQooX1iE8lskYmeOb5uBnoujGKvQcvGUOc-EZNBRGEO9OVhAAgNCum9D4hFfhHp0wR2V", "width": 4032}], "place_id": "ChIJ8ZuR6JwOZ0gR5jtVW54gEHM", "plus_code": {"compound_code": "8PVP+GG Dublin, Ireland", "global_code": "9C5M8PVP+GG"}, "price_level": 2, "rating": 4.5, "reference": "ChIJ8ZuR6JwOZ0gR5jtVW54gEHM", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 5957, "vicinity": "1 Dame Ct, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3431396, "lng": -6.2621012}, "viewport": {"northeast": {"lat": 53.34444377989273, "lng": -6.260776370107278}, "southwest": {"lat": 53.34174412010729, "lng": -6.263476029892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Old Stand", "opening_hours": {"open_now": true}, "photos": [{"height": 3072, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/100793377739197992232\">Chris Carless</a>"], "photo_reference": "AUGGfZkAPF4LNKTJG5oZAwe9GJrQWUNVGuaVb3xp41yv5VSTXEcJH4iPx97hDH8_-qNZvMoJJBWEQm2WHcpx5aTSg2311nGXZMWx762ByYmucJzUbbSZQ4rmU2Iz4yxgDDRz2vuCl23YANIP9QLjo7faboTPwVKbf4doVEZG3YKyNSe8IwXV", "width": 4080}], "place_id": "ChIJMdEljJwOZ0gRBxkvK7TJW_0", "plus_code": {"compound_code": "8PVQ+75 Dublin 2, Ireland", "global_code": "9C5M8PVQ+75"}, "price_level": 2, "rating": 4.4, "reference": "ChIJMdEljJwOZ0gRBxkvK7TJW_0", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1723, "vicinity": "37 Exchequer St, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3421354, "lng": -6.2507085}, "viewport": {"northeast": {"lat": 53.34346702989273, "lng": -6.249273820107279}, "southwest": {"lat": 53.34076737010728, "lng": -6.251973479892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Kennedy's Pub & Restaurant", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/102439918811814853752\">A Google User</a>"], "photo_reference": "AUGGfZn4Ac-aoOzoEVdGC2S1pqw3ukANFXt3UV2UIeVw1LD9dD6PHrblGN__TaEQzCS1evkwQU29rwMKusGUPgkHSOY_edpyYSVpS49yd6raAiRxnUrAbZHQYH3GpwcXnufemPs1ZLz2BFgfMgONGFEpPc8muzmIjb8uq238SoM6YFWhH7kF", "width": 4032}], "place_id": "ChIJQ1k55pAOZ0gRvHhymPkdAr8", "plus_code": {"compound_code": "8PRX+VP Dublin 2, Ireland", "global_code": "9C5M8PRX+VP"}, "price_level": 2, "rating": 4.3, "reference": "ChIJQ1k55pAOZ0gRvHhymPkdAr8", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1863, "vicinity": "30-32 Westland Row, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.341259, "lng": -6.2638742}, "viewport": {"northeast": {"lat": 53.34257347989272, "lng": -6.262558020107279}, "southwest": {"lat": 53.33987382010727, "lng": -6.265257679892723}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Hairy Lemon", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/118381223831306283679\">Krister Ilkert</a>"], "photo_reference": "AUGGfZnUy4duI7BNyLXyES8DZAA29vJTMzLPz7QLDOEERxIavj8UzYr_A9aHjh-1oJvT2tyjoIi78hw4emrJ0LcR39YCuVYWzJGNwNT2AwlZg0NzDcW0SOaXQmz_B2SmuJ8upDT5kOz8lMqWsxexfy00DzwHtRtV08u3l-yzPmLKlyIKbRvp", "width": 4032}], "place_id": "ChIJ2Qf_MpwOZ0gRo65Kwjms1JE", "plus_code": {"compound_code": "8PRP+GF Dublin 2, Ireland", "global_code": "9C5M8PRP+GF"}, "price_level": 2, "rating": 4.4, "reference": "ChIJ2Qf_MpwOZ0gRo65Kwjms1JE", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 6393, "vicinity": "Stephen Street Lower, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3514492, "lng": -6.2604283}, "viewport": {"northeast": {"lat": 53.35277147989272, "lng": -6.259288270107278}, "southwest": {"lat": 53.35007182010728, "lng": -6.261987929892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Madigan's O'Connell Street", "opening_hours": {"open_now": true}, "photos": [{"height": 802, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/106570694645917915101\">Madigan&#39;s</a>"], "photo_reference": "AUGGfZmbno7R0yds3_NGHdqeFhN36hspnTxQ3eTXJwMRucFSH5CwCYpGHtFD0vIcNTHOyOxCWL7pS8eQJ1G9z7POGmCD9gwhgGCIudaiN_VkQOJinfKSkfh5MoadGTCpTxXyCYBSv2FbribGzH3KaTgbTQJDbJD1nuFlCQXms8nYm_MfaSTp", "width": 1200}], "place_id": "ChIJQeQwmoYOZ0gR19Z4OlFohKg", "plus_code": {"compound_code": "9P2Q+HR Dublin 1, Ireland", "global_code": "9C5M9P2Q+HR"}, "price_level": 2, "rating": 4.3, "reference": "ChIJQeQwmoYOZ0gR19Z4OlFohKg", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 2205, "vicinity": "19 O'Connell Street Upper, North City, Dublin 1"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.34183849999999, "lng": -6.265224099999999}, "viewport": {"northeast": {"lat": 53.34316427989272, "lng": -6.263794420107278}, "southwest": {"lat": 53.34046462010728, "lng": -6.266494079892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Long Hall", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/101719620616094066482\">Pamela Doyle</a>"], "photo_reference": "AUGGfZnMPvnQiNIfVmZzXwy03SmBkRA1dATnaJaAnAv5-hGvCL0ayNRS18tLhguwq1NhaRXO9XMK1QNA5SsIWqfw8F2niSs7f_jVtVgBkuT5_YzQFr8mqOqsR9ary87xIeDYBWRetfl9I4ZTdOtV66CulLd4EKTO58iY0j7OlLtAdCcbeH9u", "width": 4032}], "place_id": "ChIJHRhbu50OZ0gRGT1aPIaL698", "plus_code": {"compound_code": "8PRM+PW Dublin 2, Ireland", "global_code": "9C5M8PRM+PW"}, "price_level": 2, "rating": 4.6, "reference": "ChIJHRhbu50OZ0gRGT1aPIaL698", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 3541, "vicinity": "51 South Great George's Street, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3335429, "lng": -6.2649066}, "viewport": {"northeast": {"lat": 53.33487887989273, "lng": -6.263653370107279}, "southwest": {"lat": 53.33217922010729, "lng": -6.266353029892723}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Bleeding Horse", "opening_hours": {"open_now": true}, "photos": [{"height": 1365, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/109609357713202081979\">A Google User</a>"], "photo_reference": "AUGGfZllx7NjZIezD-cPp3Ycn-OXI2Lrlb7swpwV2RGgk4QOjuYcCEM_tAO-Jg_EWxTULlxXeuHzH0yztCEa6Df69d3eP8sz6MJszIjgtcJjhGC0I-CdO9NcUndBgI3mWZui-twhdCTfsiixwZYEtQZoXZ6AtNGESTeaBZFeoqZ9qVtMjwLf", "width": 2048}], "place_id": "ChIJJXaIDKAOZ0gRgeh-zIbtWF8", "plus_code": {"compound_code": "8PMP+C2 Dublin, Ireland", "global_code": "9C5M8PMP+C2"}, "price_level": 2, "rating": 4.3, "reference": "ChIJJXaIDKAOZ0gRgeh-zIbtWF8", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 3818, "vicinity": "24-25 Camden Street Upper, Saint Kevin's, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3458882, "lng": -6.259606799999999}, "viewport": {"northeast": {"lat": 53.34720462989272, "lng": -6.258261370107277}, "southwest": {"lat": 53.34450497010727, "lng": -6.260961029892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Palace Bar", "opening_hours": {"open_now": true}, "photos": [{"height": 3072, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/105061099394492403376\">Terpsichore</a>"], "photo_reference": "AUGGfZl8-xOXGrNMGGKkU5rAr_8oNfavgfQWfoAwUi56oOWQknmbYqFItCfhFaKwhNtZ1AvywuAkBIQ-iK15YUvyUcty_Rp9wKSE4LWFXPGJCKXP5ZR6nuRmDnbJSaioIlEWwpjnjdiASWUnPeJ2lzV-5hzt3LShlFlFjom4tWBh3Il-0O9T", "width": 4080}], "place_id": "ChIJY8EByoQOZ0gRSMYJds1CQHU", "plus_code": {"compound_code": "8PWR+95 Dublin 2, Ireland", "global_code": "9C5M8PWR+95"}, "price_level": 2, "rating": 4.6, "reference": "ChIJY8EByoQOZ0gRSMYJds1CQHU", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 3716, "vicinity": "21 Fleet St, Temple Bar, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3590044, "lng": -6.2616226}, "viewport": {"northeast": {"lat": 53.36031137989272, "lng": -6.260292870107278}, "southwest": {"lat": 53.35761172010727, "lng": -6.262992529892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Auld Triangle", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/105235154650696249025\">David Herrero</a>"], "photo_reference": "AUGGfZknKlzJItvMbteAE51q8XTvaWXLyBVO7_MuD-A6gJoD1OoZCa3E5ze-A7qt20EXFclPgE_W4gtsTKCxaglH8S8NSnQSmxhxkUfgQD_wSGUIF8BMVKVYsZI5tqPgmPB-TjbhtiktGkg46Xes0APTSHt73cYees4o2N_SRjjjVinFGhTK", "width": 4032}], "place_id": "ChIJ25SkUnwOZ0gRxP6RvSySEdA", "plus_code": {"compound_code": "9P5Q+J9 Dublin, Ireland", "global_code": "9C5M9P5Q+J9"}, "price_level": 1, "rating": 4.3, "reference": "ChIJ25SkUnwOZ0gRxP6RvSySEdA", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 325, "vicinity": "28 Dorset Street Lower, Mountjoy, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3410574, "lng": -6.262432}, "viewport": {"northeast": {"lat": 53.34238437989272, "lng": -6.261098620107279}, "southwest": {"lat": 53.33968472010728, "lng": -6.263798279892723}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Bar Rua", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/101121215786590176167\">A Google User</a>"], "photo_reference": "AUGGfZmIF3h6mTr3dwuKKFOr32ZaydhMoQjb7vK5SEMYK8ucwk_kzem0f8yyPA3XnV7r6ciZ3IPOcNYTC00lbbLfJXMXCpp6UHfgLHx2qoQOOgNSVMo4L_p3EaEdgo-wQpk9gVWWv274ZAi4gWtSEEgAHQimiH8Zo2Vc3lfDsGLl4V0C__7B", "width": 4032}], "place_id": "ChIJQQW4PpwOZ0gRaKHnYqr5rac", "plus_code": {"compound_code": "8PRQ+C2 Dublin, Ireland", "global_code": "9C5M8PRQ+C2"}, "price_level": 2, "rating": 4.3, "reference": "ChIJQQW4PpwOZ0gRaKHnYqr5rac", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1920, "vicinity": "32 Clarendon St, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3474772, "lng": -6.2602807}, "viewport": {"northeast": {"lat": 53.34875222989273, "lng": -6.258859270107278}, "southwest": {"lat": 53.34605257010728, "lng": -6.261558929892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "O'Connell's", "opening_hours": {"open_now": true}, "photos": [{"height": 6944, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/117893577235568276270\">Vero Mart\u00ednez</a>"], "photo_reference": "AUGGfZmkdfR5TpkvqP2jLox3WI4zP70H2B6key0WUOtxbP-drN9WTebCMuHrXanPXNOhxGcFJXKhrSCaNW31Xlhi7dQiR41eOvw8dbhH9dmrB3_hicIyLKu4mwPlslXW4RiO8zuxHjlUWvK_MnUEAKHZTLR1SZ_mYlSVqbLdiC7b_01w3MOv", "width": 9280}], "place_id": "ChIJdRf4koQOZ0gRs69VG2aIbb8", "plus_code": {"compound_code": "8PWQ+XV Dublin 1, Ireland", "global_code": "9C5M8PWQ+XV"}, "price_level": 2, "rating": 4.5, "reference": "ChIJdRf4koQOZ0gRs69VG2aIbb8", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 2140, "vicinity": "30 Bachelors Walk, North City, Dublin 1"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3434618, "lng": -6.259688799999999}, "viewport": {"northeast": {"lat": 53.34465222989272, "lng": -6.257921420107277}, "southwest": {"lat": 53.34195257010728, "lng": -6.260621079892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "O'Donoghue's Bar", "opening_hours": {"open_now": true}, "photos": [{"height": 3456, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/106318165808419840574\">Eli Bungay</a>"], "photo_reference": "AUGGfZkspv60XDPKk7Amlw9WhZm7JGJ3bKuuOb6vfkR8D6-ZD793vvkwURauTKfMfjU1QVKSvB0-e9B5WJ2lcmoWM2Lbnga3UDYnB3S8ukrEBAeUynLzAAXvnNb9kwRjY5KsegCyAjigEAqZiP_PgV7nO_suZtpxudQ9k0vb7F173RukAqSs", "width": 4608}], "place_id": "ChIJBbfZcZsOZ0gRm1Q7jsO-MFk", "plus_code": {"compound_code": "8PVR+94 Dublin, Ireland", "global_code": "9C5M8PVR+94"}, "price_level": 2, "rating": 4.4, "reference": "ChIJBbfZcZsOZ0gRm1Q7jsO-MFk", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1849, "vicinity": "15 Suffolk St, Dublin Southside, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3419569, "lng": -6.2586996}, "viewport": {"northeast": {"lat": 53.34326617989272, "lng": -6.257362770107277}, "southwest": {"lat": 53.34056652010727, "lng": -6.260062429892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Duke Dublin", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/106428895770363380671\">Roman.Ispas</a>"], "photo_reference": "AUGGfZkLmIthfz7TwnDu11RGSLqHek8UDgC4XLcFE-E8eqQBPq_kiHXYo4XHfXC02ivn00abTbmvRwGD4KNfYW4xemsoaNTtrQ15mtZ6YonCKcG8NZXr0vzNvNRvnmlbPs-oxe_uKVgD-jF0k_bW0Zv5JNrl_Oj7D5r_IpQpn3Rxk0m-OuIg", "width": 4032}], "place_id": "ChIJOe_6vZsOZ0gRZivVj7LCvic", "plus_code": {"compound_code": "8PRR+QG Dublin 2, Ireland", "global_code": "9C5M8PRR+QG"}, "price_level": 2, "rating": 4.4, "reference": "ChIJOe_6vZsOZ0gRZivVj7LCvic", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 2493, "vicinity": "9 Duke St, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3396291, "lng": -6.265667499999999}, "viewport": {"northeast": {"lat": 53.34095577989272, "lng": -6.264324170107279}, "southwest": {"lat": 53.33825612010727, "lng": -6.267023829892723}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Swan Bar", "opening_hours": {"open_now": true}, "photos": [{"height": 2268, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/116464371282267832605\">Bruno Leonardo Martellotta</a>"], "photo_reference": "AUGGfZn65yYBBu_uKl9D-mMYGaxiFgsMQuXUYyEoNRF_Hjt_T8C2LTwRdP46_qV5ZnAYB_cWd6rw7XFtoyMfkmPNaN49usnGsjRdLlIQvSfgxeV7_00QF40I6XLPmgfv-eIB2ive80IylGQKKxGQSEY1BxFAOp83K_i7p1NU4uPL21dp3Ps2", "width": 4032}], "place_id": "ChIJ0fTMC54OZ0gRf81MLNpo6rM", "plus_code": {"compound_code": "8PQM+VP Dublin, Ireland", "global_code": "9C5M8PQM+VP"}, "price_level": 1, "rating": 4.5, "reference": "ChIJ0fTMC54OZ0gRf81MLNpo6rM", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1231, "vicinity": "58 York St, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.343905, "lng": -6.2607871}, "viewport": {"northeast": {"lat": 53.34525567989272, "lng": -6.259460220107278}, "southwest": {"lat": 53.34255602010727, "lng": -6.262159879892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "O'Neills Pub & Kitchen", "opening_hours": {"open_now": true}, "photos": [{"height": 3000, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/102812808125592627380\">Curtis Dopson</a>"], "photo_reference": "AUGGfZm-KHHTyaksFEqc6rtwikj8ls1pUlKhY067n0MJEyG5xRXz1SDH2_v5lyNIIN_9HiY3XgU7T0SlJpyeZ-7znyYBTZ6tBskONgxb7q1WNvEmpTQJEjqtEC1mESzK4z993ErbD1j_bIkpF07upW8YFDB7piFl688RLuoRruwofWSIMrhT", "width": 4000}], "place_id": "ChIJC-qhYZsOZ0gR-j7mSy3UDBI", "plus_code": {"compound_code": "8PVQ+HM Dublin 2, Ireland", "global_code": "9C5M8PVQ+HM"}, "price_level": 2, "rating": 4.2, "reference": "ChIJC-qhYZsOZ0gR-j7mSy3UDBI", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 8054, "vicinity": "2 Suffolk St, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3459825, "lng": -6.2628303}, "viewport": {"northeast": {"lat": 53.34736172989273, "lng": -6.261515470107279}, "southwest": {"lat": 53.34466207010728, "lng": -6.264215129892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Merchant's Arch", "opening_hours": {"open_now": true}, "photos": [{"height": 1824, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/101988449794989569073\">Pierre Vabre</a>"], "photo_reference": "AUGGfZkmFWHr8_d6vdX-eU5DC_9ST5Ko_GdZHUZrsLwvAZSEGMudhcnQ5xYnDyxoLLmgDzswrRUZsbo8k6Y0Qp5TOgMDm2DYsVqnXcbcufljw7VZxQ-jLCHvxdoRmGmI4CBaZ_mWKjRCysg0LkB3E0jeIg6wuclQeO5psKFKc3Rz7qGCFxi0", "width": 3648}], "place_id": "ChIJ2S0FRoMOZ0gRRpOHlw7_msw", "plus_code": {"compound_code": "8PWP+9V Dublin, Ireland", "global_code": "9C5M8PWP+9V"}, "price_level": 2, "rating": 4.4, "reference": "ChIJ2S0FRoMOZ0gRRpOHlw7_msw", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 4170, "vicinity": "48-49 Wellington Quay, Temple Bar, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3497953, "lng": -6.278468}, "viewport": {"northeast": {"lat": 53.35113142989272, "lng": -6.277134470107277}, "southwest": {"lat": 53.34843177010728, "lng": -6.279834129892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Delaney's Smithfield", "opening_hours": {"open_now": true}, "photos": [{"height": 3456, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/106685510525977520915\">Anand R K</a>"], "photo_reference": "AUGGfZl0gTOH5Jp93A0EFpjdD0K2JjFYougySq-__6oIMniU5UnKCfD9W4qJC_BknzSGta1Zw2yJSD1eGsU9Jj4A6kuqR8eb_zsQAXDQaUoFGKDA95RuiVPZZcinRqEJxVTfDXR1FS7qgv3zKwW3l4zKViUd9nkizryVoyonXSn-S2P_sDc", "width": 4608}], "place_id": "ChIJfWJpni4MZ0gR7GMd5baBpJ0", "plus_code": {"compound_code": "8PXC+WJ Dublin 7, Ireland", "global_code": "9C5M8PXC+WJ"}, "price_level": 1, "rating": 4.3, "reference": "ChIJfWJpni4MZ0gR7GMd5baBpJ0", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 594, "vicinity": "83 King St N, Smithfield, Dublin 7"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3456157, "lng": -6.261963799999999}, "viewport": {"northeast": {"lat": 53.34698082989272, "lng": -6.260646520107279}, "southwest": {"lat": 53.34428117010727, "lng": -6.263346179892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Auld Dubliner", "opening_hours": {"open_now": true}, "photos": [{"height": 3456, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/109372081546374154229\">A Google User</a>"], "photo_reference": "AUGGfZnSD59ZHg9yDWt5EWKEu7dI8P_tYtkZHJTXioo7rY0QVI4ef0QwMQOKWr20_4CTL5lYae0QzmCAD8xGgeiHHCvPnzh0EZDuob7yl-J50ajMmmwObjgppOHchOmq8wajycIUMjwTjWwJKKibDnYNngbxrhPQkFZXZHXeHi1wT8-VUrOh", "width": 5184}], "place_id": "ChIJMVe9U4MOZ0gRE1iw8A0lOkw", "plus_code": {"compound_code": "8PWQ+66 Dublin, Ireland", "global_code": "9C5M8PWQ+66"}, "rating": 4.4, "reference": "ChIJMVe9U4MOZ0gRE1iw8A0lOkw", "scope": "GOOGLE", "types": ["bar", "lodging", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 2882, "vicinity": "24 - 25 Temple Bar, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.34074769999999, "lng": -6.2611905}, "viewport": {"northeast": {"lat": 53.34214317989273, "lng": -6.259917870107278}, "southwest": {"lat": 53.33944352010729, "lng": -6.262617529892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "NEARY\u2019S", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/102345951271735911398\">Chris Green</a>"], "photo_reference": "AUGGfZkScnM7HewBDiewaSYRlBRIy-R2vsg3bf1DDIohRIFHn-bBw9ea3qWgI-CQzpk5mGZjInA4N7ZDw9YcgWYV-7Zophb9VmnNn373wJ-5iipTcU0zxgeHW0uQEhDnrNQklN1CIVoYIDjiDbMRMt-dqCDGOH3DHgRIloGWLTRztbnV9jjy", "width": 4032}], "place_id": "ChIJPUh5D5wOZ0gRVnkOMmDe_2M", "plus_code": {"compound_code": "8PRQ+7G Dublin, Ireland", "global_code": "9C5M8PRQ+7G"}, "price_level": 2, "rating": 4.5, "reference": "ChIJPUh5D5wOZ0gRVnkOMmDe_2M", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1837, "vicinity": "1 Chatham St, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3414498, "lng": -6.266008299999999}, "viewport": {"northeast": {"lat": 53.34283462989271, "lng": -6.264646520107278}, "southwest": {"lat": 53.34013497010727, "lng": -6.267346179892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Snug", "opening_hours": {"open_now": true}, "photos": [{"height": 2610, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/108679922467488473608\">Karl X Byrne</a>"], "photo_reference": "AUGGfZknd-Kg9rz0tvv3sHY8DSoRSJL1aWgChkJ-5RnsZcj9A_sjP3MxHbAsGAqOYQEr3NR6wi_eVUo7g663KvBVolv4McTNJC3LwmLGyaT8mGZkYmH7UbAqrgWEN6ckHvdT25MFgIIyQ1B6GAL3Q2b5hiBTjVnWvnuhAxuEx-Ce8cAANeSx", "width": 4640}], "place_id": "ChIJY4EZlJ0OZ0gRZxSbNZq0kSg", "plus_code": {"compound_code": "8PRM+HH Dublin 8, Ireland", "global_code": "9C5M8PRM+HH"}, "price_level": 1, "rating": 4.5, "reference": "ChIJY4EZlJ0OZ0gRZxSbNZq0kSg", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 368, "vicinity": "15 Stephen Street Upper, Dublin 8"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3477628, "lng": -6.2686698}, "viewport": {"northeast": {"lat": 53.34892797989271, "lng": -6.267197320107277}, "southwest": {"lat": 53.34622832010727, "lng": -6.269896979892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "McNeill's Pub", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/114195018178295711747\">Luis Casero</a>"], "photo_reference": "AUGGfZkszDVZQ9xA72FLGrsypB8vD6sF6_h65qZOfWEx_KyRjjmTVEb042nJyp7MJDcrh_OJNZoqk1NhdJPejbl-utqw1d0B11B1TAz0W8JvApkaa3zJedGeUZxNGK-q4enzd94qTnogQ9Z6twUqvV6bTcswG8KC1kA3DEF2YOEwlGzQ8ptI", "width": 4032}], "place_id": "ChIJs8XZf4IOZ0gR3o1S_7PIVdI", "plus_code": {"compound_code": "8PXJ+4G Dublin, Ireland", "global_code": "9C5M8PXJ+4G"}, "price_level": 1, "rating": 4.7, "reference": "ChIJs8XZf4IOZ0gR3o1S_7PIVdI", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 858, "vicinity": "140 Capel St, North City, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.34737149999999, "lng": -6.2685415}, "viewport": {"northeast": {"lat": 53.34871692989272, "lng": -6.267190720107278}, "southwest": {"lat": 53.34601727010728, "lng": -6.269890379892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Boar's Head", "opening_hours": {"open_now": true}, "photos": [{"height": 2268, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/101099549509508039574\">Zach Wonderlie</a>"], "photo_reference": "AUGGfZkdYt-YczPshHxBWXCjY7wgMUb7xiUUtXh5i1ktYGrKyYiFcQU9Bi3suz8Hw61VqKJSz9SFOIPtmdVSDYHQbuLmnUZA_54BxKF3DK8YAr-DGZOtYF-MJ9qYHWu-Suh1d0LZtsgHWRGLgJ9JsGnkxuRu1xnAOEWxRFljrB0-er0XSqI3", "width": 4032}], "place_id": "ChIJZXyAgYIOZ0gRf0Uk6sY7hOc", "plus_code": {"compound_code": "8PWJ+WH Dublin, Ireland", "global_code": "9C5M8PWJ+WH"}, "price_level": 2, "rating": 4.4, "reference": "ChIJZXyAgYIOZ0gRf0Uk6sY7hOc", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1584, "vicinity": "149 Capel St, North City, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3495972, "lng": -6.258082900000001}, "viewport": {"northeast": {"lat": 53.35096787989273, "lng": -6.256673620107278}, "southwest": {"lat": 53.34826822010728, "lng": -6.259373279892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Briodys", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/101347102728089605958\">brad braddy</a>"], "photo_reference": "AUGGfZmB-3N4xq75iontmA91W7X2ussLm47IX3mdQOQ8rEb1Kyfr1Yis1G4ce41RhL9sesiM6AZOq5Q9tlgOsA7LHk_a_5x89D76YhCdGxNIu-GRkBo2gmyXbxCrIgThctFAlNLs0SiSjta8t3C66W2j8yw0iIJ2BnUXvbNmkLYIxOboLBFR", "width": 4032}], "place_id": "ChIJMUXxtoUOZ0gRoBYyHe8jg64", "plus_code": {"compound_code": "8PXR+RQ Dublin 1, Ireland", "global_code": "9C5M8PXR+RQ"}, "rating": 4.6, "reference": "ChIJMUXxtoUOZ0gRoBYyHe8jg64", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 550, "vicinity": "97 Marlborough St, North City, Dublin 1"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.34980119999999, "lng": -6.2778364}, "viewport": {"northeast": {"lat": 53.35113222989271, "lng": -6.276478570107278}, "southwest": {"lat": 53.34843257010727, "lng": -6.279178229892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Cobblestone", "opening_hours": {"open_now": true}, "photos": [{"height": 2268, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/113366913030449725915\">Laisvunas Leonavicius</a>"], "photo_reference": "AUGGfZkF8dlItTeS2eHR0HN3HXyGMysCwSTm7AivXfIet7yC5DQ0ougzXyQU3ioLE5hhluXG8JMbPlbaWhK8k5NpxrSACRyY2wRxUosdvJJ2c1-4QmLxznswIgfAnGg-SE-XF35MFCDZncXH3oFuCqNzqlSXq-CNVxxIkiP2kJicPVebXHlG", "width": 4032}], "place_id": "ChIJ8ycFoS4MZ0gRgQlPeN5HAvQ", "plus_code": {"compound_code": "8PXC+WV Dublin, Ireland", "global_code": "9C5M8PXC+WV"}, "price_level": 1, "rating": 4.7, "reference": "ChIJ8ycFoS4MZ0gRgQlPeN5HAvQ", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 4300, "vicinity": "77 King St N, Smithfield, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.33852659999999, "lng": -6.2513}, "viewport": {"northeast": {"lat": 53.33983967989272, "lng": -6.249998670107278}, "southwest": {"lat": 53.33714002010727, "lng": -6.252698329892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "McGrattans Pub", "opening_hours": {"open_now": true}, "photos": [{"height": 680, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/118125855582918684178\">McGrattans Caf\u00e9 Bar</a>"], "photo_reference": "AUGGfZlgSOoOjHLkdBARYXnGXHOwGcGEw9q8UcxjYluERN2NaZEzrYcWJAkbFWVpev94ikIYpFnqTIApLqV9cxcz08zgRqTjcDTo8cz-JqRP1Wcm6uDUbFl1QifY-a6dHClVNJsD2adLP8UFQUZKL0FenTp5iibMnUeM1wqrKRcWeHpm9WCj", "width": 960}], "place_id": "ChIJa_8FcpcOZ0gRzPt8JiODYhc", "plus_code": {"compound_code": "8PQX+CF Dublin 2, Ireland", "global_code": "9C5M8PQX+CF"}, "price_level": 2, "rating": 4.1, "reference": "ChIJa_8FcpcOZ0gRzPt8JiODYhc", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1407, "vicinity": "76 Fitzwilliam Ln, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3675355, "lng": -6.2559762}, "viewport": {"northeast": {"lat": 53.36889627989272, "lng": -6.254628520107277}, "southwest": {"lat": 53.36619662010728, "lng": -6.25732817989272}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Fagans Bar and Restaurant", "opening_hours": {"open_now": true}, "photos": [{"height": 3744, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/117090744204555007234\">Fagans Bar and Restaurant</a>"], "photo_reference": "AUGGfZnKXAbo6wf-yRe2eSW4o2yc-PPxHtsWQzqYZLogVFd27MLY-m29mWRfGWj1H1TXfEZPmd2lRmVF2Z70p1rn1nnxhlchF5ZF_nbknqqJoOjXkAk65Cnjv5SxiIBB-S0IdsEIdp70AMs-zmD395OcZdLIx7askpfjLL8VuKl1v3AUwUGu", "width": 5616}], "place_id": "ChIJpZdmgG8OZ0gR7OW8JsyWphY", "plus_code": {"compound_code": "9P8V+XJ Dublin 9, Whitehall, Ireland", "global_code": "9C5M9P8V+XJ"}, "price_level": 2, "rating": 4.4, "reference": "ChIJpZdmgG8OZ0gR7OW8JsyWphY", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 2321, "vicinity": "146 Drumcondra Rd Lower, Drumcondra, Dublin 9"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3575154, "lng": -6.242467299999999}, "viewport": {"northeast": {"lat": 53.35885357989271, "lng": -6.241175970107277}, "southwest": {"lat": 53.35615392010727, "lng": -6.243875629892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Cusack's Pub", "opening_hours": {"open_now": true}, "photos": [{"height": 1800, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/102158251996384502704\">John Raikou</a>"], "photo_reference": "AUGGfZmCP1ZzMBy-X_24tx3_CyLBjzi5GYmExgJZVZsTJubsRy54CbA0RFWwLaS7OrX-gYiFl2Jm1HYg1kZK2sZzpjBlBzOjJX78X6-VamKlB50z-2UQ-3NLDNrnDMm-81heDa6ZTFQwMO58E1Et0HulEI-qQbUSxjFR7t2_A1x0Io4NDRKP", "width": 4000}], "place_id": "ChIJuYJO-V8OZ0gRDJFcwOPZre0", "plus_code": {"compound_code": "9Q55+22 North Strand, Dublin, Ireland", "global_code": "9C5M9Q55+22"}, "price_level": 1, "rating": 4.6, "reference": "ChIJuYJO-V8OZ0gRDJFcwOPZre0", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 558, "vicinity": "145 N Strand Rd, North Strand, Dublin 3"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.34116390000001, "lng": -6.2594277}, "viewport": {"northeast": {"lat": 53.34248222989272, "lng": -6.258087670107278}, "southwest": {"lat": 53.33978257010727, "lng": -6.260787329892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Kehoes Pub", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/110569808438877016932\">Sean Moriarty</a>"], "photo_reference": "AUGGfZmg3vCbWoxt74_VjbfrZ1zjz6EguzWTspE0QelRSNUe3QAlIPFyQNKEDrfWbRkOVjio1-gbQK7XwAQPbv5w3W17b1Ds8R3qtSBBLEGRDuC7mnHF1MGpInVaUSr3gO95Y1DoSUuvrTldcPBB4fCkkeBulsRug8V0RspZAvV_uW5V3UPj", "width": 4032}], "place_id": "ChIJ8wUZ8psOZ0gRY_Z66tz8_OE", "plus_code": {"compound_code": "8PRR+F6 Dublin, Ireland", "global_code": "9C5M8PRR+F6"}, "price_level": 2, "rating": 4.5, "reference": "ChIJ8wUZ8psOZ0gRY_Z66tz8_OE", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 3712, "vicinity": "9 Anne St S, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.35246, "lng": -6.260899999999999}, "viewport": {"northeast": {"lat": 53.35378882989272, "lng": -6.259753520107278}, "southwest": {"lat": 53.35108917010727, "lng": -6.262453179892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Murray\u2019s Bar", "opening_hours": {"open_now": true}, "photos": [{"height": 2912, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/104895420943577623619\">A Google User</a>"], "photo_reference": "AUGGfZmOTV_qr_Z98wJ42KL0TDKO7q-HceLzmv1wJj9ke7Kl-T7i-3SxbZbM_pyAEcnDiarrb822dL38RVkhSg6Thn8IOst9hIrg_-YDO5brUl-54_7SDq0S1BJle56zyMW541gxaw6jNRBA1vk-aqeOZDqDhSMExbcHFsKMuf1CL7oWwpay", "width": 4368}], "place_id": "ChIJsx8N6oYOZ0gR013MeLYyxAs", "plus_code": {"compound_code": "9P2Q+XJ Dublin 1, Ireland", "global_code": "9C5M9P2Q+XJ"}, "price_level": 2, "rating": 4.5, "reference": "ChIJsx8N6oYOZ0gR013MeLYyxAs", "scope": "GOOGLE", "types": ["night_club", "bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 5894, "vicinity": "33-34 O'Connell Street Upper, Rotunda, Dublin 1"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3640213, "lng": -6.2717848}, "viewport": {"northeast": {"lat": 53.36538472989272, "lng": -6.270510670107278}, "southwest": {"lat": 53.36268507010728, "lng": -6.273210329892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Bald Eagle Beer & Food co.", "opening_hours": {"open_now": true}, "photos": [{"height": 2500, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/113455813562638772932\">A Google User</a>"], "photo_reference": "AUGGfZlB9PSxvs-d9RIhOrBEj_iXMLsO_VKvnqUO0E1mRu-yIRCcd6qnFDUvoIrLOmpRi8qkd0o80dY0JMhMYraPZahZHVFUVvlg6fDbacErTgRdGLJMSK7M6pmY1HgawzWk6emYlDBDVKlzkOPG_F8voPK89_4IEDhXisOKtVjCRP5oQX1N", "width": 3750}], "place_id": "ChIJXXPYfHgOZ0gRtG-HjQxtlL0", "plus_code": {"compound_code": "9P7H+J7 Dublin, Ireland", "global_code": "9C5M9P7H+J7"}, "price_level": 2, "rating": 4.5, "reference": "ChIJXXPYfHgOZ0gRtG-HjQxtlL0", "scope": "GOOGLE", "types": ["meal_takeaway", "bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1589, "vicinity": "114-115 Phibsborough Rd, Phibsborough, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3470026, "lng": -6.2800332}, "viewport": {"northeast": {"lat": 53.34836852989272, "lng": -6.278768720107278}, "southwest": {"lat": 53.34566887010727, "lng": -6.281468379892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Frank Ryan's", "opening_hours": {"open_now": true}, "photos": [{"height": 2988, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/103772692480068676638\">Ian Walsh</a>"], "photo_reference": "AUGGfZmeY6ai5CjmeXP7lMdNiSjx-x9YEa66weZrrzePHbZPYAX5es_ECoIcy90EzWkOMIvWCaOkb5X7bIE7GzTzZTEDcgbGA2Rja3Yw6jxpjpBNAKAhxuoa23imaLtjDFE6kaYiTEaLoOihKSRoOFUyT9hEwrH76pgN8RqOOL9wONouuJ2G", "width": 5312}], "place_id": "ChIJbW99rS8MZ0gRANlukgt9b-o", "plus_code": {"compound_code": "8PW9+RX Dublin 7, Ireland", "global_code": "9C5M8PW9+RX"}, "price_level": 1, "rating": 4.4, "reference": "ChIJbW99rS8MZ0gRANlukgt9b-o", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1259, "vicinity": "5 Queen St, Smithfield, Dublin 7"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3453201, "lng": -6.2483282}, "viewport": {"northeast": {"lat": 53.34671312989272, "lng": -6.246949020107278}, "southwest": {"lat": 53.34401347010728, "lng": -6.249648679892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Wind Jammer", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/115100761602645773415\">Nolon Blaylock</a>"], "photo_reference": "AUGGfZmFD_9qAD-r7EG6ifaTZnIyDO-LxSUI476Crwq_RD8wgoJnqAeI76x83hSt3ryYIBlZPPGVl33tTekdHrQmiyKE7gQHpZ35JokJwy37IsJ4pPcV4Znu5S4r7sk7t2-wgWtO3td0Cf68CDPXn5AwOolo1iamJwMSdpUndAHVgeJwtOBK", "width": 4032}], "place_id": "ChIJPUHW6JEOZ0gRbCS3PEmjPBg", "plus_code": {"compound_code": "8QW2+4M Dublin 2, Ireland", "global_code": "9C5M8QW2+4M"}, "rating": 4.4, "reference": "ChIJPUHW6JEOZ0gRbCS3PEmjPBg", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 404, "vicinity": "111 Townsend St, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.36116639999999, "lng": -6.242659}, "viewport": {"northeast": {"lat": 53.36254947989272, "lng": -6.241415420107279}, "southwest": {"lat": 53.35984982010728, "lng": -6.244115079892723}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Clonliffe House", "opening_hours": {"open_now": true}, "photos": [{"height": 530, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/110222197213102710533\">A Google User</a>"], "photo_reference": "AUGGfZnLLaCRGa-PEIg6BgLUhBQWLTXCVtR_T7qAxxaBfhJU6mWyW76v-D3I6UxqMXX3dqJ63vsFEx6BRyRIegM61iUbgXzVPc5OHVNokUsOFuH9BAsaaXTJAQre0q2z_fYD6ZXU0vgdyoBB4F1RrGQ9MbuwPm2c62_49dONshHf8sWZ_PB1", "width": 707}], "place_id": "ChIJgdmzPV4OZ0gR4UE58JF8vUU", "plus_code": {"compound_code": "9Q64+FW Dublin, Ireland", "global_code": "9C5M9Q64+FW"}, "price_level": 1, "rating": 4.3, "reference": "ChIJgdmzPV4OZ0gR4UE58JF8vUU", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 338, "vicinity": "43 Ballybough Rd, Dublin 3"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.344281, "lng": -6.2653728}, "viewport": {"northeast": {"lat": 53.34557672989272, "lng": -6.263986970107278}, "southwest": {"lat": 53.34287707010727, "lng": -6.266686629892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Peadar Kearney's Pub", "opening_hours": {"open_now": true}, "photos": [{"height": 3840, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/116393662122294947960\">A Google User</a>"], "photo_reference": "AUGGfZmMy-G4RltlPMMzkypRAXDpp-pkYMtqd3SSlZBaWGMmgB-CEoZduGpk7wn_DjqB9fpFc5DDOAVkKRpQFrIMqTTztGcr-lKj15M-BGZIe_Ai7bIr2wieoLRWqpvo7cR8V38IXjFr8KediI8jRSyrWhZRcglwXowNTNkd2g4yC7vJI2Gq", "width": 5120}], "place_id": "ChIJ-4eyJJ0OZ0gRxyrV70Zq95A", "plus_code": {"compound_code": "8PVM+PV Dublin, Ireland", "global_code": "9C5M8PVM+PV"}, "price_level": 2, "rating": 4.4, "reference": "ChIJ-4eyJJ0OZ0gRxyrV70Zq95A", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1270, "vicinity": "64 Dame St, Temple Bar, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3382083, "lng": -6.2542292}, "viewport": {"northeast": {"lat": 53.33960572989272, "lng": -6.252864220107276}, "southwest": {"lat": 53.33690607010728, "lng": -6.25556387989272}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "O'Donoghues Bar", "opening_hours": {"open_now": true}, "photos": [{"height": 3072, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/117139211989548379168\">Daniel Laprise</a>"], "photo_reference": "AUGGfZmIQBKSHtVQc-OpAho2_2PqnCC5RvzJ8cCb66PmX8-K76FrRi9b2DCTOeJ31DaZYZghmg7Ye9EPLmVAS3ZkyiHe2aGQOaBR7g4KzM2SvzVdT4NMDQ-AtXSBTPF3kfvfXdBi5X_XKIhydcNgXhUqQ4JO_yK12FMIrTlwv80L4tDo6zFS", "width": 4080}], "place_id": "ChIJw-DhupkOZ0gRzPibivFAces", "plus_code": {"compound_code": "8PQW+78 Dublin, Ireland", "global_code": "9C5M8PQW+78"}, "price_level": 2, "rating": 4.5, "reference": "ChIJw-DhupkOZ0gRzPibivFAces", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 5278, "vicinity": "15 Merrion Row, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3306023, "lng": -6.2606264}, "viewport": {"northeast": {"lat": 53.33199332989273, "lng": -6.259198120107277}, "southwest": {"lat": 53.32929367010728, "lng": -6.261897779892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "McCaffertys at the Barge", "opening_hours": {"open_now": true}, "photos": [{"height": 2988, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/101211107332302195129\">P\u00efe P\u00ede</a>"], "photo_reference": "AUGGfZl75ikAR0Q7E2nCnro6uljcMt4_RmicOdPCrSDSj0YKWg8Q2LW1wxh42vVFOsWbDTT8zCt8OEK_KWu9AtF4b84E5l4HkFzDsxYlWzsMYY5JHVppltVYTomEcNZmyGHhvePe2BKrf0M2gmbCBLrok8crsjNGENPuYOgjvxOjMV6OTsH_", "width": 5312}], "place_id": "ChIJISjK0PEMZ0gRX7HLn7J4IpM", "plus_code": {"compound_code": "8PJQ+6P Dublin, Ireland", "global_code": "9C5M8PJQ+6P"}, "price_level": 2, "rating": 4.3, "reference": "ChIJISjK0PEMZ0gRX7HLn7J4IpM", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 3034, "vicinity": "42 Charlemont St, Ranelagh, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3482748, "lng": -6.2688625}, "viewport": {"northeast": {"lat": 53.34967592989272, "lng": -6.267802270107278}, "southwest": {"lat": 53.34697627010728, "lng": -6.270501929892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Slattery's", "opening_hours": {"open_now": true}, "photos": [{"height": 3840, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/118195904548383525484\">A Google User</a>"], "photo_reference": "AUGGfZkIElj-0McH3kf2Go841jNML92ZbEzhmSstd0phRD0xPNSv0CUHGxlVxUjd4dcK1y4rheWYNZQ-VaNXeY5FmKtg67TIinAkVn7H6AvLVlFE2PiaP4Thz7SOrQt5XTaJgiEuknTDkhHm2MwVoARow57ovMx-2Qt5HwG1YFKIYZDDjZvH", "width": 5760}], "place_id": "ChIJE42FqWAMZ0gRNgtpxlLd7wQ", "plus_code": {"compound_code": "8PXJ+8F Dublin 1, Ireland", "global_code": "9C5M8PXJ+8F"}, "price_level": 2, "rating": 4.3, "reference": "ChIJE42FqWAMZ0gRNgtpxlLd7wQ", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 3080, "vicinity": "129 Capel St, North City, Dublin 1"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3439551, "lng": -6.2699449}, "viewport": {"northeast": {"lat": 53.34532382989272, "lng": -6.268651970107278}, "southwest": {"lat": 53.34262417010728, "lng": -6.271351629892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Darkey Kelly's", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/114451956393339050637\">A Google User</a>"], "photo_reference": "AUGGfZkZ_xk3N1roXXI7CcUAKNf_XvHzlR37AZ-DZ_TmnhDrvYBlE0eW9FxNBhauPPWenM0HQHZNjh-Xny6M7wLwd_Q1rwKTES5TTXwMch-2BlttouA5uxvALabuuXAE7P5uiTPkhAloO1PNovRkiPEtUpGSwLfxJWC5eqMGof9_3_tqEQHJ", "width": 4032}], "place_id": "ChIJFYr86CcMZ0gRV0f-OELulf8", "plus_code": {"compound_code": "8PVJ+H2 Dublin 8, Ireland", "global_code": "9C5M8PVJ+H2"}, "price_level": 2, "rating": 4.7, "reference": "ChIJFYr86CcMZ0gRV0f-OELulf8", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 3794, "vicinity": "19 Fishamble St, Christchurch Pl, Temple Bar, Dublin 8"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3332243, "lng": -6.2428826}, "viewport": {"northeast": {"lat": 53.33449967989272, "lng": -6.241607420107278}, "southwest": {"lat": 53.33180002010727, "lng": -6.244307079892723}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Searsons", "opening_hours": {"open_now": true}, "photos": [{"height": 2268, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/109286569689625773062\">Tobias Wilsmann</a>"], "photo_reference": "AUGGfZkcwE7No7hJZXkf41pP3-OtJ36bhT6NakiD_tu6ER4_SVuPWTI0rWBkJwN0OJKyfpHdk05zgIhqx2DyjgVwmeaa-kfNe8SdOwzQ7Kj3lw9VtiB33P324MHpzyiKYhueWx_5I6Qmkw01wM6_juHxTyiBs1duRL39hM3ScDmLpwmOJATe", "width": 4032}], "place_id": "ChIJR_ZbaTIJZ0gRhO7ThY46D9U", "plus_code": {"compound_code": "8QM4+7R Dublin 4, Ireland", "global_code": "9C5M8QM4+7R"}, "price_level": 2, "rating": 4.4, "reference": "ChIJR_ZbaTIJZ0gRhO7ThY46D9U", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 3822, "vicinity": "42-44 Baggot Street Upper, Dublin 4"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.34399980000001, "lng": -6.262488299999999}, "viewport": {"northeast": {"lat": 53.34533447989272, "lng": -6.261053470107279}, "southwest": {"lat": 53.34263482010728, "lng": -6.263753129892723}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Bankers Bar", "opening_hours": {"open_now": true}, "photos": [{"height": 3000, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/110635720474893579901\">robert allen</a>"], "photo_reference": "AUGGfZlMHfpne3e1qJdVr0cXDW6NCURDeYSn8Q7yP7ib2pDcEfplcP5Z5RS2HN_aACvRphel2tpPwvZVAK0Hk3f3mAnN-PyCCqZCNLDeDhbAKzGuU_hEXuk0_VrunNm_gL2ztfHUPaOJvuu5px88PB7tXZM6tpyOHohC2y3enZZMRix56YM", "width": 4000}], "place_id": "ChIJiTZhlZwOZ0gR1GiRj8Y6XFk", "plus_code": {"compound_code": "8PVQ+H2 Dublin 2, Ireland", "global_code": "9C5M8PVQ+H2"}, "price_level": 2, "rating": 4.3, "reference": "ChIJiTZhlZwOZ0gR1GiRj8Y6XFk", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1981, "vicinity": "Ard Finnan House, Trinity St, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.34430320000001, "lng": -6.2662967}, "viewport": {"northeast": {"lat": 53.34564402989272, "lng": -6.264985120107279}, "southwest": {"lat": 53.34294437010728, "lng": -6.267684779892723}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Brogans", "opening_hours": {"open_now": true}, "photos": [{"height": 2736, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/116393662122294947960\">A Google User</a>"], "photo_reference": "AUGGfZmCePnYr_0PWoNf2FfXYVhiVDsw8U6h4aTA6wyUesr0yGoPlCpqbZdQDDJRhokDdZiSfxra8XC28euwNuLlxJdaHjDr9mPj2Ym3IFdvMDUANg0uhf6jOHqEz_B9kKuPG82OYZtGbV4J_AyCvXe-uf_F-ymUmnyebYu8PiNVgBPWycco", "width": 3648}], "place_id": "ChIJh9ZiR50OZ0gRH7Ge580qRDg", "plus_code": {"compound_code": "8PVM+PF Dublin 2, Ireland", "global_code": "9C5M8PVM+PF"}, "price_level": 2, "rating": 4.3, "reference": "ChIJh9ZiR50OZ0gRH7Ge580qRDg", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 701, "vicinity": "75 Dame Street, 75 Dame St, Temple Bar, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3481564, "lng": -6.2932568}, "viewport": {"northeast": {"lat": 53.34945252989272, "lng": -6.291914220107278}, "southwest": {"lat": 53.34675287010727, "lng": -6.294613879892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "P. Duggan's", "opening_hours": {"open_now": true}, "photos": [{"height": 4080, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/112138291275246153179\">Prem Mehta</a>"], "photo_reference": "AUGGfZkMOyBK8AfO3WtrLZVD8dZiG5rbCYLpMTdikJCIhN_wsHTYqiBCGtNupoZ0-VBtl6Glw_by5k6_X7rWDnFnERdpa3KrbvzmfmcewQ1pcdYp9BAIOyB-LrpVUJTzL_M-d1wcS7pC5JJCWA_s823PLa2GF1y00l_04RAG1Wg_Rs_Uoyu_", "width": 3072}], "place_id": "ChIJvUHdkjYMZ0gRnBGKRbiyeSU", "plus_code": {"compound_code": "8PX4+7M Dublin 8, Ireland", "global_code": "9C5M8PX4+7M"}, "price_level": 1, "rating": 4.5, "reference": "ChIJvUHdkjYMZ0gRnBGKRbiyeSU", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 426, "vicinity": "25 Parkgate St, Stoneybatter, Dublin 8"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3430823, "lng": -6.270029399999999}, "viewport": {"northeast": {"lat": 53.34442792989272, "lng": -6.268621220107278}, "southwest": {"lat": 53.34172827010728, "lng": -6.271320879892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Lord Edward", "opening_hours": {"open_now": true}, "photos": [{"height": 1080, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/105274032038189804733\">Frank Kehoe</a>"], "photo_reference": "AUGGfZmlkB8ur9nBEasBloMVEsi3ORaNI058tQMmfatQ28ryKfGkU3XMya_MkQUv5c6Khin6p6S4_27-EHcxJN-bCBCmUipJHijnnV6R6uiTCvoDg8IQIfEp3GssSBhfTyfphL9-joQKpYudM_UmMUE6RY6hjCGLS7EK1YfMWm0-VLou2SFS", "width": 1920}], "place_id": "ChIJsUM-uicMZ0gRk4iushYetk0", "plus_code": {"compound_code": "8PVH+6X Dublin, Ireland", "global_code": "9C5M8PVH+6X"}, "price_level": 1, "rating": 4.4, "reference": "ChIJsUM-uicMZ0gRk4iushYetk0", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 777, "vicinity": "23 Christchurch Pl, Wood Quay, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3523, "lng": -6.269108699999999}, "viewport": {"northeast": {"lat": 53.35360612989272, "lng": -6.267803670107276}, "southwest": {"lat": 53.35090647010728, "lng": -6.270503329892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Kings Inn", "opening_hours": {"open_now": true}, "photos": [{"height": 2268, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/111175870507582771951\">Natalia Voronova</a>"], "photo_reference": "AUGGfZlCevbR8rWFDU59Ig5r040rDiptFtWpDaZQoB17JxpkHhix2vW1FAwrXVZpTOBNGT97fC15S3SpqMOdW5TTSuxovb-gB4EYTMmrOFmlgZ1z9sz0wn-PkK4l9JKGjoPImBq19-0KfMkKEm01pzN92n9oRgbZmAr_2FKw5I8yEQ1A4toO", "width": 4032}], "place_id": "ChIJm7wg24EOZ0gRhvk5QyBT-r0", "plus_code": {"compound_code": "9P2J+W9 Dublin, Ireland", "global_code": "9C5M9P2J+W9"}, "price_level": 2, "rating": 4.7, "reference": "ChIJm7wg24EOZ0gRhvk5QyBT-r0", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 411, "vicinity": "42 Bolton St, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3510875, "lng": -6.2822982}, "viewport": {"northeast": {"lat": 53.35237362989272, "lng": -6.281046920107279}, "southwest": {"lat": 53.34967397010728, "lng": -6.283746579892723}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Tommy O\u2019Gara\u2019s", "opening_hours": {"open_now": true}, "photos": [{"height": 1816, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/100361500838068428460\">John Walsh</a>"], "photo_reference": "AUGGfZkNFh-reQyd-M1-6KwCcZ_vwfngYn6q9S1oPAyVOgjmnvUWHFc-0u_aQc23MNoP2yK2MN-OkwZ166tjXGgvTlIHcZax5ZKgF1cWA9zNRrR3HfEkKbuUdHXBsihckYeRIf6RYYQQObm56Y5G1vjY2vV1uWXnNtJtnHpRaNoHbmMj-QPT", "width": 4032}], "place_id": "ChIJbcNH6y0MZ0gRreZHLJI084M", "plus_code": {"compound_code": "9P29+C3 Dublin 7, Ireland", "global_code": "9C5M9P29+C3"}, "price_level": 1, "rating": 4.5, "reference": "ChIJbcNH6y0MZ0gRreZHLJI084M", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 459, "vicinity": "19 Stoneybatter, Dublin 7"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.34199899999999, "lng": -6.2525018}, "viewport": {"northeast": {"lat": 53.34328827989271, "lng": -6.251096620107277}, "southwest": {"lat": 53.34058862010727, "lng": -6.253796279892721}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Lincoln's Inn", "opening_hours": {"open_now": true}, "photos": [{"height": 2569, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/107021602212407143486\">Brian Gillespie</a>"], "photo_reference": "AUGGfZmVJWdfMT7OLe0urXNAYWzkm8oRnC_R4td3iyMjxT6TZ46GWLrIrODpRuGtOg4R3qIY02AiNSo_MGIhGVf4n0b35IfS3jeLCCZErFFWFVG2ey_nHE469ps69NWqb8wjbxcuG9lmoxXy0z6BbtVEr6tIkzt0wZHJiG9eIqrhyR1BbXD0", "width": 3425}], "place_id": "ChIJ7ZxB65AOZ0gRWW0F1ahPfGY", "plus_code": {"compound_code": "8PRW+QX Dublin, Ireland", "global_code": "9C5M8PRW+QX"}, "price_level": 2, "rating": 4.6, "reference": "ChIJ7ZxB65AOZ0gRWW0F1ahPfGY", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1401, "vicinity": "19 Lincoln Pl, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3363439, "lng": -6.2656794}, "viewport": {"northeast": {"lat": 53.33773687989273, "lng": -6.264307570107278}, "southwest": {"lat": 53.33503722010729, "lng": -6.267007229892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Ryan's", "opening_hours": {"open_now": true}, "photos": [{"height": 4032, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/100289076063615907621\">John Wendeborn</a>"], "photo_reference": "AUGGfZkpdwC2Y9QL_Y_cQoDecOB_Yuv15wq6aAf7eIbNBN2PDvAWsC91Bje9e8RvHj2_oUDAd0QjuqQthZQs64RcTbS_9ry3ouAqlJ_iEpSCtX5VbavuzbXebpuxqXnPnyGpuDhHNvfZq3XCKYImkWtI9gJlHzRwtpbMtTl2ITgG9wBcqAG1", "width": 3024}], "place_id": "ChIJXSll2p8OZ0gRQcO01pUDZx8", "plus_code": {"compound_code": "8PPM+GP Dublin 2, Ireland", "global_code": "9C5M8PPM+GP"}, "price_level": 2, "rating": 4.3, "reference": "ChIJXSll2p8OZ0gRQcO01pUDZx8", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1374, "vicinity": "Camden Street Lower, Saint Kevin's, Dublin 2"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.34745539999999, "lng": -6.2660265}, "viewport": {"northeast": {"lat": 53.34880972989273, "lng": -6.264698920107278}, "southwest": {"lat": 53.34611007010729, "lng": -6.267398579892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "TP Smith's Bar and Restaurant", "opening_hours": {"open_now": true}, "photos": [{"height": 1080, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/112529479237679209849\">112529479237679209849</a>"], "photo_reference": "AUGGfZkdDbp3w2nUxEJOKB4Ig5x1zNeHQTWoyaQsuciy2vniJWmfi-RAWExQcyznhE17ec1v2_DWgybRQzViO7ItEkJVvJpl4cKNj4aS4Jhrs8RVgosw9RxZYdATHUkNhj3LC_J2GbqqPGt9Wl2NuurdquH_enxWRE-s35rW6N0PEADRpsN4", "width": 1920}], "place_id": "ChIJOVgT-oIOZ0gRMTfS9wozvEc", "plus_code": {"compound_code": "8PWM+XJ Dublin 1, Ireland", "global_code": "9C5M8PWM+XJ"}, "price_level": 2, "rating": 4.2, "reference": "ChIJOVgT-oIOZ0gRMTfS9wozvEc", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1969, "vicinity": "9-10, Jervis St, North City, Dublin 1"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3307236, "lng": -6.2653297}, "viewport": {"northeast": {"lat": 53.33201382989272, "lng": -6.263939320107278}, "southwest": {"lat": 53.32931417010728, "lng": -6.266638979892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "The Lower Deck Pub", "opening_hours": {"open_now": true}, "photos": [{"height": 2160, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/108679922467488473608\">Karl X Byrne</a>"], "photo_reference": "AUGGfZnGqQLOWqOcLdsHXyrO8AoSSSGLnJqIkPpw08tjYnDnQMhEWlj9gdcNkQmXnC_u9il9hltWLYKRjFNhesR_BlO1vr94DzbK2JxJzkZQiLuPv66ZnWepbE4xOgmmAGBidQoZkTt93MjJvDqJ7euilvGOVqeWannlfwKtUlWgd-ttmwQT", "width": 3840}], "place_id": "ChIJMwczIR4MZ0gR_xyb0OnQZDw", "plus_code": {"compound_code": "8PJM+7V Dublin, Ireland", "global_code": "9C5M8PJM+7V"}, "price_level": 2, "rating": 4.4, "reference": "ChIJMwczIR4MZ0gR_xyb0OnQZDw", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 461, "vicinity": "3 Portobello Harbour, Portobello, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.3449326, "lng": -6.275792099999999}, "viewport": {"northeast": {"lat": 53.34644592989272, "lng": -6.274343720107279}, "southwest": {"lat": 53.34374627010727, "lng": -6.277043379892723}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Ned O' Sheas", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/106120066767110502907\">Mickael Pallier</a>"], "photo_reference": "AUGGfZl8UU-QwzWoadiz_SKcjewqRd6x6cuEQ6c3qSVE2ahFG_Dc24SnhjFC1nprQ7sSKvOdiR9_t3rkZmuqTU_k7X3aX0s3ztM9XJqioDCz4grKDuWYtdEe17XlhFVLACk6-jon1-J9txw3Pcx6GJzNm2B6gqmbhlKXL77A7Q0Yi08C-RkD", "width": 3767}], "place_id": "ChIJ6xp-US8MZ0gRSDT7vmuSXp0", "plus_code": {"compound_code": "8PVF+XM Dublin, Ireland", "global_code": "9C5M8PVF+XM"}, "price_level": 2, "rating": 4.4, "reference": "ChIJ6xp-US8MZ0gRSDT7vmuSXp0", "scope": "GOOGLE", "types": ["tourist_attraction", "bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1891, "vicinity": "12a Lower Bridge St, The Liberties, Dublin"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 53.36517509999999, "lng": -6.2720227}, "viewport": {"northeast": {"lat": 53.36651487989272, "lng": -6.270591670107278}, "southwest": {"lat": 53.36381522010728, "lng": -6.273291329892722}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png", "icon_background_color": "#FF9E67", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet", "name": "Hedigans \"The Brian Boru\"", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/104025748055427156604\">Darren Walsh</a>"], "photo_reference": "AUGGfZmDir1Vu-PB9E7rR4Zs6yGIEPgV6ELMkiDggyYfLPMAi_MfTC6X3Qpb-s9CXMEUMhJpRAHZi0A9PLJ-LCdtcal-pPbN5A41avhCRyw2mzYnqZJ8kROL9THMSqW8DlVUGNJ7h2hVXmE7kYMxnyiKUSLZkZx29t36qYqNjyLBJqiV73OD", "width": 4032}], "place_id": "ChIJa1s6GngOZ0gRmzb45a0lUjo", "plus_code": {"compound_code": "9P8H+35 Dublin, Ireland", "global_code": "9C5M9P8H+35"}, "price_level": 2, "rating": 4.2, "reference": "ChIJa1s6GngOZ0gRmzb45a0lUjo", "scope": "GOOGLE", "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"], "user_ratings_total": 1582, "vicinity": "5 Prospect Rd, Glasnevin, Dublin"}]
+[
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3450877,
+                "lng": -6.2674185
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34642977989272,
+                    "lng": -6.266129020107278
+                },
+                "southwest": {
+                    "lat": 53.34373012010727,
+                    "lng": -6.268828679892723
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Porterhouse Temple Bar",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 4284,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100746562551733277644\">Brennan Hall</a>"
+                ],
+                "photo_reference": "AUc7tXX-xI1bNpKeG6jyL0i0MlOP9k6KjKnCdSM4aB7Z4ypFRrh7owtEPkSdLdqy36gBDZnmb0QcGaRhG1Ebu47hoc0YT8RJih7Z6HXMK4S25Ti6wa7_mwc9Eq9vmH4sKogt0AiO8sz9vwknjSNSxc_OJ0S3Z83GuXyB95O08CyglAq4eOs_",
+                "width": 5712
+            }
+        ],
+        "place_id": "ChIJISjK0PEMZ0gRZz3RsNSfxjQ",
+        "plus_code": {
+            "compound_code": "8PWM+22 Dublin 8, Ireland",
+            "global_code": "9C5M8PWM+22"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJISjK0PEMZ0gRZz3RsNSfxjQ",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 9753,
+        "vicinity": "16-18 Parliament St, Temple Bar, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3414497,
+                "lng": -6.2660082
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34283067989271,
+                    "lng": -6.264687570107277
+                },
+                "southwest": {
+                    "lat": 53.34013102010727,
+                    "lng": -6.267387229892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Snug",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 1515,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110223066021006998103\">Michael Fergus</a>"
+                ],
+                "photo_reference": "AUc7tXVtjAwg2CN_T8WQFq3CdjRPZD_Xn21qAEuYeEXuHXLhn-f-nMYc5PeiyKQfAczCjh3losQLDWaQcT6qYYwZgRt_Hben3fqqYYpGiCpNKfwOEtuojN2eBca8W1d1G2fWx6WUQtxyL_laWtg2jYcIxStkPDB8e5ftOP2gDN-jM2T9LRdP",
+                "width": 2982
+            }
+        ],
+        "place_id": "ChIJY4EZlJ0OZ0gRZxSbNZq0kSg",
+        "plus_code": {
+            "compound_code": "8PRM+HH Dublin 8, Ireland",
+            "global_code": "9C5M8PRM+HH"
+        },
+        "price_level": 1,
+        "rating": 4.5,
+        "reference": "ChIJY4EZlJ0OZ0gRZxSbNZq0kSg",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 377,
+        "vicinity": "15 Stephen Street Upper, Dublin 8"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3449326,
+                "lng": -6.275792099999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34645012989272,
+                    "lng": -6.274373470107278
+                },
+                "southwest": {
+                    "lat": 53.34375047010727,
+                    "lng": -6.277073129892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Ned O' Sheas",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 3060,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113879115515638454062\">kinio83</a>"
+                ],
+                "photo_reference": "AUc7tXV7BxTueXjQjXoYrfjn-Xw8xN2AsRVBzcyLoOztnLgR13OQq03mEC4dMx9eslIRT2WB94TZlCGw3M6lZNg7Zo-vI44xSbcxpFWeQgaNQ_uPpuF0AJYnlydeC4Gee88nkJFQcdO6ioye_NLTY6PBSPllHT2TI1kXRVrao5WntVzuVYnU",
+                "width": 4080
+            }
+        ],
+        "place_id": "ChIJ6xp-US8MZ0gRSDT7vmuSXp0",
+        "plus_code": {
+            "compound_code": "8PVF+XM Dublin, Ireland",
+            "global_code": "9C5M8PVF+XM"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJ6xp-US8MZ0gRSDT7vmuSXp0",
+        "scope": "GOOGLE",
+        "types": [
+            "tourist_attraction",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1930,
+        "vicinity": "12a Lower Bridge St, The Liberties, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3412587,
+                "lng": -6.2638745
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34257952989272,
+                    "lng": -6.262577820107278
+                },
+                "southwest": {
+                    "lat": 53.33987987010727,
+                    "lng": -6.265277479892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Hairy Lemon",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 2988,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106697045833855218304\">Daniel Nolden</a>"
+                ],
+                "photo_reference": "AUc7tXWRIx-b8hg4msRHtZQngZxtc7D3uvlv1L2CQmPdudy_wQeOYaxWzB1afh2TjySjAm2lOykOvOvheemSkUacnXSmgB2nDP2Ugkr_psEDbPgvFZ5bzHK2qyXNOKj22us1VlQ_f2LRaozpq96ceEsvQ1D45Ocm9uOe30kcv3aIsFl9K78P",
+                "width": 5312
+            }
+        ],
+        "place_id": "ChIJ2Qf_MpwOZ0gRo65Kwjms1JE",
+        "plus_code": {
+            "compound_code": "8PRP+GF Dublin 2, Ireland",
+            "global_code": "9C5M8PRP+GF"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJ2Qf_MpwOZ0gRo65Kwjms1JE",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 6472,
+        "vicinity": "Stephen Street Lower, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3459825,
+                "lng": -6.2628303
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34736172989273,
+                    "lng": -6.261515470107279
+                },
+                "southwest": {
+                    "lat": 53.34466207010728,
+                    "lng": -6.264215129892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Merchant's Arch",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 9000,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114838979610330200273\">michaelsmith37@sky.com</a>"
+                ],
+                "photo_reference": "AUc7tXVuRwjv85AlY9ZcbAfpR8zYqsTrGHb-ebALHVXpdfA25Zuga4st7vusZLH8LZyNenT6-N4sen87PhDxD3W2-PXvFpsityJx0ucIIa9tVFDyU3TysIw7aADAFW4JhQ__qebq6if7XKvK2OwcDR1gs5CfFj48Tta8bfTQQbQzPPCdkvOb",
+                "width": 12000
+            }
+        ],
+        "place_id": "ChIJ2S0FRoMOZ0gRRpOHlw7_msw",
+        "plus_code": {
+            "compound_code": "8PWP+9V Dublin, Ireland",
+            "global_code": "9C5M8PWP+9V"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJ2S0FRoMOZ0gRRpOHlw7_msw",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 4228,
+        "vicinity": "48-49 Wellington Quay, Temple Bar, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3640213,
+                "lng": -6.2717848
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.36538472989272,
+                    "lng": -6.270510670107278
+                },
+                "southwest": {
+                    "lat": 53.36268507010728,
+                    "lng": -6.273210329892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Bald Eagle Beer & Food co.",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 2500,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113455813562638772932\">A Google User</a>"
+                ],
+                "photo_reference": "AUc7tXX52ztE75Zl8s96R7DFkTXkqOyaoFL_jcvYY9JP65wMFiOJc0z3fL5aYDagDHQwpXoTUlPbEBZptSjHH9eMB6eYxr8EWzzZhJSo_W1wpEOqP2x135L9wXPQ6a8MTqIIPl9-a4cPa8WWd2eHAmSjadJaY6RpKl-AvvYpjlUx2V6yy1J3",
+                "width": 3750
+            }
+        ],
+        "place_id": "ChIJXXPYfHgOZ0gRtG-HjQxtlL0",
+        "plus_code": {
+            "compound_code": "9P7H+J7 Dublin, Ireland",
+            "global_code": "9C5M9P7H+J7"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJXXPYfHgOZ0gRtG-HjQxtlL0",
+        "scope": "GOOGLE",
+        "types": [
+            "meal_takeaway",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1606,
+        "vicinity": "114-115 Phibsborough Rd, Phibsborough, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.35246,
+                "lng": -6.260899999999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.35381032989272,
+                    "lng": -6.25975912010728
+                },
+                "southwest": {
+                    "lat": 53.35111067010728,
+                    "lng": -6.262458779892723
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Murray\u2019s Bar",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 1868,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116820883700253312540\">116820883700253312540</a>"
+                ],
+                "photo_reference": "AUc7tXV6MECaNbk6f4WBzX5IwsWvwug5AJplTeWioIwy9cq_ZdmuaTs6zlk-CMSUCjWgNLCkFpVpiRLn9hONqDrb6WZQ4xPxRCmWxGk5hO_zgjdtHG_AWBZSq4C5eTlhaqFBdxSfEZwkKoeOCQIcwqZRPvhlhk4whLUTzcdoKIqMFchMqI-U",
+                "width": 4000
+            }
+        ],
+        "place_id": "ChIJsx8N6oYOZ0gR013MeLYyxAs",
+        "plus_code": {
+            "compound_code": "9P2Q+XJ Dublin 1, Ireland",
+            "global_code": "9C5M9P2Q+XJ"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJsx8N6oYOZ0gR013MeLYyxAs",
+        "scope": "GOOGLE",
+        "types": [
+            "night_club",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 6004,
+        "vicinity": "33-34 O'Connell Street Upper, Rotunda, Dublin 1"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.34494,
+                "lng": -6.2763738
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34628247989272,
+                    "lng": -6.274857320107278
+                },
+                "southwest": {
+                    "lat": 53.34358282010728,
+                    "lng": -6.277556979892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Brazen Head",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3096,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105607520375289875258\">Christian Mercat</a>"
+                ],
+                "photo_reference": "AUc7tXWMLywOqbaL0HumBt_xNRe1mT6vWeGNgM0iNAXPet0dUGNWLFptN9uW3rtDeZGfW5uhZlAcPxsnjnBhQoazfSIzWhUpxL86rQI76AAEj2rdmGKwJDUObPnjv0ezcAO4Bw4c0Aw8UemNqC4_CIXP3nuPQyvGx79UjmreObjMJnCbdC0L",
+                "width": 4128
+            }
+        ],
+        "place_id": "ChIJ5wqZWS8MZ0gRq5auJO7NbDE",
+        "plus_code": {
+            "compound_code": "8PVF+XF Dublin, Ireland",
+            "global_code": "9C5M8PVF+XF"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJ5wqZWS8MZ0gRq5auJO7NbDE",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 16707,
+        "vicinity": "20 Lower Bridge St, Usher's Quay, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.344314,
+                "lng": -6.263592099999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34562782989273,
+                    "lng": -6.262246020107278
+                },
+                "southwest": {
+                    "lat": 53.34292817010729,
+                    "lng": -6.264945679892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Trinity Bar & Venue",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 3072,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114145759290528331704\">Slava Kramarov</a>"
+                ],
+                "photo_reference": "AUc7tXWvD8KsI2cO49fD5TbdAEzI87V8tnoRtP74u5xlEdSahUcPTHYYa2vCU-crQ9l6mrHX3XWXhHuR5mnA0ig2M9zoos24jXSpz_ZJsmib9mgFV1ryybB4gP1YzqGeAhMnCU_OGLaoMI5RGjhZFveNcRhuq84i-N7y7cKZkxTjR64efvUK",
+                "width": 4080
+            }
+        ],
+        "place_id": "ChIJ6e3GRJ0OZ0gRutaWOjFlip0",
+        "plus_code": {
+            "compound_code": "8PVP+PH Dublin, Ireland",
+            "global_code": "9C5M8PVP+PH"
+        },
+        "price_level": 2,
+        "rating": 4.3,
+        "reference": "ChIJ6e3GRJ0OZ0gRutaWOjFlip0",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2825,
+        "vicinity": "46-49 Dame St, Dublin Southside, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3573485,
+                "lng": -6.2637694
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.35872467989272,
+                    "lng": -6.262450670107278
+                },
+                "southwest": {
+                    "lat": 53.35602502010727,
+                    "lng": -6.265150329892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Kavanaghs The Temple",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 2268,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107323437004301073320\">ARUN Thundyill Saseendran</a>"
+                ],
+                "photo_reference": "AUc7tXWQS2XZlc0Eo8PE_td7ToQbkz1GKSbZ7U5FRfrI20bDFbLOZiqYAFezXV7YrcTg7TPnsfO4ljn46Nn9mi7s6UHBNc0WoF8eFIrBre4lKEPRD1j9FHZAhsPiM_git3L4oFZHtredxLGmgZsDOfel2F9UQ1YPXuq6J7h2zhNQRLnAWVbX",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJDxos4X0OZ0gR-M904H2E4V0",
+        "plus_code": {
+            "compound_code": "9P4P+WG Dublin 1, Ireland",
+            "global_code": "9C5M9P4P+WG"
+        },
+        "price_level": 2,
+        "rating": 4.3,
+        "reference": "ChIJDxos4X0OZ0gR-M904H2E4V0",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 921,
+        "vicinity": "71 Dorset Street Upper, Rotunda, Dublin 1"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.34980119999999,
+                "lng": -6.2778364
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.35113222989271,
+                    "lng": -6.276478570107278
+                },
+                "southwest": {
+                    "lat": 53.34843257010727,
+                    "lng": -6.279178229892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Cobblestone",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116162886263223657780\">Jingqiong Yang</a>"
+                ],
+                "photo_reference": "AUc7tXV8dC2lGA7xh_ZjlRZKAOCdyQkWwYOK88hK6SQzlAziuc6Sq0hBsW_Bkb57ApXCJti_z6EHgo96DiTaSkVgieekn3D3PU5kwh7-f67agc0Y6dqr5m7mh7CECH8ATRabKHKP5HwB2729FZztZcmkqKAL2_-oada3gUlW_iDELWvw5mhG",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJ8ycFoS4MZ0gRgQlPeN5HAvQ",
+        "plus_code": {
+            "compound_code": "8PXC+WV Dublin, Ireland",
+            "global_code": "9C5M8PXC+WV"
+        },
+        "price_level": 1,
+        "rating": 4.7,
+        "reference": "ChIJ8ycFoS4MZ0gRgQlPeN5HAvQ",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 4371,
+        "vicinity": "77 King St N, Smithfield, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3646379,
+                "lng": -6.2712454
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.36596557989272,
+                    "lng": -6.269910820107277
+                },
+                "southwest": {
+                    "lat": 53.36326592010727,
+                    "lng": -6.27261047989272
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Bernard Shaw",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 2832,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111909394576569975131\">The Bernard Shaw</a>"
+                ],
+                "photo_reference": "AUc7tXXfxc1SoUiilJPsUBDI7OFKFmEt-JI61-W4jc4fn-pmXZJreLj-SoLWTxu6hSvUuVw9TwpeYEUjKHN4ZqvpAcZ3niatPkBKq8-3CR-zAjEwjVlSs7gcmUTyb7jIDv7XU3G3JuhIddEFForv9b7z6c_dOkwHq2vzUVJ27tzAC2COVC0L",
+                "width": 4243
+            }
+        ],
+        "place_id": "ChIJZf8Yh6AOZ0gRhewFFltjO2k",
+        "plus_code": {
+            "compound_code": "9P7H+VG Dublin, Ireland",
+            "global_code": "9C5M9P7H+VG"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJZf8Yh6AOZ0gRhewFFltjO2k",
+        "scope": "GOOGLE",
+        "types": [
+            "art_gallery",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 4949,
+        "vicinity": "Cross Guns Bridge, Drumcondra, Dublin 9"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3456157,
+                "lng": -6.261963799999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34698457989272,
+                    "lng": -6.260580020107279
+                },
+                "southwest": {
+                    "lat": 53.34428492010728,
+                    "lng": -6.263279679892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Auld Dubliner",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3456,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/109372081546374154229\">A Google User</a>"
+                ],
+                "photo_reference": "AUc7tXVicsYMZwAe7veJvUxkkMCIKz4W84_qCi5aBMtssSQiUxV81mqtnEnJhIhP5asE5G18Cr9VaMQrBmW8ozVfTU7COJmgRF001f4UUSww5m_elonNIHCCgI4gP1JYAZVDWbbL2yp8dKDseIdagryfXXR_LBUzR_CBWeMAm8_nY3TJZVU-",
+                "width": 5184
+            }
+        ],
+        "place_id": "ChIJMVe9U4MOZ0gRE1iw8A0lOkw",
+        "plus_code": {
+            "compound_code": "8PWQ+66 Dublin, Ireland",
+            "global_code": "9C5M8PWQ+66"
+        },
+        "rating": 4.4,
+        "reference": "ChIJMVe9U4MOZ0gRE1iw8A0lOkw",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2920,
+        "vicinity": "24 - 25 Temple Bar, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3332243,
+                "lng": -6.2428826
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.33449967989272,
+                    "lng": -6.241607420107278
+                },
+                "southwest": {
+                    "lat": 53.33180002010727,
+                    "lng": -6.244307079892723
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Searsons",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 2268,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/109286569689625773062\">Tobias Wilsmann</a>"
+                ],
+                "photo_reference": "AUc7tXVhKYMJPS2-TNR43M3XSluNSv6Rxdk2epT5TB89HB2ahCCJVu3aSsLMYDJaPkpP5llUE5BvcE3rT5VB5EB_hizA3JgxQtpwLmgixa4olnNYqcqmdtGV0Jp68SltGk2sj5u2D54rhs7xpb8kF67e7KreZ9fbtNkyjRtgLhkUeDXDc7Pq",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJR_ZbaTIJZ0gRhO7ThY46D9U",
+        "plus_code": {
+            "compound_code": "8QM4+7R Dublin 4, Ireland",
+            "global_code": "9C5M8QM4+7R"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJR_ZbaTIJZ0gRhO7ThY46D9U",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 3871,
+        "vicinity": "42-44 Baggot Street Upper, Dublin 4"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3514492,
+                "lng": -6.2604283
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.35275687989272,
+                    "lng": -6.259280370107278
+                },
+                "southwest": {
+                    "lat": 53.35005722010727,
+                    "lng": -6.261980029892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Madigan's O'Connell Street",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 802,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106570694645917915101\">Madigan&#39;s</a>"
+                ],
+                "photo_reference": "AUc7tXU1X3_Ud4wrxYiKeBPc_Q1p1p6aDQS8cEPKKHXo_fzgiLxLl6bOsfkEmmySU1-ZvK8w8Ir-NcsmFhpz8nWkKCaGmVFbl0dOX-7ywVystQ-GUQH7cPVhNiNNsEmKrgRMG55JQqRDY0NOTgNen5J_PMXWDfb6PGYCiu_Gm_MFOEBwQzR_",
+                "width": 1200
+            }
+        ],
+        "place_id": "ChIJQeQwmoYOZ0gR19Z4OlFohKg",
+        "plus_code": {
+            "compound_code": "9P2Q+HR Dublin 1, Ireland",
+            "global_code": "9C5M9P2Q+HR"
+        },
+        "price_level": 2,
+        "rating": 4.3,
+        "reference": "ChIJQeQwmoYOZ0gR19Z4OlFohKg",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2234,
+        "vicinity": "19 O'Connell Street Upper, North City, Dublin 1"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.34383829999999,
+                "lng": -6.2636601
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34520657989272,
+                    "lng": -6.262201520107278
+                },
+                "southwest": {
+                    "lat": 53.34250692010728,
+                    "lng": -6.264901179892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Stags Head",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3000,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116669645933363490950\">Willi Schneider</a>"
+                ],
+                "photo_reference": "AUc7tXWJhV6BOZSNjipQmVB242jLBmXG4BfHqk8DzzJtiA7_Y1bV-lamMquuFXBDSTIeVfALC-7CxXTrf9NTI4AqRJjejAhjc3xPcIl6yGc5owqGErD4XfL0A2Jam9f7s-CVG341Gl1fXc5VuZWHSLGabf2A0OVUGXflEZxXHhzGrvv7wlo0",
+                "width": 4000
+            }
+        ],
+        "place_id": "ChIJ8ZuR6JwOZ0gR5jtVW54gEHM",
+        "plus_code": {
+            "compound_code": "8PVP+GG Dublin, Ireland",
+            "global_code": "9C5M8PVP+GG"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJ8ZuR6JwOZ0gR5jtVW54gEHM",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 6020,
+        "vicinity": "1 Dame Ct, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.35056290000001,
+                "lng": -6.255004599999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.35195477989272,
+                    "lng": -6.253670170107277
+                },
+                "southwest": {
+                    "lat": 53.34925512010727,
+                    "lng": -6.256369829892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Celt",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113368692110159022932\">Prisca Baudry</a>"
+                ],
+                "photo_reference": "AUc7tXUzejmraBqcaGaXPBh72rFW8Rh5cupUhUWwZufLBixUSx0CWNMhz-tr61C5gGfS8jXk16DM4xYpJyTTT9GDoNKqkqasfefyI--tWO9W0vMFKAMrs2ImkZKXEZhXOPF7HqJ3RfAm9ibpb91B1oTsaSSDHon453ANl0wExoT5uMynfiP3",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJZwg6WI8OZ0gRuDskFjw5m84",
+        "plus_code": {
+            "compound_code": "9P2V+6X Dublin, Ireland",
+            "global_code": "9C5M9P2V+6X"
+        },
+        "price_level": 2,
+        "rating": 4.6,
+        "reference": "ChIJZwg6WI8OZ0gRuDskFjw5m84",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 6501,
+        "vicinity": "81 Talbot St, North City, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3522459,
+                "lng": -6.261993
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.35359732989271,
+                    "lng": -6.260677520107278
+                },
+                "southwest": {
+                    "lat": 53.35089767010727,
+                    "lng": -6.263377179892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Parnell Heritage Pub & Grill",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 1365,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/109039416160213042652\">The Parnell Heritage Bar and Grill</a>"
+                ],
+                "photo_reference": "AUc7tXXyzFtVdO3skbpNfbsA28SVPhhMINlRK6XEg-sTGHOBgiTq0ceVgYjexpzIQkM0FptF9IqVyBLppLa6gn7tRwSaZP4lD2BJ9mqGd4bNhv_emSawJSXfYzyosMOGB1Ex5zmwbIfkjgdm_hCP2spBdZ8AH9N_-Fz_pHdZjtR8MIvnF-4G",
+                "width": 2048
+            }
+        ],
+        "place_id": "ChIJ1wjst4YOZ0gR_pg-hMy3dhM",
+        "plus_code": {
+            "compound_code": "9P2Q+V6 Dublin 1, Ireland",
+            "global_code": "9C5M9P2Q+V6"
+        },
+        "price_level": 2,
+        "rating": 4.3,
+        "reference": "ChIJ1wjst4YOZ0gR_pg-hMy3dhM",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2783,
+        "vicinity": "72-74 Parnell St, North City, Dublin 1"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.343905,
+                "lng": -6.2607871
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34525567989272,
+                    "lng": -6.259460220107278
+                },
+                "southwest": {
+                    "lat": 53.34255602010727,
+                    "lng": -6.262159879892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "O'Neills Pub & Kitchen",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3000,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102812808125592627380\">Curtis Dopson</a>"
+                ],
+                "photo_reference": "AUc7tXVAfCawcIUq3XGx8BwdZj9z2kTkf-VHSaa1YN8iey7_FiKA5G6MllNuu_n07JkhIrb5rMEn7vsAehQRgv27lEBnHdCNfFdG6j5Tpv6L_UI0i_CUNS8yU1cyPAjZgUPYfmaw4Gvtem98MqtLI4130mxrBspm446LDc8ggWWDqAJt0kAc",
+                "width": 4000
+            }
+        ],
+        "place_id": "ChIJC-qhYZsOZ0gR-j7mSy3UDBI",
+        "plus_code": {
+            "compound_code": "8PVQ+HM Dublin 2, Ireland",
+            "global_code": "9C5M8PVQ+HM"
+        },
+        "price_level": 2,
+        "rating": 4.2,
+        "reference": "ChIJC-qhYZsOZ0gR-j7mSy3UDBI",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 8090,
+        "vicinity": "2 Suffolk St, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3449015,
+                "lng": -6.2679554
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34623682989272,
+                    "lng": -6.266592070107277
+                },
+                "southwest": {
+                    "lat": 53.34353717010728,
+                    "lng": -6.269291729892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Lundy Foot's",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 640,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103545211778196934485\">A Google User</a>"
+                ],
+                "photo_reference": "AUc7tXWklw0aECS0UOxEs8LKGxAvKFK2uchnZGIVzYU6XYckc3hqBBuim3WthuUhW2Xn4ODmCsujFWd8bgQ6E7mXBjr3h6VfBD0om2IqsNduoBYmWJC9FF9KHyXpiZIEXgThxQTk0COfP9NKw2R6ga6YbyYEuoScBhmERYlgANoq06vr-jVz",
+                "width": 960
+            }
+        ],
+        "place_id": "ChIJJ7hgKJYPZ0gRXK79fxx9SH0",
+        "plus_code": {
+            "compound_code": "8PVJ+XR Dublin, Ireland",
+            "global_code": "9C5M8PVJ+XR"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJJ7hgKJYPZ0gRXK79fxx9SH0",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2106,
+        "vicinity": "Lundy Foot's Bar and Restaurant, Essex Gate, D2, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3533237,
+                "lng": -6.260123699999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.35464592989272,
+                    "lng": -6.258737070107277
+                },
+                "southwest": {
+                    "lat": 53.35194627010728,
+                    "lng": -6.261436729892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "O'Reilly's Bar & Lounge",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 1236,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106998059406883883050\">Gregory Mundy</a>"
+                ],
+                "photo_reference": "AUc7tXW_h-_fpuvDcZE3jVOXRU4I1fGBJI6R1wII5lIyMXODn-fZb5BjCfv3y__WMryf6s0ZNswXEhCTqPxDK2CmyxOzD5AFjPM5MPGzQ8IUhiPGIX9b9JIwYAfhEoN4U62Z16Ks6eftiZ6-ZO52wibQGxuCfrXTJYeu8QFe1pDRutnfmIi3",
+                "width": 2543
+            }
+        ],
+        "place_id": "ChIJ4acA_IYOZ0gRbkVCP1ad8MQ",
+        "plus_code": {
+            "compound_code": "9P3Q+8W Dublin, Ireland",
+            "global_code": "9C5M9P3Q+8W"
+        },
+        "price_level": 1,
+        "rating": 4.1,
+        "reference": "ChIJ4acA_IYOZ0gRbkVCP1ad8MQ",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 280,
+        "vicinity": "151 Parnell St, Rotunda, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.34547420000001,
+                "lng": -6.2641937
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34683477989272,
+                    "lng": -6.263216470107278
+                },
+                "southwest": {
+                    "lat": 53.34413512010727,
+                    "lng": -6.265916129892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Temple Bar Pub",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 2736,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117027222575653415610\">michele di letizia</a>"
+                ],
+                "photo_reference": "AUc7tXXjNokvbkeoSgehSnMd5mjh9gHjP2HwRukZE07HESehaZRp_IKqf1M0EI6nrZnT0j7NZfWgwZI2SHLLzliPreCko84UkB_7BrQFjiXUwlqiUSHHcnGUyzhlQmAw_W8v5kJtbg7pcwb1E1rHbNnQwXaxeHRf4gvW1TnS1nGCKPNak-9z",
+                "width": 3648
+            }
+        ],
+        "place_id": "ChIJR9mP8ScMZ0gRWDrL2dfqLBA",
+        "plus_code": {
+            "compound_code": "8PWP+58 Dublin 2, Ireland",
+            "global_code": "9C5M8PWP+58"
+        },
+        "price_level": 3,
+        "rating": 4.6,
+        "reference": "ChIJR9mP8ScMZ0gRWDrL2dfqLBA",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "clothing_store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+        ],
+        "user_ratings_total": 34843,
+        "vicinity": "47-48 Temple Bar, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.345176,
+                "lng": -6.262646
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34637282989272,
+                    "lng": -6.261358120107278
+                },
+                "southwest": {
+                    "lat": 53.34367317010727,
+                    "lng": -6.264057779892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Old Storehouse Bar and Restaurant",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108783165664929699675\">Cabal</a>"
+                ],
+                "photo_reference": "AUc7tXXVQfmpdXBmSHXmBhhJ38e43DMZVRADOM92qTrZit21grKIhoOoQI7a_CmJNR6iS2oRkmZwOkFex87On5drhn5rY6LJ5gcdbJUGTfI6Ao2EbUp2ggUZo6zq0UOlpEYGf9neo8j27JMRlipsaVQrQFhzYg5aVoshEzdVDZDGNPEGv-JE",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJiTBhtJwOZ0gRQVe4FWJj5Kg",
+        "plus_code": {
+            "compound_code": "8PWP+3W Dublin, Ireland",
+            "global_code": "9C5M8PWP+3W"
+        },
+        "price_level": 2,
+        "rating": 4.6,
+        "reference": "ChIJiTBhtJwOZ0gRQVe4FWJj5Kg",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 6991,
+        "vicinity": "3 Crown Alley, Temple Bar, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3431396,
+                "lng": -6.2621012
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34444362989272,
+                    "lng": -6.260783370107279
+                },
+                "southwest": {
+                    "lat": 53.34174397010727,
+                    "lng": -6.263483029892723
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Old Stand",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3072,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100793377739197992232\">Chris Carless</a>"
+                ],
+                "photo_reference": "AUc7tXVEX9RuJ5FcSKQNVyFDJBnwjWcZXJbYXI1bd5GlZ9_BOLD1pNRGpXHA36In4vxjylY-1mPcSfqSLZd22aI6QHv8i5BMbIBBvQheiS_FFzde64WF6K6gbO_2vI35mj62LxQF2FSE0f9jDrF5L_XksG6ju7JuUzO8BNMLRXUSRp3hErrF",
+                "width": 4080
+            }
+        ],
+        "place_id": "ChIJMdEljJwOZ0gRBxkvK7TJW_0",
+        "plus_code": {
+            "compound_code": "8PVQ+75 Dublin 2, Ireland",
+            "global_code": "9C5M8PVQ+75"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJMdEljJwOZ0gRBxkvK7TJW_0",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1747,
+        "vicinity": "37 Exchequer St, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3504172,
+                "lng": -6.2597671
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.35178507989273,
+                    "lng": -6.258422420107278
+                },
+                "southwest": {
+                    "lat": 53.34908542010729,
+                    "lng": -6.261122079892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Brannigans",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106231413872754577597\">Dawid Kolacz</a>"
+                ],
+                "photo_reference": "AUc7tXVTW8yR_38tsJ7NWzwuaw-g4ODYNaFIvDGXGCenkh7dYFd4CgrWGgRE2kvC1YNqI_Fqrnp2BIVdvt94MmTt4RAreEz01gAqu9tTneUbbSMQAjIr8_Q_skvHRHSmf3kxPduiBGuCdAxJnV0xYCUScoxoO-fOeNpmUf2Ip36eD6BCpxBF",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJVQ-AJYQOZ0gR1BjChczzOcM",
+        "plus_code": {
+            "compound_code": "9P2R+53 Dublin, Ireland",
+            "global_code": "9C5M9P2R+53"
+        },
+        "price_level": 2,
+        "rating": 4.6,
+        "reference": "ChIJVQ-AJYQOZ0gR1BjChczzOcM",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2080,
+        "vicinity": "9 Cathedral St, North City, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3421354,
+                "lng": -6.2507085
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34346702989273,
+                    "lng": -6.249273820107279
+                },
+                "southwest": {
+                    "lat": 53.34076737010728,
+                    "lng": -6.251973479892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Kennedy's Pub & Restaurant",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102439918811814853752\">A Google User</a>"
+                ],
+                "photo_reference": "AUc7tXWLE7FQlGYMStC64FMAKNI9wcylpaqtsEquW1QEvJy-wcmQIVsqrOaxPJJpqgIQ1qZGaSSjtgXsmIjz_v-j7k5pY4pgw61gTf0P3LblXMCGvDjysFzizCj00h2R44cloH33lwAVTS3-o4mcQ_WFCS6gnsXkn18OyCsAG0p8GhcBzzIA",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJQ1k55pAOZ0gRvHhymPkdAr8",
+        "plus_code": {
+            "compound_code": "8PRX+VP Dublin 2, Ireland",
+            "global_code": "9C5M8PRX+VP"
+        },
+        "price_level": 2,
+        "rating": 4.3,
+        "reference": "ChIJQ1k55pAOZ0gRvHhymPkdAr8",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1920,
+        "vicinity": "30-32 Westland Row, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3480222,
+                "lng": -6.2577973
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34929812989272,
+                    "lng": -6.256487120107278
+                },
+                "southwest": {
+                    "lat": 53.34659847010727,
+                    "lng": -6.259186779892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The James Connolly Pub",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3072,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100793377739197992232\">Chris Carless</a>"
+                ],
+                "photo_reference": "AUc7tXXprxZ2k0YFy85h53laMh1KzsYbZXg1L_kVLIfy46YYmaIWVCGlICU12LKIBYMWJvo3CJI9kbwc577gyBk-IdmfC53iCxlHH9APqUs5xTWRLKhKNhEptfP8slD2GI3ixRFqUDPIrCUwu87p0uE79QGoA84QHMB372etfStFZX_znsgb",
+                "width": 4080
+            }
+        ],
+        "place_id": "ChIJK-E4BIUOZ0gRd-kUnF2f98U",
+        "plus_code": {
+            "compound_code": "8PXR+6V Dublin, Ireland",
+            "global_code": "9C5M8PXR+6V"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJK-E4BIUOZ0gRd-kUnF2f98U",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1529,
+        "vicinity": "11 Eden Quay, North City, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3458882,
+                "lng": -6.259606799999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34720417989271,
+                    "lng": -6.258270520107279
+                },
+                "southwest": {
+                    "lat": 53.34450452010727,
+                    "lng": -6.260970179892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Palace Bar",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3072,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105061099394492403376\">Terpsichore</a>"
+                ],
+                "photo_reference": "AUc7tXWmIJRFJ0-boZWg95QTBGlgGmaqT_COqaIUU4kZ0hapD_faexI-a03Ij3PcggIRguLjLlYoJQAKWyErLSZSiFnslsizaNrED6pBlDeg34NBFtHphURY0GTH6foFhhjDpJSNbkjBLbeZqesCSXDxjEf1SO5hcEy2IaF7U_CsIDuMLMH5",
+                "width": 4080
+            }
+        ],
+        "place_id": "ChIJY8EByoQOZ0gRSMYJds1CQHU",
+        "plus_code": {
+            "compound_code": "8PWR+95 Dublin 2, Ireland",
+            "global_code": "9C5M8PWR+95"
+        },
+        "price_level": 2,
+        "rating": 4.6,
+        "reference": "ChIJY8EByoQOZ0gRSMYJds1CQHU",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 3757,
+        "vicinity": "21 Fleet St, Temple Bar, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3434618,
+                "lng": -6.259688799999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34465222989272,
+                    "lng": -6.257931720107279
+                },
+                "southwest": {
+                    "lat": 53.34195257010728,
+                    "lng": -6.260631379892723
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "O'Donoghue's Bar",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3456,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106318165808419840574\">Eli Bungay</a>"
+                ],
+                "photo_reference": "AUc7tXVdvB7dkQ4Ygn8U9dh7Q2q45wtdg7nF9Tqj4g7Oj_WZmNmIi39O2FF-n7k35nrg1C4o3-BEZH--e0G_qxH2P-WfaCtnE3DzZobNOoR_CgoHXPxwEvJxJvyGSXyaXSSIuKm-No3wCeRpGckBlHapShh6-Lvs8hpC3MUWK4bq6RqbiO5h",
+                "width": 4608
+            }
+        ],
+        "place_id": "ChIJBbfZcZsOZ0gRm1Q7jsO-MFk",
+        "plus_code": {
+            "compound_code": "8PVR+94 Dublin, Ireland",
+            "global_code": "9C5M8PVR+94"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJBbfZcZsOZ0gRm1Q7jsO-MFk",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1873,
+        "vicinity": "15 Suffolk St, Dublin Southside, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3438308,
+                "lng": -6.2638646
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34518182989272,
+                    "lng": -6.262451120107278
+                },
+                "southwest": {
+                    "lat": 53.34248217010727,
+                    "lng": -6.265150779892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Dame Tavern",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3000,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116864211971507410162\">Johannes Sowinski</a>"
+                ],
+                "photo_reference": "AUc7tXXI_jdv0JPWRO8-AwmO5x_e0tYPnY274C4aoegC84SpT2SqgpQZWo0CfnEap6AiYl9VTUIq3kxEErVTMkCzWBiHarjUhmPCSRDkVtEWFNf0pme7wdBvDdCLRwSWbw_LMtjV8fg9q3LeWQElQWYzSRGlveCjrklLh3Wcxso0xMQU4aMJ",
+                "width": 4000
+            }
+        ],
+        "place_id": "ChIJtaDa5pwOZ0gRGE1TdBU_Y64",
+        "plus_code": {
+            "compound_code": "8PVP+GF Dublin 2, Ireland",
+            "global_code": "9C5M8PVP+GF"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJtaDa5pwOZ0gRGE1TdBU_Y64",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 986,
+        "vicinity": "18 Dame Ct, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.34074769999999,
+                "lng": -6.2611905
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34214317989273,
+                    "lng": -6.259917870107278
+                },
+                "southwest": {
+                    "lat": 53.33944352010729,
+                    "lng": -6.262617529892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "NEARY\u2019S",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102345951271735911398\">Chris Green</a>"
+                ],
+                "photo_reference": "AUc7tXUVYPqsVjJpjmk9_rZXA2i7GU4pSsxZ-yIuX_zXs289XsKSKQjgj2eJOnBOLGIwiB7D5OrI3dmtqn2AEaQbHDMICJgEXft5prYsq2Z6rjwqlPPgQzlyTPnAewU6zb8hDA5bLKLZu5I0d5lrfy6us07FZNMpMaMeaee67bB9x5KSleyI",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJPUh5D5wOZ0gRVnkOMmDe_2M",
+        "plus_code": {
+            "compound_code": "8PRQ+7G Dublin, Ireland",
+            "global_code": "9C5M8PRQ+7G"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJPUh5D5wOZ0gRVnkOMmDe_2M",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1862,
+        "vicinity": "1 Chatham St, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3410652,
+                "lng": -6.2624578
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34239082989272,
+                    "lng": -6.261128770107278
+                },
+                "southwest": {
+                    "lat": 53.33969117010728,
+                    "lng": -6.263828429892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Bar Rua",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101121215786590176167\">A Google User</a>"
+                ],
+                "photo_reference": "AUc7tXWKlucMWedXNXiaxjgIe4SrUauUrHj9XYEXZIuc23t8stWuodUSB_xjDugMXNCDmE8Sws6jGfmsz_3600h56LTVQCcG0XS4eWnF0eJ5kHH_O-o8LHdGTEJSUgXdihfr-5ggfqehzSA3IvQDPVgTDPJbwW-ee_Ygm8O9zxKNPkHANH8k",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJQQW4PpwOZ0gRaKHnYqr5rac",
+        "plus_code": {
+            "compound_code": "8PRQ+C2 Dublin, Ireland",
+            "global_code": "9C5M8PRQ+C2"
+        },
+        "price_level": 2,
+        "rating": 4.3,
+        "reference": "ChIJQQW4PpwOZ0gRaKHnYqr5rac",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1948,
+        "vicinity": "32 Clarendon St, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3419569,
+                "lng": -6.2586996
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34326617989272,
+                    "lng": -6.257362770107277
+                },
+                "southwest": {
+                    "lat": 53.34056652010727,
+                    "lng": -6.260062429892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Duke Dublin",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106428895770363380671\">Roman.Ispas</a>"
+                ],
+                "photo_reference": "AUc7tXUo_r8iM7ITeOJjAnbc8qvofWh6HmFyi4DE6jw9ZrSp-XOZ_bqWmS9hQ8pN0LoZ2-pDMkjeQ8PbHWfr0pHltH09FSkv3BvQy8LW61uX8xkj0l8QmwvFeKfjwz_ACZRa5Fq8A-qiiLJbUU1IOozLqyBqeYhsj59wePXWgaU0yH3Vtyhi",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJOe_6vZsOZ0gRZivVj7LCvic",
+        "plus_code": {
+            "compound_code": "8PRR+QG Dublin 2, Ireland",
+            "global_code": "9C5M8PRR+QG"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJOe_6vZsOZ0gRZivVj7LCvic",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2523,
+        "vicinity": "9 Duke St, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3474772,
+                "lng": -6.2602807
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34875222989273,
+                    "lng": -6.258859270107278
+                },
+                "southwest": {
+                    "lat": 53.34605257010728,
+                    "lng": -6.261558929892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "O'Connell's",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 6944,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117893577235568276270\">Vero Mart\u00ednez</a>"
+                ],
+                "photo_reference": "AUc7tXXIGXKFGwBMq85RcHWvmYD28eGYX4bEwO_ICkyMuqCIZnt7tlEQQ-yeWvm-klkAo7Z4hRTsNj5a8BhJ6bjY_IVq4F6WvefM6AjGEglRWDlywaP_L3HIknTFnyCCfjFxGs-M_ceqikwJJPALKFqIbVvo96qhT_z6YHMCzquoUPUyz3AT",
+                "width": 9280
+            }
+        ],
+        "place_id": "ChIJdRf4koQOZ0gRs69VG2aIbb8",
+        "plus_code": {
+            "compound_code": "8PWQ+XV Dublin 1, Ireland",
+            "global_code": "9C5M8PWQ+XV"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJdRf4koQOZ0gRs69VG2aIbb8",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2159,
+        "vicinity": "30 Bachelors Walk, North City, Dublin 1"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3382083,
+                "lng": -6.2542292
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.33960572989272,
+                    "lng": -6.252864220107276
+                },
+                "southwest": {
+                    "lat": 53.33690607010728,
+                    "lng": -6.25556387989272
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "O'Donoghues Bar",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3468,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111682488455018853473\">Eva Vera</a>"
+                ],
+                "photo_reference": "AUc7tXWcBMJSxur1_0WQTC3dSAJ5ZHKe0Im0bu6NXT4akPU2oTcfGjsvCFu6knIcnrN86YQ8WoG6L3al9KwR_xas1fRQMXiTfja79BdQUQlg0xwrfQcLJY9KCIhKNCUtkKUzcspZgPsh3OONS4hjf6IPGweqM0nYSmTmAYAzRQbSvcCv3r_E",
+                "width": 4624
+            }
+        ],
+        "place_id": "ChIJw-DhupkOZ0gRzPibivFAces",
+        "plus_code": {
+            "compound_code": "8PQW+78 Dublin, Ireland",
+            "global_code": "9C5M8PQW+78"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJw-DhupkOZ0gRzPibivFAces",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 5335,
+        "vicinity": "15 Merrion Row, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3418795,
+                "lng": -6.24956
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34319047989272,
+                    "lng": -6.248240520107278
+                },
+                "southwest": {
+                    "lat": 53.34049082010728,
+                    "lng": -6.250940179892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Ginger Man",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 2736,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104431391625904724030\">Robert McCallum</a>"
+                ],
+                "photo_reference": "AUc7tXVmF1lHkokqeKQLUXjI6jiVnLIRAump4fFBi5uUNYGTEogpvUUat1xbPfsL_kVGEi3Xnmxk6KZNUb_a_GBfZYWqhXA7UWBAvDoNwEwoaCY3z_D_x9bd_KOpQZQlq4Fqa3fbx1lXvB0IfEAoXpQtzHXTAElSZGQ9SlyAtKBfYyysap-0",
+                "width": 3648
+            }
+        ],
+        "place_id": "ChIJHcGRIZEOZ0gR26u5wKDjMsM",
+        "plus_code": {
+            "compound_code": "8QR2+Q5 Dublin 2, Ireland",
+            "global_code": "9C5M8QR2+Q5"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJHcGRIZEOZ0gR26u5wKDjMsM",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2936,
+        "vicinity": "39-40 Fenian St, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.34737149999999,
+                "lng": -6.2685415
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34871692989272,
+                    "lng": -6.267190720107278
+                },
+                "southwest": {
+                    "lat": 53.34601727010728,
+                    "lng": -6.269890379892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Boar's Head",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 2268,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101099549509508039574\">Zach Wonderlie</a>"
+                ],
+                "photo_reference": "AUc7tXXHeKSjZ4qA2HMO5l7tYb1_mEfOunQ7ZiKCXSPEXwAi5ucLH0r0Q4sxzAlz3FzaJN5XmTVFUViera098Glthk0AB5Y0T8hd4qxdEEhvEDq4bX4PeVvrqE7wWNKY01lXGyNGxbtAfg4NUdL1Bvj3eDiOV4PMcB99aZoRRDGm0PJpuzwN",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJZXyAgYIOZ0gRf0Uk6sY7hOc",
+        "plus_code": {
+            "compound_code": "8PWJ+WH Dublin, Ireland",
+            "global_code": "9C5M8PWJ+WH"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJZXyAgYIOZ0gRf0Uk6sY7hOc",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1599,
+        "vicinity": "149 Capel St, North City, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3477628,
+                "lng": -6.2686698
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34892797989271,
+                    "lng": -6.267197320107277
+                },
+                "southwest": {
+                    "lat": 53.34622832010727,
+                    "lng": -6.269896979892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "McNeill's Pub",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114195018178295711747\">Luis Casero</a>"
+                ],
+                "photo_reference": "AUc7tXXW3ofzlYD09vr1aM7z8-4lEdJgjCPl-_WXslqf10bCTRZDXcDSvVowECDtMScHYio2O2JDR2Le24yVrDvgb0GW_ntbGipWTfHH1AJslFY8kaTTfAx_7j_GNKoABu5slazmBLJHs3lcYmbkvXxh8qMzU6-WVt_z-s8NTrSuuxJgRMcg",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJs8XZf4IOZ0gR3o1S_7PIVdI",
+        "plus_code": {
+            "compound_code": "8PXJ+4G Dublin, Ireland",
+            "global_code": "9C5M8PXJ+4G"
+        },
+        "price_level": 1,
+        "rating": 4.7,
+        "reference": "ChIJs8XZf4IOZ0gR3o1S_7PIVdI",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 868,
+        "vicinity": "140 Capel St, North City, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3396291,
+                "lng": -6.265667499999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34095577989272,
+                    "lng": -6.264324170107279
+                },
+                "southwest": {
+                    "lat": 53.33825612010727,
+                    "lng": -6.267023829892723
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Swan Bar",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 2268,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116464371282267832605\">Bruno Leonardo Martellotta</a>"
+                ],
+                "photo_reference": "AUc7tXWZpEYkCiiEVZLP7T-UJ5wYykrTAqVpxJLSgEsZDKNRe4XghjhoCwbHPVSJYGK3DvyVhCGAbEHYBuxICgtNZ9PvmG5xSXUMvmPN83nRkClVRttdtH8L2Az1wLQeOufOO0pORnV0h_rG5MIzszMpJmj-s4Pfutd06zUG1Q3lwxpfwDSw",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJ0fTMC54OZ0gRf81MLNpo6rM",
+        "plus_code": {
+            "compound_code": "8PQM+VP Dublin, Ireland",
+            "global_code": "9C5M8PQM+VP"
+        },
+        "price_level": 1,
+        "rating": 4.5,
+        "reference": "ChIJ0fTMC54OZ0gRf81MLNpo6rM",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1241,
+        "vicinity": "58 York St, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.33852659999999,
+                "lng": -6.2513
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.33983967989272,
+                    "lng": -6.249998670107278
+                },
+                "southwest": {
+                    "lat": 53.33714002010727,
+                    "lng": -6.252698329892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "McGrattans Pub",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 680,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118125855582918684178\">McGrattans Caf\u00e9 Bar</a>"
+                ],
+                "photo_reference": "AUc7tXXlJ6G7fkckB9Sfhf6DZokoQWIuHYJrnsfFL7sReQLEpntWr3RnEVw62h6RlrADvuxTuPS39LpzaCCkZjSEvFv6ohikc7hmVumA1DfpbBtOZiwd3_3qEKteEfaeFnV5nTNc1bB2PCP8FRkGv9dodEL72787DH1Xw7yJCChT_keNLsIN",
+                "width": 960
+            }
+        ],
+        "place_id": "ChIJa_8FcpcOZ0gRzPt8JiODYhc",
+        "plus_code": {
+            "compound_code": "8PQX+CF Dublin 2, Ireland",
+            "global_code": "9C5M8PQX+CF"
+        },
+        "price_level": 2,
+        "rating": 4.1,
+        "reference": "ChIJa_8FcpcOZ0gRzPt8JiODYhc",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1417,
+        "vicinity": "76 Fitzwilliam Ln, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3418441,
+                "lng": -6.2652056
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34314577989271,
+                    "lng": -6.263822070107278
+                },
+                "southwest": {
+                    "lat": 53.34044612010727,
+                    "lng": -6.266521729892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Long Hall",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 2832,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116150741856697651269\">The Long Hall</a>"
+                ],
+                "photo_reference": "AUc7tXV_h7e0YKHRiMQQTmrIbiG2190RWBKjAj32DnKw6u_6m0_Za5viZVyaHagQrZQZncaSD3lsLlQzJrB8jrzhIlSXDEKmijwoZuO8JTH2hyUYLSbV73mtMKDLu96hflSjGr5g-cUTnhc1PZ6fIypn6wl-ca92vv6G-SOyZdq4S6sCBwdY",
+                "width": 4256
+            }
+        ],
+        "place_id": "ChIJHRhbu50OZ0gRGT1aPIaL698",
+        "plus_code": {
+            "compound_code": "8PRM+PW Dublin 2, Ireland",
+            "global_code": "9C5M8PRM+PW"
+        },
+        "price_level": 2,
+        "rating": 4.6,
+        "reference": "ChIJHRhbu50OZ0gRGT1aPIaL698",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 3593,
+        "vicinity": "51 South Great George's Street, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.34410829999999,
+                "lng": -6.261492
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34553627989271,
+                    "lng": -6.260186070107277
+                },
+                "southwest": {
+                    "lat": 53.34283662010727,
+                    "lng": -6.262885729892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+        "name": "The Bank on College Green",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100603448604637796502\">James Royal</a>"
+                ],
+                "photo_reference": "AUc7tXV_NpldzkRO8y8P6Z_A_iW2HBUajqXP1SWkQYjg3LVeYPa8v04ZM-Kk2lbgOCwIC5Q-2MjAlweql22IilzGaXDo1DswkY5iKj9sVmvUPdtJVE5s-8CMGaplL1IjfML98quehL4_radFK5JUUsysOt9SX_GlfOxbU8LmPDCtrTKzjeGE",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJb01BopwOZ0gRGK_aIlZ-Q4g",
+        "plus_code": {
+            "compound_code": "8PVQ+JC Dublin 2, Ireland",
+            "global_code": "9C5M8PVQ+JC"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJb01BopwOZ0gRGK_aIlZ-Q4g",
+        "scope": "GOOGLE",
+        "types": [
+            "tourist_attraction",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 5611,
+        "vicinity": "20-22 College Green, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3632484,
+                "lng": -6.2356674
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.36459822989272,
+                    "lng": -6.234317570107278
+                },
+                "southwest": {
+                    "lat": 53.36189857010728,
+                    "lng": -6.237017229892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Strand House - Fairview",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114107276056571928352\">Srivatsa .M.V</a>"
+                ],
+                "photo_reference": "AUc7tXXcXEtJUJR4y-g5q5vw0WLZl-t2LyItyJHWVhprjHPyEHrrunemV6rnM89YYDBVkMUwh8BF1LRBqED12sUJYWxV5tP9JULDVrh3IKpEEq-k6n7327YuMisTIEpo6SMigf7eR6oU8y5x9FlqSEf3O_5Hdf606kGQ-vM9SYymdOppZQhh",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJh1vc5lsOZ0gROeYrX62FUMI",
+        "plus_code": {
+            "compound_code": "9Q77+7P Dublin, Ireland",
+            "global_code": "9C5M9Q77+7P"
+        },
+        "price_level": 2,
+        "rating": 4.3,
+        "reference": "ChIJh1vc5lsOZ0gROeYrX62FUMI",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1253,
+        "vicinity": "12 Fairview, Dublin 3"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3483313,
+                "lng": -6.2559502
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34960952989272,
+                    "lng": -6.254575520107277
+                },
+                "southwest": {
+                    "lat": 53.34690987010728,
+                    "lng": -6.257275179892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Wiley Fox",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 1084,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108163825437627010642\">The Sound House</a>"
+                ],
+                "photo_reference": "AUc7tXXcZ_xLPHrG080brbm4LEfnueFymoXkv0HT6Bp8H0QauvUBUC8RX3ppaNAlOpIf1iCM6LaOS54i4aRw81ugPrcequAwUHZltuy-Np3kbLERTEdOcdMtC_TK_UqJqP_LCgRp4JtV9DvePJc4B39n9vU1lwD75GQLmCulnLDWbKS_xd2D",
+                "width": 1084
+            }
+        ],
+        "place_id": "ChIJBdu4d4UOZ0gRaOuk1A8nm50",
+        "plus_code": {
+            "compound_code": "8PXV+8J Dublin 1, Ireland",
+            "global_code": "9C5M8PXV+8J"
+        },
+        "price_level": 2,
+        "rating": 4.3,
+        "reference": "ChIJBdu4d4UOZ0gRaOuk1A8nm50",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1162,
+        "vicinity": "28 Eden Quay, North City, Dublin 1"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3439551,
+                "lng": -6.2699449
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34532382989272,
+                    "lng": -6.268651970107278
+                },
+                "southwest": {
+                    "lat": 53.34262417010728,
+                    "lng": -6.271351629892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Darkey Kelly's",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3464,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111954152650812021575\">Franck Michaud</a>"
+                ],
+                "photo_reference": "AUc7tXVG-tdai1mVCbPN3FWGmtc583SuuhvGYPZHKYLVLf5Fo2jfQ-PGAmHNu7fczLZvotuYa1OyHiZItbSKVWqmppRViA-0unUXJsO7ltCEdj1HCD95bw2_NbK-tei44MZ8TqqrE7DK9yXIaB0YfxRP1g9BV1N04QvK2S8dgECpDcNVbFnx",
+                "width": 4618
+            }
+        ],
+        "place_id": "ChIJFYr86CcMZ0gRV0f-OELulf8",
+        "plus_code": {
+            "compound_code": "8PVJ+H2 Dublin 8, Ireland",
+            "global_code": "9C5M8PVJ+H2"
+        },
+        "price_level": 2,
+        "rating": 4.7,
+        "reference": "ChIJFYr86CcMZ0gRV0f-OELulf8",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 3884,
+        "vicinity": "19 Fishamble St, Christchurch Pl, Temple Bar, Dublin 8"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3484027,
+                "lng": -6.2603274
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34971127989272,
+                    "lng": -6.258968120107278
+                },
+                "southwest": {
+                    "lat": 53.34701162010727,
+                    "lng": -6.261667779892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Oval Bar Dublin",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3072,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117594454141174235074\">Luuk Nieuwenkamp</a>"
+                ],
+                "photo_reference": "AUc7tXVMgAWc977joL3nzYBBfGc7x2TP2D62Q4eTagNclkEy8HXyw4jodneQVc8Gr7BpQmcGgq2STExm2aMCGe9xWD1WHY0yQtZTnUSd81ErZK4AMY8b0K8Q7nFion6vjfkUSmdRm8jTEsBQZPwqz5bRF7FAjC98NKL8Ay7oapiL9_5AMoKm",
+                "width": 4080
+            }
+        ],
+        "place_id": "ChIJW--8YIQOZ0gRi_8uV6kItkI",
+        "plus_code": {
+            "compound_code": "8PXQ+9V Dublin 1, Ireland",
+            "global_code": "9C5M8PXQ+9V"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJW--8YIQOZ0gRi_8uV6kItkI",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2279,
+        "vicinity": "78 Middle Abbey St, North City, Dublin 1"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3469777,
+                "lng": -6.2581381
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34839087989272,
+                    "lng": -6.256883270107278
+                },
+                "southwest": {
+                    "lat": 53.34569122010728,
+                    "lng": -6.259582929892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "J.R. MAHON'S",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 4284,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118210524721166832883\">A Google User</a>"
+                ],
+                "photo_reference": "AUc7tXXLyXl_QyrtBrFSWPoH-1QZhCUObX7in2Bf5vZaCzCMi9W9aD1R4Xem2M5PIrd10hGXdMar7FS52aZv-Ru_aLYLyZyBw8HREJ2r8qFducTMysw5WqEZGfXx_ovZnPNG9ZRWhPN6Rx6zg-9BDR0RVDyT_-fog9riChg29AlgR25PK7CT",
+                "width": 5712
+            }
+        ],
+        "place_id": "ChIJVyv8H4UOZ0gREKGhgosrQy8",
+        "plus_code": {
+            "compound_code": "8PWR+QP Dublin 2, Ireland",
+            "global_code": "9C5M8PWR+QP"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJVyv8H4UOZ0gREKGhgosrQy8",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 4179,
+        "vicinity": "1-2, Burgh Quay, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3383445,
+                "lng": -6.2432203
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.33976117989273,
+                    "lng": -6.241806420107278
+                },
+                "southwest": {
+                    "lat": 53.33706152010728,
+                    "lng": -6.244506079892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "O'Connor's of Mount Street",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117014106476340183988\">Sophie Boissonneau</a>"
+                ],
+                "photo_reference": "AUc7tXXzAEiwRao9cW6jGRyl5v8yQZyixC2hzCSl95XwWUL1exEc2mke0in--N5ezhWztQA-mAJQelMkRL2q4jDAI_4gwGW2117rhxujor6lpHAMWk_GJVI522DFqJ4ULYpIdo5IjaQXwG6u6F_6mJijRadIMLe9d5x_EQ2PX4AbqmhuDXrM",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJ519VTJQOZ0gRywHdgjGR_KM",
+        "plus_code": {
+            "compound_code": "8QQ4+8P Dublin 2, Ireland",
+            "global_code": "9C5M8QQ4+8P"
+        },
+        "price_level": 2,
+        "rating": 4.3,
+        "reference": "ChIJ519VTJQOZ0gRywHdgjGR_KM",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 710,
+        "vicinity": "32 Mount Street Lower, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3389203,
+                "lng": -6.2723647
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34023332989272,
+                    "lng": -6.271038870107279
+                },
+                "southwest": {
+                    "lat": 53.33753367010728,
+                    "lng": -6.273738529892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Fourth Corner",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3000,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112904549609428058621\">Fabio Cravarezza</a>"
+                ],
+                "photo_reference": "AUc7tXXkwPuTdGjWrGvCCXpu8bE5SnmAuXxqYVarzmViM2g60dHFCV3Lr2PqJYZEK63DOv5KEt1OASPW-svCPMeX_bB2d4jInAPNOyhtTMYRwWR8vfRO_spX7f3v_9cuPEJDRT2rUXJcjkeRom0RUoUyssSFccuF789-Et2uq-QhRWF5J5OO",
+                "width": 4000
+            }
+        ],
+        "place_id": "ChIJPW6rSSEMZ0gRofTOkmhxBqA",
+        "plus_code": {
+            "compound_code": "8PQH+H3 Dublin 8, Ireland",
+            "global_code": "9C5M8PQH+H3"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJPW6rSSEMZ0gRofTOkmhxBqA",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 769,
+        "vicinity": "Patrick Street Patrick St, Dublin 8"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3482748,
+                "lng": -6.2688625
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34967592989272,
+                    "lng": -6.267802270107278
+                },
+                "southwest": {
+                    "lat": 53.34697627010728,
+                    "lng": -6.270501929892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Slattery's",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/109006775239441851527\">A Google User</a>"
+                ],
+                "photo_reference": "AUc7tXUl_CUG29XSnAOyBupyegBGn_mFlKQLYrYi-9S9ZuEuArwTlTiy5Z3aZAOhrUV5Ycrfvop1pROay5xor90zu_JukVtJR05FlW4t5uKWarZWHNlmuSHAj2jo5bdksDfcRtfhEllbS5_XVf3OnRK_lvqSDU2IlYGNfmTu2sYZ8LZWf0Pt",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJE42FqWAMZ0gRNgtpxlLd7wQ",
+        "plus_code": {
+            "compound_code": "8PXJ+8F Dublin 1, Ireland",
+            "global_code": "9C5M8PXJ+8F"
+        },
+        "price_level": 2,
+        "rating": 4.3,
+        "reference": "ChIJE42FqWAMZ0gRNgtpxlLd7wQ",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 3123,
+        "vicinity": "129 Capel St, North City, Dublin 1"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3370159,
+                "lng": -6.2340912
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.33832382989272,
+                    "lng": -6.232819020107277
+                },
+                "southwest": {
+                    "lat": 53.33562417010727,
+                    "lng": -6.235518679892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+        "name": "The Chophouse",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 1121,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100244814187013185892\">The Chop House</a>"
+                ],
+                "photo_reference": "AUc7tXVI3XG9SSR9zheLVZ4bDkpnxrMVqC8x4oPhd1N0VEqSZ5ocnYlAKWeB8VMRWhM2AYWvP4OqhiNQj6FV2hTDPN4aWzRv15YWRiohHkrBWe_Y8P1Lsqwts20s5qNpFM49MxD4CRTiiIfKQCs2eKFJn-DIGKUQQ_Sv5JGCrFEtaxWqWq6L",
+                "width": 1500
+            }
+        ],
+        "place_id": "ChIJa9pqZOoOZ0gRoHOTop8_ano",
+        "plus_code": {
+            "compound_code": "8QP8+R9 Dublin 4, Ireland",
+            "global_code": "9C5M8QP8+R9"
+        },
+        "price_level": 3,
+        "rating": 4.5,
+        "reference": "ChIJa9pqZOoOZ0gRoHOTop8_ano",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1361,
+        "vicinity": "2 Shelbourne Rd, Dublin 4"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3490719,
+                "lng": -6.2578533
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.35042412989273,
+                    "lng": -6.256495620107277
+                },
+                "southwest": {
+                    "lat": 53.34772447010728,
+                    "lng": -6.259195279892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Pipers Corner",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 2736,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106772353697475547972\">A Google User</a>"
+                ],
+                "photo_reference": "AUc7tXWvZqxRh0Id3JowJoXFus-xkvAW8YqV_cggmCXiUI8K0GkO0XjI_5pjydN7WOobP4VxJyS298CfYqPtgYUvOVvOIi-vOv7SeoMjsJujtRqoFSC3GngWtAjyi06_GxLZM6mzB2kXi2E_eU8aTl7gyLE8qhdWwuzGdXNVFZm9u2cTUG8I",
+                "width": 3648
+            }
+        ],
+        "place_id": "ChIJAVAxsIUOZ0gRspg3Q_h-ZlQ",
+        "plus_code": {
+            "compound_code": "8PXR+JR Dublin, Ireland",
+            "global_code": "9C5M8PXR+JR"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJAVAxsIUOZ0gRspg3Q_h-ZlQ",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 969,
+        "vicinity": "105-106 Marlborough St, North City, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3510876,
+                "lng": -6.2822982
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.35237132989273,
+                    "lng": -6.281043570107278
+                },
+                "southwest": {
+                    "lat": 53.34967167010728,
+                    "lng": -6.283743229892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Tommy O\u2019Gara\u2019s",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 1816,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100361500838068428460\">John Walsh</a>"
+                ],
+                "photo_reference": "AUc7tXXz4H89k-WNLShwR8cJsOzSa2uXiMcgz2iwIZBYtXCmmayL4uGjqfOah5zlgZ1gYdmdz9FMaU1ieCCVVuUPCY-1esLosatgnIiUXD8ccFO4jsukx8eWNo9WM1msNfBLN_xdMqc5bfhyUdsVEcUWSiq7Teri8itPDGX5B_jSY-bwt6BM",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJbcNH6y0MZ0gRreZHLJI084M",
+        "plus_code": {
+            "compound_code": "9P29+C3 Dublin 7, Ireland",
+            "global_code": "9C5M9P29+C3"
+        },
+        "price_level": 1,
+        "rating": 4.5,
+        "reference": "ChIJbcNH6y0MZ0gRreZHLJI084M",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 464,
+        "vicinity": "19 Stoneybatter, Dublin 7"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3609119,
+                "lng": -6.2725174
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.36224517989271,
+                    "lng": -6.271256420107277
+                },
+                "southwest": {
+                    "lat": 53.35954552010727,
+                    "lng": -6.273956079892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+        "name": "Doyles Corner",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3679,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110633928655173245373\">A Google User</a>"
+                ],
+                "photo_reference": "AUc7tXW1Uv6ho1rfpc9-zhvIvWBgqdYtewTTClwL4R_MJaPGwxejkzu-Ipss7wxi16SmqQM60kDIh6IEXzmEHebs1_6yfp68QaUuEDuIQMy6pOUQOPEpfs8s8GnuhC5s6Z5nUFE5KUplXvxg91Pf7NOW6e4kevGD6BQAfF6RW-RZZr0g_y7q",
+                "width": 5518
+            }
+        ],
+        "place_id": "ChIJ6ddR_NUNZ0gR8iLk5c5TSdk",
+        "plus_code": {
+            "compound_code": "9P6G+9X Dublin 7, Ireland",
+            "global_code": "9C5M9P6G+9X"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJ6ddR_NUNZ0gR8iLk5c5TSdk",
+        "scope": "GOOGLE",
+        "types": [
+            "restaurant",
+            "bar",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1074,
+        "vicinity": "160/161 Phibsborough Rd, Phibsborough, Dublin 7"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.34116390000001,
+                "lng": -6.2594277
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34248347989272,
+                    "lng": -6.258095520107276
+                },
+                "southwest": {
+                    "lat": 53.33978382010727,
+                    "lng": -6.26079517989272
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Kehoes Pub",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3036,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102090920443389343202\">Patrick Janicki</a>"
+                ],
+                "photo_reference": "AUc7tXUtSUNnQZuL3sqGT5fn4ZiS2_Dfe-qb6VQRUWBDKygdjqavEeXVJJFEYE7yf8zrml-poauZ-fqCCEcIfCcVT8zIJFcwocdW9NxYtZCmkP3Zezbzu7CNkw84LiEl43sP2zFo6jBmMfzt2dmz9x7bJHpvpzLGvff2xT3lQnPyR_ZZyi38",
+                "width": 4048
+            }
+        ],
+        "place_id": "ChIJ8wUZ8psOZ0gRY_Z66tz8_OE",
+        "plus_code": {
+            "compound_code": "8PRR+F6 Dublin, Ireland",
+            "global_code": "9C5M8PRR+F6"
+        },
+        "price_level": 2,
+        "rating": 4.5,
+        "reference": "ChIJ8wUZ8psOZ0gRY_Z66tz8_OE",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 3755,
+        "vicinity": "9 Anne St S, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3571801,
+                "lng": -6.2639138
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.35854922989272,
+                    "lng": -6.262628270107278
+                },
+                "southwest": {
+                    "lat": 53.35584957010727,
+                    "lng": -6.265327929892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Bleecker Street Bar",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 2969,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111373811023994481563\">Vicente Mart\u00ednez</a>"
+                ],
+                "photo_reference": "AUc7tXVAwxXrhZSf4n4DTmb_RLQ9sHYPQ7-XcYNu1AgyEfFk6kYhmWt7unHVg8vO6YkXceChh106SGgD4GaUCTuBiTTrcci0W2ptP1yb0r8ABfIy2z6Dnh9Rx9_Gr7ns8ZFS_sTc9kKqmIMh8SocjVEBvRorCKAuEuA8S_JPa5K2QRIWMy1f",
+                "width": 3959
+            }
+        ],
+        "place_id": "ChIJkQxwCn4OZ0gRtI4y2o08FuA",
+        "plus_code": {
+            "compound_code": "9P4P+VC Dublin 1, Ireland",
+            "global_code": "9C5M9P4P+VC"
+        },
+        "price_level": 2,
+        "rating": 4.6,
+        "reference": "ChIJkQxwCn4OZ0gRtI4y2o08FuA",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "cafe",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 822,
+        "vicinity": "68 Dorset Street Upper, Rotunda, Dublin 1"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3497948,
+                "lng": -6.2690908
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.35096887989273,
+                    "lng": -6.267897970107277
+                },
+                "southwest": {
+                    "lat": 53.34826922010728,
+                    "lng": -6.270597629892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Black Sheep",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3456,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106171231663564151298\">Xiu Shi</a>"
+                ],
+                "photo_reference": "AUc7tXV0lKaHREmpEKZvyXcd19IahbPU8yM2cGCSaYLwSoJyp7AAa6CRnx6CBP0S2TdKu5NHTFIUd15Tp5AZ0t95dL_c84Bi1mIqon6halGp0rWK8JRQKUtK_c0-U_-eB5PPZAiQvPoN8bcTvnQoeCNyLC9zknQHoT9unW9ITOkb9Yb6Za3Q",
+                "width": 4608
+            }
+        ],
+        "place_id": "ChIJk1IUCIIOZ0gRL4X5sjOjIFQ",
+        "plus_code": {
+            "compound_code": "8PXJ+W9 Dublin, Ireland",
+            "global_code": "9C5M8PXJ+W9"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJk1IUCIIOZ0gRL4X5sjOjIFQ",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 3070,
+        "vicinity": "61 Capel St, Rotunda, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3441072,
+                "lng": -6.263404299999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34549162989273,
+                    "lng": -6.262057470107278
+                },
+                "southwest": {
+                    "lat": 53.34279197010729,
+                    "lng": -6.264757129892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Mulligan and Haines",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 9000,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111476811624085063933\">Sascha Krause</a>"
+                ],
+                "photo_reference": "AUc7tXWvaGz2UJtzwgHzTXIHuqoySaz6TvT0GnPH7xw1ceef0ZFb3nqPtlim1YfyE8EQEoJWD_iTxQRci6ib2z7FOpDL1vN5vEZu5mtuN-iCDVXIEG01C3F-Jb77fkpju7TVfzFy1k5O86Qx3IUbiAm-AcPxVCzXKq-V9Yo3jAqN5WaqcVF_",
+                "width": 12000
+            }
+        ],
+        "place_id": "ChIJUZL1wpwOZ0gRZfvY9Z2tk8k",
+        "plus_code": {
+            "compound_code": "8PVP+JJ Dublin 2, Ireland",
+            "global_code": "9C5M8PVP+JJ"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJUZL1wpwOZ0gRZfvY9Z2tk8k",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1423,
+        "vicinity": "32 Dame St, Dublin 2"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.344281,
+                "lng": -6.2653728
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.34557672989272,
+                    "lng": -6.263986970107278
+                },
+                "southwest": {
+                    "lat": 53.34287707010727,
+                    "lng": -6.266686629892722
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "Peadar Kearney's Pub",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 2736,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116393662122294947960\">A Google User</a>"
+                ],
+                "photo_reference": "AUc7tXU-vrx1EEJE9H0cMRT6PBEtSneHfYiDMtyZAUz_LP1rUMbf6X0xPsU5MqVR1QB_GIqb3gpcijXkKYQE1hihgsVrhAAecz355ZEA8y6YzlNTZI9eAUGHbWiyFO1yN0fV2Bmr0PAurfZsVEhJ_sNWM_G2UCxacC4g9NV2kJTqAOnHZTQe",
+                "width": 3648
+            }
+        ],
+        "place_id": "ChIJ-4eyJJ0OZ0gRxyrV70Zq95A",
+        "plus_code": {
+            "compound_code": "8PVM+PV Dublin, Ireland",
+            "global_code": "9C5M8PVM+PV"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJ-4eyJJ0OZ0gRxyrV70Zq95A",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1282,
+        "vicinity": "64 Dame St, Temple Bar, Dublin"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 53.3590044,
+                "lng": -6.2616226
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 53.36031137989272,
+                    "lng": -6.260292870107278
+                },
+                "southwest": {
+                    "lat": 53.35761172010727,
+                    "lng": -6.262992529892721
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "icon_background_color": "#FF9E67",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+        "name": "The Auld Triangle",
+        "opening_hours": {
+            "open_now": false
+        },
+        "photos": [
+            {
+                "height": 3024,
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105235154650696249025\">David Herrero</a>"
+                ],
+                "photo_reference": "AUc7tXXONE7TJNj4n8mX0bfMKUvwovPdusTuOY0ePeUaldG1aFCqEZiFp7Mgo-335nd6wEtIm3nO9OnxlT6zux90GCbTGCNQ7P279z3nNs35EK3D4NXIPT2BH3M3G7ymLXuvscMiWDP2BBgmvoioXwnK7r0UyyQt0nHXl8c4DrlchhNb0dp2",
+                "width": 4032
+            }
+        ],
+        "place_id": "ChIJ25SkUnwOZ0gRxP6RvSySEdA",
+        "plus_code": {
+            "compound_code": "9P5Q+J9 Dublin, Ireland",
+            "global_code": "9C5M9P5Q+J9"
+        },
+        "price_level": 1,
+        "rating": 4.3,
+        "reference": "ChIJ25SkUnwOZ0gRxP6RvSySEdA",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 334,
+        "vicinity": "28 Dorset Street Lower, Mountjoy, Dublin"
+    }
+]

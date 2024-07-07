@@ -10,7 +10,7 @@ import { containsObject } from "/usr/local/web/static/utils.js";
 mapboxgl.accessToken = MAPBOX_TOKEN;
 
 // appplication state
-var currentLocation = "Amsterdam";
+var currentLocation = "Dublin";
 var currentMarkers = [];
 var selectedDistance = 1.5;
 var selectedMarkers = 3;

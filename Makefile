@@ -3,3 +3,6 @@ build:
 
 run:
 	go run cmd/api/main.go
+
+tune:
+	go run tuning/parameter_tuning.go

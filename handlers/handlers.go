@@ -15,7 +15,7 @@ import (
 	"github.com/jamesk14022/barcrawler/utils"
 )
 
-const cacheDir = "usr/local/web/static/data/"
+var cacheDir = os.Getenv("CACHE_DIR")
 
 // check which directories exist in given directory
 func checkCachedLocations() []string {
@@ -31,7 +31,7 @@ func checkCachedLocations() []string {
 	return names
 }
 
-func loadLocationInformation(location string) ([]Location, DistanceMatrix, RoutesMatrix, error) {
+func LoadLocationInformation(location string) ([]Location, DistanceMatrix, RoutesMatrix, error) {
 	var cachedLocations = checkCachedLocations()
 	if !utils.Contains(cachedLocations, location) {
 		fmt.Println("Location not found")
@@ -64,7 +64,7 @@ func loadLocationInformation(location string) ([]Location, DistanceMatrix, Route
 	}
 }
 
-func checkOverlap(path []int, R RoutesMatrix) bool {
+func CheckOverlap(path []int, R RoutesMatrix) bool {
 	localPoints := make(map[[2]float64]bool)
 	for i := 0; i < len(path)-1; i++ {
 		for _, point := range R[path[i]][path[i+1]].Geometry.Coordinates[1:] {
@@ -78,7 +78,7 @@ func checkOverlap(path []int, R RoutesMatrix) bool {
 	return false
 }
 
-func adjacentLengthMeetConstraint(path []int, D DistanceMatrix) bool {
+func AdjacentLengthMeetConstraint(path []int, D DistanceMatrix) bool {
 	for i := 0; i < len(path)-1; i++ {
 		points := make([]int, len(path))
 		copy(points, path)
@@ -94,10 +94,8 @@ func adjacentLengthMeetConstraint(path []int, D DistanceMatrix) bool {
 	return true
 }
 
-func equalLengthMeetConstraint(path []int, D DistanceMatrix, targetDist float64) bool {
-	margin := (targetDist / float64(len(path)-1)) * 0.8
-	// fmt.Println("Margin:", margin)
-	// fmt.Println("Gap:", D[path[0]][path[len(path)-1]])
+func EqualLengthMeetConstraint(path []int, D DistanceMatrix, targetDist float64, alpha float64) bool {
+	margin := (targetDist / float64(len(path)-1)) * alpha
 	for i := 0; i < len(path)-1; i++ {
 		if D[path[i]][path[i+1]] > margin {
 			return false
@@ -106,7 +104,7 @@ func equalLengthMeetConstraint(path []int, D DistanceMatrix, targetDist float64)
 	return true
 }
 
-func getEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatrix) [][]int {
+func GetEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatrix, beta float64) [][]int {
 	var eligiblePaths [][]int
 
 	var dfs func(node int, path []int, currentDist float64, visited []bool)
@@ -115,7 +113,7 @@ func getEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatri
 			return
 		}
 
-		if len(path) == targetN && currentDist > min(targetDist-(targetDist*0.5), 1) && currentDist < min(targetDist+(targetDist*0.5), 1) {
+		if len(path) == targetN && currentDist > min(targetDist-(targetDist*beta), 1) && currentDist < min(targetDist+(targetDist*beta), 1) {
 			eligiblePaths = append(eligiblePaths, path)
 			return
 		}
@@ -158,25 +156,25 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 	}
 	location := strings.ToLower((r.URL.Query().Get("location")))
 
-	enrichedData, D, R, err := loadLocationInformation(location)
+	enrichedData, D, R, err := LoadLocationInformation(location)
 	if err != nil {
 		fmt.Println("Error loading location information", err)
 		json.NewEncoder(w).Encode(emptyResponse)
 	}
 
 	size := len(enrichedData)
-	eligiblePaths := getEligiblePaths(size, targetN, targetDist, D)
+	eligiblePaths := GetEligiblePaths(size, targetN, targetDist, D, 0.7)
 
-	eligiblePaths = filterPaths(eligiblePaths, func(e []int) bool {
-		return !checkOverlap(e, R)
+	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
+		return !CheckOverlap(e, R)
 	})
 
-	eligiblePaths = filterPaths(eligiblePaths, func(e []int) bool {
-		return adjacentLengthMeetConstraint(e, D)
+	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
+		return AdjacentLengthMeetConstraint(e, D)
 	})
 
-	eligiblePaths = filterPaths(eligiblePaths, func(e []int) bool {
-		return equalLengthMeetConstraint(e, D, targetDist)
+	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
+		return EqualLengthMeetConstraint(e, D, targetDist, 0.8)
 	})
 
 	w.Header().Set("Content-Type", "application/json")
@@ -203,7 +201,7 @@ func PostCrawl(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("Error parsing markers")
 	}
 
-	enrichedData, _, _, err := loadLocationInformation(location)
+	enrichedData, _, _, err := LoadLocationInformation(location)
 	var emptyResponse = make([]Location, 0)
 	if err != nil {
 		fmt.Println("Error loading location information")
@@ -226,7 +224,7 @@ func PostCrawl(w http.ResponseWriter, r *http.Request) {
 
 func GetAllCityPoints(w http.ResponseWriter, r *http.Request) {
 	location := strings.ToLower((r.URL.Query().Get("location")))
-	enrichedData, _, _, err := loadLocationInformation(location)
+	enrichedData, _, _, err := LoadLocationInformation(location)
 	if err != nil {
 		fmt.Println("Error loading location information", err)
 	}
@@ -237,7 +235,7 @@ func GetAllCityPoints(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(enrichedData)
 }
 
-func filterPaths(paths [][]int, condition func([]int) bool) [][]int {
+func FilterPaths(paths [][]int, condition func([]int) bool) [][]int {
 	var result [][]int
 	for _, path := range paths {
 		if condition(path) {
