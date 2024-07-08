@@ -18,8 +18,8 @@ import (
 var cacheDir = os.Getenv("CACHE_DIR")
 
 const distanceThreshold = 1
-const Mu = 1.7
-const Alpha = 1.9
+const Mu = 1.1
+const Alpha = 1.1
 
 // check which directories exist in given directory
 func checkCachedLocations() []string {
@@ -98,32 +98,74 @@ func AdjacentLengthMeetConstraint(path []int, D DistanceMatrix, mu float64) bool
 	return true
 }
 
-func EqualLengthMeetConstraint(path []int, D DistanceMatrix, alpha float64) bool {
-	margin := (distanceThreshold / float64(len(path)-1)) * alpha
+func EqualLengthMeetConstraint(path []int, pathDistance float64, D DistanceMatrix, alpha float64) bool {
+	margin := (pathDistance / float64(len(path)-1)) * alpha
 	for i := 0; i < len(path)-1; i++ {
 		if D[path[i]][path[i+1]] > margin {
+			return false
+		}
+		if D[path[i]][path[i+1]] < 0.15 {
 			return false
 		}
 	}
 	return true
 }
 
-func GetEligiblePaths(size int, targetN int, D DistanceMatrix) [][]int {
+// func GetEligiblePaths(size int, targetN int, D DistanceMatrix) ([][]int, []float64) {
+// 	var eligiblePaths [][]int
+// 	var distances []float64
+
+// 	var dfs func(node int, path []int, currentDist float64, visited []bool)
+// 	dfs = func(node int, path []int, currentDist float64, visited []bool) {
+// 		if (len(path) == targetN) && (currentDist < distanceThreshold) {
+// 			fmt.Println("Path:", path, "Dist:", currentDist)
+// 			eligiblePaths = append(eligiblePaths, path)
+// 			distances = append(distances, currentDist)
+// 			return
+// 		}
+// 		if len(path) >= targetN {
+// 			return
+// 		}
+// 		for i := 0; i < size; i++ {
+// 			if i != node && !visited[i] {
+// 				visited[i] = true
+// 				newDist := currentDist + D[node][i]
+// 				dfs(i, append(path, i), newDist, visited)
+// 				visited[i] = false
+// 			}
+// 		}
+// 	}
+
+// 	for i := 0; i < size; i++ {
+// 		visited := make([]bool, size)
+// 		visited[i] = true
+// 		dfs(i, []int{i}, 0, visited)
+// 	}
+
+// 	return eligiblePaths, distances
+// }
+
+func GetEligiblePaths(size int, targetN int, D DistanceMatrix) ([][]int, []float64) {
 	var eligiblePaths [][]int
+	var distances []float64
 
 	var dfs func(node int, path []int, currentDist float64, visited []bool)
 	dfs = func(node int, path []int, currentDist float64, visited []bool) {
-		if len(path) > targetN {
-			return
-		}
-		if len(path) == targetN && currentDist < distanceThreshold {
-			eligiblePaths = append(eligiblePaths, path)
+		if len(path) == targetN {
+			if currentDist < distanceThreshold {
+				// Create a copy of the path slice
+				pathCopy := make([]int, len(path))
+				copy(pathCopy, path)
+				eligiblePaths = append(eligiblePaths, pathCopy)
+				distances = append(distances, currentDist)
+			}
 			return
 		}
 		for i := 0; i < size; i++ {
 			if i != node && !visited[i] {
 				visited[i] = true
-				dfs(i, append(path, i), currentDist+D[node][i], visited)
+				newDist := currentDist + D[node][i]
+				dfs(i, append(path, i), newDist, visited)
 				visited[i] = false
 			}
 		}
@@ -135,7 +177,7 @@ func GetEligiblePaths(size int, targetN int, D DistanceMatrix) [][]int {
 		dfs(i, []int{i}, 0, visited)
 	}
 
-	return eligiblePaths
+	return eligiblePaths, distances
 }
 
 func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
@@ -160,37 +202,42 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 	}
 
 	size := len(enrichedData)
-	eligiblePaths := GetEligiblePaths(size, targetN, D)
-
+	fmt.Println("Size:", size)
+	eligiblePaths, distances := GetEligiblePaths(size, targetN, D)
+	// fmt.Println("Eligible paths:", eligiblePaths)
 	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
 		return !CheckOverlap(e, R)
 	})
-
+	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
 		return AdjacentLengthMeetConstraint(e, D, Mu)
 	})
 	fmt.Println("Eligible paths:", len(eligiblePaths))
-
-	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
-		return EqualLengthMeetConstraint(e, D, Alpha)
+	eligiblePaths = FilterPathsDistances(eligiblePaths, distances, func(e []int, f float64) bool {
+		return EqualLengthMeetConstraint(e, f, D, Alpha)
 	})
 	fmt.Println("Eligible paths:", len(eligiblePaths))
+	//eligiblePaths = utils.RemoveDuplicateRows(eligiblePaths)
 
-	eligiblePaths = utils.RemoveDuplicateRows(eligiblePaths)
-
-	fmt.Println("Eligible paths:", eligiblePaths)
 	w.Header().Set("Content-Type", "application/json")
 	if len(eligiblePaths) == 0 {
 		json.NewEncoder(w).Encode(emptyResponse)
 	} else {
 
+		fmt.Println(len(eligiblePaths))
+		fmt.Println(rand.Intn(len(eligiblePaths)))
+
 		path := eligiblePaths[rand.Intn(len(eligiblePaths))]
 		fmt.Println("Selected path:", path)
+		fmt.Println(utils.ContainsInt(path, 59))
 		var selectedLocations = make([]Location, len(path))
 
 		for i, p := range path {
 			selectedLocations[i] = enrichedData[p]
+		}
+		for i := 0; i < len(selectedLocations)-1; i++ {
+			fmt.Println("Path:", i, "Dist:", D[path[i]][path[i+1]])
 		}
 		json.NewEncoder(w).Encode(selectedLocations)
 	}
@@ -235,7 +282,6 @@ func GetAllCityPoints(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Content-Type", "application/json")
 
-	fmt.Println("All points:", enrichedData)
 	json.NewEncoder(w).Encode(enrichedData)
 }
 
@@ -243,6 +289,16 @@ func FilterPaths(paths [][]int, condition func([]int) bool) [][]int {
 	var result [][]int
 	for _, path := range paths {
 		if condition(path) {
+			result = append(result, path)
+		}
+	}
+	return result
+}
+
+func FilterPathsDistances(paths [][]int, distances []float64, condition func([]int, float64) bool) [][]int {
+	var result [][]int
+	for i, path := range paths {
+		if condition(path, distances[i]) {
 			result = append(result, path)
 		}
 	}

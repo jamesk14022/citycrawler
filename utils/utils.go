@@ -24,6 +24,15 @@ func Contains(slice []string, val string) bool {
 	return false
 }
 
+func ContainsInt(slice []int, val int) bool {
+	for _, item := range slice {
+		if item == val {
+			return true
+		}
+	}
+	return false
+}
+
 func Arange(start, stop, step float64) []float64 {
 	N := int(math.Ceil((stop - start) / step))
 	rnge := make([]float64, N, N)
