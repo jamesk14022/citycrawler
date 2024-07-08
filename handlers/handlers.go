@@ -17,6 +17,10 @@ import (
 
 var cacheDir = os.Getenv("CACHE_DIR")
 
+const distanceThreshold = 1
+const Mu = 1.7
+const Alpha = 1.9
+
 // check which directories exist in given directory
 func checkCachedLocations() []string {
 	files, err := os.ReadDir(cacheDir)
@@ -78,7 +82,7 @@ func CheckOverlap(path []int, R RoutesMatrix) bool {
 	return false
 }
 
-func AdjacentLengthMeetConstraint(path []int, D DistanceMatrix) bool {
+func AdjacentLengthMeetConstraint(path []int, D DistanceMatrix, mu float64) bool {
 	for i := 0; i < len(path)-1; i++ {
 		points := make([]int, len(path))
 		copy(points, path)
@@ -86,7 +90,7 @@ func AdjacentLengthMeetConstraint(path []int, D DistanceMatrix) bool {
 		points = utils.Remove(points, path[i])
 		distToNext := D[path[i]][path[i+1]]
 		for _, p := range points {
-			if distToNext > D[path[i]][p] {
+			if distToNext > (D[path[i]][p])*mu {
 				return false
 			}
 		}
@@ -94,8 +98,8 @@ func AdjacentLengthMeetConstraint(path []int, D DistanceMatrix) bool {
 	return true
 }
 
-func EqualLengthMeetConstraint(path []int, D DistanceMatrix, targetDist float64, alpha float64) bool {
-	margin := (targetDist / float64(len(path)-1)) * alpha
+func EqualLengthMeetConstraint(path []int, D DistanceMatrix, alpha float64) bool {
+	margin := (distanceThreshold / float64(len(path)-1)) * alpha
 	for i := 0; i < len(path)-1; i++ {
 		if D[path[i]][path[i+1]] > margin {
 			return false
@@ -104,7 +108,7 @@ func EqualLengthMeetConstraint(path []int, D DistanceMatrix, targetDist float64,
 	return true
 }
 
-func GetEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatrix, beta float64) [][]int {
+func GetEligiblePaths(size int, targetN int, D DistanceMatrix) [][]int {
 	var eligiblePaths [][]int
 
 	var dfs func(node int, path []int, currentDist float64, visited []bool)
@@ -112,19 +116,12 @@ func GetEligiblePaths(size int, targetN int, targetDist float64, D DistanceMatri
 		if len(path) > targetN {
 			return
 		}
-
-		if len(path) == targetN && currentDist > min(targetDist-(targetDist*beta), 1) && currentDist < min(targetDist+(targetDist*beta), 1) {
+		if len(path) == targetN && currentDist < distanceThreshold {
 			eligiblePaths = append(eligiblePaths, path)
 			return
 		}
-		// else {
-		// 	fmt.Println("Path length:", len(path), "Current distance:", currentDist, "Target distance:", targetDist)
-		// }
 		for i := 0; i < size; i++ {
 			if i != node && !visited[i] {
-				// if D[node][i] > (targetDist/float64(targetN-1))*2.6 {
-				// 	return
-				// }
 				visited[i] = true
 				dfs(i, append(path, i), currentDist+D[node][i], visited)
 				visited[i] = false
@@ -149,11 +146,11 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("Error getting targetN", err)
 		json.NewEncoder(w).Encode(emptyResponse)
 	}
-	targetDist, err := strconv.ParseFloat(r.URL.Query().Get("target_dist"), 64)
-	if err != nil {
-		fmt.Println("Error getting targetDist", err)
-		json.NewEncoder(w).Encode(emptyResponse)
-	}
+	// targetDist, err := strconv.ParseFloat(r.URL.Query().Get("target_dist"), 64)
+	// if err != nil {
+	// 	fmt.Println("Error getting targetDist", err)
+	// 	json.NewEncoder(w).Encode(emptyResponse)
+	// }
 	location := strings.ToLower((r.URL.Query().Get("location")))
 
 	enrichedData, D, R, err := LoadLocationInformation(location)
@@ -163,26 +160,33 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 	}
 
 	size := len(enrichedData)
-	eligiblePaths := GetEligiblePaths(size, targetN, targetDist, D, 0.7)
+	eligiblePaths := GetEligiblePaths(size, targetN, D)
 
+	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
 		return !CheckOverlap(e, R)
 	})
 
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
-		return AdjacentLengthMeetConstraint(e, D)
+		return AdjacentLengthMeetConstraint(e, D, Mu)
 	})
+	fmt.Println("Eligible paths:", len(eligiblePaths))
 
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
-		return EqualLengthMeetConstraint(e, D, targetDist, 0.8)
+		return EqualLengthMeetConstraint(e, D, Alpha)
 	})
+	fmt.Println("Eligible paths:", len(eligiblePaths))
 
+	eligiblePaths = utils.RemoveDuplicateRows(eligiblePaths)
+
+	fmt.Println("Eligible paths:", eligiblePaths)
 	w.Header().Set("Content-Type", "application/json")
 	if len(eligiblePaths) == 0 {
 		json.NewEncoder(w).Encode(emptyResponse)
 	} else {
 
 		path := eligiblePaths[rand.Intn(len(eligiblePaths))]
+		fmt.Println("Selected path:", path)
 		var selectedLocations = make([]Location, len(path))
 
 		for i, p := range path {

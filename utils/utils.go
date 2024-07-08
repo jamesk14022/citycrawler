@@ -1,7 +1,9 @@
 package utils
 
 import (
+	"fmt"
 	"math"
+	"strings"
 )
 
 func Remove(slice []int, s int) []int {
@@ -31,4 +33,23 @@ func Arange(start, stop, step float64) []float64 {
 		i += 1
 	}
 	return rnge
+}
+
+func hashRow(row []int) string {
+	return strings.Trim(strings.Replace(fmt.Sprint(row), " ", ",", -1), "[]")
+}
+
+func RemoveDuplicateRows(arr [][]int) [][]int {
+	uniqueRows := make(map[string]bool)
+	var result [][]int
+
+	for _, row := range arr {
+		hash := hashRow(row)
+		if !uniqueRows[hash] {
+			uniqueRows[hash] = true
+			result = append(result, row)
+		}
+	}
+
+	return result
 }
