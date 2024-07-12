@@ -5,6 +5,7 @@ import (
 
 	. "github.com/jamesk14022/barcrawler/handlers"
 	. "github.com/jamesk14022/barcrawler/types"
+	. "github.com/jamesk14022/barcrawler/utils"
 )
 
 const targetN = 4
@@ -14,7 +15,7 @@ const location = "dublin"
 func getNumberPaths(enrichedData []Location, D DistanceMatrix, R RoutesMatrix, alpha float64, beta float64, mu float64) uint8 {
 
 	size := len(enrichedData)
-	eligiblePaths := GetEligiblePaths(size, targetN, targetDist, D, beta)
+	eligiblePaths, distances := GetEligiblePaths(size, targetN, targetDist, D, beta)
 
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
 		return !CheckOverlap(e, R)
@@ -22,8 +23,8 @@ func getNumberPaths(enrichedData []Location, D DistanceMatrix, R RoutesMatrix, a
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
 		return AdjacentLengthMeetConstraint(e, D, mu)
 	})
-	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
-		return EqualLengthMeetConstraint(e, D, targetDist, alpha)
+	eligiblePaths = FilterPathsDistances(eligiblePaths, distances, func(e []int, p float64) bool {
+		return EqualLengthMeetConstraint(e, p, D, alpha)
 	})
 	return uint8(len(eligiblePaths))
 }
@@ -35,18 +36,15 @@ func tuneCrawlParameters() {
 		fmt.Println("Error loading location information", err)
 	}
 
-	// alphaRange := Arange(1.0, 2.0, 0.1)
+	alphaRange := Arange(1.0, 2.0, 0.1)
 
-	// res := make([]uint8, len(alphaRange))
+	res := make([]uint8, len(alphaRange))
 
-	// for i, alpha := range alphaRange {
-	// 	fmt.Println("Running for alpha:", alpha)
-	// 	res[i] = getNumberPaths(enrichedData, D, R, alpha, 0.5)
-	// 	fmt.Println("Number of paths:", res[i])
-	// }
-
-	res := getNumberPaths(enrichedData, D, R, 1.3, 0.5, 1.1)
-	fmt.Println(res)
+	for i, alpha := range alphaRange {
+		fmt.Println("Running for alpha:", alpha)
+		res[i] = getNumberPaths(enrichedData, D, R, alpha, float64(0.5), float64(1.1))
+		fmt.Println("Number of paths:", res[i])
+	}
 }
 
 func main() {

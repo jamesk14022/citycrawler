@@ -17,9 +17,15 @@ import (
 
 var cacheDir = os.Getenv("CACHE_DIR")
 
-const distanceThreshold = 1
+// for 3 + 4
+const distanceThreshold = 0.9
 const Mu = 1.1
 const Alpha = 1.1
+
+// for 5 + 6
+// const distanceThreshold = 1.6
+// const Mu = 1.3
+// const Alpha = 1.3
 
 // check which directories exist in given directory
 func checkCachedLocations() []string {
