@@ -18,20 +18,31 @@ import (
 	"github.com/jamesk14022/barcrawler/utils"
 )
 
-var cacheDir = os.Getenv("CACHE_DIR")
-
 const CacheSize = 7
 
-// for 3 + 4
-const distanceThreshold = 0.9
-const Mu = 1.1
-const Alpha = 1.1
-
-// for 5 + 6
-// const distanceThreshold = 1.6
-// const Mu = 1.3
-// const Alpha = 1.3
-
+var cacheDir = os.Getenv("CACHE_DIR")
+var markerSettings = map[int]map[string]float64{
+	3: {
+		"distanceThreshold": 0.9,
+		"mu":                1.1,
+		"alpha":             1.1,
+	},
+	4: {
+		"distanceThreshold": 0.9,
+		"mu":                1.1,
+		"alpha":             1.1,
+	},
+	5: {
+		"distanceThreshold": 1.6,
+		"mu":                1.3,
+		"alpha":             1.3,
+	},
+	6: {
+		"distanceThreshold": 1.6,
+		"mu":                1.3,
+		"alpha":             1.3,
+	},
+}
 var cache sync.Map
 
 // ReadJSONFile reads a JSON file and returns its contents as a byte slice
@@ -268,7 +279,7 @@ func GetEligiblePaths(size int, targetN int, D DistanceMatrix) ([][]int, []float
 	var dfs func(node int, path []int, currentDist float64, visited []bool)
 	dfs = func(node int, path []int, currentDist float64, visited []bool) {
 		if len(path) == targetN {
-			if currentDist < distanceThreshold {
+			if currentDist < markerSettings[targetN]["distanceThreshold"] {
 				// Create a copy of the path slice
 				pathCopy := make([]int, len(path))
 				copy(pathCopy, path)
@@ -341,11 +352,11 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 	})
 	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
-		return AdjacentLengthMeetConstraint(e, D, Mu)
+		return AdjacentLengthMeetConstraint(e, D, markerSettings[targetN]["mu"])
 	})
 	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPathsDistances(eligiblePaths, distances, func(e []int, f float64) bool {
-		return EqualLengthMeetConstraint(e, f, D, Alpha)
+		return EqualLengthMeetConstraint(e, f, D, markerSettings[targetN]["alpha"])
 	})
 	fmt.Println("Eligible paths:", len(eligiblePaths))
 	//eligiblePaths = utils.RemoveDuplicateRows(eligiblePaths)

@@ -9,13 +9,12 @@ import (
 )
 
 const targetN = 4
-const targetDist = 2.5
 const location = "dublin"
 
-func getNumberPaths(enrichedData []Location, D DistanceMatrix, R RoutesMatrix, alpha float64, beta float64, mu float64) uint8 {
+func getNumberPaths(enrichedData []Location, D DistanceMatrix, R RoutesMatrix, alpha float64, mu float64) uint8 {
 
 	size := len(enrichedData)
-	eligiblePaths, distances := GetEligiblePaths(size, targetN, targetDist, D, beta)
+	eligiblePaths, distances := GetEligiblePaths(size, targetN, D)
 
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
 		return !CheckOverlap(e, R)
@@ -42,7 +41,7 @@ func tuneCrawlParameters() {
 
 	for i, alpha := range alphaRange {
 		fmt.Println("Running for alpha:", alpha)
-		res[i] = getNumberPaths(enrichedData, D, R, alpha, float64(0.5), float64(1.1))
+		res[i] = getNumberPaths(enrichedData, D, R, alpha, float64(0.5))
 		fmt.Println("Number of paths:", res[i])
 	}
 }
