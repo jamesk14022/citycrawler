@@ -28,6 +28,9 @@ func enableCORS(next http.Handler) http.Handler {
 }
 
 func main() {
+
+	handlers.InitCache()
+
 	router := mux.NewRouter()
 
 	router.

@@ -27,3 +27,7 @@ type Location struct {
 		}
 	}
 }
+
+type CacheItem struct {
+	Values [][]Location
+}
