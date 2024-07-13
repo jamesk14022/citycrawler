@@ -18,7 +18,7 @@ import (
 	"github.com/jamesk14022/barcrawler/utils"
 )
 
-const CacheSize = 7
+const CacheSize = 5
 
 var cacheDir = os.Getenv("CACHE_DIR")
 var markerSettings = map[int]map[string]float64{
@@ -45,7 +45,6 @@ var markerSettings = map[int]map[string]float64{
 }
 var cache sync.Map
 
-// ReadJSONFile reads a JSON file and returns its contents as a byte slice
 func ReadCacheJSONFile(filename string) ([]byte, error) {
 	file, err := os.Open(filename)
 	if err != nil {
@@ -56,14 +55,12 @@ func ReadCacheJSONFile(filename string) ([]byte, error) {
 	return ioutil.ReadAll(file)
 }
 
-// UnmarshalJSONToMap converts a JSON byte slice to a map
 func UnmarshalCacheJSONToMap(data []byte) (map[string]types.CacheItem, error) {
 	var result map[string]types.CacheItem
 	err := json.Unmarshal(data, &result)
 	return result, err
 }
 
-// PopulateSyncMap populates a sync.Map from a standard map
 func PopulateCacheSyncMap(source map[string]types.CacheItem) {
 	for key, value := range source {
 		cache.Store(key, value)
@@ -92,17 +89,6 @@ func InitCache() {
 func generateKey(location string, markers int) string {
 	return location + "_" + strconv.Itoa(markers)
 }
-
-// func preComputeCache() {
-// 	for i := 0; i < 10; i++ {
-// 		param := fmt.Sprintf("param_%d", i)
-// 		key := generateKey(param)
-// 		for k := 0; k < 5; k++ {
-// 			result := fmt.Sprintf("Pre-computed Result %d for %s at %s", k, param, time.Now())
-// 			addToCache(key, result)
-// 		}
-// 	}
-// }
 
 func saveCache() {
 
@@ -272,36 +258,142 @@ func EqualLengthMeetConstraint(path []int, pathDistance float64, D DistanceMatri
 // 	return eligiblePaths, distances
 // }
 
+// func GetEligiblePaths(size int, targetN int, D DistanceMatrix) ([][]int, []float64) {
+// 	var eligiblePaths [][]int
+// 	var distances []float64
+
+// 	var dfs func(node int, path []int, currentDist float64, visited []bool)
+// 	dfs = func(node int, path []int, currentDist float64, visited []bool) {
+// 		if len(path) > targetN {
+// 			return
+// 		}
+// 		if currentDist > markerSettings[targetN]["distanceThreshold"] {
+// 			return
+// 		}
+// 		if len(path) == targetN {
+// 			if currentDist < markerSettings[targetN]["distanceThreshold"] {
+// 				// Create a copy of the path slice
+// 				pathCopy := make([]int, len(path))
+// 				copy(pathCopy, path)
+// 				eligiblePaths = append(eligiblePaths, pathCopy)
+// 				distances = append(distances, currentDist)
+// 			}
+// 			return
+// 		}
+// 		for i := 0; i < size; i++ {
+// 			if i != node && !visited[i] {
+// 				visited[i] = true
+// 				newDist := currentDist + D[node][i]
+// 				dfs(i, append(path, i), newDist, visited)
+// 				visited[i] = false
+// 			}
+// 		}
+// 	}
+
+// 	for i := 0; i < size; i++ {
+// 		visited := make([]bool, size)
+// 		visited[i] = true
+// 		dfs(i, []int{i}, 0, visited)
+// 	}
+
+// 	return eligiblePaths, distances
+// }
+
+// func GetEligiblePaths(size int, targetN int, D DistanceMatrix) ([][]int, []float64) {
+// 	var eligiblePaths [][]int
+// 	var distances []float64
+// 	var mu sync.Mutex
+// 	var wg sync.WaitGroup
+
+// 	threshold := markerSettings[targetN]["distanceThreshold"]
+
+// 	var dfs func(node int, path []int, currentDist float64, visited []bool)
+// 	dfs = func(node int, path []int, currentDist float64, visited []bool) {
+// 		if len(path) > targetN {
+// 			return
+// 		}
+// 		if currentDist > threshold {
+// 			return
+// 		}
+// 		if len(path) == targetN {
+// 			if currentDist < threshold {
+// 				// Create a copy of the path slice
+// 				pathCopy := make([]int, len(path))
+// 				copy(pathCopy, path)
+
+// 				// Protect shared data with a mutex
+// 				mu.Lock()
+// 				eligiblePaths = append(eligiblePaths, pathCopy)
+// 				distances = append(distances, currentDist)
+// 				mu.Unlock()
+// 			}
+// 			return
+// 		}
+// 		for i := 0; i < size; i++ {
+// 			if i != node && !visited[i] {
+// 				newVisited := make([]bool, len(visited))
+// 				copy(newVisited, visited)
+// 				newVisited[i] = true
+// 				newDist := currentDist + D[node][i]
+// 				dfs(i, append(path, i), newDist, newVisited)
+// 			}
+// 		}
+// 	}
+
+// 	for i := 0; i < size; i++ {
+// 		wg.Add(1)
+// 		go func(start int) {
+// 			defer wg.Done()
+// 			visited := make([]bool, size)
+// 			visited[start] = true
+// 			dfs(start, []int{start}, 0, visited)
+// 		}(i)
+// 	}
+
+// 	wg.Wait()
+// 	return eligiblePaths, distances
+// }
+
 func GetEligiblePaths(size int, targetN int, D DistanceMatrix) ([][]int, []float64) {
 	var eligiblePaths [][]int
 	var distances []float64
+	path := make([]int, targetN)
+	visited := make([]bool, size)
 
-	var dfs func(node int, path []int, currentDist float64, visited []bool)
-	dfs = func(node int, path []int, currentDist float64, visited []bool) {
-		if len(path) == targetN {
+	var dfs func(node, depth int, currentDist float64)
+	dfs = func(node, depth int, currentDist float64) {
+		if len(eligiblePaths) >= 17099886 {
+			return
+		}
+		if depth == targetN {
 			if currentDist < markerSettings[targetN]["distanceThreshold"] {
-				// Create a copy of the path slice
-				pathCopy := make([]int, len(path))
-				copy(pathCopy, path)
+				pathCopy := make([]int, targetN)
+				copy(pathCopy, path[:depth])
 				eligiblePaths = append(eligiblePaths, pathCopy)
 				distances = append(distances, currentDist)
 			}
 			return
 		}
+
+		if currentDist > markerSettings[targetN]["distanceThreshold"] {
+			return
+		}
+
 		for i := 0; i < size; i++ {
 			if i != node && !visited[i] {
 				visited[i] = true
-				newDist := currentDist + D[node][i]
-				dfs(i, append(path, i), newDist, visited)
+				path[depth] = i
+				dfs(i, depth+1, currentDist+D[node][i])
 				visited[i] = false
 			}
 		}
 	}
 
 	for i := 0; i < size; i++ {
-		visited := make([]bool, size)
 		visited[i] = true
-		dfs(i, []int{i}, 0, visited)
+		path[0] = i
+		dfs(i, 1, 0)
+		visited[i] = false
 	}
 
 	return eligiblePaths, distances
@@ -345,7 +437,6 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 	size := len(enrichedData)
 	fmt.Println("Size:", size)
 	eligiblePaths, distances := GetEligiblePaths(size, targetN, D)
-	// fmt.Println("Eligible paths:", eligiblePaths)
 	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
 		return !CheckOverlap(e, R)
@@ -359,7 +450,7 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 		return EqualLengthMeetConstraint(e, f, D, markerSettings[targetN]["alpha"])
 	})
 	fmt.Println("Eligible paths:", len(eligiblePaths))
-	//eligiblePaths = utils.RemoveDuplicateRows(eligiblePaths)
+	// eligiblePaths = utils.RemoveDuplicateRows(eligiblePaths)
 
 	if len(eligiblePaths) == 0 {
 		json.NewEncoder(w).Encode(emptyResponse)
