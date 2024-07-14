@@ -354,9 +354,10 @@ function renderBarInformationBox(waypoint, index) {
   input.type = "button";
   input.id = `marker-${index}`;
   input.onclick = () => {
+    let url = `https://www.google.com/maps/search/?api=1&query=${waypoint.Geometry.Location.lat},${waypoint.Geometry.Location.lng}&query_place_id=${waypoint.place_id}`
     window
       .open(
-        "https://maps.google.com/?q=" + waypoint.Geometry.Location.lat + "," + waypoint.Geometry.Location.lng,
+        url,
         "_blank",
       )
       .focus();
