@@ -69,7 +69,7 @@ func PopulateCacheSyncMap(source map[string]types.CacheItem) {
 
 func InitCache() {
 	// Step 1: Read the JSON file
-	jsonData, err := ReadCacheJSONFile("cache_data.json")
+	jsonData, err := ReadCacheJSONFile("/usr/local/cache_data.json")
 	if err != nil {
 		fmt.Println("Error reading JSON file:", err)
 		return
@@ -107,7 +107,7 @@ func saveCache() {
 	}
 
 	// Step 4: Write JSON to a File
-	file, err := os.Create("cache_data.json")
+	file, err := os.Create("/usr/local/cache_data.json")
 	if err != nil {
 		fmt.Println("Error creating file:", err)
 		return

@@ -10,6 +10,7 @@
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css"
       rel="stylesheet"
@@ -169,6 +170,10 @@
         border-radius: 5px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         z-index: 1;
+      }
+      .material-icons {
+        font-size: initial;
+        ;
       }
       @media screen and (min-width: 799px) {
         #rightBar {
@@ -425,7 +430,7 @@
             border-radius: 5px;
             position: absolute;
             top: 60px; /* Adjust this value to set the distance from the top */
-            right: 150px; /* Adjust this value to set the distance from the right */
+            right: 160px; /* Adjust this value to set the distance from the right */
         }
           .toggle-btn {
             display: block;
@@ -438,9 +443,8 @@
           }
           #rightBar {
             position: absolute;
-            bottom: 0px;
+            bottom: 10px;
             left: 25px;
-            height: 200px;
             z-index: 1;
             width: 90%;
           }
@@ -448,7 +452,15 @@
             width: 95%;
           }
           .listing-group{
-            display: inline-flex;
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .listing-group {
+            font:
+              8px/20px "Helvetica Neue",
+              Arial,
+              Helvetica,
+              sans-serif;
           }
           .sidebar-label{
             width: 200px;
@@ -501,8 +513,8 @@
             <span class="num-distance"></span>
             <button class="distance-quantity-btn-plus">+</button>
           </div> -->
-          <button type="button" id="shareButton">Copy sharing link</button>
-          <button type="button" id="refresh-button">Randomise Route</button>
+          <button type="button" id="shareButton"><i class="material-icons">content_paste</i>Copy sharing link</button>
+          <button type="button" id="refresh-button"><i class="material-icons">shuffle</i> Randomise Route</button>
           <div id="toggleBar">
             <button id="sidebarToggle" class="toggle-btn">☰</button>
           </div>
