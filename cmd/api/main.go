@@ -33,13 +33,13 @@ func main() {
 
 	router := mux.NewRouter()
 
-	router.
-		PathPrefix(staticDir).
-		Handler(http.StripPrefix(staticDir, http.FileServer(http.Dir("."+staticDir))))
-
 	router.HandleFunc("/pubs", handlers.GetRandomCrawl).Methods("GET")
 	router.HandleFunc("/citypoints", handlers.GetAllCityPoints).Methods("GET")
 	router.HandleFunc("/crawl", handlers.PostCrawl).Methods("POST")
+
+	router.
+		PathPrefix("/").
+		Handler(http.StripPrefix("/", http.FileServer(http.Dir("."+staticDir))))
 
 	corsRouter := enableCORS(router)
 	loggedRouter := gorillaHandlers.LoggingHandler(os.Stdout, corsRouter)

@@ -160,6 +160,7 @@ def location_search(coords, radius, next_page_token=None):
 
     if next_page_token:
         time.sleep(GOOGLE_MAPS_NEXT_PAGE_DELAY)
+        # how did we come up with this? "pub" isn't a valid type
         url = f"{GOOGLE_MAPS_BASE_URL}?location={lat}%2C{long}&radius={radius}&type=pub&keyword=pub&pagetoken={next_page_token}&key={KEY}"
     else:
         url = f"{GOOGLE_MAPS_BASE_URL}?location={lat}%2C{long}&radius={radius}&type=pub&keyword=pub&key={KEY}"

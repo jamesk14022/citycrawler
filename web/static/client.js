@@ -3,8 +3,8 @@ import {
   TIME_SPENT_BAR,
   MAPBOX_TOKEN,
   BASE_URL,
-} from "/usr/local/web/static/constants.js"; // Make sure this path points directly to the albumsData.js file
-import { containsObject } from "/usr/local/web/static/utils.js";
+} from "./constants.js"; // Make sure this path points directly to the albumsData.js file
+import { containsObject } from "./utils.js";
 
 // token scoped and safe for FE use
 mapboxgl.accessToken = MAPBOX_TOKEN;
@@ -448,25 +448,27 @@ function pageStart() {
 
     currentLocation = location;
 
-    fetch(`${BASE_URL}/crawl?location=${currentLocation}`, {
-      method: "POST", // or 'PUT'
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ place_ids: markers }),
-    })
-      .then((response) => response.json())
-      .then((waypoints) => {
-        selectedDistance = parseFloat(targetDistance);
-        selectedMarkers = parseInt(targetN);
-        updateRouteMetrics();
-        map.on("load", function () {
-          renderRoute(waypoints)
-        });
+    
+    map.on("load", function () {
+      fetch(`${BASE_URL}/crawl?location=${currentLocation}`, {
+        method: "POST", // or 'PUT'
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ place_ids: markers }),
       })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
+        .then((response) => response.json())
+        .then((waypoints) => {
+          selectedDistance = parseFloat(targetDistance);
+          selectedMarkers = parseInt(targetN);
+          updateRouteMetrics();
+          console.log("Rendering specific route")
+          renderRoute(waypoints)
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    });
   } else {
     map.on("load", function () {
       buildMap();

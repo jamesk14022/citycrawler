@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat</title>
+    <title>Pubcrawler</title>
     <meta charset="utf-8" />
     <title>Mapbox Directions</title>
     <meta
@@ -190,24 +190,26 @@
           text-decoration: none;
           display: inline-block;
           font-size: 14px;
-          margin: 8px 4px;
+          margin: 5px;
           cursor: pointer;
           border-radius: 5px;
           padding: 10px;
+          width: 120%;
         }
         #shareButton {
           z-index: 1;
           background-color: #008cba;
           border: none;
           color: white;
-          padding: 15px 32px;
+          padding: 10px;
           text-align: center;
           text-decoration: none;
           display: inline-block;
           font-size: 14px;
-          margin: 4px 2px;
+          margin: 5px;
           cursor: pointer;
           border-radius: 5px;
+          width: 90%;
         }
       }
       .listing-group {
@@ -457,7 +459,7 @@
           }
           .listing-group {
             font:
-              8px/20px "Helvetica Neue",
+              9px/20px "Helvetica Neue",
               Arial,
               Helvetica,
               sans-serif;
@@ -483,7 +485,7 @@
           
         <p id="no_pubs">
           No routes found within the specified distance. Please try adjusting the
-          distance or number of markers.
+          distance or number of pubs.
         </p>
         <p id="city_not_found">
           City not found. Please try again.
@@ -501,7 +503,7 @@
           />
 
           <div id="marker-container" class="top-bar">
-            <label for="distance-slider">Markers:</label>
+            <label for="distance-slider">Pubs:</label>
             <button class="marker-quantity-btn-minus">-</button>
             <span class="num-markers"></span>
             <button class="marker-quantity-btn-plus">+</button>
@@ -513,7 +515,7 @@
             <span class="num-distance"></span>
             <button class="distance-quantity-btn-plus">+</button>
           </div> -->
-          <button type="button" id="shareButton"><i class="material-icons">content_paste</i>Copy sharing link</button>
+          <button type="button" id="shareButton">Copy sharing link</button>
           <button type="button" id="refresh-button"><i class="material-icons">shuffle</i> Randomise Route</button>
           <div id="toggleBar">
             <button id="sidebarToggle" class="toggle-btn">☰</button>
@@ -541,7 +543,7 @@
     </div>
     <div id="collap-sidebar" class="sidebar">
       <div id="marker-container">
-        <label class="sidebar-label" for="distance-slider">Markers:</label>
+        <label class="sidebar-label" for="distance-slider">Pubs:</label>
         <button class="btn-side marker-quantity-btn-minus">-</button>
         <span class="num-markers"></span>
         <button class="btn-side marker-quantity-btn-plus">+</button>

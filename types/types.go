@@ -16,10 +16,11 @@ type PlaceIDs struct {
 }
 
 type Location struct {
-	ID       string  `json:"place_id"`
-	Name     string  `json:"name"`
-	Price    float32 `json:"price_level"`
-	Rating   float32 `json:"rating"`
+	ID       string   `json:"place_id"`
+	Name     string   `json:"name"`
+	Price    float32  `json:"price_level"`
+	Rating   float32  `json:"rating"`
+	Types    []string `json:"types"`
 	Geometry struct {
 		Location struct {
 			Latitude  float64 `json:"lat"`
