@@ -28,8 +28,8 @@ import numpy as np
 #     "Denver": (39.76, -104.88),
 # }
 
-# CITY_COORDS_IRELAND = {
-#     "Dublin": (53.35, -6.26), 
+CITY_COORDS_IRELAND = {
+    "Dublin": (53.35, -6.26), 
 #     "Cork": (51.90, -8.47), 
 #     "Limerick": (52.66, -8.63), 
 #     "Galway": (53.27, -9.05), 
@@ -69,7 +69,7 @@ import numpy as np
 #     "Arklow": (52.80, -6.14), 
 #     "Castlebar": (53.85, -9.30), 
 #     "Wicklow": (52.98, -6.05)
-# }
+}
 
 CITY_COORDS_UK = {
     "London": (51.5072, -0.1275),
@@ -120,7 +120,7 @@ CITY_COORDS_UK = {
     "Chelmsford": (51.7300, 0.4800),
 }
 
-BASE_PATH = "../new_england_data/"
+BASE_PATH = "../dublin_attraction_data/"
 SEARCH_RADIUS = 1750
 
 GOOGLE_MAPS_BASE_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
@@ -137,11 +137,14 @@ def walking_distance(start_latitude, start_longitude, end_latitude, end_longitud
     response = requests.get(url, params=params)
     data = response.json()
 
-    # Extract distance and duration
-    route = data["routes"][0]
+    if not data["routes"]:
+        route = None
+    else:
+        route = data["routes"][0]
+    
     walking_distance = route["distance"]  # in meters
 
-    return walking_distance / 1000, data["routes"][0]
+    return walking_distance / 1000, route
 
 
 def load_location_search():
@@ -151,8 +154,7 @@ def load_location_search():
         state = json.loads(f.read())
     return state
 
-
-def location_search(coords, radius, next_page_token=None):
+def make_nearby_search_request(coords, radius, next_page_token, location_type="pub"):
     KEY = os.environ["GOOGLE_MAPS_API_KEY"]
     headers = {"accept": "application/json"}
     results = []
@@ -160,16 +162,30 @@ def location_search(coords, radius, next_page_token=None):
 
     if next_page_token:
         time.sleep(GOOGLE_MAPS_NEXT_PAGE_DELAY)
-        # how did we come up with this? "pub" isn't a valid type
-        url = f"{GOOGLE_MAPS_BASE_URL}?location={lat}%2C{long}&radius={radius}&type=pub&keyword=pub&pagetoken={next_page_token}&key={KEY}"
+        if location_type == "pub":
+            url = f"{GOOGLE_MAPS_BASE_URL}?location={lat}%2C{long}&radius={radius}&type=bar&keyword=pub&pagetoken={next_page_token}&key={KEY}"
+        elif location_type == "tourist_attraction":
+            url = f"{GOOGLE_MAPS_BASE_URL}?location={lat}%2C{long}&radius={radius}&type=tourist_attraction&pagetoken={next_page_token}&key={KEY}"
     else:
-        url = f"{GOOGLE_MAPS_BASE_URL}?location={lat}%2C{long}&radius={radius}&type=pub&keyword=pub&key={KEY}"
+        if location_type == "pub":
+            url = f"{GOOGLE_MAPS_BASE_URL}?location={lat}%2C{long}&radius={radius}&type=bar&keyword=pub&key={KEY}"
+        elif location_type == "tourist_attraction":
+            url = f"{GOOGLE_MAPS_BASE_URL}?location={lat}%2C{long}&radius={radius}&type=tourist_attraction&key={KEY}"
 
     raw_response = requests.get(url, headers=headers)
     response = json.loads(raw_response.text)
     results += response["results"]
     if "next_page_token" in response:
-        results += location_search(coords, radius, response["next_page_token"])
+        results += make_nearby_search_request(coords, radius, response["next_page_token"], location_type)
+
+    return results
+
+def location_search(coords, radius):
+
+    results = []
+    types = ["pub", "tourist_attraction"]
+    for t in types:
+        results += make_nearby_search_request(coords, radius, None, t)
 
     return results
 
@@ -233,7 +249,7 @@ def create_directory_if_not_exists(directory_path):
         print("Directory already exists:", directory_path)
 
 
-for name, coords in CITY_COORDS_UK.items():
+for name, coords in CITY_COORDS_IRELAND.items():
     name = name.lower()
 
     state = location_search(coords, SEARCH_RADIUS)
