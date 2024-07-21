@@ -12,8 +12,8 @@ mapboxgl.accessToken = MAPBOX_TOKEN;
 // appplication state
 var currentLocation = "Dublin";
 var currentMarkers = [];
-var selectedDistance = 1.5;
-var selectedMarkers = 3;
+var selectedPubs = 3;
+var selectedAttractions = 1;
 
 const container = document.getElementById("container")
 const refreshButton = document.getElementById("refresh-button");
@@ -28,9 +28,11 @@ const dataList = document.getElementById("locations");
 
 const markerMinus = document.querySelectorAll(".marker-quantity-btn-minus");
 const markerPlus = document.querySelectorAll(".marker-quantity-btn-plus");
-const distanceMinus = document.querySelectorAll(".distance-quantity-btn-minus");
-const distancePlus = document.querySelectorAll(".distance-quantity-btn-plus");
-const distanceCounter = document.querySelectorAll(".num-distance");
+
+const attractionMinus = document.querySelectorAll(".attraction-quantity-btn-minus");
+const attractionPlus = document.querySelectorAll(".attraction-quantity-btn-plus");
+
+const attractionCounter = document.querySelectorAll(".num-attractions");
 const markerCounter = document.querySelectorAll(".num-markers");
 
 const sidebar = document.getElementById('collap-sidebar');
@@ -41,42 +43,41 @@ shareButton.addEventListener("click", copyLink);
 
 markerMinus.forEach((btn) => {
 btn.addEventListener('click', () => {
-  if (selectedMarkers === 2) {
+  if (selectedPubs === 2) {
     return;
   }
-  selectedMarkers -= parseInt(1);
-  setMarkersDisplay(selectedMarkers);
+  selectedPubs -= parseInt(1);
+  setMarkersDisplay(selectedPubs);
 });
 });
 
 markerPlus.forEach((btn) => {
 btn.addEventListener('click', () => {
-  if (selectedMarkers === 8) {
+  if (selectedPubs === 8) {
     return;
   }
-  selectedMarkers += parseInt(1);
-  setMarkersDisplay(selectedMarkers);
+  selectedPubs += parseInt(1);
+  setMarkersDisplay(selectedPubs);
 });
 });
 
-distanceMinus.forEach((btn) => {
+attractionMinus.forEach((btn) => {
 btn.addEventListener('click', () => {
-  if (selectedDistance === 0.5) {
+  if (selectedAttractions === 1.0) {
     return;
   } 
-  selectedDistance -= parseFloat(0.5);
-  setDistanceDisplay(selectedDistance);
+  selectedAttractions -= parseInt(1.0);
+  setAttractionDisplay(selectedAttractions);
 });
 });
 
-distancePlus.forEach((btn) => {
+attractionPlus.forEach((btn) => {
 btn.addEventListener('click', () => {
-  if (selectedDistance === 7) {
+  if (selectedAttractions === 4) {
     return;
   } 
-  selectedDistance += parseFloat(0.5);
-  distanceCounter.textContent = parseFloat(selectedDistance);
-  setDistanceDisplay(selectedDistance);
+  selectedAttractions += parseInt(1.0);
+  setAttractionDisplay(selectedAttractions);
 });
 });
 
@@ -119,15 +120,15 @@ document.addEventListener('click', function(event) {
   }
 });
 
-const setDistanceDisplay = (distance) => {
-  distanceCounter.forEach((element) => {
-    element.textContent = parseFloat(distance);
+const setAttractionDisplay = (attractions) => {
+  attractionCounter.forEach((element) => {
+    element.textContent = parseFloat(attractions);
   });
 }
 
 const setMarkersDisplay = (markers) => {
   markerCounter.forEach((element) => {
-    element.textContent = parseInt(markers);
+    element.textContent = markers;
   });
 }
 
@@ -238,7 +239,7 @@ function updateRouteMetrics(e) {
 
     const routeDurationElement = document.getElementById("route-duration");
     routeDurationElement.textContent = parseInt(
-      e[0].duration / 60 + selectedMarkers * TIME_SPENT_BAR,
+      e[0].duration / 60 + selectedPubs * TIME_SPENT_BAR,
     );
   }
 }
@@ -369,6 +370,12 @@ function renderBarInformationBox(waypoint, index) {
     65 + index,
   )}</strong><br>${waypoint.name}`;
 
+  if (waypoint.types.includes("tourist_attraction")) {
+    label.innerHTML = "🎡 " + label.innerHTML
+  }else{
+    label.innerHTML = "🍺 " + label.innerHTML
+  }
+
   const ratingDiv = document.createElement("div");
   for (let i = 0; i < parseFloat(waypoint.rating); i++) {
     const starSpan = document.createElement("span");
@@ -422,27 +429,27 @@ function pageStart() {
   showLoading();
   addLocations();
 
-  setDistanceDisplay(selectedDistance);
-  setMarkersDisplay(selectedMarkers);
+  setAttractionDisplay(selectedAttractions);
+  setMarkersDisplay(selectedPubs);
 
   // Check if the URL contains a query string
   const urlParams = new URLSearchParams(window.location.search);
   if (
     urlParams.has("location") &&
-    urlParams.has("target_dist") &&
-    urlParams.has("target_n") &&
+    urlParams.has("target_pubs") &&
+    urlParams.has("target_attractions") &&
     urlParams.has("marker1")
   ) {
 
-    setDistanceDisplay(parseFloat(urlParams.get("target_dist")));
-    setMarkersDisplay(parseInt(urlParams.get("target_n")));
+    setAttractionDisplay(parseFloat(urlParams.get("target_attractions")));
+    setMarkersDisplay(parseInt(urlParams.get("target_pubs")));
 
     // Get the query string values
     const location = urlParams.get("location");
-    const targetDistance = urlParams.get("target_dist");
-    const targetN = urlParams.get("target_n");
+    const targetPubs = parseInt(urlParams.get("target_pubs"));
+    const targetAttractions = parseInt(urlParams.get("target_attractions"));
     const markers = [];
-    for (let i = 1; i <= targetN; i++) {
+    for (let i = 1; i <= targetPubs + targetAttractions; i++) {
       markers.push(urlParams.get(`marker${i}`));
     }
 
@@ -455,12 +462,11 @@ function pageStart() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ place_ids: markers }),
+        body: JSON.stringify({ place_ids: markers.filter(n => n)}),
       })
         .then((response) => response.json())
         .then((waypoints) => {
-          selectedDistance = parseFloat(targetDistance);
-          selectedMarkers = parseInt(targetN);
+          selectedPubs = targetPubs
           updateRouteMetrics();
           console.log("Rendering specific route")
           renderRoute(waypoints)
@@ -493,8 +499,8 @@ function renderRoute(waypoints) {
 
     updateURL(
       currentLocation,
-      selectedDistance,
-      selectedMarkers,
+      selectedPubs,
+      selectedAttractions,
       ...waypoints.map((waypoint) => waypoint.place_id),
     );
   } else {
@@ -521,17 +527,16 @@ function toggleNoCitiesResults() {
   cityNotFound.style.display = "block";
 }
 
-function updateURL(location, targetDistance, targetN, ...markers) {
+function updateURL(location, targetPubs, targetAttractions, ...markers) {
   var state = {
     location: location,
-    targetDistance: targetDistance,
-    targetN: targetN,
+    targetN: targetPubs + targetAttractions,
   };
   for (let i = 0; i < markers.length; i++) {
     state[`marker${i + 1}`] = markers[i];
   }
 
-  var pathState = `?location=${location}&target_dist=${targetDistance}&target_n=${targetN}`;
+  var pathState = `?location=${location}&target_pubs=${targetPubs}&target_attractions=${targetAttractions}`;
   for (let i = 0; i < markers.length; i++) {
     pathState += `&marker${i + 1}=${markers[i]}`;
   }
@@ -554,10 +559,11 @@ const buildMap = () => {
   addLocations();
 
   fetch(
-    `${BASE_URL}/pubs?target_n=${selectedMarkers}&target_dist=${selectedDistance}&location=${currentLocation}`,
+    `${BASE_URL}/pubs?target_pubs=${selectedPubs}&target_attractions=${selectedAttractions}&location=${currentLocation}`,
   )
     .then((response) => response.json())
     .then((waypoints) => {
+      console.log(waypoints);
       renderRoute(waypoints);
     });
   updateRouteMetrics();

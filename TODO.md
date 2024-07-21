@@ -2,3 +2,14 @@
 - pop up photo/details for red markers
 - remove A&B mapbox-GL markers
 - error messaged are greyed
+
+
+- tourist attractions button - desktop site
+- tourist attractions button - mobile site
+- scrape attractions data ireland
+- scrape attractions data UK
+- cache attractions data ireland
+- cache attractions data englang
+- set cache settings for attraction data
+- verify mapbox directions api cost
+- check that we don't double request directions api when scraping

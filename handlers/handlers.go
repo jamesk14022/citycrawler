@@ -24,13 +24,13 @@ var cacheDir = os.Getenv("CACHE_DIR")
 var markerSettings = map[int]map[string]float64{
 	3: {
 		"distanceThreshold": 0.9,
-		"mu":                1.1,
-		"alpha":             1.1,
+		"mu":                1.4,
+		"alpha":             1.4,
 	},
 	4: {
 		"distanceThreshold": 0.9,
-		"mu":                1.1,
-		"alpha":             1.1,
+		"mu":                1.4,
+		"alpha":             1.4,
 	},
 	5: {
 		"distanceThreshold": 1.6,
@@ -70,7 +70,8 @@ func PopulateCacheSyncMap(source map[string]types.CacheItem) {
 
 func InitCache() {
 	// Step 1: Read the JSON file
-	jsonData, err := ReadCacheJSONFile("/usr/local/cache_data.json")
+	// jsonData, err := ReadCacheJSONFile("/usr/local/cache_data.json")
+	jsonData, err := ReadCacheJSONFile("cache_data.json")
 	if err != nil {
 		fmt.Println("Error reading JSON file:", err)
 		return
@@ -236,10 +237,12 @@ func checkAttractionContraints(path []int, enrichedData []Location, target_attra
 	return attractions == target_attractions
 }
 
-func GetEligiblePaths(size int, targetN int, target_attractions int, D DistanceMatrix, enrichedData []Location) ([][]int, []float64) {
+func GetEligiblePaths(size int, target_pubs int, target_attractions int, D DistanceMatrix, enrichedData []Location) ([][]int, []float64) {
 	var eligiblePaths [][]int
 	var distances []float64
-	path := make([]int, targetN)
+	var total_length = target_pubs + target_attractions
+
+	path := make([]int, total_length)
 	visited := make([]bool, size)
 
 	var dfs func(node, depth int, currentDist float64)
@@ -247,9 +250,9 @@ func GetEligiblePaths(size int, targetN int, target_attractions int, D DistanceM
 		if len(eligiblePaths) >= 17099886 {
 			return
 		}
-		if depth == targetN {
-			if currentDist < markerSettings[targetN]["distanceThreshold"] && checkAttractionContraints(path, enrichedData, target_attractions) {
-				pathCopy := make([]int, targetN)
+		if depth == total_length {
+			if currentDist < markerSettings[total_length]["distanceThreshold"] && checkAttractionContraints(path, enrichedData, target_attractions) {
+				pathCopy := make([]int, total_length)
 				copy(pathCopy, path[:depth])
 				eligiblePaths = append(eligiblePaths, pathCopy)
 				distances = append(distances, currentDist)
@@ -257,7 +260,7 @@ func GetEligiblePaths(size int, targetN int, target_attractions int, D DistanceM
 			return
 		}
 
-		if currentDist > markerSettings[targetN]["distanceThreshold"] {
+		if currentDist > markerSettings[total_length]["distanceThreshold"] {
 			return
 		}
 
@@ -281,40 +284,35 @@ func GetEligiblePaths(size int, targetN int, target_attractions int, D DistanceM
 	return eligiblePaths, distances
 }
 
-func extractURLParams(r *http.Request) (int, int, float64, string, error) {
+func extractURLParams(r *http.Request) (int, int, string, error) {
 	targetAttractions, err := strconv.Atoi(r.URL.Query().Get("target_attractions"))
 	if err != nil {
-		return 0, 0, 0, "", err
+		return 0, 0, "", err
 	}
 
-	targetN, err := strconv.Atoi(r.URL.Query().Get("target_n"))
+	targetPubs, err := strconv.Atoi(r.URL.Query().Get("target_pubs"))
 	if err != nil {
-		return 0, 0, 0, "", err
-	}
-
-	targetDist, err := strconv.ParseFloat(r.URL.Query().Get("target_dist"), 64)
-	if err != nil {
-		return 0, 0, 0, "", err
+		return 0, 0, "", err
 	}
 
 	location := strings.ToLower((r.URL.Query().Get("location")))
 	if location == "" {
-		return 0, 0, 0, "", err
+		return 0, 0, "", err
 	}
 
-	return targetAttractions, targetN, targetDist, location, nil
+	return targetAttractions, targetPubs, location, nil
 }
 
 func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
-	targetAttractions, targetN, _, location, err := extractURLParams(r)
+	targetAttractions, targetPubs, location, err := extractURLParams(r)
 	if err != nil {
 		fmt.Println("Error extracting URL params", err)
 		json.NewEncoder(w).Encode(emptyResponse)
 	}
 
-	key := generateKey(location, targetN, targetAttractions)
+	key := generateKey(location, targetPubs, targetAttractions)
 
 	item, ok := cache.Load(key)
 	if ok {
@@ -335,18 +333,18 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 
 	size := len(enrichedData)
 	fmt.Println("Size:", size)
-	eligiblePaths, distances := GetEligiblePaths(size, targetN, targetAttractions, D, enrichedData)
+	eligiblePaths, distances := GetEligiblePaths(size, targetPubs, targetAttractions, D, enrichedData)
 	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
 		return !CheckOverlap(e, R)
 	})
 	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
-		return AdjacentLengthMeetConstraint(e, D, markerSettings[targetN]["mu"])
+		return AdjacentLengthMeetConstraint(e, D, markerSettings[targetPubs]["mu"])
 	})
 	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPathsDistances(eligiblePaths, distances, func(e []int, f float64) bool {
-		return EqualLengthMeetConstraint(e, f, D, markerSettings[targetN]["alpha"])
+		return EqualLengthMeetConstraint(e, f, D, markerSettings[targetPubs]["alpha"])
 	})
 	fmt.Println("Eligible paths:", len(eligiblePaths))
 	// eligiblePaths = utils.RemoveDuplicateRows(eligiblePaths)

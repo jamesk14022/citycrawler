@@ -71,7 +71,7 @@
       #route-info p{
         margin: 0px;
       }
-      #marker-container {
+      .marker-container {
         display: inline-flex;
         align-items: center;
         gap: 5px;
@@ -214,7 +214,7 @@
       }
       .listing-group {
         font:
-          12px/20px "Helvetica Neue",
+          15px/20px "Helvetica Neue",
           Arial,
           Helvetica,
           sans-serif;
@@ -437,7 +437,7 @@
           .toggle-btn {
             display: block;
           }
-          div#marker-container.top-bar{
+          .marker-container.top-bar{
             display: none;
           }
           div#slider-container.top-bar{
@@ -459,7 +459,7 @@
           }
           .listing-group {
             font:
-              9px/20px "Helvetica Neue",
+              14px/20px "Helvetica Neue",
               Arial,
               Helvetica,
               sans-serif;
@@ -502,11 +502,18 @@
             placeholder="Search location..."
           />
 
-          <div id="marker-container" class="top-bar">
+          <div class="marker-container top-bar">
             <label for="distance-slider">Pubs:</label>
             <button class="marker-quantity-btn-minus">-</button>
             <span class="num-markers"></span>
             <button class="marker-quantity-btn-plus">+</button>
+          </div>
+
+          <div class="marker-container top-bar">
+            <label for="distance-slider">Tourist Attractions:</label>
+            <button class="attraction-quantity-btn-minus">-</button>
+            <span class="num-attractions"></span>
+            <button class="attraction-quantity-btn-plus">+</button>
           </div>
 
           <!-- <div id="slider-container" class="top-bar">
@@ -542,11 +549,18 @@
       </div>
     </div>
     <div id="collap-sidebar" class="sidebar">
-      <div id="marker-container">
+      <div class="marker-container">
         <label class="sidebar-label" for="distance-slider">Pubs:</label>
         <button class="btn-side marker-quantity-btn-minus">-</button>
         <span class="num-markers"></span>
         <button class="btn-side marker-quantity-btn-plus">+</button>
+      </div>
+
+      <div class="marker-container">
+        <label class="sidebar-label" for="distance-slider">Tourist Attractions:</label>
+        <button class="btn-side attraction-quantity-btn-minus">-</button>
+        <span class="num-attractions"></span>
+        <button class="btn-side attraction-quantity-btn-plus">+</button>
       </div>
     </br>
     </br>

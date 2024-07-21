@@ -11,7 +11,8 @@ import (
 	gorillaHandlers "github.com/gorilla/handlers"
 )
 
-const staticDir = "/usr/local/web/static/"
+var staticDir = os.Getenv("WEB_DIR")
+
 const port = ":8080"
 
 func enableCORS(next http.Handler) http.Handler {
