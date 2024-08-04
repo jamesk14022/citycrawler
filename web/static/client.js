@@ -15,7 +15,7 @@ var currentMarkers = [];
 var selectedPubs = 3;
 var selectedAttractions = 1;
 
-const container = document.getElementById("container")
+const container = document.getElementById("container");
 const refreshButton = document.getElementById("refresh-button");
 const shareButton = document.getElementById("shareButton");
 const searchBox = document.getElementById("search-box");
@@ -29,56 +29,60 @@ const dataList = document.getElementById("locations");
 const markerMinus = document.querySelectorAll(".marker-quantity-btn-minus");
 const markerPlus = document.querySelectorAll(".marker-quantity-btn-plus");
 
-const attractionMinus = document.querySelectorAll(".attraction-quantity-btn-minus");
-const attractionPlus = document.querySelectorAll(".attraction-quantity-btn-plus");
+const attractionMinus = document.querySelectorAll(
+  ".attraction-quantity-btn-minus",
+);
+const attractionPlus = document.querySelectorAll(
+  ".attraction-quantity-btn-plus",
+);
 
 const attractionCounter = document.querySelectorAll(".num-attractions");
 const markerCounter = document.querySelectorAll(".num-markers");
 
-const sidebar = document.getElementById('collap-sidebar');
-const sidebarToggle = document.getElementById('sidebarToggle');
-const closeBtn = sidebar.querySelector('.close-btn');
+const sidebar = document.getElementById("collap-sidebar");
+const sidebarToggle = document.getElementById("sidebarToggle");
+const closeBtn = sidebar.querySelector(".close-btn");
 
 shareButton.addEventListener("click", copyLink);
 
 markerMinus.forEach((btn) => {
-btn.addEventListener('click', () => {
-  if (selectedPubs === 2) {
-    return;
-  }
-  selectedPubs -= parseInt(1);
-  setMarkersDisplay(selectedPubs);
-});
+  btn.addEventListener("click", () => {
+    if (selectedPubs === 2) {
+      return;
+    }
+    selectedPubs -= parseInt(1);
+    setMarkersDisplay(selectedPubs);
+  });
 });
 
 markerPlus.forEach((btn) => {
-btn.addEventListener('click', () => {
-  if (selectedPubs === 8) {
-    return;
-  }
-  selectedPubs += parseInt(1);
-  setMarkersDisplay(selectedPubs);
-});
+  btn.addEventListener("click", () => {
+    if (selectedPubs === 8) {
+      return;
+    }
+    selectedPubs += parseInt(1);
+    setMarkersDisplay(selectedPubs);
+  });
 });
 
 attractionMinus.forEach((btn) => {
-btn.addEventListener('click', () => {
-  if (selectedAttractions === 1.0) {
-    return;
-  } 
-  selectedAttractions -= parseInt(1.0);
-  setAttractionDisplay(selectedAttractions);
-});
+  btn.addEventListener("click", () => {
+    if (selectedAttractions === 1.0) {
+      return;
+    }
+    selectedAttractions -= parseInt(1.0);
+    setAttractionDisplay(selectedAttractions);
+  });
 });
 
 attractionPlus.forEach((btn) => {
-btn.addEventListener('click', () => {
-  if (selectedAttractions === 4) {
-    return;
-  } 
-  selectedAttractions += parseInt(1.0);
-  setAttractionDisplay(selectedAttractions);
-});
+  btn.addEventListener("click", () => {
+    if (selectedAttractions === 4) {
+      return;
+    }
+    selectedAttractions += parseInt(1.0);
+    setAttractionDisplay(selectedAttractions);
+  });
 });
 
 // Update the distance value display
@@ -103,18 +107,18 @@ directions.on("route", (e) => {
 map.addControl(directions, "top-left");
 
 function openSidebar() {
-  sidebar.style.width = '400px';
+  sidebar.style.width = "400px";
 }
 
 function closeSidebar() {
-  sidebar.style.width = '0';
+  sidebar.style.width = "0";
 }
 
-sidebarToggle.addEventListener('click', openSidebar);
-closeBtn.addEventListener('click', closeSidebar);
+sidebarToggle.addEventListener("click", openSidebar);
+closeBtn.addEventListener("click", closeSidebar);
 
 // Close sidebar when clicking outside of it
-document.addEventListener('click', function(event) {
+document.addEventListener("click", function (event) {
   if (!sidebar.contains(event.target) && event.target !== sidebarToggle) {
     closeSidebar();
   }
@@ -124,13 +128,13 @@ const setAttractionDisplay = (attractions) => {
   attractionCounter.forEach((element) => {
     element.textContent = parseFloat(attractions);
   });
-}
+};
 
 const setMarkersDisplay = (markers) => {
   markerCounter.forEach((element) => {
     element.textContent = markers;
   });
-}
+};
 
 const clearExistingRoute = () => {
   directions.removeRoutes();
@@ -170,48 +174,54 @@ function hideLoading() {
 
 function copy(text) {
   return new Promise((resolve, reject) => {
-      if (typeof navigator !== "undefined" && typeof navigator.clipboard !== "undefined" && navigator.permissions !== "undefined") {
-          const type = "text/plain";
-          const blob = new Blob([text], { type });
-          const data = [new ClipboardItem({ [type]: blob })];
-          navigator.permissions.query({name: "clipboard-write"}).then((permission) => {
-              if (permission.state === "granted" || permission.state === "prompt") {
-                  navigator.clipboard.write(data).then(resolve, reject).catch(reject);
-              }
-              else {
-                  reject(new Error("Permission not granted!"));
-              }
-          });
-      }
-      else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
-          var textarea = document.createElement("textarea");
-          textarea.textContent = text;
-          textarea.style.position = "fixed";
-          textarea.style.width = '2em';
-          textarea.style.height = '2em';
-          textarea.style.padding = 0;
-          textarea.style.border = 'none';
-          textarea.style.outline = 'none';
-          textarea.style.boxShadow = 'none';
-          textarea.style.background = 'transparent';
-          document.body.appendChild(textarea);
-          textarea.focus();
-          textarea.select();
-          try {
-              document.execCommand("copy");
-              document.body.removeChild(textarea);
-              resolve();
+    if (
+      typeof navigator !== "undefined" &&
+      typeof navigator.clipboard !== "undefined" &&
+      navigator.permissions !== "undefined"
+    ) {
+      const type = "text/plain";
+      const blob = new Blob([text], { type });
+      const data = [new ClipboardItem({ [type]: blob })];
+      navigator.permissions
+        .query({ name: "clipboard-write" })
+        .then((permission) => {
+          if (permission.state === "granted" || permission.state === "prompt") {
+            navigator.clipboard.write(data).then(resolve, reject).catch(reject);
+          } else {
+            reject(new Error("Permission not granted!"));
           }
-          catch (e) {
-              document.body.removeChild(textarea);
-              reject(e);
-          }
+        });
+    } else if (
+      document.queryCommandSupported &&
+      document.queryCommandSupported("copy")
+    ) {
+      var textarea = document.createElement("textarea");
+      textarea.textContent = text;
+      textarea.style.position = "fixed";
+      textarea.style.width = "2em";
+      textarea.style.height = "2em";
+      textarea.style.padding = 0;
+      textarea.style.border = "none";
+      textarea.style.outline = "none";
+      textarea.style.boxShadow = "none";
+      textarea.style.background = "transparent";
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      try {
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        resolve();
+      } catch (e) {
+        document.body.removeChild(textarea);
+        reject(e);
       }
-      else {
-          reject(new Error("None of copying methods are supported by this browser!"));
-      }
+    } else {
+      reject(
+        new Error("None of copying methods are supported by this browser!"),
+      );
+    }
   });
-  
 }
 
 function copyLink() {
@@ -219,7 +229,7 @@ function copyLink() {
   var url = window.location.href;
 
   // Copy the URL to the clipboard
-  copy(url)
+  copy(url);
   // Change the button text to "Copied ✔️"
   shareButton.textContent = "Copied ✔️";
   shareButton.classList.add("copied");
@@ -229,7 +239,6 @@ function copyLink() {
     shareButton.textContent = "Share Link";
     shareButton.classList.remove("copied");
   }, 2000);
-
 }
 
 function updateRouteMetrics(e) {
@@ -264,27 +273,25 @@ function renderRouteMarker(waypoint, index) {
 
 function convertToGeoJSON(dataArray) {
   return {
-      'type': 'geojson',
-      'data': {
-          'type': 'FeatureCollection',
-          'features': dataArray.map(item => ({
-              'type': 'Feature',
-              'properties': {
-                  'name': item.name,
-                  'place_id': item.place_id,
-                  'price_level': item.price_level,
-                  'rating': item.rating
-              },
-              'geometry': {
-                  'type': 'Point',
-                  'coordinates': [item.Geometry.Location.lng, item.Geometry.Location.lat]
-              }
-          }))
-      }
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: dataArray.map((item) => ({
+        type: "Feature",
+        properties: {
+          name: item.name,
+          place_id: item.place_id,
+          price_level: item.price_level,
+          rating: item.rating,
+        },
+        geometry: {
+          type: "Point",
+          coordinates: [item.Geometry.Location.lng, item.Geometry.Location.lat],
+        },
+      })),
+    },
   };
 }
-
-
 
 function addAlternativeBarMarkers(route_points) {
   fetch(`${BASE_URL}/citypoints?location=${currentLocation}`, {
@@ -295,51 +302,56 @@ function addAlternativeBarMarkers(route_points) {
   })
     .then((response) => response.json())
     .then((waypoints) => {
-      waypoints = waypoints.filter(waypoint => !containsObject(waypoint.place_id, route_points.map(x => x.place_id)));
+      waypoints = waypoints.filter(
+        (waypoint) =>
+          !containsObject(
+            waypoint.place_id,
+            route_points.map((x) => x.place_id),
+          ),
+      );
       let convertedGEOJSON = convertToGeoJSON(waypoints);
-      map.addSource('places', convertedGEOJSON);
+      map.addSource("places", convertedGEOJSON);
       map.addLayer({
-        'id': 'places',
-        'type': 'circle',
-        'source': 'places',
-        'paint': {
-            'circle-color': '#4264fb',
-            'circle-radius': 6,
-            'circle-stroke-width': 2,
-            'circle-stroke-color': '#ffffff'
-        }
+        id: "places",
+        type: "circle",
+        source: "places",
+        paint: {
+          "circle-color": "#4264fb",
+          "circle-radius": 6,
+          "circle-stroke-width": 2,
+          "circle-stroke-color": "#ffffff",
+        },
       });
 
       const popup = new mapboxgl.Popup({
-          closeButton: false,
-          closeOnClick: false
+        closeButton: false,
+        closeOnClick: false,
       });
 
-      map.on('mouseenter', 'places', (e) => {
+      map.on("mouseenter", "places", (e) => {
         // Change the cursor style as a UI indicator.
-        map.getCanvas().style.cursor = 'pointer';
-    
+        map.getCanvas().style.cursor = "pointer";
+
         // Copy coordinates array.
         const coordinates = e.features[0].geometry.coordinates.slice();
         // description to name for now
         const description = e.features[0].properties.name;
-    
+
         // Ensure that if the map is zoomed out such that multiple
         // copies of the feature are visible, the popup appears
         // over the copy being pointed to.
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
-    
+
         // Populate the popup and set its coordinates
         // based on the feature found.
         popup.setLngLat(coordinates).setHTML(description).addTo(map);
-        
       });
-    
-      map.on('mouseleave', 'places', () => {
-          map.getCanvas().style.cursor = '';
-          popup.remove();
+
+      map.on("mouseleave", "places", () => {
+        map.getCanvas().style.cursor = "";
+        popup.remove();
       });
     })
     .catch((error) => {
@@ -348,20 +360,14 @@ function addAlternativeBarMarkers(route_points) {
 }
 
 function renderBarInformationBox(waypoint, index) {
-
-  console.log(waypoint)
+  console.log(waypoint);
 
   const input = document.createElement("input");
   input.type = "button";
   input.id = `marker-${index}`;
   input.onclick = () => {
-    let url = `https://www.google.com/maps/search/?api=1&query=${waypoint.Geometry.Location.lat},${waypoint.Geometry.Location.lng}&query_place_id=${waypoint.place_id}`
-    window
-      .open(
-        url,
-        "_blank",
-      )
-      .focus();
+    let url = `https://www.google.com/maps/search/?api=1&query=${waypoint.Geometry.Location.lat},${waypoint.Geometry.Location.lng}&query_place_id=${waypoint.place_id}`;
+    window.open(url, "_blank").focus();
   };
   const label = document.createElement("label");
   label.htmlFor = `marker-${index}`;
@@ -371,9 +377,9 @@ function renderBarInformationBox(waypoint, index) {
   )}</strong><br>${waypoint.name}`;
 
   if (waypoint.types.includes("tourist_attraction")) {
-    label.innerHTML = "🎡 " + label.innerHTML
-  }else{
-    label.innerHTML = "🍺 " + label.innerHTML
+    label.innerHTML = "🎡 " + label.innerHTML;
+  } else {
+    label.innerHTML = "🍺 " + label.innerHTML;
   }
 
   const ratingDiv = document.createElement("div");
@@ -403,29 +409,27 @@ function renderBarInformationBox(waypoint, index) {
 }
 
 function registerRoute(waypoints) {
+  console.log(directions);
+  directions.setOrigin([
+    waypoints[0].Geometry.Location.lng,
+    waypoints[0].Geometry.Location.lat,
+  ]);
 
-  console.log(directions)
-    directions.setOrigin([
-      waypoints[0].Geometry.Location.lng,
-      waypoints[0].Geometry.Location.lat,
+  directions.setDestination([
+    waypoints[waypoints.length - 1].Geometry.Location.lng,
+    waypoints[waypoints.length - 1].Geometry.Location.lat,
+  ]);
+
+  // Add the middle waypoints
+  waypoints.slice(1, -1).forEach((waypoint_mid, index) => {
+    directions.addWaypoint(index, [
+      waypoint_mid.Geometry.Location.lng,
+      waypoint_mid.Geometry.Location.lat,
     ]);
-
-    directions.setDestination([
-      waypoints[waypoints.length - 1].Geometry.Location.lng,
-      waypoints[waypoints.length - 1].Geometry.Location.lat,
-    ]);
-
-    // Add the middle waypoints
-    waypoints.slice(1, -1).forEach((waypoint_mid, index) => {
-      directions.addWaypoint(index, [
-        waypoint_mid.Geometry.Location.lng,
-        waypoint_mid.Geometry.Location.lat,
-      ]);
-    });
+  });
 }
 
 function pageStart() {
-
   showLoading();
   addLocations();
 
@@ -440,7 +444,6 @@ function pageStart() {
     urlParams.has("target_attractions") &&
     urlParams.has("marker1")
   ) {
-
     setAttractionDisplay(parseFloat(urlParams.get("target_attractions")));
     setMarkersDisplay(parseInt(urlParams.get("target_pubs")));
 
@@ -455,21 +458,20 @@ function pageStart() {
 
     currentLocation = location;
 
-    
     map.on("load", function () {
       fetch(`${BASE_URL}/crawl?location=${currentLocation}`, {
         method: "POST", // or 'PUT'
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ place_ids: markers.filter(n => n)}),
+        body: JSON.stringify({ place_ids: markers.filter((n) => n) }),
       })
         .then((response) => response.json())
         .then((waypoints) => {
-          selectedPubs = targetPubs
+          selectedPubs = targetPubs;
           updateRouteMetrics();
-          console.log("Rendering specific route")
-          renderRoute(waypoints)
+          console.log("Rendering specific route");
+          renderRoute(waypoints);
         })
         .catch((error) => {
           console.error("Error:", error);
