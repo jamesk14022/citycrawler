@@ -138,6 +138,7 @@ func addToCache(key string, value []Location) {
 
 // check which directories exist in given directory
 func checkCachedLocations() []string {
+	fmt.Println("Checking cached locations: ", cacheDir)
 	files, err := os.ReadDir(cacheDir)
 	if err != nil {
 		log.Fatal(err)
