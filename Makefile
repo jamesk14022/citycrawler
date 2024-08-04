@@ -6,3 +6,7 @@ run:
 
 tune:
 	go run tuning/parameter_tuning.go
+
+format: 
+	go fmt ./...
+	npx prettier --write . --ignore-path .prettierignore 

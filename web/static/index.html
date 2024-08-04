@@ -10,7 +10,10 @@
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css"
       rel="stylesheet"
@@ -32,9 +35,12 @@
       rel="stylesheet"
     />
     <!-- <script src="https://cdn.jsdelivr.net/npm/eruda"></script> -->
-<!-- <script>eruda.init();</script> -->
+    <!-- <script>eruda.init();</script> -->
     <script src="https://cdn.jsdelivr.net/npm/@mapbox/polyline@1.2.1/src/polyline.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <style>
       body,
       html {
@@ -59,16 +65,16 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         z-index: 1;
-        align-items:center;
+        align-items: center;
       }
-      #route-info{
+      #route-info {
         background-color: #f4f4f4;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
         z-index: 1;
       }
-      #route-info p{
+      #route-info p {
         margin: 0px;
       }
       .marker-container {
@@ -159,7 +165,6 @@
         z-index: 1;
       }
 
-
       #locations {
         position: absolute;
         top: 10px;
@@ -173,7 +178,6 @@
       }
       .material-icons {
         font-size: initial;
-        ;
       }
       @media screen and (min-width: 799px) {
         #rightBar {
@@ -257,241 +261,235 @@
         content: "✔";
         margin-right: 5px;
       }
-              /* Style for the info emblem */
-       .info-emblem {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-        }
+      /* Style for the info emblem */
+      .info-emblem {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
 
-        /* Style for the tooltip text */
-        .tooltip-text {
-            visibility: hidden;
-            width: 200px;
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%; /* Position the tooltip above the emblem */
-            left: 50%;
-            margin-left: -100px; /* Center the tooltip */
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
+      /* Style for the tooltip text */
+      .tooltip-text {
+        visibility: hidden;
+        width: 200px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%; /* Position the tooltip above the emblem */
+        left: 50%;
+        margin-left: -100px; /* Center the tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
 
-        /* Show the tooltip text when hovering over the info emblem */
-        .info-emblem:hover .tooltip-text {
-            visibility: visible;
-            opacity: 1;
-        }
+      /* Show the tooltip text when hovering over the info emblem */
+      .info-emblem:hover .tooltip-text {
+        visibility: visible;
+        opacity: 1;
+      }
 
-        /* Arrow below the tooltip text */
-        .tooltip-text::after {
-            content: "";
-            position: absolute;
-            top: 100%; /* At the bottom of the tooltip */
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: #555 transparent transparent transparent;
-        }
-        .marker {
-          border-radius: 50% 50% 50% 0;
-          border: 4px solid #fff;
-          width: 20px;
-          height: 20px;
-          transform: rotate(-45deg);
-          background-color: red;
-        }
-        .modal {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.5);
-          display: flex;
-          justify-content: center;
-        }
+      /* Arrow below the tooltip text */
+      .tooltip-text::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* At the bottom of the tooltip */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      .marker {
+        border-radius: 50% 50% 50% 0;
+        border: 4px solid #fff;
+        width: 20px;
+        height: 20px;
+        transform: rotate(-45deg);
+        background-color: red;
+      }
+      .modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+      }
 
-        .modal.hidden {
-          display: none;
-        }
+      .modal.hidden {
+        display: none;
+      }
 
-        .modal_content {
-          position: relative;
-          margin: auto 0;
-          width: 300px;
-          height: 200px;
-          background-color: lightgray;
-          border: 3px solid #999999;
-          text-align: center;
-          padding: 20px 40px;
-        }
-        #exit {
-          display: block;
-        }
-        #distance-slider{
-          margin-right: 10px;
-        }
-        #route-duration-paragraph{
-          display: inline;
-        }
-        .mapboxgl-popup {
+      .modal_content {
+        position: relative;
+        margin: auto 0;
+        width: 300px;
+        height: 200px;
+        background-color: lightgray;
+        border: 3px solid #999999;
+        text-align: center;
+        padding: 20px 40px;
+      }
+      #exit {
+        display: block;
+      }
+      #distance-slider {
+        margin-right: 10px;
+      }
+      #route-duration-paragraph {
+        display: inline;
+      }
+      .mapboxgl-popup {
         max-width: 400px;
         font:
-            12px/20px 'Helvetica Neue',
+          12px/20px "Helvetica Neue",
+          Arial,
+          Helvetica,
+          sans-serif;
+      }
+      .toggle-btn {
+        background-color: #008cba;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        display: none;
+      }
+
+      .sidebar {
+        height: 90%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.1s;
+        padding-top: 60px;
+        align-items: center;
+        box-shadow: #555;
+      }
+
+      .marker-label {
+        margin: 2px;
+        border-radius: 2px;
+      }
+
+      .sidebar button:hover {
+        color: #f1f1f1;
+      }
+
+      .sidebar .close-btn {
+        font-size: 20px;
+        text-align: center;
+        background-color: #008cba;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10% auto;
+        width: 40%;
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @media screen and (max-width: 799px) {
+        #refresh-button {
+          background-color: #008cba;
+          border: none;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          font-size: 14px;
+          margin: 8px 4px;
+          cursor: pointer;
+          border-radius: 5px;
+          padding: 10px;
+          position: absolute;
+          top: 60px; /* Adjust this value to set the distance from the top */
+          right: 0px; /* Adjust this value to set the distance from the right */
+        }
+        #shareButton {
+          z-index: 1;
+          background-color: #008cba;
+          border: none;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          margin: 8px 4px;
+          cursor: pointer;
+          padding: 10px;
+          border-radius: 5px;
+          position: absolute;
+          top: 60px; /* Adjust this value to set the distance from the top */
+          right: 160px; /* Adjust this value to set the distance from the right */
+        }
+        .toggle-btn {
+          display: block;
+        }
+        .marker-container.top-bar {
+          display: none;
+        }
+        div#slider-container.top-bar {
+          display: none;
+        }
+        #rightBar {
+          position: absolute;
+          bottom: 10px;
+          left: 25px;
+          z-index: 1;
+          width: 90%;
+        }
+        #controls {
+          width: 95%;
+        }
+        .listing-group {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .listing-group {
+          font:
+            14px/20px "Helvetica Neue",
             Arial,
             Helvetica,
             sans-serif;
         }
-        .toggle-btn {
-          background-color: #008cba;
-          color: white;
-          font-size: 30px;
-          cursor: pointer;
-          padding: 10px 15px;
-          border: none;
-          border-radius: 5px;
-          display: none;
+        .sidebar-label {
+          width: 200px;
+          padding-left: 10%;
         }
-
-        .sidebar {
-          height: 90%;
-          width: 0;
-          position: fixed;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background-color: white;
-          overflow-x: hidden;
-          transition: 0.1s;
-          padding-top: 60px;
-          align-items: center;
-          box-shadow: #555;
+        .btn-side {
+          width: 40px;
+          height: 40px;
         }
-
-        .marker-label{
-          margin: 2px;
-          border-radius: 2px;
-        }
-
-        .sidebar button:hover {
-          color: #f1f1f1;
-        }
-
-        .sidebar .close-btn {
-          font-size: 20px;
-          text-align: center;
-          background-color: #008cba;
-          color: white;
-          text-decoration: none;
-          cursor: pointer;
-          border-radius: 5px;
-          padding: 10px;
-          margin: 10% auto;
-          width: 40%;
-          position: absolute;
-          bottom: 30%;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-
-        @media screen and (max-width: 799px) {
-          #refresh-button {
-            background-color: #008cba;
-            border: none;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            font-size: 14px;
-            margin: 8px 4px;
-            cursor: pointer;
-            border-radius: 5px;
-            padding: 10px;
-            position: absolute;
-            top: 60px; /* Adjust this value to set the distance from the top */
-            right: 0px; /* Adjust this value to set the distance from the right */
-          }
-          #shareButton {
-            z-index: 1;
-            background-color: #008cba;
-            border: none;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
-            margin: 8px 4px;
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 5px;
-            position: absolute;
-            top: 60px; /* Adjust this value to set the distance from the top */
-            right: 160px; /* Adjust this value to set the distance from the right */
-        }
-          .toggle-btn {
-            display: block;
-          }
-          .marker-container.top-bar{
-            display: none;
-          }
-          div#slider-container.top-bar{
-            display: none;
-          }
-          #rightBar {
-            position: absolute;
-            bottom: 10px;
-            left: 25px;
-            z-index: 1;
-            width: 90%;
-          }
-          #controls {
-            width: 95%;
-          }
-          .listing-group{
-            display: flex;
-            flex-wrap: wrap;
-          }
-          .listing-group {
-            font:
-              14px/20px "Helvetica Neue",
-              Arial,
-              Helvetica,
-              sans-serif;
-          }
-          .sidebar-label{
-            width: 200px;
-            padding-left: 10%;
-          }
-          .btn-side{
-            width: 40px;
-            height: 40px;
-          }
-        }
+      }
     </style>
   </head>
   <body>
     <div id="container">
-      <div
-        class="modal hidden"
-        id="no-results"
-      >
+      <div class="modal hidden" id="no-results">
         <div class="modal_content">
-          
-        <p id="no_pubs">
-          No routes found within the specified distance. Please try adjusting the
-          distance or number of pubs.
-        </p>
-        <p id="city_not_found">
-          City not found. Please try again.
-        </p>
-        <div id="exit"><input type="button" value="Close" /></div>
-      </div>
+          <p id="no_pubs">
+            No routes found within the specified distance. Please try adjusting
+            the distance or number of pubs.
+          </p>
+          <p id="city_not_found">City not found. Please try again.</p>
+          <div id="exit"><input type="button" value="Close" /></div>
+        </div>
       </div>
       <div id="map">
         <div id="controls">
@@ -523,7 +521,9 @@
             <button class="distance-quantity-btn-plus">+</button>
           </div> -->
           <button type="button" id="shareButton">Copy sharing link</button>
-          <button type="button" id="refresh-button"><i class="material-icons">shuffle</i> Randomise Route</button>
+          <button type="button" id="refresh-button">
+            <i class="material-icons">shuffle</i> Randomise Route
+          </button>
           <div id="toggleBar">
             <button id="sidebarToggle" class="toggle-btn">☰</button>
           </div>
@@ -531,21 +531,23 @@
 
         <datalist id="locations"></datalist>
 
-
-
         <div id="rightBar">
           <div id="route-info">
             <p>Total route distance is <span id="route-length">10</span>km</p>
-            <p id="route-duration-paragraph">Total route duration is <span id="route-duration">50</span> minutes</p>
+            <p id="route-duration-paragraph">
+              Total route duration is
+              <span id="route-duration">50</span> minutes
+            </p>
             <div class="info-emblem">
               <i class="fas fa-info-circle"></i>
-              <span class="tooltip-text">Pub crawl distances are calculated assuming you spend 30 minutes at each bar / attraction.</span>
-          </div>
+              <span class="tooltip-text"
+                >Pub crawl distances are calculated assuming you spend 30
+                minutes at each bar / attraction.</span
+              >
+            </div>
           </div>
           <nav id="listing-group" class="listing-group"></nav>
         </div>
-
-        
       </div>
     </div>
     <div id="collap-sidebar" class="sidebar">
@@ -557,13 +559,15 @@
       </div>
 
       <div class="marker-container">
-        <label class="sidebar-label" for="distance-slider">Tourist Attractions:</label>
+        <label class="sidebar-label" for="distance-slider"
+          >Tourist Attractions:</label
+        >
         <button class="btn-side attraction-quantity-btn-minus">-</button>
         <span class="num-attractions"></span>
         <button class="btn-side attraction-quantity-btn-plus">+</button>
       </div>
-    </br>
-    </br>
+      <br />
+      <br />
       <!-- <div id="slider-container">
         <label class="sidebar-label" for="distance-slider">Distance (km):</label>
         <button class="btn-side distance-quantity-btn-minus">-</button>

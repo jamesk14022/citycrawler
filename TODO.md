@@ -3,7 +3,6 @@
 - remove A&B mapbox-GL markers
 - error messaged are greyed
 
-
 - tourist attractions button - desktop site
 - tourist attractions button - mobile site
 - scrape attractions data ireland
