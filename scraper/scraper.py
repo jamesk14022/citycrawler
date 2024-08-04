@@ -72,56 +72,56 @@ CITY_COORDS_IRELAND = {
 }
 
 CITY_COORDS_UK = {
-    "London": (51.5072, -0.1275),
-    "Birmingham": (52.4800, -1.9025),
-    "Portsmouth": (50.8058, -1.0872),
-    "Southampton": (50.9025, -1.4042),
-    "Nottingham": (52.9561, -1.1512),
-    "Bristol": (51.4536, -2.5975),
-    "Manchester": (53.4790, -2.2452),
-    "Liverpool": (53.4094, -2.9785),
-    "Leicester": (52.6344, -1.1319),
-    "Worthing": (50.8147, -0.3714),
-    "Coventry": (52.4081, -1.5106),
-    "Belfast": (54.5964, -5.9300),
-    "Bradford": (53.8000, -1.7500),
-    "Derby": (52.9247, -1.4780),
-    "Plymouth": (50.3714, -4.1422),
-    "Westminster": (51.4947, -0.1353),
-    "Wolverhampton": (52.5833, -2.1333),
-    "Northampton": (52.2304, -0.8938),
-    "Norwich": (52.6286, 1.2928),
-    "Luton": (51.8783, -0.4147),
-    "Solihull": (52.4130, -1.7780),
-    "Islington": (51.5440, -0.1027),
-    "Aberdeen": (57.1500, -2.1100),
-    "Croydon": (51.3727, -0.1099),
-    "Bournemouth": (50.7200, -1.8800),
-    "Basildon": (51.5800, 0.4900),
-    "Maidstone": (51.2720, 0.5290),
-    "Ilford": (51.5575, 0.0858),
-    "Warrington": (53.3900, -2.5900),
+    # "London": (51.5072, -0.1275),
+    # "Birmingham": (52.4800, -1.9025),
+    # "Portsmouth": (50.8058, -1.0872),
+    # "Southampton": (50.9025, -1.4042),
+    # "Nottingham": (52.9561, -1.1512),
+    # "Bristol": (51.4536, -2.5975),
+    # "Manchester": (53.4790, -2.2452),
+    # "Liverpool": (53.4094, -2.9785),
+    # "Leicester": (52.6344, -1.1319),
+    # "Worthing": (50.8147, -0.3714),
+    # "Coventry": (52.4081, -1.5106),
+    # "Belfast": (54.5964, -5.9300),
+    # "Bradford": (53.8000, -1.7500),
+    # "Derby": (52.9247, -1.4780),
+    # "Plymouth": (50.3714, -4.1422),
+    # "Westminster": (51.4947, -0.1353),
+    # "Wolverhampton": (52.5833, -2.1333),
+    # "Northampton": (52.2304, -0.8938),
+    # "Norwich": (52.6286, 1.2928),
+    # "Luton": (51.8783, -0.4147),
+    # "Solihull": (52.4130, -1.7780),
+    # "Islington": (51.5440, -0.1027),
+    # "Aberdeen": (57.1500, -2.1100),
+    # "Croydon": (51.3727, -0.1099),
+    # "Bournemouth": (50.7200, -1.8800),
+    # "Basildon": (51.5800, 0.4900),
+    # "Maidstone": (51.2720, 0.5290),
+    # "Ilford": (51.5575, 0.0858),
+    # "Warrington": (53.3900, -2.5900),
     "Oxford": (51.7500, -1.2500),
-    "Harrow": (51.5836, -0.3464),
-    "West Bromwich": (52.5190, -1.9950),
+    # "Harrow": (51.5836, -0.3464),
+    # "West Bromwich": (52.5190, -1.9950),
     "Gloucester": (51.8667, -2.2500),
     "York": (53.9600, -1.0800),
     "Blackpool": (53.8142, -3.0503),
-    "Stockport": (53.4083, -2.1494),
-    "Sale": (53.4240, -2.3220),
-    "Tottenham": (51.5975, -0.0681),
+    # "Stockport": (53.4083, -2.1494),
+    # "Sale": (53.4240, -2.3220),
+    # "Tottenham": (51.5975, -0.0681),
     "Cambridge": (52.2053, 0.1192),
-    "Romford": (51.5768, 0.1801),
-    "Colchester": (51.8917, 0.9030),
-    "High Wycombe": (51.6287, -0.7482),
-    "Gateshead": (54.9556, -1.6000),
-    "Slough": (51.5084, -0.5881),
-    "Blackburn": (53.7480, -2.4820),
-    "Chelmsford": (51.7300, 0.4800),
+    # "Romford": (51.5768, 0.1801),
+    # "Colchester": (51.8917, 0.9030),
+    # "High Wycombe": (51.6287, -0.7482),
+    # "Gateshead": (54.9556, -1.6000),
+    # "Slough": (51.5084, -0.5881),
+    # "Blackburn": (53.7480, -2.4820),
+    # "Chelmsford": (51.7300, 0.4800),
 }
 
-BASE_PATH = "../dublin_attraction_data/"
-SEARCH_RADIUS = 1750
+BASE_PATH = "../UK_attraction_data/"
+SEARCH_RADIUS = 1000
 
 GOOGLE_MAPS_BASE_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
 GOOGLE_MAPS_NEXT_PAGE_DELAY = 2.5
@@ -155,10 +155,12 @@ def load_location_search():
     return state
 
 def make_nearby_search_request(coords, radius, next_page_token, location_type="pub"):
+
     KEY = os.environ["GOOGLE_MAPS_API_KEY"]
     headers = {"accept": "application/json"}
     results = []
     lat, long = coords
+
 
     if next_page_token:
         time.sleep(GOOGLE_MAPS_NEXT_PAGE_DELAY)
@@ -175,6 +177,7 @@ def make_nearby_search_request(coords, radius, next_page_token, location_type="p
     raw_response = requests.get(url, headers=headers)
     response = json.loads(raw_response.text)
     results += response["results"]
+
     if "next_page_token" in response:
         results += make_nearby_search_request(coords, radius, response["next_page_token"], location_type)
 
@@ -183,9 +186,8 @@ def make_nearby_search_request(coords, radius, next_page_token, location_type="p
 def location_search(coords, radius):
 
     results = []
-    types = ["pub", "tourist_attraction"]
-    for t in types:
-        results += make_nearby_search_request(coords, radius, None, t)
+    results += make_nearby_search_request(coords, radius, None, "pub")[:30]
+    results += make_nearby_search_request(coords, radius, None, "tourist_attraction")[:10]
 
     return results
 
@@ -202,6 +204,7 @@ def build_matrices(state):
     print("distance matrix")
     # populate distance matrix
     for i in range(size):
+        print(f"Row {i}")
         for j in range(size):
             if D[i][j] == 0:
                 wd = walking_distance(
@@ -249,10 +252,11 @@ def create_directory_if_not_exists(directory_path):
         print("Directory already exists:", directory_path)
 
 
-for name, coords in CITY_COORDS_IRELAND.items():
+for name, coords in CITY_COORDS_UK.items():
     name = name.lower()
 
     state = location_search(coords, SEARCH_RADIUS)
+    print(f"Found {len(state)} locations in {name}")
     create_directory_if_not_exists(BASE_PATH + name)
 
     with open(

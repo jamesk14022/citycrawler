@@ -3,8 +3,8 @@ import {
   TIME_SPENT_BAR,
   MAPBOX_TOKEN,
   BASE_URL,
-} from "./constants.js"; // Make sure this path points directly to the albumsData.js file
-import { containsObject } from "./utils.js";
+} from "/usr/local/web/static/constants.js"; // Make sure this path points directly to the albumsData.js file
+import { containsObject } from "/usr/local/web/static/utils.js";
 
 // token scoped and safe for FE use
 mapboxgl.accessToken = MAPBOX_TOKEN;
