@@ -24,13 +24,13 @@ var cacheDir = os.Getenv("CACHE_DIR")
 var markerSettings = map[int]map[string]float64{
 	3: {
 		"distanceThreshold": 0.9,
-		"mu":                1.4,
-		"alpha":             1.4,
+		"mu":                1.1,
+		"alpha":             1.1,
 	},
 	4: {
 		"distanceThreshold": 0.9,
-		"mu":                1.4,
-		"alpha":             1.4,
+		"mu":                1.1,
+		"alpha":             1.1,
 	},
 	5: {
 		"distanceThreshold": 1.6,
@@ -207,6 +207,7 @@ func AdjacentLengthMeetConstraint(path []int, D DistanceMatrix, mu float64) bool
 		points = utils.Remove(points, path[i])
 		distToNext := D[path[i]][path[i+1]]
 		for _, p := range points {
+			fmt.Println("Dist to next:", distToNext, "Dist to p:", D[path[i]][p], "Mu:", mu)
 			if distToNext > (D[path[i]][p])*mu {
 				return false
 			}
@@ -341,11 +342,11 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 	})
 	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
-		return AdjacentLengthMeetConstraint(e, D, markerSettings[targetPubs]["mu"])
+		return AdjacentLengthMeetConstraint(e, D, markerSettings[targetPubs+targetAttractions]["mu"])
 	})
 	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPathsDistances(eligiblePaths, distances, func(e []int, f float64) bool {
-		return EqualLengthMeetConstraint(e, f, D, markerSettings[targetPubs]["alpha"])
+		return EqualLengthMeetConstraint(e, f, D, markerSettings[targetPubs+targetAttractions]["alpha"])
 	})
 	fmt.Println("Eligible paths:", len(eligiblePaths))
 	// eligiblePaths = utils.RemoveDuplicateRows(eligiblePaths)
