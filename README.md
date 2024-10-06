@@ -21,9 +21,7 @@ Prettier is used for consistent JS code formatting.
 - **Usage:** Run `npm run format` to format JS files.
 
 ### 4. Golang Libraries
-Managed via Go modules. Install all dependencies by running:
-  ```bash
-  go mod tidy
+Managed via Go modules. Install all dependencies by running: `go mod tidy`
 
 ### Run
 
