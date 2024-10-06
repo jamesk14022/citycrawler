@@ -7,23 +7,12 @@ Web app that uses graph theory to generate custom “city crawl” routes in EU 
 
 ## Dependencies
 
-#### 1. Docker
-Ensure Docker is installed for containerization.  
-- **Install:** [Docker Installation Guide](https://docs.docker.com/get-docker/)
+- **Docker:** [Install](https://docs.docker.com/get-docker/)
+- **Golang (v1.22.3):** [Install](https://go.dev/dl/)
+- **Prettier:** Install with `npm install` and format code using `npm run format`.
+- **Golang Libraries:** Install with `go mod tidy`.
 
-#### 2. Golang (Go 1.22.3)
-Install Go from the [official site](https://go.dev/dl/).  
-- **Version:** `Go 1.22.3`
-
-#### 3. Prettier (JavaScript Formatting)
-Prettier is used for consistent JS code formatting.  
-- **Install:** Run `npm install` (Prettier is installed as a dev dependency).  
-- **Usage:** Run `npm run format` to format JS files.
-
-#### 4. Golang Libraries
-Managed via Go modules. Install all dependencies by running: `go mod tidy`
-
-### Run
+## Run
 
 ```
 # build executable
