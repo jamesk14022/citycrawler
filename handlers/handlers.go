@@ -20,7 +20,7 @@ import (
 
 const CacheSize = 5
 
-var cacheDir = os.Getenv("CACHE_DIR")
+var cacheDir = os.Getenv("WEB_DIR") + "attr_data/"
 var markerSettings = map[int]map[string]float64{
 	3: {
 		"distanceThreshold": 0.9,

@@ -3,45 +3,19 @@ import {
   TIME_SPENT_BAR,
   MAPBOX_TOKEN,
   BASE_URL,
-} from "./constants.js"; // Make sure this path points directly to the albumsData.js file
-import { containsObject } from "./utils.js";
+  INITIAL_LOCATION,
+  container, refreshButton, shareButton, searchBox, modalExitButton, noPubsConent, cityNotFound, rightBar, nav, dataList, markerMinus, markerPlus, attractionMinus, attractionPlus, attractionCounter, markerCounter, sidebar, sidebarToggle, closeBtn
+} from "./constants.js"; 
+import { containsObject, copy, updateURL, convertToGeoJSON } from "./utils.js";
 
 // token scoped and safe for FE use
 mapboxgl.accessToken = MAPBOX_TOKEN;
 
 // appplication state
-var currentLocation = "Dublin";
-var currentMarkers = [];
-var selectedPubs = 3;
-var selectedAttractions = 1;
-
-const container = document.getElementById("container");
-const refreshButton = document.getElementById("refresh-button");
-const shareButton = document.getElementById("shareButton");
-const searchBox = document.getElementById("search-box");
-const modalExitButton = document.getElementById("exit");
-const noPubsConent = document.getElementById("no_pubs");
-const cityNotFound = document.getElementById("city_not_found");
-const rightBar = document.getElementById("rightBar");
-const nav = document.getElementById("listing-group");
-const dataList = document.getElementById("locations");
-
-const markerMinus = document.querySelectorAll(".marker-quantity-btn-minus");
-const markerPlus = document.querySelectorAll(".marker-quantity-btn-plus");
-
-const attractionMinus = document.querySelectorAll(
-  ".attraction-quantity-btn-minus",
-);
-const attractionPlus = document.querySelectorAll(
-  ".attraction-quantity-btn-plus",
-);
-
-const attractionCounter = document.querySelectorAll(".num-attractions");
-const markerCounter = document.querySelectorAll(".num-markers");
-
-const sidebar = document.getElementById("collap-sidebar");
-const sidebarToggle = document.getElementById("sidebarToggle");
-const closeBtn = sidebar.querySelector(".close-btn");
+let currentLocation = "Dublin";
+let currentMarkers = [];
+let selectedPubs = 3;
+let selectedAttractions = 1;
 
 shareButton.addEventListener("click", copyLink);
 
@@ -50,7 +24,7 @@ markerMinus.forEach((btn) => {
     if (selectedPubs === 2) {
       return;
     }
-    selectedPubs -= parseInt(1);
+    selectedPubs -= 1;
     setMarkersDisplay(selectedPubs);
   });
 });
@@ -70,7 +44,7 @@ attractionMinus.forEach((btn) => {
     if (selectedAttractions === 1.0) {
       return;
     }
-    selectedAttractions -= parseInt(1.0);
+    selectedAttractions -= 1;
     setAttractionDisplay(selectedAttractions);
   });
 });
@@ -80,7 +54,7 @@ attractionPlus.forEach((btn) => {
     if (selectedAttractions === 4) {
       return;
     }
-    selectedAttractions += parseInt(1.0);
+    selectedAttractions += 1;
     setAttractionDisplay(selectedAttractions);
   });
 });
@@ -89,7 +63,7 @@ attractionPlus.forEach((btn) => {
 const map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/streets-v11",
-  center: [4.89714, 52.3663],
+  center: INITIAL_LOCATION,
   zoom: 12,
 });
 
@@ -140,7 +114,7 @@ const clearExistingRoute = () => {
   directions.removeRoutes();
   nav.innerHTML = "";
   if (currentMarkers !== null) {
-    for (var i = currentMarkers.length - 1; i >= 0; i--) {
+    for (let i = currentMarkers.length - 1; i >= 0; i--) {
       currentMarkers[i].remove();
     }
     currentMarkers = [];
@@ -172,61 +146,9 @@ function hideLoading() {
   container.classList.remove("blurred");
 }
 
-function copy(text) {
-  return new Promise((resolve, reject) => {
-    if (
-      typeof navigator !== "undefined" &&
-      typeof navigator.clipboard !== "undefined" &&
-      navigator.permissions !== "undefined"
-    ) {
-      const type = "text/plain";
-      const blob = new Blob([text], { type });
-      const data = [new ClipboardItem({ [type]: blob })];
-      navigator.permissions
-        .query({ name: "clipboard-write" })
-        .then((permission) => {
-          if (permission.state === "granted" || permission.state === "prompt") {
-            navigator.clipboard.write(data).then(resolve, reject).catch(reject);
-          } else {
-            reject(new Error("Permission not granted!"));
-          }
-        });
-    } else if (
-      document.queryCommandSupported &&
-      document.queryCommandSupported("copy")
-    ) {
-      var textarea = document.createElement("textarea");
-      textarea.textContent = text;
-      textarea.style.position = "fixed";
-      textarea.style.width = "2em";
-      textarea.style.height = "2em";
-      textarea.style.padding = 0;
-      textarea.style.border = "none";
-      textarea.style.outline = "none";
-      textarea.style.boxShadow = "none";
-      textarea.style.background = "transparent";
-      document.body.appendChild(textarea);
-      textarea.focus();
-      textarea.select();
-      try {
-        document.execCommand("copy");
-        document.body.removeChild(textarea);
-        resolve();
-      } catch (e) {
-        document.body.removeChild(textarea);
-        reject(e);
-      }
-    } else {
-      reject(
-        new Error("None of copying methods are supported by this browser!"),
-      );
-    }
-  });
-}
-
 function copyLink() {
   // Get the current URL
-  var url = window.location.href;
+  let url = window.location.href;
 
   // Copy the URL to the clipboard
   copy(url);
@@ -260,7 +182,7 @@ function renderRouteMarker(waypoint, index) {
   el.textContent = String.fromCharCode(65 + index); // Labels A, B, C, etc.
 
   // Create the marker
-  var m = new mapboxgl.Marker(el);
+  let m = new mapboxgl.Marker(el);
   m.setLngLat([waypoint.Geometry.Location.lng, waypoint.Geometry.Location.lat])
     .addTo(map)
     .getElement()
@@ -269,28 +191,6 @@ function renderRouteMarker(waypoint, index) {
     });
 
   currentMarkers.push(m);
-}
-
-function convertToGeoJSON(dataArray) {
-  return {
-    type: "geojson",
-    data: {
-      type: "FeatureCollection",
-      features: dataArray.map((item) => ({
-        type: "Feature",
-        properties: {
-          name: item.name,
-          place_id: item.place_id,
-          price_level: item.price_level,
-          rating: item.rating,
-        },
-        geometry: {
-          type: "Point",
-          coordinates: [item.Geometry.Location.lng, item.Geometry.Location.lat],
-        },
-      })),
-    },
-  };
 }
 
 function addAlternativeBarMarkers(route_points) {
@@ -460,7 +360,7 @@ function pageStart() {
 
     map.on("load", function () {
       fetch(`${BASE_URL}/crawl?location=${currentLocation}`, {
-        method: "POST", // or 'PUT'
+        method: "POST", 
         headers: {
           "Content-Type": "application/json",
         },
@@ -529,22 +429,7 @@ function toggleNoCitiesResults() {
   cityNotFound.style.display = "block";
 }
 
-function updateURL(location, targetPubs, targetAttractions, ...markers) {
-  var state = {
-    location: location,
-    targetN: targetPubs + targetAttractions,
-  };
-  for (let i = 0; i < markers.length; i++) {
-    state[`marker${i + 1}`] = markers[i];
-  }
 
-  var pathState = `?location=${location}&target_pubs=${targetPubs}&target_attractions=${targetAttractions}`;
-  for (let i = 0; i < markers.length; i++) {
-    pathState += `&marker${i + 1}=${markers[i]}`;
-  }
-
-  history.pushState(state, "Route", pathState);
-}
 
 function addLocations() {
   dataList.innerHTML = "";
@@ -576,7 +461,7 @@ window.onload = pageStart;
 refreshButton.addEventListener("click", buildMap);
 modalExitButton.addEventListener("click", toggleNoPubsResults);
 searchBox.addEventListener("keypress", function (e) {
-  var inputVal = e.target.value;
+  let inputVal = e.target.value;
   if (inputVal in CITY_POINTS) {
     map.flyTo({
       center: CITY_POINTS[inputVal],
@@ -591,7 +476,7 @@ searchBox.addEventListener("keypress", function (e) {
   }
 });
 searchBox.addEventListener("input", function (e) {
-  var inputVal = e.target.value;
+  let inputVal = e.target.value;
   if (inputVal in CITY_POINTS) {
     map.flyTo({
       center: CITY_POINTS[inputVal],

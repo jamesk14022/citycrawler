@@ -220,4 +220,34 @@ const BASE_URL =
     ? "http://127.0.0.1:8080"
     : "https://pubcrawler.app";
 
-export { CITY_POINTS, TIME_SPENT_BAR, MAPBOX_TOKEN, BASE_URL };
+const INITIAL_LOCATION = [4.89714, 52.3663];
+
+const container = document.getElementById("container");
+const refreshButton = document.getElementById("refresh-button");
+const shareButton = document.getElementById("shareButton");
+const searchBox = document.getElementById("search-box");
+const modalExitButton = document.getElementById("exit");
+const noPubsConent = document.getElementById("no_pubs");
+const cityNotFound = document.getElementById("city_not_found");
+const rightBar = document.getElementById("rightBar");
+const nav = document.getElementById("listing-group");
+const dataList = document.getElementById("locations");
+
+const markerMinus = document.querySelectorAll(".marker-quantity-btn-minus");
+const markerPlus = document.querySelectorAll(".marker-quantity-btn-plus");
+
+const attractionMinus = document.querySelectorAll(
+  ".attraction-quantity-btn-minus",
+);
+const attractionPlus = document.querySelectorAll(
+  ".attraction-quantity-btn-plus",
+);
+
+const attractionCounter = document.querySelectorAll(".num-attractions");
+const markerCounter = document.querySelectorAll(".num-markers");
+
+const sidebar = document.getElementById("collap-sidebar");
+const sidebarToggle = document.getElementById("sidebarToggle");
+const closeBtn = sidebar.querySelector(".close-btn");
+
+export { CITY_POINTS, TIME_SPENT_BAR, MAPBOX_TOKEN, BASE_URL, INITIAL_LOCATION, container, refreshButton, shareButton, searchBox, modalExitButton, noPubsConent, cityNotFound, rightBar, nav, dataList, markerMinus, markerPlus, attractionMinus, attractionPlus, attractionCounter, markerCounter, sidebar, sidebarToggle, closeBtn };

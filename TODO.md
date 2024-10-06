@@ -12,3 +12,9 @@
 - set cache settings for attraction data
 - verify mapbox directions api cost
 - check that we don't double request directions api when scraping
+- config for marker settings
+- document the API
+- remove commented HTML
+- cleanup city names in load cache
+- cleanup citynames in constants.js
+- modularise client.js
