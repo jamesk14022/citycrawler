@@ -9,7 +9,6 @@ Web app that uses graph theory to generate custom “city crawl” routes in EU 
 
 - **Docker:** [Install](https://docs.docker.com/get-docker/)
 - **Golang (v1.22.3):** [Install](https://go.dev/dl/)
-- **Prettier:** Install with `npm install` and format code using `npm run format`.
 - **Golang Libraries:** Install with `go mod tidy`.
 
 ## Run
