@@ -3,6 +3,7 @@ import {
   TIME_SPENT_BAR,
   MAPBOX_TOKEN,
   BASE_URL,
+  GOOGLE_MAP_BASE_URL,
   INITIAL_LOCATION,
   container,
   refreshButton,
@@ -98,14 +99,8 @@ directions.on("route", (e) => {
 
 map.addControl(directions, "top-left");
 
-function openSidebar() {
-  sidebar.style.width = "400px";
-}
-
-function closeSidebar() {
-  sidebar.style.width = "0";
-}
-
+const openSidebar = () => sidebar.style.width = "400px";
+const closeSidebar = () => sidebar.style.width = "0";
 sidebarToggle.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
 
@@ -150,13 +145,8 @@ function showLoading() {
   container.classList.add("blurred");
 }
 
-function hideRightBar() {
-  rightBar.style.display = "none";
-}
-
-function showRightBar() {
-  rightBar.style.display = "block";
-}
+const hideRightBar = () => rightBar.style.display = "none";
+const showRightBar = () => rightBar.style.display = "block";
 
 function hideLoading() {
   document.querySelector(".loading-spinner").style.display = "none";
@@ -281,7 +271,7 @@ function renderBarInformationBox(waypoint, index) {
   input.type = "button";
   input.id = `marker-${index}`;
   input.onclick = () => {
-    let url = `https://www.google.com/maps/search/?api=1&query=${waypoint.Geometry.Location.lat},${waypoint.Geometry.Location.lng}&query_place_id=${waypoint.place_id}`;
+    let url = `${GOOGLE_MAP_BASE_URL}/?api=1&query=${waypoint.Geometry.Location.lat},${waypoint.Geometry.Location.lng}&query_place_id=${waypoint.place_id}`;
     window.open(url, "_blank").focus();
   };
   const label = document.createElement("label");
@@ -453,7 +443,7 @@ function addLocations() {
   }
 }
 
-const buildMap = () => {
+function buildMap() {
   clearExistingRoute();
   showLoading();
   addLocations();
@@ -469,11 +459,9 @@ const buildMap = () => {
   updateRouteMetrics();
 };
 
-window.onload = pageStart;
-
 refreshButton.addEventListener("click", buildMap);
 modalExitButton.addEventListener("click", toggleNoPubsResults);
-searchBox.addEventListener("keypress", function (e) {
+searchBox.addEventListener("keypress", (e) => {
   let inputVal = e.target.value;
   if (inputVal in CITY_POINTS) {
     map.flyTo({
@@ -488,7 +476,7 @@ searchBox.addEventListener("keypress", function (e) {
     }
   }
 });
-searchBox.addEventListener("input", function (e) {
+searchBox.addEventListener("input", (e) => {
   let inputVal = e.target.value;
   if (inputVal in CITY_POINTS) {
     map.flyTo({
@@ -499,3 +487,5 @@ searchBox.addEventListener("input", function (e) {
     buildMap();
   }
 });
+
+window.onload = pageStart;
