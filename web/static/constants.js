@@ -220,7 +220,7 @@ const BASE_URL =
     ? "http://127.0.0.1:8080"
     : "https://pubcrawler.app";
 
-const GOOGLE_MAP_BASE_URL = "https://www.google.com/maps/search"
+const GOOGLE_MAP_BASE_URL = "https://www.google.com/maps/search";
 
 const INITIAL_LOCATION = [4.89714, 52.3663];
 

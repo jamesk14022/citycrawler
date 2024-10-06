@@ -99,8 +99,8 @@ directions.on("route", (e) => {
 
 map.addControl(directions, "top-left");
 
-const openSidebar = () => sidebar.style.width = "400px";
-const closeSidebar = () => sidebar.style.width = "0";
+const openSidebar = () => (sidebar.style.width = "400px");
+const closeSidebar = () => (sidebar.style.width = "0");
 sidebarToggle.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
 
@@ -145,8 +145,8 @@ function showLoading() {
   container.classList.add("blurred");
 }
 
-const hideRightBar = () => rightBar.style.display = "none";
-const showRightBar = () => rightBar.style.display = "block";
+const hideRightBar = () => (rightBar.style.display = "none");
+const showRightBar = () => (rightBar.style.display = "block");
 
 function hideLoading() {
   document.querySelector(".loading-spinner").style.display = "none";
@@ -457,7 +457,7 @@ function buildMap() {
       renderRoute(waypoints);
     });
   updateRouteMetrics();
-};
+}
 
 refreshButton.addEventListener("click", buildMap);
 modalExitButton.addEventListener("click", toggleNoPubsResults);
