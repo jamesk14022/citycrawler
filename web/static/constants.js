@@ -250,4 +250,29 @@ const sidebar = document.getElementById("collap-sidebar");
 const sidebarToggle = document.getElementById("sidebarToggle");
 const closeBtn = sidebar.querySelector(".close-btn");
 
-export { CITY_POINTS, TIME_SPENT_BAR, MAPBOX_TOKEN, BASE_URL, INITIAL_LOCATION, container, refreshButton, shareButton, searchBox, modalExitButton, noPubsConent, cityNotFound, rightBar, nav, dataList, markerMinus, markerPlus, attractionMinus, attractionPlus, attractionCounter, markerCounter, sidebar, sidebarToggle, closeBtn };
+export {
+  CITY_POINTS,
+  TIME_SPENT_BAR,
+  MAPBOX_TOKEN,
+  BASE_URL,
+  INITIAL_LOCATION,
+  container,
+  refreshButton,
+  shareButton,
+  searchBox,
+  modalExitButton,
+  noPubsConent,
+  cityNotFound,
+  rightBar,
+  nav,
+  dataList,
+  markerMinus,
+  markerPlus,
+  attractionMinus,
+  attractionPlus,
+  attractionCounter,
+  markerCounter,
+  sidebar,
+  sidebarToggle,
+  closeBtn,
+};

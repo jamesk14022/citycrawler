@@ -4,8 +4,26 @@ import {
   MAPBOX_TOKEN,
   BASE_URL,
   INITIAL_LOCATION,
-  container, refreshButton, shareButton, searchBox, modalExitButton, noPubsConent, cityNotFound, rightBar, nav, dataList, markerMinus, markerPlus, attractionMinus, attractionPlus, attractionCounter, markerCounter, sidebar, sidebarToggle, closeBtn
-} from "./constants.js"; 
+  container,
+  refreshButton,
+  shareButton,
+  searchBox,
+  modalExitButton,
+  noPubsConent,
+  cityNotFound,
+  rightBar,
+  nav,
+  dataList,
+  markerMinus,
+  markerPlus,
+  attractionMinus,
+  attractionPlus,
+  attractionCounter,
+  markerCounter,
+  sidebar,
+  sidebarToggle,
+  closeBtn,
+} from "./constants.js";
 import { containsObject, copy, updateURL, convertToGeoJSON } from "./utils.js";
 
 // token scoped and safe for FE use
@@ -237,9 +255,6 @@ function addAlternativeBarMarkers(route_points) {
         // description to name for now
         const description = e.features[0].properties.name;
 
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
           coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
@@ -360,7 +375,7 @@ function pageStart() {
 
     map.on("load", function () {
       fetch(`${BASE_URL}/crawl?location=${currentLocation}`, {
-        method: "POST", 
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
@@ -428,8 +443,6 @@ function toggleNoCitiesResults() {
   noPubsConent.style.display = "none";
   cityNotFound.style.display = "block";
 }
-
-
 
 function addLocations() {
   dataList.innerHTML = "";
