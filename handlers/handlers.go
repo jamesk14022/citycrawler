@@ -207,7 +207,6 @@ func AdjacentLengthMeetConstraint(path []int, D DistanceMatrix, mu float64) bool
 		points = utils.Remove(points, path[i])
 		distToNext := D[path[i]][path[i+1]]
 		for _, p := range points {
-			fmt.Println("Dist to next:", distToNext, "Dist to p:", D[path[i]][p], "Mu:", mu)
 			if distToNext > (D[path[i]][p])*mu {
 				return false
 			}
