@@ -49,5 +49,3 @@ func tuneCrawlParameters() {
 func main() {
 	tuneCrawlParameters()
 }
-
-// alpha 1.3 (if dist max == 3.0) looks like a decent setting for most irish citis

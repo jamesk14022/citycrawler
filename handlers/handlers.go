@@ -333,28 +333,21 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 	}
 
 	size := len(enrichedData)
-	fmt.Println("Size:", size)
 	eligiblePaths, distances := GetEligiblePaths(size, targetPubs, targetAttractions, D, enrichedData)
-	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
 		return !CheckOverlap(e, R)
 	})
-	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
 		return AdjacentLengthMeetConstraint(e, D, markerSettings[targetPubs+targetAttractions]["mu"])
 	})
-	fmt.Println("Eligible paths:", len(eligiblePaths))
 	eligiblePaths = FilterPathsDistances(eligiblePaths, distances, func(e []int, f float64) bool {
 		return EqualLengthMeetConstraint(e, f, D, markerSettings[targetPubs+targetAttractions]["alpha"])
 	})
-	fmt.Println("Eligible paths:", len(eligiblePaths))
-	// eligiblePaths = utils.RemoveDuplicateRows(eligiblePaths)
 
 	if len(eligiblePaths) == 0 {
 		json.NewEncoder(w).Encode(emptyResponse)
 	} else {
 		path := eligiblePaths[rand.Intn(len(eligiblePaths))]
-		fmt.Println("Selected path:", path)
 		var selectedLocations = make([]Location, len(path))
 
 		for i, p := range path {
@@ -408,7 +401,6 @@ func GetAllCityPoints(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-
 	json.NewEncoder(w).Encode(enrichedData)
 }
 
