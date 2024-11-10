@@ -1,0 +1,4313 @@
+[
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4763759, "lng": -1.9125137 },
+      "viewport": {
+        "northeast": { "lat": 52.47776807989271, "lng": -1.911220270107278 },
+        "southwest": { "lat": 52.47506842010727, "lng": -1.913919929892723 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "O'Neill'S Broad Street",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111029823282603813408\">Tom\u00e1\u0161 Posp\u00edchal</a>"
+        ],
+        "photo_reference": "AelY_Cu7QLGgou3CteU_JNY3CZ10cuKJ7I1aRNxCxTTIDalSJnIFQah-nq6Lda4xNbE7lyLWDcAhyTZPEnLSPbbPUVM8YYadt-Tf1WQT4G5eh-XqyrOui43sbdflb_GAwCfyPQXFViCewTmVwxidyoIkoodCERpte6lJoa4_ybPR8j6o1k_A",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJqdF8h_a8cEgRFJESIzCiQgE",
+    "plus_code": {
+      "compound_code": "F3GP+HX Birmingham",
+      "global_code": "9C4WF3GP+HX"
+    },
+    "price_level": 2,
+    "rating": 4.3,
+    "reference": "ChIJqdF8h_a8cEgRFJESIzCiQgE",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 2369,
+    "vicinity": "Broad St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48347039999999, "lng": -1.8950242 },
+      "viewport": {
+        "northeast": { "lat": 52.48484577989272, "lng": -1.893736120107278 },
+        "southwest": { "lat": 52.48214612010728, "lng": -1.896435779892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Queens Head",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 641,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115070485443482369165\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CsJRbvydph-Sx_PibAv5S8Af_JAW14Pd-2AOTZY-VmqW3eX7qscOeCE13eEuzUxb8HwmzbzVIh3OEgghvLuXj1dX2LlMD1bU1yzXX1s0dhPFQ4-BFKCzKpUwlwrElVRJ-1ZVPCamvVieEtMcMJrY_gArXeEknYpbKi6tmiRoLL6PodD",
+        "width": 960
+      }
+    ],
+    "place_id": "ChIJ__9DlY-8cEgRSvFfEEfvpqw",
+    "plus_code": {
+      "compound_code": "F4M3+9X Birmingham",
+      "global_code": "9C4WF4M3+9X"
+    },
+    "rating": 4.5,
+    "reference": "ChIJ__9DlY-8cEgRSvFfEEfvpqw",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 164,
+    "vicinity": "28 Steelhouse Ln, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.47750079999999, "lng": -1.9105445 },
+      "viewport": {
+        "northeast": { "lat": 52.47880097989272, "lng": -1.909160020107277 },
+        "southwest": { "lat": 52.47610132010728, "lng": -1.911859679892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Tap & Spile Birmingham",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1960,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/118307246235664635266\">Trond Fuhre</a>"
+        ],
+        "photo_reference": "AelY_CunRNR6krxrhmWomCIIrhIOACISjCsdzYjnk9bboySTWfGtR4AW0-ODAMEHonToc2_Kb5pc16JsTnx0VqX_0f_QTCCejM8FIf96jKi95wtL9SmVChSQDV02K5CZ1sLTnHPlPrTmidoElz_jIwq3WiqHroZ1wkujdzVFoCf7e_8DfyEk",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJsT2lPvS8cEgRr3aFZtruv5k",
+    "plus_code": {
+      "compound_code": "F3HQ+2Q Birmingham",
+      "global_code": "9C4WF3HQ+2Q"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJsT2lPvS8cEgRr3aFZtruv5k",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 1474,
+    "vicinity": "10-16 Gas St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4877673, "lng": -1.8871893 },
+      "viewport": {
+        "northeast": { "lat": 52.48911272989272, "lng": -1.885847320107278 },
+        "southwest": { "lat": 52.48641307010728, "lng": -1.888546979892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Gosta Green",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3473,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111244264179484739391\">Gosta Green Pub</a>"
+        ],
+        "photo_reference": "AelY_CvifuaKAxHAu1jgz98MDgLx2k6_Un1Z0hABY9Pw7J4eGsK4FIVTen7PXVCsPkgPqBVEJoJIvX2h1spanX6xEWTkduLABMU18-TcHgG5Kj52LNp6nWDrT1eYxywMyXrPn2enmqTLFKIXo28aIepf1P6U3lVIzAc26OONM9UtBYeQXsq8",
+        "width": 5209
+      }
+    ],
+    "place_id": "ChIJv_-3d5u8cEgR0njVWSX811I",
+    "plus_code": {
+      "compound_code": "F4Q7+33 Birmingham",
+      "global_code": "9C4WF4Q7+33"
+    },
+    "price_level": 1,
+    "rating": 4.4,
+    "reference": "ChIJv_-3d5u8cEgR0njVWSX811I",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 1263,
+    "vicinity": "Holt St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4806251, "lng": -1.9005329 },
+      "viewport": {
+        "northeast": { "lat": 52.48195482989272, "lng": -1.899243870107278 },
+        "southwest": { "lat": 52.47925517010728, "lng": -1.901943529892723 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Wellington",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4016,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105811110264648683216\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_Cu_b1Bk1D41daxa2b7HOyiwA1peUmnuvnqgCrVkMFeNc1HEEnfJ5EtRbvrV8LwtkMckywdT8Nq_NU6vKXPPW_UbmY6uYqkoGE7l5FQZhksIRI9xCAfIFNaC1-xvK2jjBQo91jZGiIYAQSV74DpzEFSof40d-mZT6ZT7EWNYGA3OJuF7",
+        "width": 6016
+      }
+    ],
+    "place_id": "ChIJ13eIPYy8cEgRKXDlQBsiK_0",
+    "plus_code": {
+      "compound_code": "F3JX+7Q Birmingham",
+      "global_code": "9C4WF3JX+7Q"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJ13eIPYy8cEgRKXDlQBsiK_0",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 3685,
+    "vicinity": "37 Bennetts Hill, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4750933, "lng": -1.9038966 },
+      "viewport": {
+        "northeast": { "lat": 52.47639277989272, "lng": -1.902443670107278 },
+        "southwest": { "lat": 52.47369312010728, "lng": -1.905143329892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Craven Arms",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4016,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105187823540283114998\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CtR-DREIlzbW7UsMOIzcSB11U0tmJR8GtqMyCra7-QREC6pLIHpncEgb_qXir2Q_GmykLPPfKNslGmJTXl0BzmfW-ZWTVuYSXUgjBwUoYeYXiup2LpVhOUIMh2r5F8cI7MmaKRCFMMqYYK9JCzfsCNHyE6hstF10Zz1xmIGJzDUZxcW",
+        "width": 6016
+      }
+    ],
+    "place_id": "ChIJMcSwlYq8cEgRDlCpiEzSs_Y",
+    "plus_code": {
+      "compound_code": "F3GW+2C Birmingham",
+      "global_code": "9C4WF3GW+2C"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJMcSwlYq8cEgRDlCpiEzSs_Y",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 993,
+    "vicinity": "47 Upper Gough St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4794073, "lng": -1.9134051 },
+      "viewport": {
+        "northeast": { "lat": 52.48093622989272, "lng": -1.911868770107277 },
+        "southwest": { "lat": 52.47823657010727, "lng": -1.914568429892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Malt House",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1840,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107052059235455805763\">Damien Chia</a>"
+        ],
+        "photo_reference": "AelY_CuMgSN_VUKgzk5uXTcVQsXIal9TGspwkvo4Z8cjWL9oPqjclo47YVFAm-Ncl-NvV0L6OJzLCFdguTDTrQQ5JmW15r2DXrM5rfXtQmchivlgzfyb-GNMcMwflIjyWhlbLMo2Xe592zKgisppMgZoIDnYdwws4wWnN03YFNEKiKwg_uy0",
+        "width": 3264
+      }
+    ],
+    "place_id": "ChIJW40nUfG8cEgRbCcsoYdVZUs",
+    "plus_code": {
+      "compound_code": "F3HP+QJ Birmingham",
+      "global_code": "9C4WF3HP+QJ"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJW40nUfG8cEgRbCcsoYdVZUs",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2825,
+    "vicinity": "75 King Edwards Rd, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4744787, "lng": -1.8885099 },
+      "viewport": {
+        "northeast": { "lat": 52.47580212989272, "lng": -1.887204570107278 },
+        "southwest": { "lat": 52.47310247010727, "lng": -1.889904229892723 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Anchor Digbeth",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 720,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116233701664609677500\">Julian Rose-Gibbs</a>"
+        ],
+        "photo_reference": "AelY_CsUCxREi-kOvI7_ZRBlSraWyPjjRaK9HUkRL1yL-c4kQ0b9cy3MySPyzcG1XY1CPIBpXhFnzD0vU11J6CRFEF9y68-l4dGbxl5GyJJxgR0fWdgjCpek-d8ZxagiLgqUlzrwXTsHDnU8d5HX7c-cfzf3RoKIiTQiYxheEqjFLJM7Mq0",
+        "width": 1080
+      }
+    ],
+    "place_id": "ChIJ67oWZIe8cEgRrsmgHnFl6vg",
+    "plus_code": {
+      "compound_code": "F4F6+QJ Birmingham",
+      "global_code": "9C4WF4F6+QJ"
+    },
+    "price_level": 1,
+    "rating": 4.4,
+    "reference": "ChIJ67oWZIe8cEgRrsmgHnFl6vg",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 768,
+    "vicinity": "308 Bradford St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4804736, "lng": -1.9121984 },
+      "viewport": {
+        "northeast": { "lat": 52.48175787989273, "lng": -1.910847470107278 },
+        "southwest": { "lat": 52.47905822010728, "lng": -1.913547129892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Flapper",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3257,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112471919498632681892\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CsQBgY1nSIrEJBP5op0StsRWeo9s7hn-jkEbYzdVXY7pz0PcAjSAB4wOrc_Cb4HdTm9ekwswwHEpvBK196L0T7O5YJL5axGUwzGmsGef_QhsOQkCkQLW2-_tbhBjR8iUzs1xuDoLICjQiWsxdjISmt4_hrWmhCis6osykccASfzSSA",
+        "width": 4923
+      }
+    ],
+    "place_id": "ChIJ84KMXvG8cEgRwnr-IuPNsj0",
+    "plus_code": {
+      "compound_code": "F3JQ+54 Birmingham",
+      "global_code": "9C4WF3JQ+54"
+    },
+    "price_level": 1,
+    "rating": 4.6,
+    "reference": "ChIJ84KMXvG8cEgRwnr-IuPNsj0",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 1624,
+    "vicinity": "Cambrian Wharf, Kingston Row, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48297480000001, "lng": -1.9012587 },
+      "viewport": {
+        "northeast": { "lat": 52.48431682989272, "lng": -1.899920270107277 },
+        "southwest": { "lat": 52.48161717010728, "lng": -1.902619929892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Old Royal",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2304,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106864269644234736900\">Keith Dewett</a>"
+        ],
+        "photo_reference": "AelY_CsNrD17RC1ebdoBAuUmMSRDiaR6p_FdbB4N5kBLN4T-Zt61dbSJYQPsqpqTpAay9qQYIF0TmTj0ftvmelDNg85dW_4yp-6WF_AqZW3LOM31WFGwhAjs9kjfiVxxNbjYegfdrnkqk3Ixl7MzBpvk4PTK8pfzwMWMo0e1i9dNSTBv8nf5",
+        "width": 4608
+      }
+    ],
+    "place_id": "ChIJBZI1v428cEgR9SlrEFwwGzM",
+    "plus_code": {
+      "compound_code": "F3MX+6G Birmingham",
+      "global_code": "9C4WF3MX+6G"
+    },
+    "price_level": 1,
+    "rating": 4.3,
+    "reference": "ChIJBZI1v428cEgR9SlrEFwwGzM",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 791,
+    "vicinity": "53 Church St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48010859999999, "lng": -1.8990338 },
+      "viewport": {
+        "northeast": { "lat": 52.48144337989272, "lng": -1.897752370107278 },
+        "southwest": { "lat": 52.47874372010727, "lng": -1.900452029892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Head of Steam Birmingham",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102879383250072439565\">Dan Mayer</a>"
+        ],
+        "photo_reference": "AelY_CuYtplt19y_1CvMrjALVvEulJxgPIDeoQ5vZRZQH8G_q_UAdBl_JANIAJfXRtRDI5L4m4vWycUqx87kuhicjo1-t9npBX1N7tGGFjy-UCTgv5lDL64Rj8U0cQAjHMWPPyYXVp7_3xTAeBeP26VNIl1CqgSRNd-gQOiqW3MKY9K9V1Mz",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ8SJ0Zim9cEgRUDvtnlAQnQo",
+    "plus_code": {
+      "compound_code": "F4J2+29 Birmingham",
+      "global_code": "9C4WF4J2+29"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJ8SJ0Zim9cEgRUDvtnlAQnQo",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 1754,
+    "vicinity": "37 Temple St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48954579999999, "lng": -1.9113899 },
+      "viewport": {
+        "northeast": { "lat": 52.49087872989272, "lng": -1.910088570107278 },
+        "southwest": { "lat": 52.48817907010727, "lng": -1.912788229892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Jewellers Arms",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4016,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/118344557908785451653\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_Cu6eMPmgEgNCyARlAWbJg4iftFmZ8H1zTU8Gnck0s6yObuC8FtZwqZccKVim9SXnfbGkvtxNpwKLwc_Gdf5HYTefM3X7ui1vECH1D81MXQCWkvfMHlmGey6FHChOzR-wUZcjbhFaMqxZjcTxgW_ln6UZT6nE3ReMcnGmJvea23wOyv0",
+        "width": 6016
+      }
+    ],
+    "place_id": "ChIJPWDJC-y8cEgR6ISyrCReWUo",
+    "plus_code": {
+      "compound_code": "F3QQ+RF Birmingham",
+      "global_code": "9C4WF3QQ+RF"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJPWDJC-y8cEgR6ISyrCReWUo",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 900,
+    "vicinity": "23 Hockley St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48299710000001, "lng": -1.8995822 },
+      "viewport": {
+        "northeast": { "lat": 52.48432742989272, "lng": -1.898209220107278 },
+        "southwest": { "lat": 52.48162777010728, "lng": -1.900908879892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Old Contemptibles",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 847,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105417608314806977178\">The Old Contemptibles</a>"
+        ],
+        "photo_reference": "AelY_Ct6i-ajYSILM-ji-j_ShCYbMT729T1LO9Y3XBt14OGOVvhdUhUN_KyzZ2VjjEQ6CCZVSp9S-cIbVnMFU2YtuKY20Nk9Olm5YEMFYKdPZ3xY3MX5u2wFSG83wRX-SX0BgWgG7SRmUsnRMS343Z_lsTrG1a88VTyRkCLfppHuAhN6eQNk",
+        "width": 1271
+      }
+    ],
+    "place_id": "ChIJuVHZdY68cEgRGfA-uBOxWis",
+    "plus_code": {
+      "compound_code": "F4M2+65 Birmingham",
+      "global_code": "9C4WF4M2+65"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJuVHZdY68cEgRGfA-uBOxWis",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 2469,
+    "vicinity": "176 Edmund St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4864973, "lng": -1.895257 },
+      "viewport": {
+        "northeast": { "lat": 52.48786077989273, "lng": -1.893941070107278 },
+        "southwest": { "lat": 52.48516112010729, "lng": -1.896640729892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Bull",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113684051214320354866\">Andreas Schl\u00f6gl</a>"
+        ],
+        "photo_reference": "AelY_Cvo2caQpyRcRmTmOyIBHSUMDLgiYh1IbjVgevK9b-Tf7_Ptbhezhcs19tpB2158-jLPDe2nie2bAyR06hos4-sojxzf_846L9utSmlGbrRaws1oLaZOhbscpvjYUef0gYssIzYJ9oTDEOlLqLvVkbyYURnlZ2_EBWh33jU5LyL4J9sF",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJvaQ8QpC8cEgR5DygKRcfOA4",
+    "plus_code": {
+      "compound_code": "F4P3+HW Birmingham",
+      "global_code": "9C4WF4P3+HW"
+    },
+    "price_level": 1,
+    "rating": 4.6,
+    "reference": "ChIJvaQ8QpC8cEgR5DygKRcfOA4",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 431,
+    "vicinity": "1 Price St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4796343, "lng": -1.8994131 },
+      "viewport": {
+        "northeast": { "lat": 52.48096682989272, "lng": -1.898034970107278 },
+        "southwest": { "lat": 52.47826717010728, "lng": -1.900734629892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Trocadero",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102833066913691976490\">Mark</a>"
+        ],
+        "photo_reference": "AelY_CsLedjDYYm1wOXVqRIykLfkf7v_NkXTCU8utU5oYAoz2hbXW5JTPoZRUEFCYJjvMfALaHXfCWwsPwAxNbK-A57EIKb6WQYtp3lZNrWKFCDPuYkeQySrsYRYfJgYvPjSuYnCfR1kNNR3mv08qnLtrK7km5F4vOQO0HothPcU94fy7D3W",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJaRbmqo68cEgRX4sF08FjFa0",
+    "plus_code": {
+      "compound_code": "F4H2+V6 Birmingham",
+      "global_code": "9C4WF4H2+V6"
+    },
+    "price_level": 1,
+    "rating": 4.3,
+    "reference": "ChIJaRbmqo68cEgRX4sF08FjFa0",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 1712,
+    "vicinity": "Temple St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4798038, "lng": -1.9000737 },
+      "viewport": {
+        "northeast": { "lat": 52.48114492989272, "lng": -1.898834620107278 },
+        "southwest": { "lat": 52.47844527010728, "lng": -1.901534279892723 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Sun On The Hill",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1680,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104988251742692036064\">104988251742692036064</a>"
+        ],
+        "photo_reference": "AelY_Cttl2LAyEFcDfJvjF1crwlN5NseZrEbkjOju85miCAr_5lwRXZsiTtI-JRmRTIoWARXPeyeUZnydAbJ_1Eyd-FYoo4hkD4FndQhfvt3TgP7Ytk8wb-gzR4YD-RWyu6L8j9VkNWumOiyVN1sNzeznZDaVkY7cq0xtV3PKSEtIXAkGmfR",
+        "width": 3648
+      }
+    ],
+    "place_id": "ChIJw7LmBYy8cEgRNqJeCn2Ulpw",
+    "plus_code": {
+      "compound_code": "F3HX+WX Birmingham",
+      "global_code": "9C4WF3HX+WX"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJw7LmBYy8cEgRNqJeCn2Ulpw",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1490,
+    "vicinity": "23 Bennetts Hill, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.476833, "lng": -1.8926616 },
+      "viewport": {
+        "northeast": { "lat": 52.47824022989272, "lng": -1.891213320107277 },
+        "southwest": { "lat": 52.47554057010727, "lng": -1.893912979892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Bull Ring Tavern",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115793785397925391528\">Sunny Ghosh</a>"
+        ],
+        "photo_reference": "AelY_CsTMhfujgmk2bKh1fjAhd421YiKZz0rBj8S_lFoGLwHIQgz56KHEyCrATchlX7yeSqBegLblx0xdPs5kE7kq-kEtbzgjyYUWExGYEOePYCwYGIlX1HmieYEUQIjwWypVoNP5nWwdgqT0zSAH0BXTyAbB6TCrq0_4DKZxOMzQxandLn9",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJS-YscH28cEgRuKeOWvzp1a8",
+    "plus_code": {
+      "compound_code": "F4G4+PW Birmingham",
+      "global_code": "9C4WF4G4+PW"
+    },
+    "price_level": 1,
+    "rating": 4.1,
+    "reference": "ChIJS-YscH28cEgRuKeOWvzp1a8",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 1018,
+    "vicinity": "Digbeth, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4797735, "lng": -1.8981927 },
+      "viewport": {
+        "northeast": { "lat": 52.48144392989272, "lng": -1.896900770107278 },
+        "southwest": { "lat": 52.47874427010728, "lng": -1.899600429892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Windsor",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2988,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101813894873132910748\">Sean Sweeney</a>"
+        ],
+        "photo_reference": "AelY_CtPCwf9Vgg5rXQyaYlhbdokbTl7yVevSf3k75k3v3MAess5fUJ4Cpv4p-BEziGqY2DvcyVN4GMXMHHv5_sSndyQal8pB6s6wMuQNq9Vb-WvLv1SRAV4Gi23ajQuU1SJILiq7o1pF_lq-Q8cUwSY34iq08UTSmoRBAQ0FwCamGaE4w6O",
+        "width": 5312
+      }
+    ],
+    "place_id": "ChIJOzSfso68cEgRuRBJQ0Cw3I8",
+    "plus_code": {
+      "compound_code": "F4H2+WP Birmingham",
+      "global_code": "9C4WF4H2+WP"
+    },
+    "price_level": 2,
+    "rating": 4.1,
+    "reference": "ChIJOzSfso68cEgRuRBJQ0Cw3I8",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 1474,
+    "vicinity": "33 Cannon St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4775837, "lng": -1.8898788 },
+      "viewport": {
+        "northeast": { "lat": 52.47892442989272, "lng": -1.888563820107278 },
+        "southwest": { "lat": 52.47622477010728, "lng": -1.891263479892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Hennessey's Bar",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1080,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107604600130403346351\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CuD0ofDbeo1PGiQErV-jfPiJOt5qjPYosBuRyCHxcS-DZODNBrDCV4YgHI0b_U5p51W9zYjRvToxPRoyVSE-zeU1ZbHwjB41KWD8S_xhYOjWjcecDRt8p2MZ_kNpM2R6kFn3yi13C42z5TUzM1ii9q_DuFNCrFg6n0S5efnF5q2unY5",
+        "width": 1080
+      }
+    ],
+    "place_id": "ChIJbczX94a8cEgRFfV9GbuoEac",
+    "plus_code": {
+      "compound_code": "F4H6+23 Birmingham",
+      "global_code": "9C4WF4H6+23"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJbczX94a8cEgRFfV9GbuoEac",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1253,
+    "vicinity": "30-31 Allison St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4773937, "lng": -1.9088343 },
+      "viewport": {
+        "northeast": { "lat": 52.47904782989272, "lng": -1.907315420107278 },
+        "southwest": { "lat": 52.47634817010728, "lng": -1.910015079892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "The Botanist Brindley Place",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 9000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104742955116865488140\">delia izvoranu</a>"
+        ],
+        "photo_reference": "AelY_Cso9Yph_zQXJny9lgWyS-lX6enC9zzW8GJj9ibMFmGDGO3d8m_sZdoLN1KrmOrxJJ0rHqo7HtaeoUbzQVODQPu487ehRn35GO5JNxosjBlkCVIt__jraFYGbKza2uvjRqLAQ1o6jQc7W_m7nnxLSqYmPciEfhLXKrODEfJV3RGt6fch",
+        "width": 12000
+      }
+    ],
+    "place_id": "ChIJD-_F-fS8cEgRrD3yhf7tQQI",
+    "plus_code": {
+      "compound_code": "F3GR+XF Birmingham",
+      "global_code": "9C4WF3GR+XF"
+    },
+    "price_level": 2,
+    "rating": 4.3,
+    "reference": "ChIJD-_F-fS8cEgRrD3yhf7tQQI",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 4317,
+    "vicinity": "12 Bridge St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.481875, "lng": -1.8973862 },
+      "viewport": {
+        "northeast": { "lat": 52.48324452989273, "lng": -1.895997670107277 },
+        "southwest": { "lat": 52.48054487010728, "lng": -1.898697329892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Good Intent",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3072,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115259233116871787766\">Darren Burling</a>"
+        ],
+        "photo_reference": "AelY_CuMs_py_iRLGf2rht73PsxI3SFwOzUnRA0yCiG_YOwfP2lcOBX1EyCyXtf6TxHvEv2yZ0rwz4DylRxrrCPOmgMvO6BZEXCNBtHBEC_ZksghAqy6sMZCaVf_k-g_vcRub5gmQGDcT1OtBA7e5Y_fKEnEn9xlERxckEIpnzx2OOwZeH8t",
+        "width": 4080
+      }
+    ],
+    "place_id": "ChIJNwbaHgq9cEgRkmL57EdnHX8",
+    "plus_code": {
+      "compound_code": "F4J3+Q2 Birmingham",
+      "global_code": "9C4WF4J3+Q2"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJNwbaHgq9cEgRkmL57EdnHX8",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 322,
+    "vicinity": "32-33 Great Western Arcade, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4704213, "lng": -1.9241855 },
+      "viewport": {
+        "northeast": { "lat": 52.47185627989272, "lng": -1.922883820107278 },
+        "southwest": { "lat": 52.46915662010728, "lng": -1.925583479892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Physician",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114013316227972107062\">artursmith</a>"
+        ],
+        "photo_reference": "AelY_CupDTXN8EF6f9iQor911TwM5b4z4uFkQRZK5qwI8nne3dZgNBKb3KsoRkQvlgSHWQLfz5i7262DmAzhHSlKuFIJRGoGpuwsebuiGteq13g7H4JaSiWi7gfc8zwb89U7WdUfjD4vZK__MZhYZqBMxsd7KLZrk2sWtlU5F3A1_NsUWnZV",
+        "width": 3000
+      }
+    ],
+    "place_id": "ChIJhUTZK1S8cEgROFSob0uKz_M",
+    "plus_code": {
+      "compound_code": "F3CG+58 Birmingham",
+      "global_code": "9C4WF3CG+58"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJhUTZK1S8cEgROFSob0uKz_M",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 2921,
+    "vicinity": "Harborne Rd, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4771492, "lng": -1.9015423 },
+      "viewport": {
+        "northeast": { "lat": 52.47852162989273, "lng": -1.900101820107277 },
+        "southwest": { "lat": 52.47582197010728, "lng": -1.902801479892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "BrewDog Birmingham",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3468,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115481819844329207674\">Tim Tomlinson</a>"
+        ],
+        "photo_reference": "AelY_CuBsOqm8gHCFMEoWzYRDCqJLdVW1zXmNicVwymZfnVjk0EwVrD3V5Zn57NHLxyfpw7pPenGIq--pgshWrThq22kIDF0So4xOqXh8U8wXZWzoNIBPBzfhIakQCri-WbtUIpuI30LH2XuONrPVYilzCacedIId_b3YPaJq_Z-dtfUUAGt",
+        "width": 4624
+      }
+    ],
+    "place_id": "ChIJVbNIsIu8cEgR0a-uTbuRP-E",
+    "plus_code": {
+      "compound_code": "F3GX+V9 Birmingham",
+      "global_code": "9C4WF3GX+V9"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJVbNIsIu8cEgR0a-uTbuRP-E",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2539,
+    "vicinity": "81 John Bright St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4864958, "lng": -1.9016574 },
+      "viewport": {
+        "northeast": { "lat": 52.48787957989273, "lng": -1.900261370107278 },
+        "southwest": { "lat": 52.48517992010729, "lng": -1.902961029892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Wolf",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1960,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111326441084475503837\">Thiago Ferreira Magalhaes</a>"
+        ],
+        "photo_reference": "AelY_Cvz9XyLlFUh9SY3cBe7a5AzOvk5xXI46OeBRHYl5fjPzX3ob7bX-B1kNWsSqhH3UHXX1ey9fZ9zn5NBRjBBJeRUi_AzJLyXRY_TouKrS9Plbo3EfdUOYab_TPlI9bIAqAoMAvEjfciUO44ODYw3bl4KIxl5zGYbqbOBaSGjem4c9PpW",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJibDCSJK8cEgRhUsmfs9MlEs",
+    "plus_code": {
+      "compound_code": "F3PX+H8 Birmingham",
+      "global_code": "9C4WF3PX+H8"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJibDCSJK8cEgRhUsmfs9MlEs",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 1010,
+    "vicinity": "2-10 Constitution Hill, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.474775, "lng": -1.8835565 },
+      "viewport": {
+        "northeast": { "lat": 52.47605917989272, "lng": -1.882255620107278 },
+        "southwest": { "lat": 52.47335952010728, "lng": -1.884955279892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Old Crown",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107179489848576723407\">David Reynolds</a>"
+        ],
+        "photo_reference": "AelY_Csvi_sE7PsP6pZN_42ubHDHvlX2hTzAyAskjEH32H2afU6kBzKWE1W52TD38bGYiPG8cm5fmzp73KnjlwYe2iaX5Y5DRUbdh79_IpwJ2Rf0seNy7WZg7b12fpeK09W6KWxQsFoqUkG9p8MavXjPhQ7B0doJlDPtU8AdDyl6fnAdfpGr",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJfa0_eoC8cEgR-aHYI6Nfidc",
+    "plus_code": {
+      "compound_code": "F4F8+WH Birmingham",
+      "global_code": "9C4WF4F8+WH"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJfa0_eoC8cEgR-aHYI6Nfidc",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2151,
+    "vicinity": "188 High St, Deritend, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4871525, "lng": -1.9122427 },
+      "viewport": {
+        "northeast": { "lat": 52.48845987989272, "lng": -1.910909070107278 },
+        "southwest": { "lat": 52.48576022010727, "lng": -1.913608729892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Rose Villa Tavern",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102763373009975480215\">Ardi Melikian</a>"
+        ],
+        "photo_reference": "AelY_CsG0aEldzjlqyI27NC66KLY9V3-a5zz_B5fipZ_UIfutG_X-_DWc6IjyPEW4g4IReBsKs5kSdXvBSRF1d83ENbbwREIbnkoMxiTfViIs06UQYfHTFR7Vcs9izprIULeO68C63WdaMRA11nC-qd67eKzKRKC0fGSYG02cRtPk05H6Bi6",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJW7hYK-y8cEgRtUamPXuE7uQ",
+    "plus_code": {
+      "compound_code": "F3PQ+V4 Birmingham",
+      "global_code": "9C4WF3PQ+V4"
+    },
+    "price_level": 2,
+    "rating": 4.3,
+    "reference": "ChIJW7hYK-y8cEgRtUamPXuE7uQ",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1385,
+    "vicinity": "172 Warstone Ln, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4767875, "lng": -1.8896859 },
+      "viewport": {
+        "northeast": { "lat": 52.47810347989272, "lng": -1.888265570107278 },
+        "southwest": { "lat": 52.47540382010727, "lng": -1.890965229892723 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Nortons Digbeth",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100907236315581888996\">richard horton</a>"
+        ],
+        "photo_reference": "AelY_CvWtkUfmcVsiFEodEYB6BAyQ513L61UWZwzoNrxs6V7ElEn1CWMnt-EHEcQDK5Zd3Zv6XxzYmPqFbZzfnrBf0Yj-W09QJtQ3QhG096dx-ttEcpDFiLqf_IJ41UYQEr-j8ZHW83_J7EUNET-f3JXzqMB_MKP03dWgxilDHwaOP1jZaQg",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ45CLNWK9cEgRcCmmJxQ0pHg",
+    "plus_code": {
+      "compound_code": "F4G6+P4 Birmingham",
+      "global_code": "9C4WF4G6+P4"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJ45CLNWK9cEgRcCmmJxQ0pHg",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 511,
+    "vicinity": "43-45 Meriden St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.479991, "lng": -1.9017227 },
+      "viewport": {
+        "northeast": { "lat": 52.48129607989272, "lng": -1.900383320107277 },
+        "southwest": { "lat": 52.47859642010727, "lng": -1.903082979892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Purecraft Bar & Kitchen",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116397172921561777926\">Steve bell</a>"
+        ],
+        "photo_reference": "AelY_CuFIDF8pT6lHzerHh5gyI8COTq5HIkHiLDEC5s45QqUB2kekfTF_kRT_camBbszwH5NzKXjNeiWMYUMYwubMWqhf4OMi4UKxbc4zfKDYgJ9iy5vSlJWr1slVb75cQu49346Hx0AcMdBbRSDhbl63bgxZns2ZUVRZWu2oDx1MOURe3ub",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ-_0xbIy8cEgRU7S19YAntXY",
+    "plus_code": {
+      "compound_code": "F3HX+X8 Birmingham",
+      "global_code": "9C4WF3HX+X8"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJ-_0xbIy8cEgRU7S19YAntXY",
+    "scope": "GOOGLE",
+    "types": [
+      "liquor_store",
+      "bar",
+      "restaurant",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2086,
+    "vicinity": "30 Waterloo St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.47773489999999, "lng": -1.910291 },
+      "viewport": {
+        "northeast": { "lat": 52.47916342989272, "lng": -1.909183420107277 },
+        "southwest": { "lat": 52.47646377010728, "lng": -1.911883079892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Walkabout - Birmingham",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2988,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106936948954939649808\">Ken Coffman</a>"
+        ],
+        "photo_reference": "AelY_CsQltVClj9ZQrHo4PdmGhlsyVAIHo8_aDaS-h6kiAAR7bHs9rfmSF8ygZFdpzmHeWawOhnaP1fiHHzU7W80ql4oi15KPaCb_FchrvMxJcn3R13OBe_LdRx7t0k8U6t-oZQGr4n3nzXxKH8B4d5cu3YZldyx1ynpvuuoTcnGUCUq-9yN",
+        "width": 5312
+      }
+    ],
+    "place_id": "ChIJu0QMQPS8cEgRAxhNamsEmu4",
+    "plus_code": {
+      "compound_code": "F3HQ+3V Birmingham",
+      "global_code": "9C4WF3HQ+3V"
+    },
+    "price_level": 2,
+    "rating": 4,
+    "reference": "ChIJu0QMQPS8cEgRAxhNamsEmu4",
+    "scope": "GOOGLE",
+    "types": [
+      "night_club",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1894,
+    "vicinity": "Langley Buildings, Regency Wharf, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4744828, "lng": -1.8969581 },
+      "viewport": {
+        "northeast": { "lat": 52.47580082989271, "lng": -1.895664670107278 },
+        "southwest": { "lat": 52.47310117010727, "lng": -1.898364329892723 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Sly Old Fox",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3376,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117708893731268533191\">jaroslaw szypula</a>"
+        ],
+        "photo_reference": "AelY_CstegOlVf-fqJmsx-S0Qgoqtb4YCd-wQXmMiRAgXBl0IevHuMt74axn1Aiu5n6VF0Ue1TypNzqC2VMCojSMJHY9yOst1ipaqp_Nsjv0u2cfe8VhgeFcYiSJwI3AIApY0lBSWtKFXlyNlxstLi_9XdZraF3jGZnAbuyDtis9UpQcvGP8",
+        "width": 6000
+      }
+    ],
+    "place_id": "ChIJ2bfF64m8cEgR8FRncisxtMM",
+    "plus_code": {
+      "compound_code": "F4F3+Q6 Birmingham",
+      "global_code": "9C4WF4F3+Q6"
+    },
+    "price_level": 2,
+    "rating": 4.1,
+    "reference": "ChIJ2bfF64m8cEgR8FRncisxtMM",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 681,
+    "vicinity": "54-56 Hurst St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4775442, "lng": -1.9011587 },
+      "viewport": {
+        "northeast": { "lat": 52.47890942989272, "lng": -1.899765470107277 },
+        "southwest": { "lat": 52.47620977010728, "lng": -1.902465129892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Railway",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3492,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113016633084872624007\">Jamie Mann</a>"
+        ],
+        "photo_reference": "AelY_Cu5fggKZiDzYF6uLM_CcsXfdAaplPk1heHawKX5G8amFduChMU8pd7fvc1R1r_LoRvYSPB4AVZiDr9x29PcFdYzOHmzhcQgLfRAS0_D9UwXpwXZBGbokf3tTtSUU-3Tti8MhH8utlq2wlP2cntmO7CKuYJojcHQADSljGP5Q2f6rymw",
+        "width": 4656
+      }
+    ],
+    "place_id": "ChIJFdRrLoq8cEgRZigkU_PFQ-o",
+    "plus_code": {
+      "compound_code": "F3HX+2G Birmingham",
+      "global_code": "9C4WF3HX+2G"
+    },
+    "price_level": 1,
+    "rating": 4.2,
+    "reference": "ChIJFdRrLoq8cEgRZigkU_PFQ-o",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 1732,
+    "vicinity": "Savoy Buildings, Hill St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.47425699999999, "lng": -1.8816545 },
+      "viewport": {
+        "northeast": { "lat": 52.47555422989272, "lng": -1.880275070107277 },
+        "southwest": { "lat": 52.47285457010727, "lng": -1.882974729892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Rainbow",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2448,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107905334618721418101\">Abdurrahman Sahinbas</a>"
+        ],
+        "photo_reference": "AelY_CvEqv6Zf2jCamuWnS117eKBpqP793KoOEp_nKy7Vt3U2HJzpla-t4JpRwH4gH0-9qRvY4UMDYRvxzrYvd0SLW3toMeSiO1K5W2UBTuQEcHKOK1uvjxqQrH2v4sLpTNMrSRPMZxYvPiZGOdWXK5u5cqKv24YpCgRB9j3FokNJy_UB3BO",
+        "width": 3264
+      }
+    ],
+    "place_id": "ChIJfa0_eoC8cEgRAIq8SOfuZ3g",
+    "plus_code": {
+      "compound_code": "F4F9+P8 Birmingham",
+      "global_code": "9C4WF4F9+P8"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJfa0_eoC8cEgRAIq8SOfuZ3g",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 444,
+    "vicinity": "160 High St, Bordesley, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4705222, "lng": -1.8925322 },
+      "viewport": {
+        "northeast": { "lat": 52.47184497989272, "lng": -1.891118420107277 },
+        "southwest": { "lat": 52.46914532010727, "lng": -1.893818079892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Lamp Tavern",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101029035870606359519\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_Cv8mjdM7s-_kjp5YZDQ1B-n5fhD4s97iVp4eCF0dhefVeBCFj0SiqZRx8q0_txSuw30weFXR6FS5E4psecAmSsyrNVXF09FhU6vfj_-3-DIY00QpCYXGhPj2FeonWhFe8GXpL3tzbdeqAWzX5esv5Xsq7hB_h7l1DhP3kk3QCS0jUU",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJjbgPIX28cEgR3TYFbR67f7w",
+    "plus_code": {
+      "compound_code": "F4C4+6X Birmingham",
+      "global_code": "9C4WF4C4+6X"
+    },
+    "price_level": 1,
+    "rating": 4.6,
+    "reference": "ChIJjbgPIX28cEgR3TYFbR67f7w",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 220,
+    "vicinity": "The Lamp Tavern, 157 Barford St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4836848, "lng": -1.9066142 },
+      "viewport": {
+        "northeast": { "lat": 52.48503357989273, "lng": -1.905155770107278 },
+        "southwest": { "lat": 52.48233392010728, "lng": -1.907855429892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Queen's Arms",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3414,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106158649330962179667\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_Ctgw5zD1CGi4BIF_fN-9eeaewfFSrYyDjQcDTdm98C8t5AXufVOAmRacQbnZ0TKEpDvxrUk7LiVdyT1pd7u0AWoYmYLEDeKh7oczDvnJAEsRbY06tsaFed8_qg6p-9-Rx4Jii8wZiAYHpBgsob6gUI0-5wLaquqLM0G47R6p-HD5-XD",
+        "width": 5121
+      }
+    ],
+    "place_id": "ChIJAYGrsPK8cEgRJk7_AeMe_rU",
+    "plus_code": {
+      "compound_code": "F3MV+F9 Birmingham",
+      "global_code": "9C4WF3MV+F9"
+    },
+    "price_level": 2,
+    "rating": 4.1,
+    "reference": "ChIJAYGrsPK8cEgRJk7_AeMe_rU",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 704,
+    "vicinity": "150 Newhall St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4774833, "lng": -1.9119553 },
+      "viewport": {
+        "northeast": { "lat": 52.47872662989272, "lng": -1.910696470107278 },
+        "southwest": { "lat": 52.47602697010728, "lng": -1.913396129892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Pitcher & Piano Birmingham",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1200,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102781728998888501636\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_Cte2CIAPQQachwWJqUiANCzVkTCfNl80ExHuy561d0grOSlxBMTwH1W8c43UUELIRzoG_C9fS1BhUiRIABHM_WhCQdUjlKpq5eXS6BKZViRuV4pno3ggPNSYuXNS0GHmqCKFqhgwSAfVmhU62R6DAHiCpe0T7_ihRClbr5iQyqm3vxP",
+        "width": 1800
+      }
+    ],
+    "place_id": "ChIJGXsvwPa8cEgRvR-v_U1s898",
+    "plus_code": {
+      "compound_code": "F3GQ+X6 Birmingham",
+      "global_code": "9C4WF3GQ+X6"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJGXsvwPa8cEgRvR-v_U1s898",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 5185,
+    "vicinity": "Eleven Brindley Place, Brindley Pl, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4754531, "lng": -1.8871825 },
+      "viewport": {
+        "northeast": { "lat": 52.47675927989272, "lng": -1.885771020107278 },
+        "southwest": { "lat": 52.47405962010728, "lng": -1.888470679892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Big Bulls Head",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/118307246235664635266\">Trond Fuhre</a>"
+        ],
+        "photo_reference": "AelY_Ctf_QEskUHkzJPLYLGyhc-YXYedNjEzvlmzQ-f2Q7TwnU35TakJBs3gO3_5DD0G1iuhLWF5DVD4LrbhH7tfJvUmNb9XKdWpx_OgCVirRpmFbzcn-PV1-x4tb_R4c_l6a-wTkL7jG1TXyOoUAxflJ4XSOSLmEXUHnevZGVySvguJTDLi",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJN1xLSIe8cEgReLTbzODZZX0",
+    "plus_code": {
+      "compound_code": "F4G7+54 Birmingham",
+      "global_code": "9C4WF4G7+54"
+    },
+    "rating": 4.5,
+    "reference": "ChIJN1xLSIe8cEgReLTbzODZZX0",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "lodging",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 638,
+    "vicinity": "The Big Bulls Head, 75, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4797681, "lng": -1.8994218 },
+      "viewport": {
+        "northeast": { "lat": 52.48110907989273, "lng": -1.898002320107278 },
+        "southwest": { "lat": 52.47840942010728, "lng": -1.900701979892723 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "The Botanist Birmingham",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2684,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117847314860545644248\">riezcha moza</a>"
+        ],
+        "photo_reference": "AelY_CvAIUxg2OBYNOeLUcbF3axYdqi0GP6rGp-8qnCn8OxG9CSct3odKmkdraw34t2IKA_ZgvVN9qKd0oaxV9YGLCYKW-oDff7ENEhmBkdYhLR1RM_RSvfNVFcuDru_4-AxGizRlIZYzfYypSqWytclZjaieUhUyPpom6gJN-7C4Njz693b",
+        "width": 3578
+      }
+    ],
+    "place_id": "ChIJedLoVom8cEgRLy4WNsgNTQs",
+    "plus_code": {
+      "compound_code": "F4H2+W6 Birmingham",
+      "global_code": "9C4WF4H2+W6"
+    },
+    "price_level": 2,
+    "rating": 4.3,
+    "reference": "ChIJedLoVom8cEgRLy4WNsgNTQs",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 3519,
+    "vicinity": "House 14, 16 Temple St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4750015, "lng": -1.8796849 },
+      "viewport": {
+        "northeast": { "lat": 52.47638557989272, "lng": -1.878341870107278 },
+        "southwest": { "lat": 52.47368592010728, "lng": -1.881041529892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Dead Wax Digbeth",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110243291611759617291\">Kristina Karasjova</a>"
+        ],
+        "photo_reference": "AelY_Ctx8UZqPlXhAGWUSIPg-aeKTOjg6bEzr3-T9hXHD4ETcERjeej0jZuvDdM1YVeZevXKIuBjqcYo_IOI8NMugVPlj6DjVXaORq3yQUahkOC_64Dn2raMvoX9NYKH8XM_6RobSG8jshMihF4RXMYSQXHVnZrN3147HWlTWuwYMA4v2m4X",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJE2X74q-7cEgRvd-suQqtT34",
+    "plus_code": {
+      "compound_code": "F4GC+24 Birmingham",
+      "global_code": "9C4WF4GC+24"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJE2X74q-7cEgRvd-suQqtT34",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 475,
+    "vicinity": "28 Adderley St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4765021, "lng": -1.8838001 },
+      "viewport": {
+        "northeast": { "lat": 52.47781297989272, "lng": -1.882437870107277 },
+        "southwest": { "lat": 52.47511332010728, "lng": -1.885137529892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Ruin",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106691547898588047365\">Emma McDonald</a>"
+        ],
+        "photo_reference": "AelY_CsUtBM37DdySaiKm-zK7_tGx1c4DLJpVI1X6bJFMafHa8Xty0KGCltJHsfIy7iiNQ37U7XWnzmqoec69c8va52UKqLJQeHS_utbyDzdf5QDkEEmHLheqqSFQbHGdLDO7iIgkO57dsBGNiiH6QkfxYspJyeQh-NMszoT4TKY_5Ivl3xY",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJ1wdg-YC8cEgRyxctX3MBueo",
+    "plus_code": {
+      "compound_code": "F4G8+HF Birmingham",
+      "global_code": "9C4WF4G8+HF"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJ1wdg-YC8cEgRyxctX3MBueo",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 475,
+    "vicinity": "92 Floodgate St, Deritend, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4701742, "lng": -1.8827057 },
+      "viewport": {
+        "northeast": { "lat": 52.47154287989272, "lng": -1.881319620107278 },
+        "southwest": { "lat": 52.46884322010727, "lng": -1.884019279892723 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Cleary\u2019s Irish music Bar",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 5312,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117461033126612181140\">Becky Neale</a>"
+        ],
+        "photo_reference": "AelY_CsxmfGjs7Bmv6EgxCB8DXN3nCot0kmZVfVSFOr8Rh5sr_qbXG-K7qaaDOS1ZKw4n7y3N8hkDNn_glZvNyp2kN3qX6M8O6ArJ3T4mFf0Xpnpw8BqSfr1fliOn3ZGVrZyX6qQNwmGcaYbVC2t1ZlWvZnPzTSUzm72_NHeAJ8c66Gw5hX0",
+        "width": 2988
+      }
+    ],
+    "place_id": "ChIJby3pIX-8cEgRpAHiiK7HO_A",
+    "plus_code": {
+      "compound_code": "F4C8+3W Birmingham",
+      "global_code": "9C4WF4C8+3W"
+    },
+    "rating": 4.4,
+    "reference": "ChIJby3pIX-8cEgRpAHiiK7HO_A",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 279,
+    "vicinity": "128 Moseley St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4795606, "lng": -1.9116327 },
+      "viewport": {
+        "northeast": { "lat": 52.48094642989271, "lng": -1.910317920107278 },
+        "southwest": { "lat": 52.47824677010727, "lng": -1.913017579892723 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Prince of Wales",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110656907776566440135\">Jean-Luc Bulber</a>"
+        ],
+        "photo_reference": "AelY_CuXHKF5sIYZPlErOhQVhuOzrdOT-yjCVGP2js9AkJcLHEVsiVbDMuPMragLDMfJKtwUkU71R_jDWWmN_wacFixgoKLP7st0ycsdhceI38WW4DuD_1kYU_o3M13c0QBA6ttcgBQHayVAHs3hRVPtkFq0rXkAR0tdl3LPWON6pWuI53-W",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ4dIfkqG9cEgRMpiyHiAYu-o",
+    "plus_code": {
+      "compound_code": "F3HQ+R8 Birmingham",
+      "global_code": "9C4WF3HQ+R8"
+    },
+    "price_level": 1,
+    "rating": 4.4,
+    "reference": "ChIJ4dIfkqG9cEgRMpiyHiAYu-o",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 479,
+    "vicinity": "84 Cambridge St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4895045, "lng": -1.9080874 },
+      "viewport": {
+        "northeast": { "lat": 52.49081447989273, "lng": -1.906826570107278 },
+        "southwest": { "lat": 52.48811482010728, "lng": -1.909526229892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Church Pub & Dining Room",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3036,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102899040169834740455\">Graham L</a>"
+        ],
+        "photo_reference": "AelY_Cvi6-2TP7XaMeym5oGuGOq9HjEweRAqCad0vSpKu46elRzuiNI4kRQpkWzgC4V-jso0OzZsjRzhccdHOSvzkj1hUpVh7IuKgCWKoFwK75s3SS5sTvOyTOBw6a73d-mMteS9n8h2qxQp3RrN2RtlQPowpyhrTwkDftgbhv5ZkZMRoxHy",
+        "width": 4048
+      }
+    ],
+    "place_id": "ChIJrSJGn-y8cEgRkvI-Kh4HaYE",
+    "plus_code": {
+      "compound_code": "F3QR+RQ Birmingham",
+      "global_code": "9C4WF3QR+RQ"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJrSJGn-y8cEgRkvI-Kh4HaYE",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 709,
+    "vicinity": "22 Great Hampton St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4778294, "lng": -1.9113644 },
+      "viewport": {
+        "northeast": { "lat": 52.47913722989271, "lng": -1.909834820107278 },
+        "southwest": { "lat": 52.47643757010727, "lng": -1.912534479892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Brasshouse",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3840,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109291420870828624614\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CvX2xVoK4IZOECd-xqmQ6f_zhsXAk-azt92bA1U9aRJucuCeF-yq1ryz6ODl8tzI0Jlw1BKntsVyuAxuXuxNgpuDi8ogOsQOkg23cbvu2vpzSPJl5EshIW47K2fijO8hyTbnBkHkt2zSMKPDNDkhH7VJUXCXXaBUHntG1GEZqVbQ55N",
+        "width": 5120
+      }
+    ],
+    "place_id": "ChIJHwYOnva8cEgRLQy4JLQ1KIE",
+    "plus_code": {
+      "compound_code": "F3HQ+4F Birmingham",
+      "global_code": "9C4WF3HQ+4F"
+    },
+    "price_level": 2,
+    "rating": 4.1,
+    "reference": "ChIJHwYOnva8cEgRLQy4JLQ1KIE",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2630,
+    "vicinity": "44 Broad St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.47372430000001, "lng": -1.8981731 },
+      "viewport": {
+        "northeast": { "lat": 52.47512547989272, "lng": -1.896931920107278 },
+        "southwest": { "lat": 52.47242582010728, "lng": -1.899631579892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Bierkeller Birmingham",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112223912223944492777\">Stephen Stoakes</a>"
+        ],
+        "photo_reference": "AelY_CtpTfdkLETnLNF9pkN_xl8a4k1-t7boIH2hR1PK5ZAV-Ne24xAHWimmeT1NkE59dkGj2C-ALpKT3Q96oNXoYM6P2u_iammFB2KF-v07ANKLJ5oLOLuW3cN6y6AJxB3AoxnuGhgDHZl9UPw02hNbhRqPV8Xz2Z-nBmKzJDZzbL8RBgo7",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJq3HHzPe8cEgRpJQ3PeuC5i4",
+    "plus_code": {
+      "compound_code": "F4F2+FP Birmingham",
+      "global_code": "9C4WF4F2+FP"
+    },
+    "price_level": 2,
+    "rating": 3.8,
+    "reference": "ChIJq3HHzPe8cEgRpJQ3PeuC5i4",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "night_club",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 600,
+    "vicinity": "21, 22 Essex St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.47738, "lng": -1.8976118 },
+      "viewport": {
+        "northeast": { "lat": 52.47884572989273, "lng": -1.896113070107278 },
+        "southwest": { "lat": 52.47614607010729, "lng": -1.898812729892723 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "All Bar One New Street Station",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3337,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106353625581905311576\">All Bar One New Street Stat Birmingham</a>"
+        ],
+        "photo_reference": "AelY_Cu3CKSn6dW3hc4-SZducT0MCeGqsmc8EA7kCUoWIIagHUsR0YGkhDn8R0ngTk4s8ukNF7L71gFgivHQzYuWzmqjvLBstkSnH1O7knnJ8tYVOfNUveHZjjdvh8mujP41RJXm2ICcRVQmO0GXy0BJxKa1vmePcF0LD8cmzkDrApGQqigU",
+        "width": 5000
+      }
+    ],
+    "place_id": "ChIJfwyAa4m8cEgRvkl5IpNsNSQ",
+    "plus_code": {
+      "compound_code": "F4G2+XX Birmingham",
+      "global_code": "9C4WF4G2+XX"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJfwyAa4m8cEgRvkl5IpNsNSQ",
+    "scope": "GOOGLE",
+    "types": ["bar", "food", "point_of_interest", "establishment"],
+    "user_ratings_total": 1661,
+    "vicinity": "Unit 28B, New Street Station, Smallbrook Queensway, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4707926, "lng": -1.8814528 },
+      "viewport": {
+        "northeast": { "lat": 52.47210907989272, "lng": -1.880156370107278 },
+        "southwest": { "lat": 52.46940942010728, "lng": -1.882856029892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Moseley Arms",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3088,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106347038530703554395\">Lind el Loren</a>"
+        ],
+        "photo_reference": "AelY_CviEPbOxEtAhEcnJqvL93l4xUBo-DM1ps3QW96XNuLAoABcViljgK4iWRUyHGEZDB5LGGJw0y1rsT8t9YUUC1J4Z2i08lcS9NIPTypBNKQb7IUD1GY28B_w9rjMeCjWQ10_po13u0y9ftNmmizhGUkfpkOS65oSjA0B6a-d4tx9umU",
+        "width": 4160
+      }
+    ],
+    "place_id": "ChIJId4wE3-8cEgRhNXdFbcE-j4",
+    "plus_code": {
+      "compound_code": "F4C9+8C Birmingham",
+      "global_code": "9C4WF4C9+8C"
+    },
+    "price_level": 1,
+    "rating": 4.1,
+    "reference": "ChIJId4wE3-8cEgRhNXdFbcE-j4",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 804,
+    "vicinity": "105 Ravenhurst St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4869547, "lng": -1.9158385 },
+      "viewport": {
+        "northeast": { "lat": 52.48834562989272, "lng": -1.914461970107278 },
+        "southwest": { "lat": 52.48564597010727, "lng": -1.917161629892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Red Lion",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115217391491807149307\">Lee</a>"
+        ],
+        "photo_reference": "AelY_CtbNgnCDitp8k3TrJXLLkf9fj5rGXMieCUDh1AHyM0Ar1THvHgF2qEPMBbJsYltMCJJ6Crm1bNglvIvuoN3NALy2mmLgWxKfOxBw7P1GGlVaUuydcKi9-1-w7CRAbRS68-b7KxPqOIh9y_sW0gz1GQLVLaP1cC2bp31FEhgpxedSCO1",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJOdnhYO68cEgRKUQQ_9YHhzE",
+    "plus_code": {
+      "compound_code": "F3PM+QM Birmingham",
+      "global_code": "9C4WF3PM+QM"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJOdnhYO68cEgRKUQQ_9YHhzE",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 955,
+    "vicinity": "95 Warstone Ln, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4793503, "lng": -1.9018603 },
+      "viewport": {
+        "northeast": { "lat": 52.48100322989273, "lng": -1.900535320107277 },
+        "southwest": { "lat": 52.47830357010729, "lng": -1.903234979892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Post Office Vaults",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2448,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102261128563113849882\">David Atkins</a>"
+        ],
+        "photo_reference": "AelY_CtL2KTBFRopkKlwUaD5diWQcZc01FaJ6vm_bfvgrRxcBVSryyZIc224_Lk7UzbivK6q8kO0NF29et6EZPIO3IFmzwaiofpjpUCdPd7Jw8mRZuDce7fj60aRA_vuGdEcUAToPAIz6WYuEy6HKZcJCcr2vnlvUzj0gNnJttuELpohGTo4",
+        "width": 3264
+      }
+    ],
+    "place_id": "ChIJsX2keIy8cEgRpYrb-5vCamU",
+    "plus_code": {
+      "compound_code": "F3HX+P7 Birmingham",
+      "global_code": "9C4WF3HX+P7"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJsX2keIy8cEgRpYrb-5vCamU",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 1916,
+    "vicinity": "84 New St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.47513420000001, "lng": -1.9201256 },
+      "viewport": {
+        "northeast": { "lat": 52.47645102989272, "lng": -1.918821720107277 },
+        "southwest": { "lat": 52.47375137010728, "lng": -1.921521379892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Vine Inn",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 815,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103358282719243335053\">The Vine Inn</a>"
+        ],
+        "photo_reference": "AelY_CsTuce77n3lBVzfc1rq4NVUqCHmNkj9PUIc-MxhAk5i3WkVNS63265dBx495JhPWLNYEoLl_7JcnHepo6PBZ8Chv4IM5VBR7RNTZ3NPFq2sGvkvjpib3VrMFPuzuEzpKnBBEtRWi_oWzsSKjfpGa4AaD3BtcFhgGXO5k7KP22cirH2N",
+        "width": 1200
+      }
+    ],
+    "place_id": "ChIJwd2vafi8cEgR2nJ_atOpRw0",
+    "plus_code": {
+      "compound_code": "F3GH+2X Birmingham",
+      "global_code": "9C4WF3GH+2X"
+    },
+    "rating": 4.5,
+    "reference": "ChIJwd2vafi8cEgR2nJ_atOpRw0",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 237,
+    "vicinity": "92 Ruston St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4789653, "lng": -1.899635 },
+      "viewport": {
+        "northeast": { "lat": 52.48017352989272, "lng": -1.898235620107278 },
+        "southwest": { "lat": 52.47747387010728, "lng": -1.900935279892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Shakespeare",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 846,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101989538795695575359\">The Shakespeare</a>"
+        ],
+        "photo_reference": "AelY_CuTFbcVr6fIc1HTn5Fmqn-QoIxXdUMoK6TvOx4-blFog3XL-M9xGFZJRI6AL49ZurS3vxH96ED9_5IZGw7ppoZwSsWLBL3q3Au_10bpISTJJgG4Lik1Ua0MtJ2BVVE4OynYa7CtBttv-DMldoSoGlqq-Uz337qKcrBsp6nPhhaKmoV2",
+        "width": 1276
+      }
+    ],
+    "place_id": "ChIJTa0BVom8cEgRYFEbyqYl4qQ",
+    "plus_code": {
+      "compound_code": "F4H2+H4 Birmingham",
+      "global_code": "9C4WF4H2+H4"
+    },
+    "price_level": 2,
+    "rating": 4.1,
+    "reference": "ChIJTa0BVom8cEgRYFEbyqYl4qQ",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 2184,
+    "vicinity": "Lower Temple St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.47803709999999, "lng": -1.9093946 },
+      "viewport": {
+        "northeast": { "lat": 52.47956012989273, "lng": -1.908120320107278 },
+        "southwest": { "lat": 52.47686047010728, "lng": -1.910819979892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Gentleman & Scholar Pub and Terrace",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 814,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106213282085681138985\">The Gentleman &amp; Scholar Pub and Terrace</a>"
+        ],
+        "photo_reference": "AelY_Cs5hDf6SxXBlPNHYWwQVhMOZI6eARvqPON1x-2QFUwjBE3znSFg4j7RVF9sp82YZKadE4ovS786f_7yqO9vzAV__Jy5IYQdwIOYLMeTvsE4zgwbUrDAa39l9o69m24awF3WOULukbcnIBnnCoVRGNhju-v_g6IqRv1fqYbLSH47AAqq",
+        "width": 1280
+      }
+    ],
+    "place_id": "ChIJg2jCZfS8cEgRRGDCFR6rFmA",
+    "plus_code": {
+      "compound_code": "F3HR+66 Birmingham",
+      "global_code": "9C4WF3HR+66"
+    },
+    "rating": 4.2,
+    "reference": "ChIJg2jCZfS8cEgRRGDCFR6rFmA",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 169,
+    "vicinity": "2 Bridge St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4817992, "lng": -1.8939913 },
+      "viewport": {
+        "northeast": { "lat": 52.48323322989272, "lng": -1.892686520107277 },
+        "southwest": { "lat": 52.48053357010727, "lng": -1.895386179892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Grey Lantern",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110102450511309736133\">Tee Watts</a>"
+        ],
+        "photo_reference": "AelY_Cs3rtgzJ3xbLM8p5OntWlU-UfAelrwVpJyODC6z7SnonFkMfxsaI-FJHR3MeJHnpvDtfkhSCX8bnIkuA3sV3yF5Hm7Q5ab6_x7zQZYxRje6HjqMnlnrtSPw32hRk-rygKLyYbBFff9otzBIVB8LuZD6h-TrOhxHd7RUI-YmhPLWxmIY",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ52PqYE-9cEgRpzdgH6xvcX0",
+    "plus_code": {
+      "compound_code": "F4J4+PC Birmingham",
+      "global_code": "9C4WF4J4+PC"
+    },
+    "rating": 4.3,
+    "reference": "ChIJ52PqYE-9cEgRpzdgH6xvcX0",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 87,
+    "vicinity": "27 The Priory Queensway, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48444509999999, "lng": -1.904685 },
+      "viewport": {
+        "northeast": { "lat": 52.48584142989272, "lng": -1.903268870107278 },
+        "southwest": { "lat": 52.48314177010727, "lng": -1.905968529892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Actress & Bishop",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2592,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106768460028784970976\">Veselin Noykov</a>"
+        ],
+        "photo_reference": "AelY_CufTOz8wWiILGjYiFy6IGZO10Istk9wKyP8mcAsJkmFQKf2XRi0J0HltpA29pxSbLFYkus4M-G6Gn4tCCATA-_obwB6qsBNi8hrlyWwvb51v4sNSIT-jw9kSDr05nHXFCa3Pgab6G3EemeuUGpDQLEbKEc5iAURFNLjjhmyBZlSHFul",
+        "width": 4608
+      }
+    ],
+    "place_id": "ChIJnTRDX428cEgRS4JfNifcy-0",
+    "plus_code": {
+      "compound_code": "F3MW+Q4 Birmingham",
+      "global_code": "9C4WF3MW+Q4"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJnTRDX428cEgRS4JfNifcy-0",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 1690,
+    "vicinity": "36 Ludgate Hill, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4818558, "lng": -1.8991538 },
+      "viewport": {
+        "northeast": { "lat": 52.48316147989271, "lng": -1.897696270107277 },
+        "southwest": { "lat": 52.48046182010727, "lng": -1.900395929892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Alchemist Colmore Row",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2988,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102319213610902713051\">charlie Dool</a>"
+        ],
+        "photo_reference": "AelY_CsYumh09ezvrBswxV15oggA1AT9mUNQ-Jo3uoGCaVH8lHEovTVCi5eoLx8jrMA86oP-LXH4i47SghcvWmGicCOMt0Na329_NKamCscdX9tjX4oIAVx9bjPOBA9ViUluEE1gDdBZIpIG3tZkeEbuIjjcYAJKeK0TyHgm87wHEGOhWtlL",
+        "width": 5312
+      }
+    ],
+    "place_id": "ChIJKf3tJYy8cEgRqsTrO0qRN8I",
+    "plus_code": {
+      "compound_code": "F4J2+P8 Birmingham",
+      "global_code": "9C4WF4J2+P8"
+    },
+    "price_level": 3,
+    "rating": 4.4,
+    "reference": "ChIJKf3tJYy8cEgRqsTrO0qRN8I",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2895,
+    "vicinity": "The Grand, Colmore Row, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4771013, "lng": -1.9097908 },
+      "viewport": {
+        "northeast": { "lat": 52.47843347989272, "lng": -1.908471920107278 },
+        "southwest": { "lat": 52.47573382010728, "lng": -1.911171579892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Canalside Bar",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109061505875613612522\">Craig LaCava</a>"
+        ],
+        "photo_reference": "AelY_CvTH9k0x0OtzBZuIHe10Uzj-v0xsfXoy5yRlg0IZS4hduyDeZRHyH2K0RSb11cYTfKWVh8swUPGEn68KcSOGTqzN3A7U19yyD1eEPjkIm781jU4JIoaZuv-LmneokF9TN3IdXOqZkRC_dDOKLHIUT19mhRFKMuLJOQr4wzbQwfaJnw",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJBcZAT_S8cEgRB07oyiPfZ_U",
+    "plus_code": {
+      "compound_code": "F3GR+R3 Birmingham",
+      "global_code": "9C4WF3GR+R3"
+    },
+    "price_level": 1,
+    "rating": 4.2,
+    "reference": "ChIJBcZAT_S8cEgRB07oyiPfZ_U",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 778,
+    "vicinity": "Gas St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4686416, "lng": -1.9225236 },
+      "viewport": {
+        "northeast": { "lat": 52.46995592989272, "lng": -1.921261620107278 },
+        "southwest": { "lat": 52.46725627010728, "lng": -1.923961279892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The High Field",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111884497179277513738\">eveniment</a>"
+        ],
+        "photo_reference": "AelY_CsYF8vhb9xuAJD4g6OnxxulaZ_xyObbHpLG7DALgh3YmQEiM8A8hLjzyDP8wvBGI4I57XV4M3mHpYlpt5FqhDA9mjVcc526w_GL1LkcV3yV4cahXsKukeDDHTUQ3BRqmyUa42rvMpPg4_8BlwWdfFPVsWUePmpbMXKC8UMYl0ICWGbo",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ87kfiVaUcEgRDdlgpBVdeVI",
+    "plus_code": {
+      "compound_code": "F39H+F2 Birmingham",
+      "global_code": "9C4WF39H+F2"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJ87kfiVaUcEgRDdlgpBVdeVI",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1444,
+    "vicinity": "22 Highfield Rd, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4765279, "lng": -1.9122347 },
+      "viewport": {
+        "northeast": { "lat": 52.47792847989273, "lng": -1.910974770107277 },
+        "southwest": { "lat": 52.47522882010728, "lng": -1.913674429892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Figure of Eight - JD Wetherspoon",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111234110806336355474\">Cathy Evatt-Davey</a>"
+        ],
+        "photo_reference": "AelY_Cua8lIel1wfbWIYg6ViSc6bkBfmuWgLF-aUl7N26rJCYDJ-tZ_e4eJtcbCTlHo-x9QGdTMNCNMNfs2dJHv7ZvJ1QBwI4u5Fn99gSqq-BM9094uMxUtQAQc2zERO9Kp92iR5XasAR1KjtwfsnoGgezAKPHJyqa2SdCpQy-AeBBUTW3lS",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJQQYah_a8cEgRgRsnGqM1FCs",
+    "plus_code": {
+      "compound_code": "F3GQ+J4 Birmingham",
+      "global_code": "9C4WF3GQ+J4"
+    },
+    "price_level": 1,
+    "rating": 4.1,
+    "reference": "ChIJQQYah_a8cEgRgRsnGqM1FCs",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 4120,
+    "vicinity": "236-239 Broad St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4864589, "lng": -1.8967212 },
+      "viewport": {
+        "northeast": { "lat": 52.48777447989271, "lng": -1.895310170107278 },
+        "southwest": { "lat": 52.48507482010727, "lng": -1.898009829892723 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Gunmakers Arms",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 5472,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102564111188704887135\">Drinkwater Digital</a>"
+        ],
+        "photo_reference": "AelY_CveZnpuaOuO2rAcE5bNHNiH-ZM0KwaC72-rtxRQpFj3lmYOIS6O0i07NqzrUt_5F8jr9vteV7wGxsbOLV-kFtk0_EcpWgoyLm72uOHa98Ld1WkHghqrf_knn_gnKtrB7_VYHgxOhqkVxZ_Xd5REtBl5jBGjyNR9TtnirczPfrP_rpRw",
+        "width": 7296
+      }
+    ],
+    "place_id": "ChIJsQGbTZC8cEgRTST-aC184-M",
+    "plus_code": {
+      "compound_code": "F4P3+H8 Birmingham",
+      "global_code": "9C4WF4P3+H8"
+    },
+    "rating": 4.4,
+    "reference": "ChIJsQGbTZC8cEgRTST-aC184-M",
+    "scope": "GOOGLE",
+    "types": ["bar", "lodging", "point_of_interest", "establishment"],
+    "user_ratings_total": 583,
+    "vicinity": "93 Bath St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4897384, "lng": -1.8998719 },
+      "viewport": {
+        "northeast": { "lat": 52.49097142989272, "lng": -1.898525320107277 },
+        "southwest": { "lat": 52.48827177010728, "lng": -1.901224979892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Unity pub",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104805521547243592252\">Dj wan2</a>"
+        ],
+        "photo_reference": "AelY_Cu4I_BGrMhOTcNza-3kAAlRIWC08dPNubY5tDj56RZa9HhkklVAActTuuP-yPmwsOolOxidu2Y9H3XKIzqhDVl5h4lJ1JRy5TgUvQZTGnZAEhgvwNwL1fmpXKdFWgAGNKUpO7TERww5VyYpijs-B0Dq0IU2aJrJRbLrWFo1I7BHPowG",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJY8aJ-5O8cEgRIuAcgaeRfB4",
+    "plus_code": {
+      "compound_code": "F4Q2+V3 Birmingham",
+      "global_code": "9C4WF4Q2+V3"
+    },
+    "rating": 4.6,
+    "reference": "ChIJY8aJ-5O8cEgRIuAcgaeRfB4",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 139,
+    "vicinity": "337 New Summer St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4803937, "lng": -1.8996182 },
+      "viewport": {
+        "northeast": { "lat": 52.48180407989273, "lng": -1.898292570107277 },
+        "southwest": { "lat": 52.47910442010728, "lng": -1.900992229892722 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Bar + Block Steakhouse Birmingham City Centre (Waterloo Street)",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2048,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/118033902889283197577\">Beefeater Bar and Block - Birmingham</a>"
+        ],
+        "photo_reference": "AelY_CudeCWa7MNC_O7e-VHh0_6IssQzJchHnv3BM8ozD_PR54eC97F-UZNcF3QgNsz3owU05iHZGwPhLmtb8fojRYh0FKkmwNr1mApNdbl2auHY869Id98LqRR9yT16tws_ILVxHyegXVVYiRPR0V__apz-WrjxKqdIEyO9LciLSRj2_2y0",
+        "width": 3072
+      }
+    ],
+    "place_id": "ChIJH_XGH4y8cEgRrrFN_9lwr0U",
+    "plus_code": {
+      "compound_code": "F4J2+55 Birmingham",
+      "global_code": "9C4WF4J2+55"
+    },
+    "price_level": 2,
+    "rating": 4.1,
+    "reference": "ChIJH_XGH4y8cEgRrrFN_9lwr0U",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1596,
+    "vicinity": "3-6 Waterloo St, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48253099999999, "lng": -1.886773 },
+      "viewport": {
+        "northeast": { "lat": 52.4836438802915, "lng": -1.884933519708498 },
+        "southwest": { "lat": 52.4809459197085, "lng": -1.887631480291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Thinktank Birmingham Science Museum",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102931711526012679390\">Daniel Martin</a>"
+        ],
+        "photo_reference": "AelY_CtZenFt68GD1z81lnu9nL0E_u2RdSxl4JxLgEPq5T0XXAlrTGNs7N63HP9mqjAfeWWw0Fi_UHLu7kX-RqGjuzLUCVn6GvhG-v4hds71-92gP-AC2cgjErxren0xbJJPbINaDyNeZGqaXa_O8MzC5KTD28-5MPpNNyGPlvhN2Ggl7vFd",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ3wS0u4O8cEgRl9LqOSFXQHs",
+    "plus_code": {
+      "compound_code": "F4M7+27 Birmingham, UK",
+      "global_code": "9C4WF4M7+27"
+    },
+    "rating": 4.3,
+    "reference": "ChIJ3wS0u4O8cEgRl9LqOSFXQHs",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 4629,
+    "vicinity": "Millennium Point, Curzon Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4794163, "lng": -1.9084593 },
+      "viewport": {
+        "northeast": { "lat": 52.4808871302915, "lng": -1.906830419708498 },
+        "southwest": { "lat": 52.4781891697085, "lng": -1.909528380291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/civic-bldg_pinlet",
+    "name": "Library of Birmingham",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 2843,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100827196321300050310\">Mark Chater</a>"
+        ],
+        "photo_reference": "AelY_CsIz7Czhnh4zbsSQNFpIuyRriAWR7mcg9We3TSvTJhEiL3pDkA8cpMXtl1cipHSSt97u6DSSEiBS1iTctmPrS0-aYK6IkIA1K5tOM3h1EpMiSwTEerZTJkValtkC9YjOP6a72lKxMcYzTDmDFVXaSjAS2NeWQLYqLSueqXn7mEXSeyq",
+        "width": 3791
+      }
+    ],
+    "place_id": "ChIJzbhBevO8cEgRsizctkhHvG0",
+    "plus_code": {
+      "compound_code": "F3HR+QJ Birmingham, UK",
+      "global_code": "9C4WF3HR+QJ"
+    },
+    "rating": 4.5,
+    "reference": "ChIJzbhBevO8cEgRsizctkhHvG0",
+    "scope": "GOOGLE",
+    "types": [
+      "library",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1741,
+    "vicinity": "Centenary Square, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4782074, "lng": -1.9128138 },
+      "viewport": {
+        "northeast": { "lat": 52.47955638029149, "lng": -1.911464819708498 },
+        "southwest": { "lat": 52.47685841970849, "lng": -1.914162780291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "National SEA LIFE Centre Birmingham",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117558022170282777150\">jinu antony</a>"
+        ],
+        "photo_reference": "AelY_Ctr9Cu2KRD1wX9-upjocSmgHXo8OY1j2ZNBSGKDCSepQ271Bs5cyg-jasOwoW2zEM4ihNRILYiuXLV3mBKPHwMDHR6K36sJnXT5QK97E4421KItaLblAxsa-IuY4lR7mVWzQ4gKvammzakDGu5Hn-V8av0372FknKWq0fOx7VsxX4I0",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJxdh6tfa8cEgRCe45SOyUX00",
+    "plus_code": {
+      "compound_code": "F3HP+7V Birmingham, UK",
+      "global_code": "9C4WF3HP+7V"
+    },
+    "rating": 4.3,
+    "reference": "ChIJxdh6tfa8cEgRCe45SOyUX00",
+    "scope": "GOOGLE",
+    "types": [
+      "aquarium",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 13223,
+    "vicinity": "The Water's Edge, Brindley Place, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.480111, "lng": -1.903462 },
+      "viewport": {
+        "northeast": { "lat": 52.4813456302915, "lng": -1.901637619708498 },
+        "southwest": { "lat": 52.4786476697085, "lng": -1.904335580291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Birmingham Museum & Art Gallery",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103069004335595909527\">Prabhu Lakkimsetti</a>"
+        ],
+        "photo_reference": "AelY_CslxNugZruo4F2lFwG12blmVvE2jRiWhbOZqkLj0qCrOFdZaJ692yoJf5w1cDd9KP93J6hmEh7yszWl89qo1ToxqDZ6LFI5dQsh7_-kE1-f0s1mDfof_t9-MNfL6KDCADisAjmQBTXGJCBu3JJhDPA-GMfJ0OUW44d8JUeDKsJ1piG-",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJo0dMkYy8cEgRRJR-gJ-142Y",
+    "plus_code": {
+      "compound_code": "F3JW+2J Birmingham, UK",
+      "global_code": "9C4WF3JW+2J"
+    },
+    "rating": 4.5,
+    "reference": "ChIJo0dMkYy8cEgRRJR-gJ-142Y",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "art_gallery",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 8346,
+    "vicinity": "Chamberlain Square, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4770256, "lng": -1.893224 },
+      "viewport": {
+        "northeast": { "lat": 52.4782050302915, "lng": -1.891694469708498 },
+        "southwest": { "lat": 52.4755070697085, "lng": -1.894392430291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "St. Martin's",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117242316337671548018\">Shargeel Anjum</a>"
+        ],
+        "photo_reference": "AelY_Cv1qYZwQQpRiF8fMuhUlqK6awEkT4eG2aJOJS2AW7b5IDha4g9WAjXoUT_g_ekT56lLOTfgkCQmTHkVOtdLW_90vjrW4zxZvXapXSTBXk93Cr72RxnapwZPJdhgBKVD5sCVMg5sI1xiSmw_7bE7bSf1PVSjc9jON3wlfXQfsgzcTzoQ",
+        "width": 3000
+      }
+    ],
+    "place_id": "ChIJGbeOjoi8cEgR1k7FRwPEt9o",
+    "plus_code": {
+      "compound_code": "F4G4+RP Birmingham, UK",
+      "global_code": "9C4WF4G4+RP"
+    },
+    "rating": 4.6,
+    "reference": "ChIJGbeOjoi8cEgR1k7FRwPEt9o",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "church",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 978,
+    "vicinity": "Edgbaston Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48517150000001, "lng": -1.905818 },
+      "viewport": {
+        "northeast": { "lat": 52.48634783029151, "lng": -1.904153419708499 },
+        "southwest": { "lat": 52.48364986970851, "lng": -1.906851380291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "St. Paul's Church",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 2832,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108897950232742938304\">St. Paul&#39;s Church</a>"
+        ],
+        "photo_reference": "AelY_Ct5yv7I6W1etlU4beYWDjrC_6nEq6vmNBHshuHXnCwPiswdmAlwKnekvzn9M11iX714l1UkhxqQGpRB_oPURAQub9AebuIzu9wLps5AQlr1dIhTHq_jAPGKI24a2PTHXyLSl7wBUePWdyIMtUPz6t-PhiP2ySV-_81NxPjtMRXlg68h",
+        "width": 4240
+      }
+    ],
+    "place_id": "ChIJdyVTSu28cEgRJuHktarb3hI",
+    "plus_code": {
+      "compound_code": "F3PV+3M Birmingham, UK",
+      "global_code": "9C4WF3PV+3M"
+    },
+    "rating": 4.5,
+    "reference": "ChIJdyVTSu28cEgRJuHktarb3hI",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "church",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 334,
+    "vicinity": "St Paul's Church, Saint Paul's Square, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4753461, "lng": -1.8975694 },
+      "viewport": {
+        "northeast": { "lat": 52.47657528029149, "lng": -1.896375619708499 },
+        "southwest": { "lat": 52.4738773197085, "lng": -1.899073580291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Genting Casino Birmingham Chinatown",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4669,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110498085967792742584\">Genting Casino Birmingham Chinatown</a>"
+        ],
+        "photo_reference": "AelY_CvKjPq7ne_7HYqHpP7Od9C99Kk5kdiP2AnPeTAOlnL8JVC-aRCulZ9YEAIOFg_8zBJwEcHvLJtupMbgK4vxOnuJA6xEVqMgLl_-HIWmPFrhnYpos_l2flYO9-apak7uf76ifDmmFsOO2wbUYZPW5yVh9moRGGU8ygSujjBdoZzyoZgk",
+        "width": 7000
+      }
+    ],
+    "place_id": "ChIJYZ6v6om8cEgR67W9xEMpmhk",
+    "plus_code": {
+      "compound_code": "F4G2+4X Birmingham, UK",
+      "global_code": "9C4WF4G2+4X"
+    },
+    "rating": 3.9,
+    "reference": "ChIJYZ6v6om8cEgR67W9xEMpmhk",
+    "scope": "GOOGLE",
+    "types": [
+      "casino",
+      "tourist_attraction",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 383,
+    "vicinity": "16, 18 Hurst Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4855592, "lng": -1.8986124 },
+      "viewport": {
+        "northeast": { "lat": 52.4867859302915, "lng": -1.897161019708498 },
+        "southwest": { "lat": 52.4840879697085, "lng": -1.899858980291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "St Chad's Catholic Cathedral",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 4000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115309236834686080344\">Josep Perez</a>"
+        ],
+        "photo_reference": "AelY_CtEavJzeXCT3YaqniUaqYStWBIe4O-P_4yQ_W9hnvCvGDhEBHotBdmq2NMCUgPTtUenYB9LjPJvawYaDIpqPCiPNDHkqw1ECEHe0X3C3lI9Lfy76u_jzQMNlaaufYLnE27LwNT4epQuJSUVQvAKzjiYNIgWkMOjwnVu47f5NyYbO5A",
+        "width": 3000
+      }
+    ],
+    "place_id": "ChIJ11UMzJG8cEgRLYaCwzoQNdk",
+    "plus_code": {
+      "compound_code": "F4P2+6H Birmingham, UK",
+      "global_code": "9C4WF4P2+6H"
+    },
+    "rating": 4.7,
+    "reference": "ChIJ11UMzJG8cEgRLYaCwzoQNdk",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "church",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 450,
+    "vicinity": "3540 Saint Chads Queensway, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4794401, "lng": -1.9070593 },
+      "viewport": {
+        "northeast": { "lat": 52.4806964302915, "lng": -1.905439319708498 },
+        "southwest": { "lat": 52.4779984697085, "lng": -1.908137280291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Hall of Memory",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/118050045698619484195\">Ben W</a>"
+        ],
+        "photo_reference": "AelY_CsArkE3YVwXBLl2iKPpBa8D1hKpcfmkHSMHVQUxb2DAiPBMkk8tqxio2N-QKXKCvs3H05wzSZNzmccZv-S6sCP08ZrA75M3vhgdOdX3Fjll7UFkQ4dZ1StPUiG0S8S1e5rIPr3tBHtLMtPIEKJj6a6SSY-DfmRUvmLQpFkigEUJmU4V",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJP0P5XvO8cEgRSLUuI7iOBxE",
+    "plus_code": {
+      "compound_code": "F3HV+Q5 Birmingham, UK",
+      "global_code": "9C4WF3HV+Q5"
+    },
+    "rating": 4.5,
+    "reference": "ChIJP0P5XvO8cEgRSLUuI7iOBxE",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 154,
+    "vicinity": "Broad Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4811597, "lng": -1.8991412 },
+      "viewport": {
+        "northeast": { "lat": 52.4823877302915, "lng": -1.898088319708498 },
+        "southwest": { "lat": 52.4796897697085, "lng": -1.900786280291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "Birmingham Cathedral",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 6936,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113974751266521923470\">Patricia Pereira</a>"
+        ],
+        "photo_reference": "AelY_Cs-sEvdzSNR5S811g1TAXdj5BgPT5KoMuQr1OmA1DVxleEvXi27AsAZE4RV9vljDeITgF9cqJ6NAAWj-pKVy_NUwi43m8BJOnwatQMxnBIOMlQ9tCoYAuRiREcV3ykC0ORc-QSXlzaq7L1NeLD0MVKRgM5Em-4161f7PRRUyJKQGn-t",
+        "width": 9248
+      }
+    ],
+    "place_id": "ChIJyZhgKIy8cEgRb68F_0J9zwQ",
+    "plus_code": {
+      "compound_code": "F4J2+F8 Birmingham, UK",
+      "global_code": "9C4WF4J2+F8"
+    },
+    "rating": 4.5,
+    "reference": "ChIJyZhgKIy8cEgRb68F_0J9zwQ",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "church",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2216,
+    "vicinity": "Cathedral Square, Colmore Row, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4819641, "lng": -1.9073582 },
+      "viewport": {
+        "northeast": { "lat": 52.4833497302915, "lng": -1.906092719708498 },
+        "southwest": { "lat": 52.4806517697085, "lng": -1.908790680291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "The Coffin Works",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 1194,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101058041532129819324\">The Coffin Works</a>"
+        ],
+        "photo_reference": "AelY_CvTUwzcqhPcYBPyBjfs9hrs-X1H7sXMv2eY8KhOrJ8g6C6y1cSwVrDf9rf0glK1fg6ULj7q5sR7RwQoqsrJbH3gqd5DtSv2d8fgIWwJ8REvJdI1GqYc5KYiX5ymqiwfEvv3OZKwXsOg5dEWt87K4LQvm_4ebpjjvbxqvxOoJ-i93Wvm",
+        "width": 1792
+      }
+    ],
+    "place_id": "ChIJ-SB14PK8cEgRRBhKbfBZmhM",
+    "plus_code": {
+      "compound_code": "F3JV+Q3 Birmingham, UK",
+      "global_code": "9C4WF3JV+Q3"
+    },
+    "rating": 4.7,
+    "reference": "ChIJ-SB14PK8cEgRRBhKbfBZmhM",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 529,
+    "vicinity": "13-15 Fleet Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4851341, "lng": -1.901697199999999 },
+      "viewport": {
+        "northeast": { "lat": 52.4862838802915, "lng": -1.900160719708498 },
+        "southwest": { "lat": 52.4835859197085, "lng": -1.902858680291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Clue HQ Birmingham - The Live Escape Game",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108902196879648324748\">Acmtix</a>"
+        ],
+        "photo_reference": "AelY_Cuof2TNXO7KX_4XzyrNrox249AOjdmzMXrfRnzqTaV9luWXmh4Ra3Y6SClA1WJwI3FcR4P90xjxkJtq0Rdyef0tv1lWSeZBZ4zghH8-yKgVUa-m7zFbofMht68Apu702nxld0lu8SQ7BaipaJaD0II_hfe6hgvmTZc9l_UMBQfJwH6b",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJDSeBcZK8cEgR__HsAiDOPmM",
+    "plus_code": {
+      "compound_code": "F3PX+38 Birmingham, UK",
+      "global_code": "9C4WF3PX+38"
+    },
+    "rating": 4.7,
+    "reference": "ChIJDSeBcZK8cEgR__HsAiDOPmM",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 659,
+    "vicinity": "Arches 20&21, Lionel Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4776689, "lng": -1.9124096 },
+      "viewport": {
+        "northeast": { "lat": 52.4788958302915, "lng": -1.911157219708499 },
+        "southwest": { "lat": 52.4761978697085, "lng": -1.913855180291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Ikon Gallery",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 600,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107392072611578715940\">Glen Howell</a>"
+        ],
+        "photo_reference": "AelY_CukBH4UJsj8-DRsAb3JX5D3nnjn1eAudplMik6MFKQe5GLOGw29fXnVxHUZ07AuqzNpSfV83-GfWbjvmCNNUHo4kUqokM7b53d3DuTeF3LAZxO4rMLAKPMzWhMMI3kD_Yks1LStLzobRUxn9DZO58crznWEH9yjkzvuFAt4YIw39AGM",
+        "width": 800
+      }
+    ],
+    "place_id": "ChIJ-9S5mPa8cEgRdcpwuRtQksU",
+    "plus_code": {
+      "compound_code": "F3HQ+32 Birmingham, UK",
+      "global_code": "9C4WF3HQ+32"
+    },
+    "rating": 4.4,
+    "reference": "ChIJ-9S5mPa8cEgRdcpwuRtQksU",
+    "scope": "GOOGLE",
+    "types": [
+      "art_gallery",
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1127,
+    "vicinity": "1 Brindley Place, Oozells Square, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4743351, "lng": -1.8972246 },
+      "viewport": {
+        "northeast": { "lat": 52.47567068029149, "lng": -1.895753319708498 },
+        "southwest": { "lat": 52.47297271970849, "lng": -1.898451280291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "National Trust - Birmingham Back to Backs",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 2205,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108145866423290104461\">Joolz Johnson</a>"
+        ],
+        "photo_reference": "AelY_Cs4KadmITygUk9_zY4IduA6bk2DnuuwxxWhw03uo8hwzREvQtM82EqMjmvNDEkHj_BUkYTPDyccOvtCANZNLLkSuoRfU9oCAay0stkvaPXxAzovQ3Xztul72nS6L8d4Er9UIW9_Z7BLQo7ZPEGsVFsdEAZX_eqP31kLCIRBq1PT6OBE",
+        "width": 3291
+      }
+    ],
+    "place_id": "ChIJ4TKseGK8cEgREn_MweEXxyA",
+    "plus_code": {
+      "compound_code": "F4F3+P4 Birmingham, UK",
+      "global_code": "9C4WF4F3+P4"
+    },
+    "price_level": 2,
+    "rating": 4.8,
+    "reference": "ChIJ4TKseGK8cEgREn_MweEXxyA",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1359,
+    "vicinity": "50-54, 55-63 Inge Street, Hurst Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48237270000001, "lng": -1.8852325 },
+      "viewport": {
+        "northeast": { "lat": 52.48359643029151, "lng": -1.883833219708498 },
+        "southwest": { "lat": 52.48089846970851, "lng": -1.886531180291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+    "name": "Eastside City Park",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2592,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106020003979357644163\">Adam Stewart</a>"
+        ],
+        "photo_reference": "AelY_CvF1IkvNaDDP-l-LdXyEhQciyWkcL0ezI-OHIpi2_UL9D1FnkZZTrXETy3VgIG1fYZhIOELvlOgRoKSH-hs0HOmFN2-cAMPg8PKKKVbkjJpNOPbaWSbG4g98JRxsTelKGV1GtJ5SSZzg_RXpZfg_b4BMt8mgfqYG19YK4bYvUrufsSz",
+        "width": 1944
+      }
+    ],
+    "place_id": "ChIJu_irC4O8cEgR_wKtUEafAGU",
+    "plus_code": {
+      "compound_code": "F4J7+WW Birmingham, UK",
+      "global_code": "9C4WF4J7+WW"
+    },
+    "rating": 4.1,
+    "reference": "ChIJu_irC4O8cEgR_wKtUEafAGU",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 231,
+    "vicinity": "Curzon Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4845193, "lng": -1.9115684 },
+      "viewport": {
+        "northeast": { "lat": 52.4859890802915, "lng": -1.910195769708499 },
+        "southwest": { "lat": 52.4832911197085, "lng": -1.912893730291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Pen Museum",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3648,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117473104857951095655\">Pen Museum</a>"
+        ],
+        "photo_reference": "AelY_CsFZNBVDqXu10EB7_omywrO7WdfgB50fFY0HeN5d9mIj3tzxWvmCJZbNBF9QCXwtF3bRiyKG6jcZs0DXUBjgPS3ILCy6YN1fgubWllQA_vzsD2sjCn6vg2Gth5v9OE6s_DOYHN-d2xBrWYVik55GerqMyqRatXb-zH6uvO4Vi0ul02Z",
+        "width": 5472
+      }
+    ],
+    "place_id": "ChIJB9b5-e28cEgRGyFE1Gwoqws",
+    "plus_code": {
+      "compound_code": "F3MQ+R9 Birmingham, UK",
+      "global_code": "9C4WF3MQ+R9"
+    },
+    "rating": 4.6,
+    "reference": "ChIJB9b5-e28cEgRGyFE1Gwoqws",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 458,
+    "vicinity": "The Argent Centre, 60 Frederick Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4699777, "lng": -1.9220236 },
+      "viewport": {
+        "northeast": { "lat": 52.4713259302915, "lng": -1.920675519708498 },
+        "southwest": { "lat": 52.4686279697085, "lng": -1.923373480291501 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Edgbaston Village",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1236,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100105381074335637309\">Debbie Matthews</a>"
+        ],
+        "photo_reference": "AelY_CuGfGMBw-u4Nw2mTnHChUkxqZXBWS7ovezF2AlFmAohR4c-0IWiLYgwkAl47W7y39k56TwNqhURhZ2epZfSnfHRbY9TNXhWnj1907gzQtHDy3KwYtf6E1ORToxAggYbqeUoPsbt_dMuK3HemqIBgv1iKzfc8T4yBcs4vFH_cIWCY-mT",
+        "width": 1716
+      }
+    ],
+    "place_id": "ChIJ2duvEVW8cEgRuG2F08i-Joo",
+    "plus_code": {
+      "compound_code": "F39H+X5 Birmingham, UK",
+      "global_code": "9C4WF39H+X5"
+    },
+    "rating": 4.5,
+    "reference": "ChIJ2duvEVW8cEgRuG2F08i-Joo",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 134,
+    "vicinity": "5 Greenfield Crescent, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4800469, "lng": -1.8926069 },
+      "viewport": {
+        "northeast": { "lat": 52.48134103029149, "lng": -1.891104919708498 },
+        "southwest": { "lat": 52.47864306970849, "lng": -1.893802880291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+    "name": "St. Michael's Catholic Church",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115453595154857647542\">Sakhawat Hossain</a>"
+        ],
+        "photo_reference": "AelY_CtEG1VWJu5Bd56RdbZ948KRQ40lSZAb069E24x09pV7qO9Nz_b2H96HOnejA1V5ACA7FeZNuhhePw-txU3NPtxN8AEOK2E79WxmGEUQzghUD4QS6QeFnodUtFSp9NJCs_AQOT4_QrwmtXTzWbhJcckBbg_5Y0POgKiNbB6QeFjFxMwp",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJJ4MJ-oW8cEgRorptX9r7kAg",
+    "plus_code": {
+      "compound_code": "F4J4+2X Birmingham, UK",
+      "global_code": "9C4WF4J4+2X"
+    },
+    "rating": 4.7,
+    "reference": "ChIJJ4MJ-oW8cEgRorptX9r7kAg",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "church",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 227,
+    "vicinity": "Moor Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4777127, "lng": -1.911156099999999 },
+      "viewport": {
+        "northeast": { "lat": 52.4790392802915, "lng": -1.909765669708497 },
+        "southwest": { "lat": 52.47634131970851, "lng": -1.912463630291501 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Birmingham Walk of Stars",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3144,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106504410159603206148\">Raj Patel</a>"
+        ],
+        "photo_reference": "AelY_CuZ21W3k_0Ws_AsNrOe-ySXlteeOY9-hiqIWvhiyxLzqpDDHzzssLPs0rSy0kW0QF5UqcMoL2sWuBFdDDYqIlGlAHGoSQzEmmCNfGCQ3oHjv7jsrrbWiYm_Y4zgi55AmdiYiBMWLiVnSvOlQ1VLV67Jvq0Lpj2c1dEahxC7rXc-Ej_Z",
+        "width": 4192
+      }
+    ],
+    "place_id": "ChIJb0FlbPS8cEgRz8wCONJc50s",
+    "plus_code": {
+      "compound_code": "F3HQ+3G Birmingham, UK",
+      "global_code": "9C4WF3HQ+3G"
+    },
+    "rating": 3.6,
+    "reference": "ChIJb0FlbPS8cEgRz8wCONJc50s",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 52,
+    "vicinity": "Broad Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4796551, "lng": -1.9029961 },
+      "viewport": {
+        "northeast": { "lat": 52.48072348029149, "lng": -1.901523169708498 },
+        "southwest": { "lat": 52.4780255197085, "lng": -1.904221130291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Queen Victoria",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3461,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111699769074212146397\">Keith Richards</a>"
+        ],
+        "photo_reference": "AelY_CuHfKuUPUEW6Eec2ZSG6oo2kqUJyUaSbcPPS9MjpyEYgJVi3_d3ByrJl4-EMNDRGFRGSO0NFijpiuDfBUo1GviVD9bqaWkn04RADWQ0e-MQDfBDIP5y0TH6d2mrfxEPIJElQsP62QeJqO60fxch5xSvYUMaKiMrAzKnltzFsn5B-bEE",
+        "width": 4623
+      }
+    ],
+    "place_id": "ChIJqTV1hIy8cEgRZ1kTn2lPgcM",
+    "plus_code": {
+      "compound_code": "F3HW+VR Birmingham, UK",
+      "global_code": "9C4WF3HW+VR"
+    },
+    "rating": 4.4,
+    "reference": "ChIJqTV1hIy8cEgRZ1kTn2lPgcM",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 619,
+    "vicinity": "38 Paradise Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48002570000001, "lng": -1.9015552 },
+      "viewport": {
+        "northeast": { "lat": 52.4813380302915, "lng": -1.900196769708498 },
+        "southwest": { "lat": 52.4786400697085, "lng": -1.902894730291501 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "Attraction Tix",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105842259741394849770\">Theresa Byrne</a>"
+        ],
+        "photo_reference": "AelY_CsYHxNKJomweI4Q5oJQB7NOYsSnBArgaXqF_0ytpZKtOBnnbK-shBDNGHmdMCFAa_jpdoeotKthyru_z2NW-rMELcZq7nwZcQ4XKkO5_tp5fK0b_lKQm8sSwFtPZ6aEAoTtq7hWVcsE4pmbytvRrzIMZRLkcU6zTHjOJfC_B63gnkCe",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJQzl1fjG_cEgRYxvf2lZHzoA",
+    "plus_code": {
+      "compound_code": "F3JX+29 Birmingham, UK",
+      "global_code": "9C4WF3JX+29"
+    },
+    "rating": 4.4,
+    "reference": "ChIJQzl1fjG_cEgRYxvf2lZHzoA",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "travel_agency",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 50,
+    "vicinity": "First Floor, New Oxford House, Attraction Tix, Waterloo Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4800137, "lng": -1.9015454 },
+      "viewport": {
+        "northeast": { "lat": 52.4813319802915, "lng": -1.900196919708498 },
+        "southwest": { "lat": 52.4786340197085, "lng": -1.902894880291501 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "FloridaTix",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 620,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104768345835598432997\">FloridaTix</a>"
+        ],
+        "photo_reference": "AelY_CvEvj5Yb779DMa0zl2XefSDYCGTRtUk3k2QWhyiu1y_ttwOz1j7U-D2A8-iG4NdUN85L2ZQ53MnKySdjTzgBsBlzV7kiDdp8DaaIrcwbGNRqDsAcPye-TJ2Uz2SJ7Mqi2ZMVN1rbrlNbaxWEypMHPp2igcvOIHlboGm20ZXnb_64vgS",
+        "width": 930
+      }
+    ],
+    "place_id": "ChIJT33HcmG-cEgRcEUsgPy7f88",
+    "plus_code": {
+      "compound_code": "F3JX+29 Birmingham, UK",
+      "global_code": "9C4WF3JX+29"
+    },
+    "rating": 3.7,
+    "reference": "ChIJT33HcmG-cEgRcEUsgPy7f88",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "travel_agency",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 61,
+    "vicinity": "First Floor, New Oxford House, FloridaTix, Waterloo Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4771097, "lng": -1.9024433 },
+      "viewport": {
+        "northeast": { "lat": 52.4783687302915, "lng": -1.901058519708498 },
+        "southwest": { "lat": 52.4756707697085, "lng": -1.903756480291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Be Bold Be Birmingham Graffiti",
+    "photos": [
+      {
+        "height": 3848,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106198832509658220340\">Max Chiu</a>"
+        ],
+        "photo_reference": "AelY_CsfAhMeQorRowcLdVOkTOaRjq9K6oV422i6P8xmPMXWZNh7nKx0bfbw3Ke1xE1YYFVBMzCjg1YlWVkvL3RjPyDGcdedq1ABJuhoMcLdrKH0G858X2lxhxaCTtkBgCGq4L1EqI5EQ0eWyC1ofRS0bmMZMVPQ-tGZ8ua4wRMFkpmGsHps",
+        "width": 9840
+      }
+    ],
+    "place_id": "ChIJz6vISwC9cEgRIFaGwGaes68",
+    "plus_code": {
+      "compound_code": "F3GX+R2 Birmingham, UK",
+      "global_code": "9C4WF3GX+R2"
+    },
+    "reference": "ChIJz6vISwC9cEgRIFaGwGaes68",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "vicinity": "24 Suffolk Street Queensway, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4779271, "lng": -1.8988887 },
+      "viewport": {
+        "northeast": { "lat": 52.4795543802915, "lng": -1.897786369708498 },
+        "southwest": { "lat": 52.4768564197085, "lng": -1.900484330291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Ozzy the Bull",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4480,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116133525946605629873\">Ozzy the Bull</a>"
+        ],
+        "photo_reference": "AelY_CvI3-H3rc--dB1CCiZhj4qo4w29A3m0C1Pj7er3I6t1_buFBkSieVa1HURZEsz1LNJNR3oxrrTgG9aSy-nefwJJzL1D9m5Oaimqoga6mJErfodfStcxBfwW7bXyX-3T32HS1K-iwlOgMhgCTPS8joNk6NdeVrYEBySCRivMH17_P-u2",
+        "width": 6720
+      }
+    ],
+    "place_id": "ChIJxTRwHga9cEgRtS--mra3apY",
+    "plus_code": {
+      "compound_code": "F4H2+5C Birmingham, UK",
+      "global_code": "9C4WF4H2+5C"
+    },
+    "rating": 4.7,
+    "reference": "ChIJxTRwHga9cEgRtS--mra3apY",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 47,
+    "vicinity": "New Street Station Forecourt, East Mews, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4779365, "lng": -1.8988491 },
+      "viewport": {
+        "northeast": { "lat": 52.4795543802915, "lng": -1.897786369708498 },
+        "southwest": { "lat": 52.4768564197085, "lng": -1.900484330291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "The Grand Central Bull",
+    "photos": [
+      {
+        "height": 1736,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110579662797892624800\">Andrew</a>"
+        ],
+        "photo_reference": "AelY_CtlkD2J7DZHkZo2DqdwSZ6PVsxLg9nr5l0hMXlUP37wTUTr9dc1EWkmkXSCKkrZD8YC4WGpMbzDvh4GM2vmkzNZvRIJB7cO681OZlMD42SxKWcGroXc_RqjPFgkMp4R8r09rE3T4WrD9Twzv0UM8WSDbpxoSwU4rSN-FQTdKUynjBAl",
+        "width": 2604
+      }
+    ],
+    "place_id": "ChIJKbhabSu9cEgRFCUIcswWBA0",
+    "plus_code": {
+      "compound_code": "F4H2+5F Birmingham, UK",
+      "global_code": "9C4WF4H2+5F"
+    },
+    "rating": 4.6,
+    "reference": "ChIJKbhabSu9cEgRFCUIcswWBA0",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 14,
+    "vicinity": "1-2 Lower Temple Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4783637, "lng": -1.8981276 },
+      "viewport": {
+        "northeast": { "lat": 52.4796632802915, "lng": -1.89739355 },
+        "southwest": { "lat": 52.4769653197085, "lng": -1.90010895 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Sandbox VR",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 857,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110784708313820620163\">Sandbox VR</a>"
+        ],
+        "photo_reference": "AelY_Cs_eqUvMN-q9VUHQcn7rng1gCNMzwgMdJzyH7JFuEaZns8JNWx4y0TRrkcOQlS4bfTw996IgaQsPC7JYaZosdcER8eCP0kmYF6t_vK_P9PAn1mSoqHtpRDK7Ztxi6HmoZug0G3v4iZCuoqX-kNy68AUlso0iYk-xIVTnQj87B9WNpBr",
+        "width": 1254
+      }
+    ],
+    "place_id": "ChIJUboE0ae9cEgREVOPFCpIcbs",
+    "plus_code": {
+      "compound_code": "F4H2+8P Birmingham, UK",
+      "global_code": "9C4WF4H2+8P"
+    },
+    "rating": 4.8,
+    "reference": "ChIJUboE0ae9cEgREVOPFCpIcbs",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "bar",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 441,
+    "vicinity": "Unit 25A, Grand Central Shopping Centre, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4809342, "lng": -1.8970501 },
+      "viewport": {
+        "northeast": { "lat": 52.4823873802915, "lng": -1.895847019708498 },
+        "southwest": { "lat": 52.4796894197085, "lng": -1.898544980291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Birmingham High Street (City Centre)",
+    "place_id": "ChIJf78dSAC9cEgRyxXYYk4AGus",
+    "plus_code": {
+      "compound_code": "F4J3+95 Birmingham, UK",
+      "global_code": "9C4WF4J3+95"
+    },
+    "reference": "ChIJf78dSAC9cEgRyxXYYk4AGus",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "vicinity": "83 Bull Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4830073, "lng": -1.9070298 },
+      "viewport": {
+        "northeast": { "lat": 52.4844708802915, "lng": -1.905893269708499 },
+        "southwest": { "lat": 52.4817729197085, "lng": -1.908591230291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Newhall Square Fountains",
+    "opening_hours": { "open_now": true },
+    "place_id": "ChIJI9nXH6S9cEgRQR8wwr0b7uI",
+    "plus_code": {
+      "compound_code": "F3MV+65 Birmingham, UK",
+      "global_code": "9C4WF3MV+65"
+    },
+    "reference": "ChIJI9nXH6S9cEgRQR8wwr0b7uI",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "vicinity": "4 Charlotte Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4788438, "lng": -1.9089483 },
+      "viewport": {
+        "northeast": { "lat": 52.4801927802915, "lng": -1.907599319708498 },
+        "southwest": { "lat": 52.4774948197085, "lng": -1.910297280291501 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Centenary Winter Carousels",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115466752456915196803\">Dicky King</a>"
+        ],
+        "photo_reference": "AelY_CuXa5zEObxJSXI1MEFFBsf3IEJcVdtCjwSaYtSrMHTUdvpr6iWkOmQJVe36bWlK9NuHVt3Tk43v5MaR587nTwLOxAGuVPCZwdpMOWk58-m5HBriAQj3M4XDmWaX2XN5xRjI9bOtF16MNqeOzPnMzrxUm4MiBVvo6EO3ZxLZ1esmnsdW",
+        "width": 2250
+      }
+    ],
+    "place_id": "ChIJibAYVme9cEgR2JN2m05OivM",
+    "plus_code": {
+      "compound_code": "F3HR+GC Birmingham, UK",
+      "global_code": "9C4WF3HR+GC"
+    },
+    "rating": 4.3,
+    "reference": "ChIJibAYVme9cEgR2JN2m05OivM",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 3,
+    "vicinity": "Library Metro (Stop BR4, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4766372, "lng": -1.8979455 },
+      "viewport": {
+        "northeast": { "lat": 52.4779715802915, "lng": -1.896582569708499 },
+        "southwest": { "lat": 52.4752736197085, "lng": -1.899280530291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Old Rep Stage Door",
+    "place_id": "ChIJUY34J7u9cEgRAAAzODRWz_U",
+    "plus_code": {
+      "compound_code": "F4G2+MR Birmingham, UK",
+      "global_code": "9C4WF4G2+MR"
+    },
+    "reference": "ChIJUY34J7u9cEgRAAAzODRWz_U",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "vicinity": "Hinckley Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4783, "lng": -1.8952118 },
+      "viewport": {
+        "northeast": { "lat": 52.4795432302915, "lng": -1.894092419708498 },
+        "southwest": { "lat": 52.4768452697085, "lng": -1.896790380291501 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Bull",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100033481054368004996\">Imran Khan</a>"
+        ],
+        "photo_reference": "AelY_Cv0yWYZmQ2kGnXeYkR5rI6pWCoUsQlw915Z1KNcpIId8BCnbSZ8nDfBuwIUF5A65OheEHemD6wj0e8bsdyv6ESpB7qyjptPkwfZP2o9ErRsAIJqbPo_G19JwEAHcNoNouUkpGoq8QF_l_4oHJZe8595mSm2A_qTBoqO8VYo1u-BfvGc",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJG6OCWAq9cEgRDPcRIJfXJFM",
+    "plus_code": {
+      "compound_code": "F4H3+8W Birmingham, UK",
+      "global_code": "9C4WF4H3+8W"
+    },
+    "rating": 4.6,
+    "reference": "ChIJG6OCWAq9cEgRDPcRIJfXJFM",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 76,
+    "vicinity": "Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4813717, "lng": -1.9100011 },
+      "viewport": {
+        "northeast": { "lat": 52.48297813029149, "lng": -1.908451219708498 },
+        "southwest": { "lat": 52.48028016970849, "lng": -1.911149180291501 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Lock 3, Farmers Bridge Locks",
+    "photos": [
+      {
+        "height": 3464,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110073982519482179134\">Garreth</a>"
+        ],
+        "photo_reference": "AelY_CtExrleSV16GPV9O7ppF17wzrLysVy1KOuldk9zTbGwU2UtND4u-eGJGPkcbzYwMLECSGYvOpJFdEaB144mrzpsbzReO77yNk3K7cej9PpyUa8nBxwWP_nj_q23g69if57Cg4A8lRFBqNFlDGmlAF4FXldRoabtN_dq57wqESjFrHvS",
+        "width": 4618
+      }
+    ],
+    "place_id": "ChIJqQa9fEe9cEgRMYuPL0B0DLs",
+    "plus_code": {
+      "compound_code": "F3JQ+GX Birmingham, UK",
+      "global_code": "9C4WF3JQ+GX"
+    },
+    "rating": 4.2,
+    "reference": "ChIJqQa9fEe9cEgRMYuPL0B0DLs",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 6,
+    "vicinity": "67 Parade, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4776405, "lng": -1.9099119 },
+      "viewport": {
+        "northeast": { "lat": 52.4792048802915, "lng": -1.908849769708499 },
+        "southwest": { "lat": 52.4765069197085, "lng": -1.911547730291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Regency Wharf",
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109592148676346388150\">LTT_OFFICIAL</a>"
+        ],
+        "photo_reference": "AelY_CsB8dpjzDLGrpnhELkX3Wl3l9M515h-eoVpdTknkHVm8qQ0Zs985Y9qONTpmIKO01_4fh6rvIqbzjUNZYExXa3qCZYDYTBEQrpZ3h6pavBdAtUkHn2PyzfmjQ18Rw-C2BqRGjdcPZ-g3dIV_pvz2dkcvYkSmhjHcZqN41zN8XiJK5pI",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJVY09GLS9cEgRva3MRV7VV9s",
+    "plus_code": {
+      "compound_code": "F3HR+32 Birmingham, UK",
+      "global_code": "9C4WF3HR+32"
+    },
+    "rating": 4.1,
+    "reference": "ChIJVY09GLS9cEgRva3MRV7VV9s",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 7,
+    "vicinity": "Regency Wharf, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4770119, "lng": -1.9096506 },
+      "viewport": {
+        "northeast": { "lat": 52.47832938029149, "lng": -1.908353219708498 },
+        "southwest": { "lat": 52.4756314197085, "lng": -1.911051180291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Gas Street Basin moorings",
+    "photos": [
+      {
+        "height": 2839,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115495856539849552714\">Richard Cook</a>"
+        ],
+        "photo_reference": "AelY_Cv4S5IX0fMh5yRnGEs6M9aShvNyw0lfXPP3fvvN3IfrJE2JU6ZImfx8WZinnyVwIW3nMEWUvCD0E7TumBk-O7q5BGWaSkYt28G67I6g6BkJBZ2nVGRBb1jGilxftD8dc6OnGuFojNzbFnQegP9Gth9c2LDXjPvDSbyW_SoNy0OTFitX",
+        "width": 3771
+      }
+    ],
+    "place_id": "ChIJ264klkm9cEgRwUK-qVvujVc",
+    "plus_code": {
+      "compound_code": "F3GR+R4 Birmingham, UK",
+      "global_code": "9C4WF3GR+R4"
+    },
+    "rating": 5,
+    "reference": "ChIJ264klkm9cEgRwUK-qVvujVc",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 4,
+    "vicinity": "42 Gas Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4826107, "lng": -1.9107648 },
+      "viewport": {
+        "northeast": { "lat": 52.48396333029149, "lng": -1.909359019708498 },
+        "southwest": { "lat": 52.4812653697085, "lng": -1.912056980291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "New hall Hill - Historical Signature!",
+    "photos": [
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110980684488387417089\">J.M.Senanayaka Bandara</a>"
+        ],
+        "photo_reference": "AelY_CvNbszCePaH6L1ZNQc-yO0TOsEt5gA1CF7zZMlWR_snt3vYIbvUT-uiUIIglNuHT1aZetKmAi-pePepxfyJn-H_GNW6RrP7CfsKglWsL_mPCgY7s34YQpWKIVjnEiUvofiYEF-AMTjDl7wmKNWuN5Vjq13K8aQzxU6RtkQXcwNV801p",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ4_5Wu169cEgRhfY9SqEvqkI",
+    "plus_code": {
+      "compound_code": "F3MQ+2M Birmingham, UK",
+      "global_code": "9C4WF3MQ+2M"
+    },
+    "reference": "ChIJ4_5Wu169cEgRhfY9SqEvqkI",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "vicinity": "34 Newhall Hill, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.47746009999999, "lng": -1.8939142 },
+      "viewport": {
+        "northeast": { "lat": 52.4787255802915, "lng": -1.891917869708498 },
+        "southwest": { "lat": 52.4760276197085, "lng": -1.894615830291501 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Horatio Nelson Statue",
+    "photos": [
+      {
+        "height": 4080,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113909710175103060436\">The Whisperer</a>"
+        ],
+        "photo_reference": "AelY_Cshfv9P2Tmg9_noT8QqXwTlIVc5hSc4rJCDtZpa7fUqU7OsO1XrLh6XGnvSEI125Gm0iZXS4C3ntMI7roO_7lDqc9BUqX6R24NLPQGcDP1mN6dIoTzU7SSHEDxcUHl9qk_m9Tsj94hDzBvKAxrkHTzKuF8Jw436tpQSnGXseWG7Su4m",
+        "width": 3060
+      }
+    ],
+    "place_id": "ChIJ_-MAOgC9cEgR39tUg-9uxV0",
+    "plus_code": {
+      "compound_code": "F4G4+XC Birmingham, UK",
+      "global_code": "9C4WF4G4+XC"
+    },
+    "rating": 5,
+    "reference": "ChIJ_-MAOgC9cEgR39tUg-9uxV0",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 1,
+    "vicinity": "Edgbaston Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4808174, "lng": -1.91207 },
+      "viewport": {
+        "northeast": { "lat": 52.4822889302915, "lng": -1.910690219708498 },
+        "southwest": { "lat": 52.4795909697085, "lng": -1.913388180291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Lock 1, Farmers Bridge Locks",
+    "photos": [
+      {
+        "height": 428,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102750146234983433079\">Brian Richardson</a>"
+        ],
+        "photo_reference": "AelY_CtudZeLjeruvLPx1a_kxilAA5ckW0gWmPjrezJGUtfwvD2ivX3DvQRI-px_uoy7gksqeS19gs-Rb0w9FKBg2R54O3wiUTH4cY9VPboVWMVkM5o7Km-gg8q0WyVpLwBNhjNRRZehVVJX8dV0qACv-1jfu0rNPYbsDDbVxfT3hssjMwx9",
+        "width": 640
+      }
+    ],
+    "place_id": "ChIJZ-8Tj869cEgR1Fwa1lZSL_M",
+    "plus_code": {
+      "compound_code": "F3JQ+85 Birmingham, UK",
+      "global_code": "9C4WF3JQ+85"
+    },
+    "rating": 3,
+    "reference": "ChIJZ-8Tj869cEgR1Fwa1lZSL_M",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 3,
+    "vicinity": "5 Scotland Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4748299, "lng": -1.8975159 },
+      "viewport": {
+        "northeast": { "lat": 52.4763104302915, "lng": -1.896346369708498 },
+        "southwest": { "lat": 52.4736124697085, "lng": -1.899044330291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Hippodrome Square",
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108600494636481219061\">Aurelia Ven</a>"
+        ],
+        "photo_reference": "AelY_Cuv6vs0PsooIl-JkHDo_q014t0eUzZzmc3EoOL8yGjEqnX_nML2ysKjjWg0RXVl3lHb4NRj6euoTrx6u4iSarHaw14SMhrNBlU5t6ACRQPO35ebXF2VF4VCahPtKLD0zESZrZwuTqvMcJMH3K_OOowuG6IUqIf0zbFLkAkMVC6Htr68",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJAUkV5Ju9cEgR8JBTm8JX0Jk",
+    "plus_code": {
+      "compound_code": "F4F2+WX Birmingham, UK",
+      "global_code": "9C4WF4F2+WX"
+    },
+    "rating": 5,
+    "reference": "ChIJAUkV5Ju9cEgR8JBTm8JX0Jk",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 4,
+    "vicinity": "31-25 Hurst Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4743, "lng": -1.89731 },
+      "viewport": {
+        "northeast": { "lat": 52.4757402302915, "lng": -1.895850369708498 },
+        "southwest": { "lat": 52.47304226970851, "lng": -1.898548330291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "54 Inge Street",
+    "photos": [
+      {
+        "height": 659,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101523666584550348511\">54 Inge Street</a>"
+        ],
+        "photo_reference": "AelY_CsaBrllTDnWnJerZC_6ZxGs6JvxphSYD8-Tkl5MMnqLmfkVBelqeWQpt26A9BoZno0Ome1x5k2dvTHCDF5G2pBNIsBK1A7lFhppfQjZuDGX6d6To-SmCglfACqL-hZLo9t9eq4R6uO2yM0IIQ_0RnqbnyOuGS-MQhMZJaXz2Lqa6UPj",
+        "width": 1170
+      }
+    ],
+    "place_id": "ChIJZyf2SZ-9cEgRNrLsO-yRhnI",
+    "plus_code": {
+      "compound_code": "F4F3+P3 Birmingham, UK",
+      "global_code": "9C4WF4F3+P3"
+    },
+    "rating": 5,
+    "reference": "ChIJZyf2SZ-9cEgRNrLsO-yRhnI",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 1,
+    "vicinity": "Back To Backs, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4743, "lng": -1.89731 },
+      "viewport": {
+        "northeast": { "lat": 52.4757402302915, "lng": -1.895850369708498 },
+        "southwest": { "lat": 52.47304226970851, "lng": -1.898548330291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "52 Inge Street",
+    "photos": [
+      {
+        "height": 659,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105965986686123705617\">52 Inge Street</a>"
+        ],
+        "photo_reference": "AelY_CuB7eB0vyNK75rbr_MeatOz_-UAEewgvRZ11gmaY8tvv1tVKAqNYcN6XZD1qMy9iQQRfT5FtfDkErDJENde5Vrmatp0cMXCbrW-wJdYdOA-mPzGyk8gpZkLEYBHgnUQiq4lEbR3rD-sYpLcbmua_1dHaS9LIxrtaTnEYxkKgC4ZYxNP",
+        "width": 1170
+      }
+    ],
+    "place_id": "ChIJBTIZ-eS9cEgRinjyq9Tkmqo",
+    "plus_code": {
+      "compound_code": "F4F3+P3 Birmingham, UK",
+      "global_code": "9C4WF4F3+P3"
+    },
+    "reference": "ChIJBTIZ-eS9cEgRinjyq9Tkmqo",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "vicinity": "Back To Backs, Inge Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48415349999999, "lng": -1.893660999999999 },
+      "viewport": {
+        "northeast": { "lat": 52.4855664302915, "lng": -1.892377019708497 },
+        "southwest": { "lat": 52.4828684697085, "lng": -1.895074980291501 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "West Midlands Police Museum",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2992,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106018806392773815832\">West Midlands Police Museum</a>"
+        ],
+        "photo_reference": "AelY_Csph1XQo6Tx5hJzKBzerf06qUiyVUehKiEHTUMODi_OcWVM_57aZRhmHfVExWeCAPQRXDadEi1DFzZbHchE1D2YSf9yaANrCQ0eA8m0CEAgsqz1ut-yZXroLZYuNcSGX-NPJr8bAXXPfr9jSHaPX1O0PRvefqWzPUZxD59n1UojXeQ8",
+        "width": 2992
+      }
+    ],
+    "place_id": "ChIJqRK1-Y-8cEgRnzFMaYFZW3o",
+    "plus_code": {
+      "compound_code": "F4M4+MG Birmingham, UK",
+      "global_code": "9C4WF4M4+MG"
+    },
+    "rating": 4.7,
+    "reference": "ChIJqRK1-Y-8cEgRnzFMaYFZW3o",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 375,
+    "vicinity": "The Lock-up, 40 Steelhouse Lane, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.47942450000001, "lng": -1.9140458 },
+      "viewport": {
+        "northeast": { "lat": 52.48056783029151, "lng": -1.9132106 },
+        "southwest": { "lat": 52.47786986970851, "lng": -1.9165514 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "LEGOLAND Discovery Centre & LEGO Store Birmingham",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 533,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107848677085341589290\">LEGOLAND Discovery Centre &amp; LEGO Store Birmingham</a>"
+        ],
+        "photo_reference": "AelY_Cuzh4iAt5yeFSQqP99R-8-g6m-L8p3PmN8gz8kHKAvwn8HOo5Tcu96Tksfs85XDIBmNkLU9XKsmeitb8G-vxGmnFoggQGSFLfzHOyEQTaF6UR04IEvEaML4zBiz1hpUt_npTSxmLcOisf6Tx8DaCWM0Wfnn01e9WUS37vr3z7xnNg5c",
+        "width": 800
+      }
+    ],
+    "place_id": "ChIJwWVY0fC8cEgR2nKqrMl9tGQ",
+    "plus_code": {
+      "compound_code": "F3HP+Q9 Birmingham, UK",
+      "global_code": "9C4WF3HP+Q9"
+    },
+    "rating": 4.1,
+    "reference": "ChIJwWVY0fC8cEgR2nKqrMl9tGQ",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 3678,
+    "vicinity": "Arena, LEGOLAND Discovery Centre, Utilita, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4710737, "lng": -1.907758 },
+      "viewport": {
+        "northeast": { "lat": 52.47250168029149, "lng": -1.906171969708498 },
+        "southwest": { "lat": 52.4698037197085, "lng": -1.908869930291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+    "name": "Sunset Park",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108779244527723947812\">Jason CHEUNG</a>"
+        ],
+        "photo_reference": "AelY_CsP1yeaBFBYZwB8DoP9jRG-fP5vXLnejJ-yOtW0fdUc7WmQq2qfpandLBZFUdooFfykXgzBNJJAqjUi1c2lCn4SkkKrgZvHUdwWVqrDzu7pvOjyP3LzdOfTRC2NsxmyG5g_sZiEZuHAO0TIJ0cYYOsfpF2Kc1aaoExqMM6PESuj9jjH",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJ68Ncsl-8cEgRcBZsmtsHC9I",
+    "plus_code": {
+      "compound_code": "F3CR+CV Birmingham, UK",
+      "global_code": "9C4WF3CR+CV"
+    },
+    "rating": 4.4,
+    "reference": "ChIJ68Ncsl-8cEgRcBZsmtsHC9I",
+    "scope": "GOOGLE",
+    "types": [
+      "park",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 298,
+    "vicinity": "Moonlit Park, Mason Way, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4872239, "lng": -1.9128228 },
+      "viewport": {
+        "northeast": { "lat": 52.4884762802915, "lng": -1.911492069708498 },
+        "southwest": { "lat": 52.4857783197085, "lng": -1.914190030291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Paint Spectrum Birmingham: Saudade",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100277519760575430794\">Aashti Miller</a>"
+        ],
+        "photo_reference": "AelY_CulU7wXsRLk50AsgZWX9GGya8jfTdwaOVY8snHlI8xWWY2QqKS4NOmex9abgQYvZrBiGppt291rviq-sAsOKtfh_j4a6u4IWIMZgDsdxsws8g4sa_oOGSgM0Jzey67qYnF5TBPYx5FEhPrm5ILnL1cNIACfCLdr8SU5jFB-E4BghNdt",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJJdLrhIa9cEgREpYuH7Vf4Xw",
+    "plus_code": {
+      "compound_code": "F3PP+VV Birmingham, UK",
+      "global_code": "9C4WF3PP+VV"
+    },
+    "reference": "ChIJJdLrhIa9cEgREpYuH7Vf4Xw",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "vicinity": "168 Warstone Lane, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4793059, "lng": -1.9182463 },
+      "viewport": {
+        "northeast": { "lat": 52.4806970802915, "lng": -1.916795119708498 },
+        "southwest": { "lat": 52.4779991197085, "lng": -1.919493080291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Roundhouse Birmingham",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 798,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115127696482987809790\">Roundhouse Birmingham</a>"
+        ],
+        "photo_reference": "AelY_CuavFTcA8wKMXQIio5vXiGmTnirshUv4lCim92AqFKXMhOeHRrfMQep0nBlv96wvK7oPo8VTR62JQHX-60AtvAT8xv01N8YppGlH_cWx8vIDM8K4BTtnwN3mFDfuRSlXu-aSrU_5hAGWnRC9Q15N0QeV08I69snEtoE_dApKICdZp59",
+        "width": 1200
+      }
+    ],
+    "place_id": "ChIJD82yqvC8cEgRVDcdga1KIQI",
+    "plus_code": {
+      "compound_code": "F3HJ+PP Birmingham, UK",
+      "global_code": "9C4WF3HJ+PP"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJD82yqvC8cEgRVDcdga1KIQI",
+    "scope": "GOOGLE",
+    "types": [
+      "tourist_attraction",
+      "travel_agency",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 283,
+    "vicinity": "1 Sheepcote Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48624299999999, "lng": -1.890401000000001 },
+      "viewport": {
+        "northeast": { "lat": 52.4875785302915, "lng": -1.889074269708498 },
+        "southwest": { "lat": 52.4848805697085, "lng": -1.891772230291501 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "The Production Pit Ltd.",
+    "place_id": "ChIJvXQ5Qge9cEgR1pmxlZreXWA",
+    "plus_code": {
+      "compound_code": "F4P5+FR Birmingham, UK",
+      "global_code": "9C4WF4P5+FR"
+    },
+    "rating": 4,
+    "reference": "ChIJvXQ5Qge9cEgR1pmxlZreXWA",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 1,
+    "vicinity": "Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.46940009999999, "lng": -1.904431 },
+      "viewport": {
+        "northeast": { "lat": 52.4708810802915, "lng": -1.902940669708498 },
+        "southwest": { "lat": 52.4681831197085, "lng": -1.905638630291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+    "name": "Moonlit Park",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 12000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101296855088427965351\">louis ks</a>"
+        ],
+        "photo_reference": "AelY_CvixuS3D1c1QvwtvRlSWgTr4_HsBbpKoe15LkAQdY80L_SvPbGl3fBiYJYZdOdDO08pdjhaYn7y5doSAV594IeTp6-uGeTnrX1nVvUCdBZ8dXvFgczw2vApkqpnqNP3pxO5vFKTCHphr3nxbIxexi7GievQks9g9acWcxBN9uXJoW5o",
+        "width": 9000
+      }
+    ],
+    "place_id": "ChIJQwQrpWC8cEgRsg_sKi1Atcc",
+    "plus_code": {
+      "compound_code": "F39W+Q6 Birmingham, UK",
+      "global_code": "9C4WF39W+Q6"
+    },
+    "rating": 4.4,
+    "reference": "ChIJQwQrpWC8cEgRsg_sKi1Atcc",
+    "scope": "GOOGLE",
+    "types": [
+      "park",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 534,
+    "vicinity": "40 Mosedale Way, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4802718, "lng": -1.8840785 },
+      "viewport": {
+        "northeast": { "lat": 52.48162078029151, "lng": -1.882729519708498 },
+        "southwest": { "lat": 52.47892281970851, "lng": -1.885427480291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Digbeth Branch Canal",
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116987452951057475569\">Sanjukta Roy</a>"
+        ],
+        "photo_reference": "AelY_Cuo0LHcb5H6_ti2A8BxM7ICdhmlZ8gdxa8mVEhSNW8oc9tEgJlv1CXF11doTY2EFLg6voUkF4izevN167zMIAvPzRkKXm9jVHUK80gzOc6fOBm0QoQzxiFlHCo3urI6leGrI96O0IpAlxgKA3-Tonrbcky4r-i5yG9Ms1XiNAnKYfqq",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJaxme6KW9cEgRHbK1DNhB3H8",
+    "plus_code": {
+      "compound_code": "F4J8+49 Birmingham, UK",
+      "global_code": "9C4WF4J8+49"
+    },
+    "rating": 3.9,
+    "reference": "ChIJaxme6KW9cEgRHbK1DNhB3H8",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 10,
+    "vicinity": "Birmingham"
+  },
+  {
+    "business_status": "CLOSED_TEMPORARILY",
+    "geometry": {
+      "location": { "lat": 52.47658610000001, "lng": -1.8836028 },
+      "viewport": {
+        "northeast": { "lat": 52.4779052802915, "lng": -1.882207069708498 },
+        "southwest": { "lat": 52.4752073197085, "lng": -1.884905030291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "In A Box 3",
+    "permanently_closed": true,
+    "photos": [
+      {
+        "height": 810,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106947885057103677141\">In A Box 3</a>"
+        ],
+        "photo_reference": "AelY_Csyr6y8ikiUnVKCnIZrM_4UMoEnmn27hHPFeKbCUraShj0F9Z79FLNQLmoV87UoeZkgdQ6rqEqy_XFTF3b9PQjWIKclkKsmmaY7VsOkDhjHcSk9pZ7eEzQpeMwj4WWriGM8Psa_sgJ_vog6YzXAUCMMZcpErpSHMrErqXTPPOaar1EC",
+        "width": 1440
+      }
+    ],
+    "place_id": "ChIJ48b90R29cEgRqWgF1csLxhU",
+    "plus_code": {
+      "compound_code": "F4G8+JH Birmingham, UK",
+      "global_code": "9C4WF4G8+JH"
+    },
+    "rating": 4.6,
+    "reference": "ChIJ48b90R29cEgRqWgF1csLxhU",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 43,
+    "vicinity": "91 Floodgate Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.479022, "lng": -1.882089 },
+      "viewport": {
+        "northeast": { "lat": 52.4800984802915, "lng": -1.881094019708498 },
+        "southwest": { "lat": 52.4774005197085, "lng": -1.883791980291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "The Bothy",
+    "place_id": "ChIJP2t9DAC9cEgR_Xm72MLW1UQ",
+    "plus_code": {
+      "compound_code": "F4H9+J5 Birmingham, UK",
+      "global_code": "9C4WF4H9+J5"
+    },
+    "reference": "ChIJP2t9DAC9cEgR_Xm72MLW1UQ",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "vicinity": "Minerva Apothecary Garden, 158 Fazeley Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4913963, "lng": -1.9107587 },
+      "viewport": {
+        "northeast": { "lat": 52.49269588029149, "lng": -1.909461969708498 },
+        "southwest": { "lat": 52.4899979197085, "lng": -1.912159930291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Exciting Game - Escape Room Birmingham",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105863590039084062249\">Exciting Game - Escape Room Birmingham</a>"
+        ],
+        "photo_reference": "AelY_CuDE2MlasvhKXZQBbuyw6bUYEcG_QHB7DtFbeNPYKq6ltRWIECIia9OgnYkmaQA3iCL1eFRZ6vC5LUWUwqTBce2-dy0LeHBD3CfOwQaBkxOs0amv9WQhzRMC1UA5trYOlXd8LMEhIEE3nN8JbV3vXBNM3FNtqNu9rhAHk5Y8oXeFfx4",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJs-Psvuu8cEgR83BHZZR3tCw",
+    "plus_code": {
+      "compound_code": "F3RQ+HM Birmingham, UK",
+      "global_code": "9C4WF3RQ+HM"
+    },
+    "rating": 4.8,
+    "reference": "ChIJs-Psvuu8cEgR83BHZZR3tCw",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 625,
+    "vicinity": "63 Great Hampton Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.49024430000001, "lng": -1.8886285 },
+      "viewport": {
+        "northeast": { "lat": 52.49168168029151, "lng": -1.887352419708498 },
+        "southwest": { "lat": 52.48898371970851, "lng": -1.890050380291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Aston Junction",
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114706176772082379821\">John Slater</a>"
+        ],
+        "photo_reference": "AelY_Cs8-ZYwGHeygHC9sT-B4zbZecMzNRzRxEHIaBSYqTyXkyXUjr2hoXdIqkJK39Xkukw9ZOw6pzVMxzoig-kGlyjE-nuVMJaaQDK0qMJJiwm4B6BMQ0OukxNHjBNBbIJsyPUUktO5n0a8-5J5tQ8ZkReTWRY0oEzwaqXVqA_7jtbVdUya",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJeRwxe_a9cEgRAVngMNPKeEs",
+    "plus_code": {
+      "compound_code": "F4R6+3G Birmingham, UK",
+      "global_code": "9C4WF4R6+3G"
+    },
+    "rating": 3.3,
+    "reference": "ChIJeRwxe_a9cEgRAVngMNPKeEs",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 3,
+    "vicinity": "7 Mill Street, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.48580469999999, "lng": -1.9232383 },
+      "viewport": {
+        "northeast": { "lat": 52.48715368029148, "lng": -1.921889319708498 },
+        "southwest": { "lat": 52.48445571970849, "lng": -1.924587280291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Springhill Interchange Birmingham",
+    "opening_hours": { "open_now": true },
+    "place_id": "ChIJ62IBDQC9cEgRLw9vVJgt9nU",
+    "plus_code": {
+      "compound_code": "F3PG+8P Birmingham, UK",
+      "global_code": "9C4WF3PG+8P"
+    },
+    "rating": 4,
+    "reference": "ChIJ62IBDQC9cEgRLw9vVJgt9nU",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 1,
+    "vicinity": "Spring Hill, Birmingham"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 52.4826148, "lng": -1.8961804 },
+      "viewport": {
+        "northeast": { "lat": 52.4839637802915, "lng": -1.894831419708498 },
+        "southwest": { "lat": 52.4812658197085, "lng": -1.897529380291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Birmingham City Centre (High Street)",
+    "place_id": "ChIJoRPHJwC9cEgRbxiq6okz8Xg",
+    "plus_code": {
+      "compound_code": "F4M3+2G Birmingham, UK",
+      "global_code": "9C4WF4M3+2G"
+    },
+    "reference": "ChIJoRPHJwC9cEgRbxiq6okz8Xg",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "vicinity": "1 Colmore Circus Queensway, Birmingham"
+  }
+]

@@ -20,7 +20,9 @@ import (
 
 const CacheSize = 5
 
-var cacheDir = os.Getenv("WEB_DIR") + "attr_data/"
+var locationDataDir = os.Getenv("LOCATION_DATA_DIR")
+var cacheDataPath = os.Getenv("CACHE_DATA_PATH")
+
 var markerSettings = map[int]map[string]float64{
 	3: {
 		"distanceThreshold": 0.9,
@@ -43,6 +45,7 @@ var markerSettings = map[int]map[string]float64{
 		"alpha":             1.3,
 	},
 }
+
 var emptyResponse = make([]Location, 0)
 var cache sync.Map
 
@@ -69,9 +72,7 @@ func PopulateCacheSyncMap(source map[string]types.CacheItem) {
 }
 
 func InitCache() {
-	// Step 1: Read the JSON file
-	// jsonData, err := ReadCacheJSONFile("/usr/local/cache_data.json")
-	jsonData, err := ReadCacheJSONFile("cache_data.json")
+	jsonData, err := ReadCacheJSONFile(cacheDataPath)
 	if err != nil {
 		fmt.Println("Error reading JSON file:", err)
 		return
@@ -109,7 +110,7 @@ func saveCache() {
 	}
 
 	// Step 4: Write JSON to a File
-	file, err := os.Create("/usr/local/cache_data.json")
+	file, err := os.Create(cacheDataPath)
 	if err != nil {
 		fmt.Println("Error creating file:", err)
 		return
@@ -122,7 +123,7 @@ func saveCache() {
 		return
 	}
 
-	fmt.Println("JSON data successfully written to data.json")
+	fmt.Println("JSON data successfully written to ", cacheDataPath)
 }
 
 func addToCache(key string, value []Location) {
@@ -136,25 +137,41 @@ func addToCache(key string, value []Location) {
 	cache.Store(key, cacheItem)
 }
 
-// check which directories exist in given directory
-func checkCachedLocations() []string {
-	fmt.Println("Checking cached locations: ", cacheDir)
-	files, err := os.ReadDir(cacheDir)
+func checkAvailableLocations() map[string][2]float64 {
+
+	jsonFile, err := os.ReadFile(locationDataDir + "cities.json")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var cityCoordinates map[string][2]float64
+	if err := json.Unmarshal(jsonFile, &cityCoordinates); err != nil {
+		log.Fatal(err)
+	}
+	files, err := os.ReadDir(locationDataDir)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	names := make([]string, len(files))
 	for i := range files {
-		names[i] = files[i].Name()
+		if files[i].IsDir() {
+			names[i] = files[i].Name()
+		}
 	}
-	return names
+	for key := range cityCoordinates {
+		if !utils.Contains(names, strings.ToLower(key)) {
+			delete(cityCoordinates, key)
+		}
+	}
+
+	return cityCoordinates
 }
 
 func LoadLocationInformation(location string) ([]Location, DistanceMatrix, RoutesMatrix, error) {
-	var cachedLocations = checkCachedLocations()
-	fmt.Println("Cached locations:", cachedLocations)
-	if !utils.Contains(cachedLocations, location) {
+
+	var availableLocations = utils.GetKeys(checkAvailableLocations())
+	if !utils.Contains(availableLocations, location) {
 		fmt.Println("Location not found")
 		return nil, nil, nil, errors.New("location not found")
 	} else {
@@ -163,19 +180,19 @@ func LoadLocationInformation(location string) ([]Location, DistanceMatrix, Route
 		var D DistanceMatrix
 		var R RoutesMatrix
 
-		file, err := os.ReadFile(cacheDir + location + "/info.json")
+		file, err := os.ReadFile(locationDataDir + location + "/info.json")
 		if err != nil {
 			fmt.Println("Error reading file", err)
 		}
 		json.Unmarshal(file, &enrichedData)
 
-		file, err = os.ReadFile(cacheDir + location + "/D.json")
+		file, err = os.ReadFile(locationDataDir + location + "/D.json")
 		if err != nil {
 			fmt.Println("Error reading file", err)
 		}
 		json.Unmarshal(file, &D)
 
-		file, err = os.ReadFile(cacheDir + location + "/R.json")
+		file, err = os.ReadFile(locationDataDir + location + "/R.json")
 		if err != nil {
 			fmt.Println("Error reading file", err)
 		}
@@ -302,6 +319,12 @@ func extractURLParams(r *http.Request) (int, int, string, error) {
 	}
 
 	return targetAttractions, targetPubs, location, nil
+}
+
+func GetCityCoordinates(w http.ResponseWriter, r *http.Request) {
+	cityCoordinates := checkAvailableLocations()
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(cityCoordinates)
 }
 
 func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {

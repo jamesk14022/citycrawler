@@ -1,0 +1,278 @@
+[
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 51.5822242, "lng": 0.4866174 },
+      "viewport": {
+        "northeast": { "lat": 51.58349187989272, "lng": 0.4880136298927222 },
+        "southwest": { "lat": 51.58079222010728, "lng": 0.4853139701072777 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Jolly Friar",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 800,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112810248657138113621\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CvffbiQa0FpjA8gh0micYspXvgZs6kVB7yGmQvs-ni-hqfK_fHwj3q6JIVIUFNsKMqTH6Rk4AHZctlpXrLiQjdq8hwfu30zzTd0yVn4tXes8hMvHY89ZB3ib-teYKt9VqOsv2GSEwcO6snp7CyeOP3ZIAqxJRyYDWZHOGf41EHa3b_b",
+        "width": 1200
+      }
+    ],
+    "place_id": "ChIJ-ReULh_E2EcRH9NYFr04l7Y",
+    "plus_code": {
+      "compound_code": "HFJP+WJ Basildon",
+      "global_code": "9F32HFJP+WJ"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJ-ReULh_E2EcRH9NYFr04l7Y",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 364,
+    "vicinity": "118 Whitmore Way, Basildon"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 51.5825886, "lng": 0.4931648 },
+      "viewport": {
+        "northeast": { "lat": 51.58387192989272, "lng": 0.4945342798927223 },
+        "southwest": { "lat": 51.58117227010728, "lng": 0.4918346201072778 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Crane",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 1211,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105610146142032679772\">Crane</a>"
+        ],
+        "photo_reference": "AelY_CvjJImD2MoDplTl-2Zu3Z604l0KgncXtmt6qgyck93WZiBXxcq6XJmHqsbO-eOQh8rb7w0Eg2swu8c1Cnz8m7tZ7-TAXNYrLJMtd_vll9j36O8pkm2ifs65b7Q8wXb8G6enIrMfHgEdypufeJKXbo0b5I2ct-_xWrf5i3tHHCox3fKk",
+        "width": 1211
+      }
+    ],
+    "place_id": "ChIJgzhg-hPE2EcRCkLWeSB4JHI",
+    "plus_code": {
+      "compound_code": "HFMV+27 Basildon",
+      "global_code": "9F32HFMV+27"
+    },
+    "price_level": 1,
+    "rating": 4.4,
+    "reference": "ChIJgzhg-hPE2EcRCkLWeSB4JHI",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 203,
+    "vicinity": "Denys Dr, Basildon"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 51.5706631, "lng": 0.4836676 },
+      "viewport": {
+        "northeast": { "lat": 51.57202597989272, "lng": 0.4850537298927222 },
+        "southwest": { "lat": 51.56932632010728, "lng": 0.4823540701072778 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Barstable Tenants and Community Association",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1080,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101937946580114245864\">matt sipple</a>"
+        ],
+        "photo_reference": "AelY_Cu7E3tKPMr0v_RETkDuJmxsGWZvTsNhE8Y9KVoN7VvalUvkBrYjlrlduyEKv9lmT32Guq7LSKp6MLf71ivZiwMqkzcnaPo2_2wkxljCTTPpU3A6Bd2WmSKMQCPwP3v7O8Wbjjovus1ZbJ-BI6anngUSIYH5GFrSqgnPC-b9Jjg4R0Yn",
+        "width": 1920
+      }
+    ],
+    "place_id": "ChIJjQCRtyTE2EcRSYEX2724r_s",
+    "plus_code": {
+      "compound_code": "HFCM+7C Basildon",
+      "global_code": "9F32HFCM+7C"
+    },
+    "price_level": 1,
+    "rating": 4.3,
+    "reference": "ChIJjQCRtyTE2EcRSYEX2724r_s",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 26,
+    "vicinity": "S Riding, Basildon"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 51.58874230000001, "lng": 0.490175 },
+      "viewport": {
+        "northeast": { "lat": 51.59014632989273, "lng": 0.4915423798927221 },
+        "southwest": { "lat": 51.58744667010728, "lng": 0.4888427201072776 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Macs bar and cafe",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 4000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106324912157015568071\">warren saunders</a>"
+        ],
+        "photo_reference": "AelY_Ct8ZicFwnawygYpq9P2reISIZjBjCF9bBBca2gZlAIRxWeE8SUArMDvSKFQlLYszjCG9kMACFsDg66AyHcmW64dspApcvutVtSenmS33hmaWtX1tjqrdx0Y2q1g_67eABcFanAxiTERwzI5dUTI2uqN8ZyV9NTYnzWCtsBX5S-sCK_Y",
+        "width": 3000
+      }
+    ],
+    "place_id": "ChIJwZ8WCw7E2EcReRnINX6ZQXc",
+    "plus_code": {
+      "compound_code": "HFQR+F3 Basildon",
+      "global_code": "9F32HFQR+F3"
+    },
+    "price_level": 1,
+    "rating": 3.4,
+    "reference": "ChIJwZ8WCw7E2EcReRnINX6ZQXc",
+    "scope": "GOOGLE",
+    "types": ["night_club", "bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 18,
+    "vicinity": "1 Paycocke Rd, Basildon"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 51.580239, "lng": 0.496876 },
+      "viewport": {
+        "northeast": { "lat": 51.58162012989272, "lng": 0.4984885798927222 },
+        "southwest": { "lat": 51.57892047010728, "lng": 0.4957889201072777 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "The Watermill Beefeater",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 531,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117663531322033797758\">The Watermill</a>"
+        ],
+        "photo_reference": "AelY_CugDqMadSOd4VXk88rvv64JIYOy9ufzwHIf7hm4lFrP1wzsRmgYaEdHad6DF45FntR1XQyfJ3ZAvvq6hS5alK7CbtanBhyuJIOeCGPJl1LGS2Z2NwUOioYJbMYkZFO4wZB8yiXUHQMHEMeke4_ji32vlTaiWL8DnTBABON1KFYWoO1B",
+        "width": 797
+      }
+    ],
+    "place_id": "ChIJEVsoDm3E2EcRsb5kVawS4k4",
+    "plus_code": {
+      "compound_code": "HFJW+3Q Basildon",
+      "global_code": "9F32HFJW+3Q"
+    },
+    "price_level": 2,
+    "rating": 3.7,
+    "reference": "ChIJEVsoDm3E2EcRsb5kVawS4k4",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1693,
+    "vicinity": "Felmores, E Mayne, Basildon"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 51.5888831, "lng": 0.4787856999999999 },
+      "viewport": {
+        "northeast": { "lat": 51.59033637989272, "lng": 0.4802913298927221 },
+        "southwest": { "lat": 51.58763672010728, "lng": 0.4775916701072777 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Basildon Sport & Leisure Club",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 540,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110948983030506182918\">Selex Sports &amp; Leisure Club</a>"
+        ],
+        "photo_reference": "AelY_CvWE2SOwPzRf3PFhRfzNF4jtNPSW4b9_F9qjDMXzJdGi1V4rnL6Y1X1vQM-xU0HKf6hiVGwn_VVDgTC6OCU5mfO8WfbqxCjUxw6bgHbqWh0vDIcNEZSZXVC06W8Kft9VTWLNyRA9KsZYatxuZOwY2NOxWNj0ttdiimOgnb8WlpKAt4r",
+        "width": 960
+      }
+    ],
+    "place_id": "ChIJ0xIKLKLG2EcRl01EUMNgtWA",
+    "plus_code": {
+      "compound_code": "HFQH+HG Basildon",
+      "global_code": "9F32HFQH+HG"
+    },
+    "rating": 4.3,
+    "reference": "ChIJ0xIKLKLG2EcRl01EUMNgtWA",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 253,
+    "vicinity": "Gardiners Way, Gardiners Ln S, Basildon"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 51.590424, "lng": 0.4830383 },
+      "viewport": {
+        "northeast": { "lat": 51.59177607989272, "lng": 0.4845006298927222 },
+        "southwest": { "lat": 51.58907642010728, "lng": 0.4818009701072778 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Culpepper Club",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 2894,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105055721585990526799\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CttJvYvAuZe-9aEAj9_xzOcXr47RfCrXpZ_KPkkYCFHAK7nrDSwFKRKcmSB-qpgYpbTdwB3VqiMyw9jgSL_c670c3W2X3ejoDhoUZklW3nJ2I7bWv_Jja7IVdqNuOTR22QgcjYm2Q9un0hes-hX9D8DhN_eiE_mh_r9J0f1JxtHh3kB",
+        "width": 5184
+      }
+    ],
+    "place_id": "ChIJzf21pgXE2EcRjUnX57ptYg8",
+    "plus_code": {
+      "compound_code": "HFRM+56 Basildon",
+      "global_code": "9F32HFRM+56"
+    },
+    "price_level": 1,
+    "rating": 4.8,
+    "reference": "ChIJzf21pgXE2EcRjUnX57ptYg8",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 35,
+    "vicinity": "Gardiners Ln S, Basildon"
+  }
+]

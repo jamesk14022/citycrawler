@@ -34,18 +34,18 @@ func main() {
 
 	router := mux.NewRouter()
 
+	router.HandleFunc("/cities", handlers.GetCityCoordinates).Methods("GET")
 	router.HandleFunc("/pubs", handlers.GetRandomCrawl).Methods("GET")
 	router.HandleFunc("/citypoints", handlers.GetAllCityPoints).Methods("GET")
 	router.HandleFunc("/crawl", handlers.PostCrawl).Methods("POST")
 
 	router.
 		PathPrefix("/").
-		Handler(http.StripPrefix("/", http.FileServer(http.Dir("."+staticDir))))
+		Handler(http.StripPrefix("/", http.FileServer(http.Dir(staticDir))))
 
 	corsRouter := enableCORS(router)
 	loggedRouter := gorillaHandlers.LoggingHandler(os.Stdout, corsRouter)
 
-	// Set up the server
 	server := &http.Server{
 		Addr:    port,
 		Handler: loggedRouter,

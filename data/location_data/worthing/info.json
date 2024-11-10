@@ -1,0 +1,2474 @@
+[
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.815414, "lng": -0.3687686 },
+      "viewport": {
+        "northeast": { "lat": 50.81674432989272, "lng": -0.3672728701072777 },
+        "southwest": { "lat": 50.81404467010727, "lng": -0.3699725298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "New Amsterdam",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109519190516134846498\">Mark Vockins</a>"
+        ],
+        "photo_reference": "AelY_Cut-wWriMcm-qIXK-5JUX271YPvkEEJXNcP9GKLA0JJUY1A9qGVuUWHaGiRSnXCyUV6D-okSczsc0MdXeWG3J7x719mXk0ld29mlvXdf02vWalRsEvWPjDpDuINwWchtXZc66irNcO0sahas3prNrteR77rVAqFQToxLqw_zrTIZ_KL",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJYTNZMjajdUgRtyip_L6SCDQ",
+    "plus_code": {
+      "compound_code": "RJ8J+5G Worthing",
+      "global_code": "9C2XRJ8J+5G"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJYTNZMjajdUgRtyip_L6SCDQ",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 395,
+    "vicinity": "79 High St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8101797, "lng": -0.3676035 },
+      "viewport": {
+        "northeast": { "lat": 50.81148942989272, "lng": -0.3662609701072777 },
+        "southwest": { "lat": 50.80878977010728, "lng": -0.3689606298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Goose",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115537383169675786503\">Pete Labdon</a>"
+        ],
+        "photo_reference": "AelY_Cv8e6WAlaVROwRoNIt_-xCBZy9MyaCCIkNLZX3vd9Kh5qS12eKxtgMy1yH_eNwvtDg--1_oJF7gZi31YdEVWTaDDQ45TX-df3gP5vx35nVW722ks6p5-L3zsI5W5cbVnMXtk7UwNa1JvY__dsf2iF5RQYXlGllsUuHJ4yOBRsdIW3dm",
+        "width": 5333
+      }
+    ],
+    "place_id": "ChIJw0SqdYKidUgRIa2vsnZmfEI",
+    "plus_code": {
+      "compound_code": "RJ6J+4X Worthing",
+      "global_code": "9C2XRJ6J+4X"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJw0SqdYKidUgRIa2vsnZmfEI",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 424,
+    "vicinity": "18A Marine Parade, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8092026, "lng": -0.3754197 },
+      "viewport": {
+        "northeast": { "lat": 50.81053862989272, "lng": -0.3740415201072778 },
+        "southwest": { "lat": 50.80783897010728, "lng": -0.3767411798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "JB's Traditional Pub",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115339874674130756172\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CtktpWf3yU9ouDeel6RAV86cCwmnQdlNJ_hGZdl2AuyYTsTuf_b_E1yvQ-qe91UOwHWS9nFh4BORKim_7OS7fdMMrPSA1k_LGMNuWcoke262YTHyBJgETJdpwqn7pga2Nn--AGOkVINR9KUY4jgVFVoUJpQKwI6i9JOj-MjIdRKwbcK",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJPchgMISidUgRqrIvfxOE_NI",
+    "plus_code": {
+      "compound_code": "RJ5F+MR Worthing",
+      "global_code": "9C2XRJ5F+MR"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJPchgMISidUgRqrIvfxOE_NI",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 152,
+    "vicinity": "3 New St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8285195, "lng": -0.374209 },
+      "viewport": {
+        "northeast": { "lat": 50.82976297989273, "lng": -0.3729311701072777 },
+        "southwest": { "lat": 50.82706332010729, "lng": -0.3756308298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Broadwater",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3012,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103269705747432621800\">Broadwater</a>"
+        ],
+        "photo_reference": "AelY_Cs6p52DF70hcGdFac1soA4b1y2uKnjksiZjukmZQOFONZmPK2LJ502RR5MPrhk-J6r0LCUvrl5LWda5UpB2jgcDvq1BFoxBFo_HwYPu0DZ1M5z_awuDDMIGDRosP0sR28Gu8RxZ5wSVAVZB3fOp8puEuk3EATjZXDokcOBbMxJUcVKh",
+        "width": 4512
+      }
+    ],
+    "place_id": "ChIJrccw76OidUgRoyxJnW_uwdo",
+    "plus_code": {
+      "compound_code": "RJHG+C8 Worthing",
+      "global_code": "9C2XRJHG+C8"
+    },
+    "price_level": 1,
+    "rating": 4.3,
+    "reference": "ChIJrccw76OidUgRoyxJnW_uwdo",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 661,
+    "vicinity": "4 Broadwater St W, Broadwater, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.829483, "lng": -0.375912 },
+      "viewport": {
+        "northeast": { "lat": 50.83075207989272, "lng": -0.3744752701072777 },
+        "southwest": { "lat": 50.82805242010728, "lng": -0.3771749298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Cricketers Worthing",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1200,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115456122711988269170\">The Cricketers</a>"
+        ],
+        "photo_reference": "AelY_Csrl4h5k0E19AthNNss6N8onsKdO5L5AWgIL0C1vh2Dclbm8ynRxb-R1M2e0A4uqS5FAWPUX1Ka2XjHBJWKsQaLMpHTcD2DTuDiIipIrmSpInq-CWudL16ddi0bsnq1Rq6o55bQNf92vQUyEs9NgN8ham1sttkh6nQclo1dDy3Lw6HI",
+        "width": 1600
+      }
+    ],
+    "place_id": "ChIJYa45h6OidUgRt37qHavMSHw",
+    "plus_code": {
+      "compound_code": "RJHF+QJ Worthing",
+      "global_code": "9C2XRJHF+QJ"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJYa45h6OidUgRt37qHavMSHw",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 601,
+    "vicinity": "66 Broadwater St W, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.825, "lng": -0.3938889 },
+      "viewport": {
+        "northeast": { "lat": 50.82631687989272, "lng": -0.3924749701072778 },
+        "southwest": { "lat": 50.82361722010728, "lng": -0.3951746298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "George & Dragon",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 267,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115377910616059612171\">The George and Dragon</a>"
+        ],
+        "photo_reference": "AelY_Cs7ENWRikX9bsy8cR-7SWTBAohkd4IbSnm4acKhUTa_M2MhC_mY9TovtHBurwtvYvqwtrxH7iEk_ws57Rw6wDRKgQ9y1Ka3HRYqNMhbwhm9PrOE0F0azONhStwq_FYCR2cG636Kj2XL72ANNlHb-6va28QfQzBMYRhp0_aF6Uidc85z",
+        "width": 400
+      }
+    ],
+    "place_id": "ChIJr0-FNcCidUgR2l7yNc1pFew",
+    "plus_code": {
+      "compound_code": "RJF4+XC Worthing",
+      "global_code": "9C2XRJF4+XC"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJr0-FNcCidUgR2l7yNc1pFew",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 453,
+    "vicinity": "1 High St, West Tarring, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8118647, "lng": -0.3686403 },
+      "viewport": {
+        "northeast": { "lat": 50.81309072989272, "lng": -0.3674152201072777 },
+        "southwest": { "lat": 50.81039107010728, "lng": -0.3701148798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "O'Connor's On Warwick Street",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105400768526421991926\">modele75</a>"
+        ],
+        "photo_reference": "AelY_CsqMLlPqeBA4mtgzOCSy_s3k0AS9HTjTAW0bdvlfwDHTI3EBrVYieXrzv10UUGodXrYQxfY1dn7s7h0ViwtoAe7vX0YVSogZUhW3NLokA_uS54E89Vra_7t_KLcJQ6g-4ft-M_sD20fopqrJGC9C19MpaeZPvMyaGyAq59fJEk98uiX",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJxSFOv_qjdUgRL621v98UI8g",
+    "plus_code": {
+      "compound_code": "RJ6J+PG Worthing",
+      "global_code": "9C2XRJ6J+PG"
+    },
+    "rating": 4.3,
+    "reference": "ChIJxSFOv_qjdUgRL621v98UI8g",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 180,
+    "vicinity": "25 Warwick St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.80979440000001, "lng": -0.3777667 },
+      "viewport": {
+        "northeast": { "lat": 50.81121742989272, "lng": -0.3764506701072777 },
+        "southwest": { "lat": 50.80851777010728, "lng": -0.3791503298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Rose & Crown Worthing",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117066730481816607593\">Norman Jones</a>"
+        ],
+        "photo_reference": "AelY_CvtDWEQ99Ii7jNsXwMUk7UKjD_Bqku_9kiyqOIGTOIebZPXXbbGEExFHcfypFT40ASxSsi8XIxEmqufQf0xGxnWLb1j3QeNKENbkEjMSCu446c1e04zwA9261ZHVdTQMu5KKdXeWDjvmKVOcF9KwZRehthvNnMAbgVsYUGqUB1cs8JA",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJwVS97IWidUgR7MZKq7gX7hU",
+    "plus_code": {
+      "compound_code": "RJ5C+WV Worthing",
+      "global_code": "9C2XRJ5C+WV"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJwVS97IWidUgR7MZKq7gX7hU",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 726,
+    "vicinity": "169-173 Montague St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8122812, "lng": -0.3643196 },
+      "viewport": {
+        "northeast": { "lat": 50.81355827989272, "lng": -0.3629993201072778 },
+        "southwest": { "lat": 50.81085862010728, "lng": -0.3656989798927223 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Cow & Oak",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2610,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111786274366128007904\">Karen Robertson</a>"
+        ],
+        "photo_reference": "AelY_CvuC-gAUoZUJl_pmoU3EBchoweoOvNlHUgx7PSkAiUXH2EI6ISMzY4DUGJYpekN1_616Fugx6byiCy0Gy0vpKKuQh_J6kIgz6cv-QvELgkiBQewceDfcWxaR7YI68_wrEiBGYeiumvV8iIM32roTlHsIdFx57kRV6Ebn2NzMMVNBaQQ",
+        "width": 4640
+      }
+    ],
+    "place_id": "ChIJlx8aXSCZdUgRxxyYkDiZUxo",
+    "plus_code": {
+      "compound_code": "RJ6P+W7 Worthing",
+      "global_code": "9C2XRJ6P+W7"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJlx8aXSCZdUgRxxyYkDiZUxo",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 584,
+    "vicinity": "67 Brighton Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.81204520000001, "lng": -0.3672708 },
+      "viewport": {
+        "northeast": { "lat": 50.81334357989271, "lng": -0.3658953201072778 },
+        "southwest": { "lat": 50.81064392010727, "lng": -0.3685949798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Heartbreaker",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3136,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/118081578845545568443\">Jan P</a>"
+        ],
+        "photo_reference": "AelY_CuCKJqOKiwMo5JcyhFzCpzPQ0v3edeOBnxHGEH7zx9PAMp7IKyXwyxG_RvBgYrJiJmEEmXyVObosgt5yy4LS1BFBIzDT2DnUV_2Zfk0qfvLek_zPWXBfFc-I5LovMGLaopxIe3cTxI_5THbNTT7Et_kUBMQHTw-gQfKPBzCrGJy8n1z",
+        "width": 4224
+      }
+    ],
+    "place_id": "ChIJxRM8cXiYdUgRsb5rbZvFyQA",
+    "plus_code": {
+      "compound_code": "RJ6M+R3 Worthing",
+      "global_code": "9C2XRJ6M+R3"
+    },
+    "price_level": 3,
+    "rating": 4.5,
+    "reference": "ChIJxRM8cXiYdUgRsb5rbZvFyQA",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 251,
+    "vicinity": "3, The Broadway, Brighton Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8178844, "lng": -0.3717121 },
+      "viewport": {
+        "northeast": { "lat": 50.81920587989271, "lng": -0.3704358701072778 },
+        "southwest": { "lat": 50.81650622010727, "lng": -0.3731355298927223 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Toad in the Hole",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3072,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110386590509932768446\">Gareth Rees</a>"
+        ],
+        "photo_reference": "AelY_CtDtnPMie4dIru5D_hwyLklxzAfgL5ckZ0OVvHCyNk5mJl1dl8rFcahmxv-iLLHpzNLZZmtIz6Bv_HwRkWLLM11qD8qftB-1Ov-TgpetjOrwDy12QTU3xR8XjZ18ETzs9lqhn3OtnYZBe9IbLEcPA43uHCd8vQQbkTeqSboKMhfwuTh",
+        "width": 4080
+      }
+    ],
+    "place_id": "ChIJu-nXg7OjdUgRz1VTym-jBhE",
+    "plus_code": {
+      "compound_code": "RJ9H+58 Worthing",
+      "global_code": "9C2XRJ9H+58"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJu-nXg7OjdUgRz1VTym-jBhE",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 112,
+    "vicinity": "1 Newland Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8116445, "lng": -0.3690259 },
+      "viewport": {
+        "northeast": { "lat": 50.81298302989273, "lng": -0.3676166201072777 },
+        "southwest": { "lat": 50.81028337010728, "lng": -0.3703162798927221 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Thieves Kitchen",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3012,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106954917198069826027\">Vintners Parrot</a>"
+        ],
+        "photo_reference": "AelY_CtSjQf5335XokYY4Sd3Fxm9ULddNaOwBCaqgU3nm4UW6D7lZMbpMPEp8YP3QmIon6CEgXvphKaPiWMoC36IHKQrmMBN7vHAp4JAHIQKCEqPHnHe_yyg0tY-p8bf-NdQYY6288r4WP-4OnUd7_7PT2D5b06N3cN4MSBKm0jjUq6NRmzT",
+        "width": 4512
+      }
+    ],
+    "place_id": "ChIJwasg94KidUgRozyRYG34Vjk",
+    "plus_code": {
+      "compound_code": "RJ6J+M9 Worthing",
+      "global_code": "9C2XRJ6J+M9"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJwasg94KidUgRozyRYG34Vjk",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1553,
+    "vicinity": "10-12 Warwick St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8159275, "lng": -0.359923 },
+      "viewport": {
+        "northeast": { "lat": 50.81726072989272, "lng": -0.3584945201072777 },
+        "southwest": { "lat": 50.81456107010727, "lng": -0.3611941798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Alexandra",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1512,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111842366558159588358\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CsybosqGoypEsbk_9f6YFMAm5Z3IQZL3pPKX25hfKJbOCn-a1lk7iZSNryCWynggG7ZI_2N2QQ3_eXSHO4CE9nweEMX9RDmp-MbXjcCIp7J7xHzxVC3NaaNLzalhVUCLUHTAOUax1n8OTLNO7-n31oImSgdqqJuT4UqSoMiXvELDA6-",
+        "width": 2016
+      }
+    ],
+    "place_id": "ChIJKc6M5HCYdUgRtvQNePkXIsg",
+    "plus_code": {
+      "compound_code": "RJ8R+92 Worthing",
+      "global_code": "9C2XRJ8R+92"
+    },
+    "price_level": 2,
+    "rating": 4.3,
+    "reference": "ChIJKc6M5HCYdUgRtvQNePkXIsg",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 292,
+    "vicinity": "28 Lyndhurst Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8171674, "lng": -0.3517144 },
+      "viewport": {
+        "northeast": { "lat": 50.81845212989272, "lng": -0.3503855701072778 },
+        "southwest": { "lat": 50.81575247010728, "lng": -0.3530852298927223 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Smugglers Return - Worthing",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1868,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103076513766323794537\">Lukasz Kostka</a>"
+        ],
+        "photo_reference": "AelY_CukI4JD1XZNYjdQmT15gO_8OGZuym9bW3Af8gVac-S3MwEkOXevoSrosK-V2WPfID3VUgvOB5ZYQqBmw7sMvPSfG4bqn1KeGl1jVE6dP4P2rHqvzgeCKfdLqJIzc6bhjhtNejQa-a7CrVgs3yArQact3An9Ug9yGFivD4PtdSM_-j_s",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJXR-A6G6YdUgRlJ7N1AwHxPc",
+    "plus_code": {
+      "compound_code": "RJ8X+V8 Worthing",
+      "global_code": "9C2XRJ8X+V8"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJXR-A6G6YdUgRlJ7N1AwHxPc",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 252,
+    "vicinity": "112 Ham Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8119864, "lng": -0.364881 },
+      "viewport": {
+        "northeast": { "lat": 50.81339332989273, "lng": -0.3635009201072777 },
+        "southwest": { "lat": 50.81069367010728, "lng": -0.3662005798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Egremont Pub",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115287813157683938979\">Craig Ramos-Stovin</a>"
+        ],
+        "photo_reference": "AelY_CtkIY62beeBElfNVWPm1DCnI6_F-SadRKEnvLz45VQEreRF9PvuILJFa00sLq15gvZtka0ysfLjnGr9x-3hgPbMSWSxCTJXoHGqB_MJTq6yCjAi5ySfWbXHSgc2XDyVH5ie2wtkHQjWjwQHmzI3VQTCYKtMAZuHD-kcxiTP4hBKiZ5u",
+        "width": 3000
+      }
+    ],
+    "place_id": "ChIJLzKvTXiYdUgR0Csu7iCxZUM",
+    "plus_code": {
+      "compound_code": "RJ6P+Q2 Worthing",
+      "global_code": "9C2XRJ6P+Q2"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJLzKvTXiYdUgR0Csu7iCxZUM",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 883,
+    "vicinity": "32 Brighton Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.80990019999999, "lng": -0.3695403 },
+      "viewport": {
+        "northeast": { "lat": 50.81119882989272, "lng": -0.3681738701072778 },
+        "southwest": { "lat": 50.80849917010728, "lng": -0.3708735298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Cow Shed",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4608,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101672831291437754297\">Matteo Saragoni</a>"
+        ],
+        "photo_reference": "AelY_Ctn3VELA5qCFMRJEGb45DSgyhxrT1Oqg1ra9eeQoy6ad9ogIbOnD-wdFIe4Xc7hHL0jjAR_zi9p9VEkSn8eSID3QGBXvWfNdAH0bB8xtRRnalGV8sWkEpNLye3e2-KCu1k51SQtjSfZLkl4aFEeCEYmJ3v6IWOAKQZeAGC4wa94M6lF",
+        "width": 3456
+      }
+    ],
+    "place_id": "ChIJe-Ko6IOidUgRpaJ6Wc25g1I",
+    "plus_code": {
+      "compound_code": "RJ5J+X5 Worthing",
+      "global_code": "9C2XRJ5J+X5"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJe-Ko6IOidUgRpaJ6Wc25g1I",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1152,
+    "vicinity": "31 Marine Parade, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8257355, "lng": -0.3928852 },
+      "viewport": {
+        "northeast": { "lat": 50.82707337989272, "lng": -0.3915441201072777 },
+        "southwest": { "lat": 50.82437372010727, "lng": -0.3942437798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Vine",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102038584736177066341\">Daniel Byrne</a>"
+        ],
+        "photo_reference": "AelY_Cu8p8SDgKrGjcI9tNINQSabRi8vWcIX4Mzg58S3SArv3op8PX6U-IaDnIXLi5N0kfntG9NMJB-IX5XNfG-X2Rsj2bZzeHmW8xO1vULyxO73s7K2VH6edTrUjtZ9xYoWSRih_eYl2sR2cmnuWMGcnYrd6Jcoo4HBY2ZKkZ6aZdMJYl5T",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJFxUGrYKidUgRJ3w7kihKpk0",
+    "plus_code": {
+      "compound_code": "RJG4+7R Worthing",
+      "global_code": "9C2XRJG4+7R"
+    },
+    "price_level": 1,
+    "rating": 4.3,
+    "reference": "ChIJFxUGrYKidUgRJ3w7kihKpk0",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 207,
+    "vicinity": "27-29 High St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8194094, "lng": -0.3923075 },
+      "viewport": {
+        "northeast": { "lat": 50.82077367989272, "lng": -0.3908576701072778 },
+        "southwest": { "lat": 50.81807402010728, "lng": -0.3935573298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Grizzly Bear",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1152,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102197507688001161599\">J. E. Clapham</a>"
+        ],
+        "photo_reference": "AelY_Csi_TVb_UyZR1I1nksSL6KcgYx3xR1qcNkvjKky79s3xvtv6umqKkYqvMVGqL5H4dT-Oivrpwjr1Ktli3fcv_Q5Hy2g3jjpxzulUaqYDYtppIiVLM8Afzpf_jjzLchVxkcP4lwlHZN7O2U05NlANlRlX8NLDb3uKaAZqeYArFsdF91F",
+        "width": 2048
+      }
+    ],
+    "place_id": "ChIJ_Y4GZ-uidUgRt_4UovRqizc",
+    "plus_code": {
+      "compound_code": "RJ95+Q3 Worthing",
+      "global_code": "9C2XRJ95+Q3"
+    },
+    "price_level": 3,
+    "rating": 4.5,
+    "reference": "ChIJ_Y4GZ-uidUgRt_4UovRqizc",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 298,
+    "vicinity": "33 South St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8300613, "lng": -0.3917404 },
+      "viewport": {
+        "northeast": { "lat": 50.83140282989272, "lng": -0.3905835701072778 },
+        "southwest": { "lat": 50.82870317010727, "lng": -0.3932832298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Thomas A Becket, Worthing",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112610561154994899405\">Pedro DS</a>"
+        ],
+        "photo_reference": "AelY_CvHTmPQG-vgamC6EEJXvAvKGeYHmm0CoB9JhuOeGCs4yFSgUSN_oQe8vAclRsFBr8cG5Yj6i-5-EA2kZ5zUwOXlDj2rGZ5QC5AogzUYcTXWkgn0Rhi5qGDd37yT-xn5MiFViuGaP5GND9UHPYu_YMvaUYZE7bJQxmV_qK-2wsA8D3jR",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ1aT_RceidUgRRCuTne0CyYY",
+    "plus_code": {
+      "compound_code": "RJJ5+28 Worthing",
+      "global_code": "9C2XRJJ5+28"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJ1aT_RceidUgRRCuTne0CyYY",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 845,
+    "vicinity": "146 Rectory Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8150168, "lng": -0.3782416 },
+      "viewport": {
+        "northeast": { "lat": 50.81635857989273, "lng": -0.3768801701072778 },
+        "southwest": { "lat": 50.81365892010728, "lng": -0.3795798298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Richard Cobden",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2988,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100304251727175518678\">aLL aLL</a>"
+        ],
+        "photo_reference": "AelY_CsrE83F-hML-NzoVzu2LB7kG0Ax0pGnXoZXYet5AnOqHorct-fXccID-Uz6DiABDu6k6qjdCYeWUVrLi3ZQdbfLSBQcW0Qy9EFmckwMhPy57dowUoTXx6rFa5mMi6Zik0BA1xoV6p4ZophrJOPGBi0HcG9TqOCebZQ1ZwXy-rpV8Se2",
+        "width": 5312
+      }
+    ],
+    "place_id": "ChIJezWioJqidUgR0O35ZzcDu44",
+    "plus_code": {
+      "compound_code": "RJ8C+2M Worthing",
+      "global_code": "9C2XRJ8C+2M"
+    },
+    "price_level": 1,
+    "rating": 4.4,
+    "reference": "ChIJezWioJqidUgR0O35ZzcDu44",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 197,
+    "vicinity": "2 Cobden Rd., Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.81271710000001, "lng": -0.3702624 },
+      "viewport": {
+        "northeast": { "lat": 50.81406572989273, "lng": -0.3689509701072777 },
+        "southwest": { "lat": 50.81136607010728, "lng": -0.3716506298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Slug & Lettuce - Worthing",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110578483627540398264\">Neil White</a>"
+        ],
+        "photo_reference": "AelY_Ctp0VLmweqsqDeIGC0tf77goIrP6JMx1cjrA3AMF3rbFViDfQ-grFsdFQ9nJ_O9e0pE1GjUysaTSFj2lwi3fs0dxvkTUzBxq5fZ-a7XyuTC71i8CvjZ1MzCJSDKXkJkBZXIs5MoxjK10Z40RKPnFd4oBebyfdBSv18dyHhVo5ndwSQt",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJnwxx4YKidUgRsCyZVmAiB4c",
+    "plus_code": {
+      "compound_code": "RJ7H+3W Worthing",
+      "global_code": "9C2XRJ7H+3W"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJnwxx4YKidUgRsCyZVmAiB4c",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1729,
+    "vicinity": "20 Chapel Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.80929039999999, "lng": -0.384873 },
+      "viewport": {
+        "northeast": { "lat": 50.81063832989272, "lng": -0.3835560201072778 },
+        "southwest": { "lat": 50.80793867010728, "lng": -0.3862556798927223 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Charles Dickens",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114998262589478500243\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CtqyBukk1jCmi7XujqXErqN68nhWpzasNVTiqEjfbWUUeOHcNJXjCtnrfdmRQruN1pfVZwdVdeL1U2JqAbUfga0x2-rvX7K1WW0CLWLfSKZr-SzZA8jtUAnsyNP8_MiqnVp27RIoEhqFvyWlZhUjQZYSpKKr28zSpO708cdfgfhEB-A",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJ5xBqHYyidUgReES6CizxR34",
+    "plus_code": {
+      "compound_code": "RJ58+P3 Worthing",
+      "global_code": "9C2XRJ58+P3"
+    },
+    "price_level": 2,
+    "rating": 3.8,
+    "reference": "ChIJ5xBqHYyidUgReES6CizxR34",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 313,
+    "vicinity": "54-60 Heene Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8111805, "lng": -0.3729531 },
+      "viewport": {
+        "northeast": { "lat": 50.81251922989272, "lng": -0.3715783201072778 },
+        "southwest": { "lat": 50.80981957010727, "lng": -0.3742779798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Manuka Bar",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1960,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103717947939856184495\">Ben Allan</a>"
+        ],
+        "photo_reference": "AelY_CtW-FbQP5Y_IDKRN2yRv3OH1zQXpkEFyBeXQm1j9RTXK5wr6_KthsqnMYR7uv6QMyPY0l4k1c_xTr1sZDYef8L1oCSgP4Xry1xmnjvn21OTKMGWOl_a3C84o9u7p62vkEW67c9v2AwixvuUY6Pg7kmrEMf4ToKVF0sZUPSQ3FQ4IkXO",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJA1rcgYOidUgRyNtNQYy6Pq4",
+    "plus_code": {
+      "compound_code": "RJ6G+FR Worthing",
+      "global_code": "9C2XRJ6G+FR"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJA1rcgYOidUgRyNtNQYy6Pq4",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 250,
+    "vicinity": "9 Portland Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8097162, "lng": -0.3705755 },
+      "viewport": {
+        "northeast": { "lat": 50.81097732989272, "lng": -0.3691551701072777 },
+        "southwest": { "lat": 50.80827767010727, "lng": -0.3718548298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Charlie's Bar & Lounge",
+    "opening_hours": { "open_now": true },
+    "place_id": "ChIJ__8Py4OidUgRrNp32Nvk3YE",
+    "plus_code": {
+      "compound_code": "RJ5H+VR Worthing",
+      "global_code": "9C2XRJ5H+VR"
+    },
+    "rating": 0,
+    "reference": "ChIJ__8Py4OidUgRrNp32Nvk3YE",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 0,
+    "vicinity": "32-34, Marine Parade, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8277623, "lng": -0.370608 },
+      "viewport": {
+        "northeast": { "lat": 50.82907982989272, "lng": -0.3692479201072777 },
+        "southwest": { "lat": 50.82638017010728, "lng": -0.3719475798927223 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Ye Olde House at Home",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 5312,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114713092942873653183\">Mike Warburton</a>"
+        ],
+        "photo_reference": "AelY_CvPBV9PiDcDeN_1w_XCQLS95jmjLzxjdIZODLUBjSOxZ_ZSQ5N8MS6LverEMPkJHv71YO-2bzPynjCzMAGzesv_EX7L0b2zB9aD11bDh9n3T0XAG39p96F_BUcUheqm3VUVRIa5qNeArvDxNnTihHEM_-30I0B-VBRMquoRRU1Tf4bx",
+        "width": 2988
+      }
+    ],
+    "place_id": "ChIJH-245aCidUgR5BUKAykgj4I",
+    "plus_code": {
+      "compound_code": "RJHH+4Q Worthing",
+      "global_code": "9C2XRJHH+4Q"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJH-245aCidUgR5BUKAykgj4I",
+    "scope": "GOOGLE",
+    "types": ["cafe", "bar", "food", "point_of_interest", "establishment"],
+    "user_ratings_total": 342,
+    "vicinity": "77 Broadwater St E, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8096337, "lng": -0.3708514 },
+      "viewport": {
+        "northeast": { "lat": 50.81087307989272, "lng": -0.3694565701072778 },
+        "southwest": { "lat": 50.80817342010727, "lng": -0.3721562298927223 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Escape Bar and Grill",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2736,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110295868112300207802\">Artur P\u0142oszaj</a>"
+        ],
+        "photo_reference": "AelY_Cs0GomssQrG8fG-ei5vUTubtCkiszcAX98OOq3TS_7LN1SYRIMP7gvZB972-2e13fluoJFxUak3mGpdRJVrC61IkIAPquzl-2k73Q4WDFqxzC5pD0hzr8_bbQVWXvfQJfGWYkb9gr1zWz94mugBqePRIAHsyHg3ChA7o5FhJdylW56N",
+        "width": 3648
+      }
+    ],
+    "place_id": "ChIJYyOYniCjdUgRAtT7utklpxU",
+    "plus_code": {
+      "compound_code": "RJ5H+VM Worthing",
+      "global_code": "9C2XRJ5H+VM"
+    },
+    "rating": 4.4,
+    "reference": "ChIJYyOYniCjdUgRAtT7utklpxU",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 258,
+    "vicinity": "37-39 Marine Parade, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.81328999999999, "lng": -0.370706 },
+      "viewport": {
+        "northeast": { "lat": 50.81463812989272, "lng": -0.3693974701072777 },
+        "southwest": { "lat": 50.81193847010728, "lng": -0.3720971298927223 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Three Fishes",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2604,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109240099240981738342\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CuugBwK0oI1xx1ftTMWWwggxCbazNGaBJJvbZmP4dEUIDqnePe9gNtunaF3x-22gbgcRBGiyithTponfKrhfKFH1uq2dNUpuGvq011L1RPdlkrN7xk3OfhQIAXaQ0wV5e16NDht62M7YfzJv3L5rsbITZrerRB7jGrnGuE4KBSINYsn",
+        "width": 4624
+      }
+    ],
+    "place_id": "ChIJVxzxJ4OidUgRt1EcBREptUI",
+    "plus_code": {
+      "compound_code": "RJ7H+8P Worthing",
+      "global_code": "9C2XRJ7H+8P"
+    },
+    "price_level": 1,
+    "rating": 3.8,
+    "reference": "ChIJVxzxJ4OidUgRt1EcBREptUI",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2026,
+    "vicinity": "56 Chapel Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8084176, "lng": -0.3793728 },
+      "viewport": {
+        "northeast": { "lat": 50.80971412989273, "lng": -0.3780011201072778 },
+        "southwest": { "lat": 50.80701447010728, "lng": -0.3807007798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Marine View Bar",
+    "photos": [
+      {
+        "height": 3456,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105832066111194314871\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CvI--rFnJFYG_-0T3ZU69Ms5YyDHVuN53CR762rYVjCv3OmJHzzuFtZaCIOVkbLT7cvxBFMyKuS3yVGediEuIkigUMBA4rz1uVoeJNU7P6pYr-ZhxGyXBrstsHE5a2ykMh2Ha_mP9A6b2msE9ftfptlcdNZfAoLKtXVA5SmcpO8X0JS",
+        "width": 5184
+      }
+    ],
+    "place_id": "ChIJj21xd5ajdUgRRsMybFQkz0w",
+    "plus_code": {
+      "compound_code": "RJ5C+97 Worthing",
+      "global_code": "9C2XRJ5C+97"
+    },
+    "rating": 0,
+    "reference": "ChIJj21xd5ajdUgRRsMybFQkz0w",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 0,
+    "vicinity": "Marine Parade, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8182517, "lng": -0.3876559 },
+      "viewport": {
+        "northeast": { "lat": 50.81965337989272, "lng": -0.3863522201072777 },
+        "southwest": { "lat": 50.81695372010727, "lng": -0.3890518798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Karma Lounge",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114713092942873653183\">mike warburton</a>"
+        ],
+        "photo_reference": "AelY_Cv8EAr-SYb3iXJboTyS5jCNt8zn2kBn7oTmnC2k6fBMvlsM1wu7zxJglvFWYjY4kniQnG8tx6utdzOaAuv_Cb1DM3T3NGVd_4LL7UILW1KJBvHOBj46Q7UYmCdUzR2OVNAK544nyY-UB9VxTJxgpNGw_p_djOQgfdIzq4RJmpNJdyaG",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJ_fnxZZijdUgRzl-f6SJv2Mw",
+    "plus_code": {
+      "compound_code": "RJ96+7W Worthing",
+      "global_code": "9C2XRJ96+7W"
+    },
+    "rating": 3.1,
+    "reference": "ChIJ_fnxZZijdUgRzl-f6SJv2Mw",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 60,
+    "vicinity": "171-173 Tarring Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8141269, "lng": -0.3687837 },
+      "viewport": {
+        "northeast": { "lat": 50.81544362989271, "lng": -0.3673289701072778 },
+        "southwest": { "lat": 50.81274397010727, "lng": -0.3700286298927223 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "MacMillans",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1255,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111383124792190313180\">Macmillans Bar</a>"
+        ],
+        "photo_reference": "AelY_CsFrPVwJ4TwuzJ7zHPB0opXU_dKK1QWVLurWgYP_2sfXWl3lM1JHaZWYtfjgs6Acd4WxFgVZ1j9Tqjin3PIBv-NqD-_j8NiB4itt4Mm5yuK8R6kOd3TGe-42KekaHY3D3i18AzWqIpclI1_dM8xnnTE4XhIoqyhZO84u-rXEIPCfWMR",
+        "width": 2008
+      }
+    ],
+    "place_id": "ChIJichL1YKidUgR0hHZo7vfDUQ",
+    "plus_code": {
+      "compound_code": "RJ7J+MF Worthing",
+      "global_code": "9C2XRJ7J+MF"
+    },
+    "rating": 4.4,
+    "reference": "ChIJichL1YKidUgR0hHZo7vfDUQ",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 298,
+    "vicinity": "3 Union Pl, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.810059, "lng": -0.3775675 },
+      "viewport": {
+        "northeast": { "lat": 50.81135382989272, "lng": -0.3762088701072777 },
+        "southwest": { "lat": 50.80865417010727, "lng": -0.3789085298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Whiskey Rooms",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2048,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114250864748463020889\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CuAYf_9bharoScSwjzLqD-6kLvY-Fyp4pyRwakCWqOe3MQQPm4OuaZBOB6wQgYP0fvkfpCU8SwJa9JoLg_wVQIylc2U7tTPt-34P8o9H3Q4mWmFNAiUuZ9aLjthdQyBISRMkQlXTl4wkcAzTyWeXqgo6yCNjEETHRR_JJfd9hNLtEo3",
+        "width": 1536
+      }
+    ],
+    "place_id": "ChIJFT2BxyOjdUgRBPEK9Nz5c6U",
+    "plus_code": {
+      "compound_code": "RJ6C+2X Worthing",
+      "global_code": "9C2XRJ6C+2X"
+    },
+    "price_level": 2,
+    "rating": 4.8,
+    "reference": "ChIJFT2BxyOjdUgRBPEK9Nz5c6U",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 193,
+    "vicinity": "142 Montague St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8094627, "lng": -0.3712789 },
+      "viewport": {
+        "northeast": { "lat": 50.81077032989272, "lng": -0.3699284701072777 },
+        "southwest": { "lat": 50.80807067010728, "lng": -0.3726281298927221 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Roots",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2781,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108451914728771602157\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_Ct6bzXFM6P4lidBs-1Pk0DPRfBTeKZzhofbOjs18fQaulFWf5SWvnm7Ns49ehbduyHQeGnGP_Xa25ayna05SQN9jPBmqE6PTnywA99l8wZmyaNCvWjndGx0U1gkUYCfYQg1k2GU6Bdv37DidPA1s4BsAjewGa27BtjsBbifffJZWEdg",
+        "width": 4163
+      }
+    ],
+    "place_id": "ChIJ2WeMeQijdUgR-gs-g0CCCxY",
+    "plus_code": {
+      "compound_code": "RJ5H+RF Worthing",
+      "global_code": "9C2XRJ5H+RF"
+    },
+    "rating": 4.7,
+    "reference": "ChIJ2WeMeQijdUgR-gs-g0CCCxY",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 27,
+    "vicinity": "42 Marine Parade, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8199923, "lng": -0.3843979 },
+      "viewport": {
+        "northeast": { "lat": 50.82137082989272, "lng": -0.3826628701072777 },
+        "southwest": { "lat": 50.81867117010728, "lng": -0.3853625298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Woodside bar",
+    "photos": [
+      {
+        "height": 960,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105916309463578069857\">Amber Wheeler</a>"
+        ],
+        "photo_reference": "AelY_Csw4CnaWxcuvDofwWiNRiKhavApcBnAkh2ZxFiYnAnLsIr1_4MMYhnG01V5HVJV6H-nfWpphqIQEG2hy6r46DPTSj2DBNKkOLFnDSNRS0tz2aHY30uAcIzULHftid6rHpqCAiesupY3hvK0O1XFo3PfO5M32gnBVTLB7l11beAuLYPo",
+        "width": 1280
+      }
+    ],
+    "place_id": "ChIJBa0MFmOjdUgRIZCJj5Fe7Sg",
+    "plus_code": {
+      "compound_code": "RJ98+X5 Worthing",
+      "global_code": "9C2XRJ98+X5"
+    },
+    "rating": 4.4,
+    "reference": "ChIJBa0MFmOjdUgRIZCJj5Fe7Sg",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 10,
+    "vicinity": "Woodside Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8151417, "lng": -0.3662312 },
+      "viewport": {
+        "northeast": { "lat": 50.81642097989273, "lng": -0.3648465701072778 },
+        "southwest": { "lat": 50.81372132010728, "lng": -0.3675462298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Selden Arms",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101712016066756428301\">Pete Barlow</a>"
+        ],
+        "photo_reference": "AelY_CvdYWH0MAVcE3CMZzaCedEjWZkqp1AKTLnlDPr_MADGVXpHCzdET-IaufQxPrHuhMiODoe_Hrc304cUnr2uJ-xQu_iWXwFMoslgqDkAaL1V7X2X3R2H6XlsSKt2Dq7_2tqDTxyLWyyQMhs_v16rMsSrtnHESeXcFBC6nBIpnBHN-k5f",
+        "width": 3574
+      }
+    ],
+    "place_id": "ChIJ4TqN6neYdUgRDvbye26Ialg",
+    "plus_code": {
+      "compound_code": "RJ8M+2G Worthing",
+      "global_code": "9C2XRJ8M+2G"
+    },
+    "price_level": 1,
+    "rating": 4.7,
+    "reference": "ChIJ4TqN6neYdUgRDvbye26Ialg",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 232,
+    "vicinity": "41 Lyndhurst Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.811941, "lng": -0.3730826 },
+      "viewport": {
+        "northeast": { "lat": 50.81328267989272, "lng": -0.3717039701072778 },
+        "southwest": { "lat": 50.81058302010728, "lng": -0.3744036298927223 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Hare & Hounds",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3456,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112660709639469662966\">SophieeSarahh</a>"
+        ],
+        "photo_reference": "AelY_CvMCMGNDynoeOa-YgVh5Lbxe9MCZkB1Vpdoi1nSdybCDULgsnorKpTxc6rfg7BG84hsG6VPNg9QsctuCqHTx3L97wNOpRMi2J5h_2rrQasgwvhrb2Awij7Za6HJvLMALqAxI8_GkY-de0mUjvVxJz3WcPoh5WrTmOYD4ZWPpevt8cpc",
+        "width": 5184
+      }
+    ],
+    "place_id": "ChIJf8nJYoOidUgR7ADCjZO6oPc",
+    "plus_code": {
+      "compound_code": "RJ6G+QQ Worthing",
+      "global_code": "9C2XRJ6G+QQ"
+    },
+    "price_level": 1,
+    "rating": 4.4,
+    "reference": "ChIJf8nJYoOidUgR7ADCjZO6oPc",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 619,
+    "vicinity": "79-81 Portland Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8137284, "lng": -0.3798919 },
+      "viewport": {
+        "northeast": { "lat": 50.81523182989272, "lng": -0.3783244701072778 },
+        "southwest": { "lat": 50.81253217010727, "lng": -0.3810241298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Brewhouse & Kitchen - Worthing",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2899,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103775784276787246930\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CsvVDTOuhz7PHpFhOVWQRNV6n6jTj1C4QaDjpdQQmXW33TksXbPZ2FjZ4m0dx_YO6xlFiOEaxAtvhM2rVzIIQWqIDTTUgiB1fG-ZvDMmRt9Xt5d7wmIn2esThPyL4aMoMwA5dfQ-Y5d8rQAWMvObpCjH5wfEH6sub1ZLQqJvIUiCXx6",
+        "width": 3866
+      }
+    ],
+    "place_id": "ChIJDXpjsw-jdUgRR2w1FX7I5mI",
+    "plus_code": {
+      "compound_code": "RJ7C+F2 Worthing",
+      "global_code": "9C2XRJ7C+F2"
+    },
+    "rating": 4.1,
+    "reference": "ChIJDXpjsw-jdUgRR2w1FX7I5mI",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "lodging",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 496,
+    "vicinity": "Wykeham Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8149992, "lng": -0.3683388 },
+      "viewport": {
+        "northeast": { "lat": 50.81627947989272, "lng": -0.3670376201072778 },
+        "southwest": { "lat": 50.81357982010728, "lng": -0.3697372798927223 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Corner House Free House & Garden",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 2204,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/118081578845545568443\">Jan P</a>"
+        ],
+        "photo_reference": "AelY_CtEM7H9Ix5slZrhsvthPV2QMkweHgAYI9OWbAr-RrMoUhM-J85H38HTZLPBsYYP4QCOWEwyhXuxAP1Cp5Li7-mT4PhLPWeDF241DXuYK-ffR0F2odBaW2b5QBywoLWIkKQrLYDajra1yY9Lp0O4D7O8yz5a7-htX0mrsBssAVSN34_y",
+        "width": 3920
+      }
+    ],
+    "place_id": "ChIJ0QsrQ52idUgRHhZoI_gq8KY",
+    "plus_code": {
+      "compound_code": "RJ7J+XM Worthing",
+      "global_code": "9C2XRJ7J+XM"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJ0QsrQ52idUgRHhZoI_gq8KY",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1008,
+    "vicinity": "80 High St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8116707, "lng": -0.3726894 },
+      "viewport": {
+        "northeast": { "lat": 50.81301352989272, "lng": -0.3713452201072778 },
+        "southwest": { "lat": 50.81031387010727, "lng": -0.3740448798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Lucifer's Cafe Bar",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1200,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109466647757628987818\">Charlotte More</a>"
+        ],
+        "photo_reference": "AelY_CsPrbdtkskkcu7tg4BaR7iQiqj3__3n5iu81sn-IqJYwik-bDFyT86pLioLnJX2iVmoBBGT7n-OHQ8OLLTbtCTGT1y0OSxRMSSWCZ8LvP5yjf9Z6nWGIkN5DyLZwhEz0aPAymhA888jvLzyNokD3dXNgBOmocgGgadqH_XKQzwpb1vM",
+        "width": 1600
+      }
+    ],
+    "place_id": "ChIJ6XepPiOjdUgRirl2X_vi8MU",
+    "plus_code": {
+      "compound_code": "RJ6G+MW Worthing",
+      "global_code": "9C2XRJ6G+MW"
+    },
+    "rating": 4.5,
+    "reference": "ChIJ6XepPiOjdUgRirl2X_vi8MU",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 37,
+    "vicinity": "58-62 Portland Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8097674, "lng": -0.3794117 },
+      "viewport": {
+        "northeast": { "lat": 50.81116412989272, "lng": -0.3780666201072778 },
+        "southwest": { "lat": 50.80846447010727, "lng": -0.3807662798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Bar Next Door",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103752116772359799344\">Kat Pilfold</a>"
+        ],
+        "photo_reference": "AelY_Cv9hJwOEWxsxCKXbOnjPIE-qYiexaUl7FpIJ-tEJSyzbjmnP1vEgjhO_OIKLvh2b19TpCNENMCvhqrQQHKTOIKEmf_s4p_NXtA2c0Mjbp0_4C-oauICTn7IJ4bpu6t3HG7uTLSrinjNLo-_0G_Du_pOIIHYl2Go8QkhIwhdHv1IXVBO",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJlaDgXI-idUgRVwHmIypWV7o",
+    "plus_code": {
+      "compound_code": "RJ5C+W6 Worthing",
+      "global_code": "9C2XRJ5C+W6"
+    },
+    "price_level": 2,
+    "rating": 4.3,
+    "reference": "ChIJlaDgXI-idUgRVwHmIypWV7o",
+    "scope": "GOOGLE",
+    "types": ["night_club", "bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 187,
+    "vicinity": "21 Rowlands Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.814316, "lng": -0.3710312 },
+      "viewport": {
+        "northeast": { "lat": 50.81566742989273, "lng": -0.3697520701072777 },
+        "southwest": { "lat": 50.81296777010728, "lng": -0.3724517298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Bar Orange Ltd",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111889577354868651987\">Chris Thornton</a>"
+        ],
+        "photo_reference": "AelY_Cs57__12FLMnWxvJBOhq3-Jo3dYpbVUmqhqS_PG7uZLw7_jAWa-yWKn2ZNrGM6D_MUrzTfMCH-xrIkSJ_Mi_1UL1DUYLe06BZZ9KQY2r_uyQd5uyOJpl8s7Sxfxk9pPg0gbz6DgAHTZm0nnu5vK5nur3rWQ-c2hIMdC4vvaq1EErbLw",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJ___v0JyidUgRrPUL3kdeSjg",
+    "plus_code": {
+      "compound_code": "RJ7H+PH Worthing",
+      "global_code": "9C2XRJ7H+PH"
+    },
+    "rating": 4.7,
+    "reference": "ChIJ___v0JyidUgRrPUL3kdeSjg",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 51,
+    "vicinity": "Unit 3, Revenue Chambers, 58c Chapel Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.82503999999999, "lng": -0.3935095 },
+      "viewport": {
+        "northeast": { "lat": 50.82640297989273, "lng": -0.3922148701072778 },
+        "southwest": { "lat": 50.82370332010728, "lng": -0.3949145298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "The Parsonage",
+    "photos": [
+      {
+        "height": 753,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111386207694386650272\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CsZPzcRmDMyZJPrxvJcfV1qxJHzCgiO0YsJRXm2YZ0vgAXGH5QKkNRjnp6S9Vp23AXE-ytNCdXuIRb0rNc5NRxZxbeXeKKKfnq9mXoz0IPVdc70sGpzbPoZNzyUs5bSx24QSwWBuoYekvVfhBY14xtm4LU9KKCzZH9s17jDwxj_tCFG",
+        "width": 1440
+      }
+    ],
+    "place_id": "ChIJo3wMV8CidUgRNKbCG_NwUHo",
+    "plus_code": {
+      "compound_code": "RJG4+2H Worthing",
+      "global_code": "9C2XRJG4+2H"
+    },
+    "price_level": 2,
+    "rating": 4.7,
+    "reference": "ChIJo3wMV8CidUgRNKbCG_NwUHo",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 256,
+    "vicinity": "Restaurant Closed for food Sundays & Mondays, The Parsonage, High St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8195494, "lng": -0.3786253 },
+      "viewport": {
+        "northeast": { "lat": 50.82090482989272, "lng": -0.3773957701072778 },
+        "southwest": { "lat": 50.81820517010728, "lng": -0.3800954298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Brooksteed",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110752291661010085749\">Martin Burton</a>"
+        ],
+        "photo_reference": "AelY_Cs7pdU1lcb4wPfeA0Mo5x0YB7L8j0kdZ32Y0Zw8PU4UEA4avlvucvf4XixQ25QyXI6Qhhwk3ZQ_k81zPaAKC5GHvwNWbno9ji_3n51AlbeNmQ1RQCGymn1mi9AVCDYSANgq39Lxb7QUIyIQrJPv5yB8kDJo9R7Hk01YhnPLLBs_Wp0L",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ41wQ-5midUgRo4c7hpn9upY",
+    "plus_code": {
+      "compound_code": "RJ9C+RG Worthing",
+      "global_code": "9C2XRJ9C+RG"
+    },
+    "price_level": 2,
+    "rating": 4.7,
+    "reference": "ChIJ41wQ-5midUgRo4c7hpn9upY",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 655,
+    "vicinity": "38 S Farm Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8114027, "lng": -0.3727066 },
+      "viewport": {
+        "northeast": { "lat": 50.81272607989272, "lng": -0.3713143701072778 },
+        "southwest": { "lat": 50.81002642010728, "lng": -0.3740140298927223 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Libertine Social",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/118217464013850604733\">Mark Hooper</a>"
+        ],
+        "photo_reference": "AelY_CuIO9o_zpE3KEdddFhj-sGUo363iAaH43IFNei12ILyKPnxj4cyVtdkOWDSOW5g6ly8cOjuICA7L19lYP26A05WPDTWo405zTPiRXhhb34OlH7GE5HLRRxAJ0tZhSaJhz2XYT8sSKjLbDFH3VfE3Gz2PHcBBRJDClvkEi8QFxpQjH5V",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJSZOaeIOidUgRKJ6ihO4iBz4",
+    "plus_code": {
+      "compound_code": "RJ6G+GW Worthing",
+      "global_code": "9C2XRJ6G+GW"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJSZOaeIOidUgRKJ6ihO4iBz4",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 491,
+    "vicinity": "46-56 Portland Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8100696, "lng": -0.3682683 },
+      "viewport": {
+        "northeast": { "lat": 50.81135022989272, "lng": -0.3669314701072778 },
+        "southwest": { "lat": 50.80865057010727, "lng": -0.3696311298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Beach House",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 667,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101950120427961947931\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_Cu2q1TupzJJjzNGWD1t4Bhoe6t56Wpu06feQgpFnOIUt0DexTsWWoTkqn4AZw98rKikqQXkQL3Gpah_6VQ62GKQYY_VlQj1R_gcWsImcR8O1evHlXPbQo_FwtKTHC7BloRH3kbcQKsSC8Zs1YwFrg82s6WmWgphV2nFW8FfT4LDtau8",
+        "width": 1000
+      }
+    ],
+    "place_id": "ChIJEzyLz4OidUgRlYmxgonHlhw",
+    "plus_code": {
+      "compound_code": "RJ6J+2M Worthing",
+      "global_code": "9C2XRJ6J+2M"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJEzyLz4OidUgRlYmxgonHlhw",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 586,
+    "vicinity": "23 Marine Parade, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.83043379999999, "lng": -0.3926322 },
+      "viewport": {
+        "northeast": { "lat": 50.83174892989272, "lng": -0.3913221201072777 },
+        "southwest": { "lat": 50.82904927010728, "lng": -0.3940217798927221 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Fox & Finch Alehouse",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 1728,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105223099210461209382\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CucjPrumsJDbblAMxfFyBqEeSF3T1GyJUT-dVW8ZM_sTe2NLsewZGlzSv_ToiTitNrF2rbswmbGHtkEHTQOl13HeiF3sUbcWi00lxsg7YSuWS2pFp2gtXkrVJ-DvVrwDc-XGd58VQYkhBZMXSVk_traRTdm8oyVB3iDpeBde_63_e7C",
+        "width": 2304
+      }
+    ],
+    "place_id": "ChIJ2bElmZ2jdUgRSLXb_8vNTZA",
+    "plus_code": {
+      "compound_code": "RJJ4+5W Worthing",
+      "global_code": "9C2XRJJ4+5W"
+    },
+    "price_level": 2,
+    "rating": 4.9,
+    "reference": "ChIJ2bElmZ2jdUgRSLXb_8vNTZA",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 165,
+    "vicinity": "8 Littlehampton Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.80956219999999, "lng": -0.3718255 },
+      "viewport": {
+        "northeast": { "lat": 50.81092647989272, "lng": -0.3703933701072777 },
+        "southwest": { "lat": 50.80822682010728, "lng": -0.3730930298927221 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Anchored in Worthing",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113957384804161331497\">Graham Brown</a>"
+        ],
+        "photo_reference": "AelY_CuGSzT6m86rZuDnQ1otyFAHbegHy_aJp3MVG5aI2_n5nk--ItYgHby63EKOn9ykvVoXwT3XuoyD6hVBBoVzgS6__PBjjX2g8CqtxKZ-vBJIxG5iuP6jUGXMBofR9MHwNlqL2sGAcc2inE0qFax4VcoegCr5msO90zJ8V6emP8VVDB2L",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJSeR3y4WidUgR4QTeT3xOjtY",
+    "plus_code": {
+      "compound_code": "RJ5H+R6 Worthing",
+      "global_code": "9C2XRJ5H+R6"
+    },
+    "price_level": 1,
+    "rating": 4.8,
+    "reference": "ChIJSeR3y4WidUgR4QTeT3xOjtY",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 257,
+    "vicinity": "14 Montague Pl, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8129976, "lng": -0.3708795 },
+      "viewport": {
+        "northeast": { "lat": 50.81436507989272, "lng": -0.3694438201072778 },
+        "southwest": { "lat": 50.81166542010727, "lng": -0.3721434798927223 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Mangiamo",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 1942,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110374548458648430583\">Mark Haines</a>"
+        ],
+        "photo_reference": "AelY_CsG8mDI16vV3L6Dihd-yRLjnf5f8aqvUbeeXd8UhlJOWHVUtgZfJ0Y9tBs4lX4HdwU9jWYpWJytDilPaTx1Wq_ZPDEcRsoQLy1ItXatzEWo3pCjsxuPLm5WmNHbGek08CJQu2UzJJsKaJm45Qclvb8QAw-8Ywb3SsCH6TR-CdkddBdi",
+        "width": 3785
+      }
+    ],
+    "place_id": "ChIJdSAx2YOjdUgRN8zoESaAFPk",
+    "plus_code": {
+      "compound_code": "RJ7H+5J Worthing",
+      "global_code": "9C2XRJ7H+5J"
+    },
+    "rating": 4.4,
+    "reference": "ChIJdSAx2YOjdUgRN8zoESaAFPk",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 500,
+    "vicinity": "47-49 Chapel Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.811339, "lng": -0.3727192 },
+      "viewport": {
+        "northeast": { "lat": 50.81269487989272, "lng": -0.3714017201072778 },
+        "southwest": { "lat": 50.80999522010728, "lng": -0.3741013798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Libertine Free House",
+    "photos": [
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116662945853131439604\">Michael Peter Cooke</a>"
+        ],
+        "photo_reference": "AelY_Cu-p8ANAnso8fBXDBovpjwxpQHh7KY88k9e6orBfHhgr_nTK0oGsh8cGYh_vJPuk3ssdk0HxS9YWf32caBYRN6TBT8umIFz2Hc5NIvZB0jqlZsZwLJLufXI6MToidklEP21BX2J6kWsglqsmL-Jnaa1hiEYY4zRGczUM1jh6tq9XPdv",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJ4YzKeYOidUgRm2Ckac1A160",
+    "plus_code": {
+      "compound_code": "RJ6G+HX Worthing",
+      "global_code": "9C2XRJ6G+HX"
+    },
+    "rating": 5,
+    "reference": "ChIJ4YzKeYOidUgRm2Ckac1A160",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 1,
+    "vicinity": "Shelley Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8188811, "lng": -0.3920351 },
+      "viewport": {
+        "northeast": { "lat": 50.82024437989271, "lng": -0.3907020701072777 },
+        "southwest": { "lat": 50.81754472010727, "lng": -0.3934017298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Green Man Ale & Cider House",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3464,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111357792151363938975\">Paul Abrahams</a>"
+        ],
+        "photo_reference": "AelY_CtEQbTg0mQhhVRJPAbcPZ-YxZPApUQq6bAuKC8wkPjMOxnK6aVvLhAM8n3YtLLEfGH_x7GsoVRD8L8I0uX1ahGNOnBMAuxxYo3fXaQV7R0GCz0BUjf0zrKsZlZSMTh1mAdpvcr5fV0_IYR-3LMKAYZWbTIj5cTvrpP5n_A5zkoOYMJd",
+        "width": 4618
+      }
+    ],
+    "place_id": "ChIJW3ZO6eqidUgR3Y-Exgyj1ZA",
+    "plus_code": {
+      "compound_code": "RJ95+G4 Worthing",
+      "global_code": "9C2XRJ95+G4"
+    },
+    "price_level": 1,
+    "rating": 4.7,
+    "reference": "ChIJW3ZO6eqidUgR3Y-Exgyj1ZA",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 240,
+    "vicinity": "17 S Street Tarring, West Worthing, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.81198130000001, "lng": -0.3694392 },
+      "viewport": {
+        "northeast": { "lat": 50.81335682989272, "lng": -0.3681233701072777 },
+        "southwest": { "lat": 50.81065717010728, "lng": -0.3708230298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "JDs bar",
+    "place_id": "ChIJT4uZSa2jdUgRer0kx_-9qXo",
+    "plus_code": {
+      "compound_code": "RJ6J+Q6 Worthing",
+      "global_code": "9C2XRJ6J+Q6"
+    },
+    "rating": 3.2,
+    "reference": "ChIJT4uZSa2jdUgRer0kx_-9qXo",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 17,
+    "vicinity": "2 Ann St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8091553, "lng": -0.3745793000000001 },
+      "viewport": {
+        "northeast": { "lat": 50.81042972989272, "lng": -0.3732072701072778 },
+        "southwest": { "lat": 50.80773007010728, "lng": -0.3759069298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Cellar Arts Club",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116727566378897682518\">Steve Peck</a>"
+        ],
+        "photo_reference": "AelY_Cs2E-C2-aJkDuIU3wql_fvKxy1bqoFJEgOUo1upmzXHjKLtUFf-jh9ijYZ_OsZIHLnRXeTs7oxmAxJxc4nNUMQ9yyqP_LX8VQn65w-6_EIZ1C3Hcv6InAk82QlfW81gnWSSVzlQCE3NngkyDp_FuWhIq_934Q-EjBsbsX6b-V0VbRne",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJfSe9LfOjdUgRK6nY-mz-PJk",
+    "plus_code": {
+      "compound_code": "RJ5G+M5 Worthing",
+      "global_code": "9C2XRJ5G+M5"
+    },
+    "price_level": 1,
+    "rating": 4.8,
+    "reference": "ChIJfSe9LfOjdUgRK6nY-mz-PJk",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 78,
+    "vicinity": "70 Marine Parade, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.813263, "lng": -0.3686834 },
+      "viewport": {
+        "northeast": { "lat": 50.81450647989272, "lng": -0.3673135201072777 },
+        "southwest": { "lat": 50.81180682010728, "lng": -0.3700131798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Fernando's Grill",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113835744363379513457\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CtFqHQp-DM4iMJOveXyWmGJR-O9I09cBm-n8JNAr-SCxHIBSj2-o2Y1_ZAkPdHDr5tjNX2-cOT_FazVDX2g8S5o8hI5x0Oiv3xfw5K4JygqKUnXeaJ7oRkKaoxldzHlHYa__xRxvVfdJzGY7-WD7HehLxo0MKm2d6TZSL9U0ML4yC7c",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJx0-yuoKidUgRrwgtbzQTEt0",
+    "plus_code": {
+      "compound_code": "RJ7J+8G Worthing",
+      "global_code": "9C2XRJ7J+8G"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJx0-yuoKidUgRrwgtbzQTEt0",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 723,
+    "vicinity": "31 Chatsworth Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8100748, "lng": -0.3684876 },
+      "viewport": {
+        "northeast": { "lat": 50.81134402989272, "lng": -0.3671026201072777 },
+        "southwest": { "lat": 50.80864437010727, "lng": -0.3698022798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Number 24",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3072,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108886244725109053049\">Alex Bell</a>"
+        ],
+        "photo_reference": "AelY_Cv1dHtEHQJd9wSg9vr0GN0vBqEG9VL2jbd-tAJSALH3IGBz7AuiFcwovQvi3IaLpvamyFaKSGkeUbrTg6vXJZNB-cpsv2vjOeNwwdsQAtlqvL3wcdSTP2da7NqzsGbxuTVWJDH6MPpfbNZULRtbJW13j7VX5Ld4hKS4DDlWET-Fdfoi",
+        "width": 4080
+      }
+    ],
+    "place_id": "ChIJ03pHJf-jdUgRDL89sZGpHwQ",
+    "plus_code": {
+      "compound_code": "RJ6J+2J Worthing",
+      "global_code": "9C2XRJ6J+2J"
+    },
+    "price_level": 2,
+    "rating": 4.1,
+    "reference": "ChIJ03pHJf-jdUgRDL89sZGpHwQ",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 189,
+    "vicinity": "24-25 Marine Parade, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8098891, "lng": -0.3821056 },
+      "viewport": {
+        "northeast": { "lat": 50.81129192989272, "lng": -0.3807622201072777 },
+        "southwest": { "lat": 50.80859227010728, "lng": -0.3834618798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "The Signal Post",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 1536,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113574027546066393231\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_Cux7yQjqz0hxuNoVfkH_ijt2r6mWvtIHplUr-PvcgIxvsuxpfGJ0WHblvd-_-nyDSCZJfCDq1Ifdxyw9DCvi33nq7dRPh9RIYe9r3AniHvB-lSVbHPdJJZpWbN8hApn2Ep7sGE4D75MjQq4sP3YCiqRRpZgu2vkgRfqgzyTXAVhmSpv",
+        "width": 2048
+      }
+    ],
+    "place_id": "ChIJw6jtnbujdUgRym0yFQFaeYw",
+    "plus_code": {
+      "compound_code": "RJ59+X5 Worthing",
+      "global_code": "9C2XRJ59+X5"
+    },
+    "price_level": 2,
+    "rating": 4.9,
+    "reference": "ChIJw6jtnbujdUgRym0yFQFaeYw",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "liquor_store",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 79,
+    "vicinity": "79 Rowlands Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.81323630000001, "lng": -0.3684444 },
+      "viewport": {
+        "northeast": { "lat": 50.81451372989272, "lng": -0.3670718201072778 },
+        "southwest": { "lat": 50.81181407010728, "lng": -0.3697714798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Molotov Cocktail Bar",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117245308757737598437\">Rachael Dines</a>"
+        ],
+        "photo_reference": "AelY_Cu1R18f7xqY8eCJNs_sg0ylGnt5xstzR1p0C1iVWJTuehxZvUTi_eWhSsZqW52o5qllAuvCCDz_7SVFyExt87kB4lwzwbzbLs4yeUxdrL02KV-uGLNBaY69pdSWiaKKltEC1I2KNV2g3Sn1wQdrLOU8TVgDXwHgBzezxbLQxpNDvBVb",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ1ehPpYKidUgRgZ3CiNHlK6k",
+    "plus_code": {
+      "compound_code": "RJ7J+7J Worthing",
+      "global_code": "9C2XRJ7J+7J"
+    },
+    "price_level": 3,
+    "rating": 3.8,
+    "reference": "ChIJ1ehPpYKidUgRgZ3CiNHlK6k",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 219,
+    "vicinity": "31 Chatsworth Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8141955, "lng": -0.3688431 },
+      "viewport": {
+        "northeast": { "lat": 50.81547012989272, "lng": -0.3673586701072778 },
+        "southwest": { "lat": 50.81277047010728, "lng": -0.3700583298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "STACEYS dive bar",
+    "opening_hours": { "open_now": true },
+    "place_id": "ChIJ_eoGs8SjdUgRHH7DsH2Ou_E",
+    "plus_code": {
+      "compound_code": "RJ7J+MF Worthing",
+      "global_code": "9C2XRJ7J+MF"
+    },
+    "rating": 4.5,
+    "reference": "ChIJ_eoGs8SjdUgRHH7DsH2Ou_E",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 2,
+    "vicinity": "3 Union Pl, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.81185290000001, "lng": -0.3685513 },
+      "viewport": {
+        "northeast": { "lat": 50.81317622989272, "lng": -0.3666825701072778 },
+        "southwest": { "lat": 50.81047657010728, "lng": -0.3693822298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Finch Bar & Eatery",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 4000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113558175654487145405\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CuKfoijPZw7fRZ1ltUerfi_ap0VRl7AfaF9wlLFRdydZ-7Ggz7YvOQaw0FMVS98wuzwMWtRn1q3oPSiRyqGHVR45dRmcrWkQUksEaicumP8xQdKOLQys-c-v5ngvNZwMgS03k-74m-jIq3rJ-3G2w9H9k-11PnJkkAj4J6Mr9UzeD7F",
+        "width": 3000
+      }
+    ],
+    "place_id": "ChIJWyiNKbSjdUgR3VvW9Pqrbzs",
+    "plus_code": {
+      "compound_code": "RJ6J+PH Worthing",
+      "global_code": "9C2XRJ6J+PH"
+    },
+    "price_level": 2,
+    "rating": 4.6,
+    "reference": "ChIJWyiNKbSjdUgR3VvW9Pqrbzs",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 470,
+    "vicinity": "27 Warwick St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.81130109999999, "lng": -0.3727125 },
+      "viewport": {
+        "northeast": { "lat": 50.81264507989273, "lng": -0.3714459201072777 },
+        "southwest": { "lat": 50.80994542010728, "lng": -0.3741455798927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Barneys",
+    "opening_hours": { "open_now": false },
+    "place_id": "ChIJ86RWeIOidUgRzcA9fskDB4Y",
+    "plus_code": {
+      "compound_code": "RJ6G+GW Worthing",
+      "global_code": "9C2XRJ6G+GW"
+    },
+    "rating": 3.3,
+    "reference": "ChIJ86RWeIOidUgRzcA9fskDB4Y",
+    "scope": "GOOGLE",
+    "types": [
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 6,
+    "vicinity": "Portland Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8108669, "lng": -0.3709848 },
+      "viewport": {
+        "northeast": { "lat": 50.81210667989272, "lng": -0.3698562701072777 },
+        "southwest": { "lat": 50.80940702010728, "lng": -0.3725559298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Block Bar Worthing",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114415674876469083492\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_Cu6lM_clHVUaaKgK7XCNJiwfYX2sxOGcN78hYHbJUK2shBoRQSroy_37bPafMZvIcS74WJZfASiMKylxTZJ9RKJRNYnx0P88FWpey5T3M7WSQdE1OrOq0aa5tdr0MMl23CUKB9c4TPettLkHH50uHq4JT_Obm-HX3sa5V81xgms4rGR",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJ1RdLo4yjdUgR7M2vfJCoaXI",
+    "plus_code": {
+      "compound_code": "RJ6H+8J Worthing",
+      "global_code": "9C2XRJ6H+8J"
+    },
+    "rating": 5,
+    "reference": "ChIJ1RdLo4yjdUgR7M2vfJCoaXI",
+    "scope": "GOOGLE",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "user_ratings_total": 2,
+    "vicinity": "14 Liverpool Rd, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.809413, "lng": -0.3752333 },
+      "viewport": {
+        "northeast": { "lat": 50.81076322989272, "lng": -0.3738770701072777 },
+        "southwest": { "lat": 50.80806357010728, "lng": -0.3765767298927222 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+    "name": "Melon",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 4531,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116103429665466296647\">A Google User</a>"
+        ],
+        "photo_reference": "AelY_CuX4QCfL1d1Ia1dPH01OGN5JgIjPD7zeM8Bv_88iw09vGk20i6xBSvIp-_rRcmTq0wjZVSpDCBDroPf-CVX8IKAd96TiaIg7lt29eVIoxdVyeTvm2qmQyPt8RsCbkcZ5G5S4F-viiqSodm0biahZamyb3Ap2_A9SG2U82rsQGyjGqDL",
+        "width": 6796
+      }
+    ],
+    "place_id": "ChIJ6Wq9JRqjdUgRF77w3WncD1I",
+    "plus_code": {
+      "compound_code": "RJ5F+QX Worthing",
+      "global_code": "9C2XRJ5F+QX"
+    },
+    "rating": 4.3,
+    "reference": "ChIJ6Wq9JRqjdUgRF77w3WncD1I",
+    "scope": "GOOGLE",
+    "types": [
+      "night_club",
+      "bar",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 120,
+    "vicinity": "6-8 New St, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8142323, "lng": -0.3715464 },
+      "viewport": {
+        "northeast": { "lat": 50.81567998029149, "lng": -0.3700152197084979 },
+        "southwest": { "lat": 50.8129820197085, "lng": -0.372713180291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+    "name": "Worthing Museum & Gallery",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3840,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108051944676252805857\">Tim Husain</a>"
+        ],
+        "photo_reference": "AelY_Cu0riOcUfjPfXnB4YSnbxuS_rzibqvNmsGfQH8EDlDmfVMpc5UyhPbfwwnw-6QGeXgNTsKg4W50DeJu0gAWvkU-cpKhLVURHxUvVfxBL9yHGNC0U1eudpnieiZjrRKgdWTM1O8VIcaH1e9IaktZU5V_MCJg60LIs8yXjzhUQei4yjKj",
+        "width": 5120
+      }
+    ],
+    "place_id": "ChIJ95sftcFsYEgR0NdBrB1sWc4",
+    "plus_code": {
+      "compound_code": "RJ7H+M9 Worthing, UK",
+      "global_code": "9C2XRJ7H+M9"
+    },
+    "rating": 4.5,
+    "reference": "ChIJ95sftcFsYEgR0NdBrB1sWc4",
+    "scope": "GOOGLE",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 343,
+    "vicinity": "Chapel Road, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8124239, "lng": -0.3628616 },
+      "viewport": {
+        "northeast": { "lat": 50.8137728802915, "lng": -0.361512619708498 },
+        "southwest": { "lat": 50.8110749197085, "lng": -0.3642105802915021 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+    "icon_background_color": "#4DB546",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+    "name": "Beach House Park",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4096,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116663150922159258607\">Steven Clough</a>"
+        ],
+        "photo_reference": "AelY_CsJFCz5agEY9VKvFNXZ6kR1K3ciHUWF9_5zvJV4Pj6dH_Z1TlFojRLWK52KJfoLLK2JNBldpTiW8_cXy-f0oNRyA-JSr-XCRoac_PSxPJxIthsjW8JA2P5ARokxUE-H2IQn6ukYUgW2HTHRYq2T-3_y95mIdtmaBfVSOT95YjGWArSt",
+        "width": 3072
+      }
+    ],
+    "place_id": "ChIJCX0N33mYdUgRNzu_elhbOXE",
+    "plus_code": {
+      "compound_code": "RJ6P+XV Worthing, UK",
+      "global_code": "9C2XRJ6P+XV"
+    },
+    "rating": 4.5,
+    "reference": "ChIJCX0N33mYdUgRNzu_elhbOXE",
+    "scope": "GOOGLE",
+    "types": [
+      "park",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 642,
+    "vicinity": "55 Lyndhurst Road, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.8091304, "lng": -0.3714142 },
+      "viewport": {
+        "northeast": { "lat": 50.8105731302915, "lng": -0.370077719708498 },
+        "southwest": { "lat": 50.8078751697085, "lng": -0.3727756802915021 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Worthing Giant Wheel",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3840,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102777420386956039337\">MIRELA GM</a>"
+        ],
+        "photo_reference": "AelY_Ct4S5eNRwmAcSswwm2pU4baM8c1RxKB6QeCscc5rRaT5Ly_n_DmkAetF_eWJnsENsyRMFh4Eo8sPj1ShTP0SQGnOACxhPXrvpPnUEEUeJ4e_yNtCkRX9nHwzDkAOeokaYkSeVJ08dch2UaYkDKkT1K_aYpD8iNvYOgME-owiLZ_6sdM",
+        "width": 2880
+      }
+    ],
+    "place_id": "ChIJe6qMPgCjdUgRxnmxwqS90fo",
+    "plus_code": {
+      "compound_code": "RJ5H+MC Worthing, UK",
+      "global_code": "9C2XRJ5H+MC"
+    },
+    "rating": 4.5,
+    "reference": "ChIJe6qMPgCjdUgRxnmxwqS90fo",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 2,
+    "vicinity": "Marine Parade, Worthing"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 50.80812, "lng": -0.3691720999999999 },
+      "viewport": {
+        "northeast": { "lat": 50.81063340000001, "lng": -0.3679036197084979 },
+        "southwest": { "lat": 50.8072822, "lng": -0.370601580291502 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#13B5C7",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Worthing Pier",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 485,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114889381877847037366\">Chris Walters</a>"
+        ],
+        "photo_reference": "AelY_CtvTNPWhAZmWpJBs8Kdd1IAx3F1K1f6WIkL080w4gxzsKvqnbkB040bVBkCHeGl9FfGpS5bGSV95KeIRZUDc4D5-EH3YdihACxDmyVJSQuEnIHxpgUFh-LtH9iTNhecHtjJzgCx_Hnt-TxfL4PeyxQIYxG7FJixNo40NEo8gq_RrgDu",
+        "width": 730
+      }
+    ],
+    "place_id": "ChIJiedrJoKidUgRhWO7lbzuX0E",
+    "plus_code": {
+      "compound_code": "RJ5J+68 Worthing, UK",
+      "global_code": "9C2XRJ5J+68"
+    },
+    "rating": 4.3,
+    "reference": "ChIJiedrJoKidUgRhWO7lbzuX0E",
+    "scope": "GOOGLE",
+    "types": ["tourist_attraction", "point_of_interest", "establishment"],
+    "user_ratings_total": 5644,
+    "vicinity": "3AJ, Marine Parade, Worthing"
+  }
+]

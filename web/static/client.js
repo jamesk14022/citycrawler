@@ -1,5 +1,4 @@
 import {
-  CITY_POINTS,
   TIME_SPENT_BAR,
   MAPBOX_TOKEN,
   BASE_URL,
@@ -35,6 +34,7 @@ let currentLocation = "Dublin";
 let currentMarkers = [];
 let selectedPubs = 3;
 let selectedAttractions = 1;
+let cityPoints = {};
 
 shareButton.addEventListener("click", copyLink);
 
@@ -436,11 +436,21 @@ function toggleNoCitiesResults() {
 
 function addLocations() {
   dataList.innerHTML = "";
-  for (const city in CITY_POINTS) {
-    const option = document.createElement("option");
-    option.value = city;
-    dataList.appendChild(option);
-  }
+  fetch(
+    `${BASE_URL}/cities`,
+  )
+    .then((response) => response.json())
+    .then((cities) => {
+
+      cityPoints = cities;
+
+      for (const city in cities) {
+        const option = document.createElement("option");
+        option.value = city;
+        dataList.appendChild(option);
+      }
+    });
+  updateRouteMetrics();
 }
 
 function buildMap() {
@@ -463,9 +473,9 @@ refreshButton.addEventListener("click", buildMap);
 modalExitButton.addEventListener("click", toggleNoPubsResults);
 searchBox.addEventListener("keypress", (e) => {
   let inputVal = e.target.value;
-  if (inputVal in CITY_POINTS) {
+  if (inputVal in cityPoints) {
     map.flyTo({
-      center: CITY_POINTS[inputVal],
+      center: cityPoints[inputVal],
       zoom: 12,
     });
     currentLocation = inputVal;
@@ -478,9 +488,9 @@ searchBox.addEventListener("keypress", (e) => {
 });
 searchBox.addEventListener("input", (e) => {
   let inputVal = e.target.value;
-  if (inputVal in CITY_POINTS) {
+  if (inputVal in cityPoints) {
     map.flyTo({
-      center: CITY_POINTS[inputVal],
+      center: cityPoints[inputVal],
       zoom: 12,
     });
     currentLocation = inputVal;
