@@ -11,6 +11,12 @@ Web app that uses graph theory to generate custom “city crawl” routes in EU 
 - **Golang (v1.22.3):** [Install](https://go.dev/dl/)
 - **Golang Libraries:** Install with `go mod tidy`.
 
+## Environment Variables 
+
+- WEB_DIR=/usr/local/web/static
+- LOCATION_DATA_DIR=/usr/local/data/location_data/
+- CACHE_DATA_PATH=/usr/local/data/location_data/cache.json
+
 ## Run
 
 ```

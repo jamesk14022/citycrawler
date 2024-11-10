@@ -72,6 +72,7 @@ func PopulateCacheSyncMap(source map[string]types.CacheItem) {
 }
 
 func InitCache() {
+
 	jsonData, err := ReadCacheJSONFile(cacheDataPath)
 	if err != nil {
 		fmt.Println("Error reading JSON file:", err)
