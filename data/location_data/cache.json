@@ -7880,6 +7880,386 @@
       ]
     ]
   },
+  "dublin_3_12": {
+    "Values": [
+      [
+        {
+          "place_id": "ChIJ30HSXIUOZ0gRJNh5Fic-vUE",
+          "name": "Mulligan's",
+          "price_level": 2,
+          "rating": 4.6,
+          "types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3468933,
+              "lng": -6.255426
+            }
+          }
+        },
+        {
+          "place_id": "ChIJK-E4BIUOZ0gRd-kUnF2f98U",
+          "name": "The James Connolly Pub",
+          "price_level": 2,
+          "rating": 4.5,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3480222,
+              "lng": -6.2577973
+            }
+          }
+        },
+        {
+          "place_id": "ChIJMUXxtoUOZ0gRoBYyHe8jg64",
+          "name": "Briodys",
+          "price_level": 0,
+          "rating": 4.6,
+          "types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3495972,
+              "lng": -6.258082900000001
+            }
+          }
+        },
+        {
+          "place_id": "ChIJd-LXKoQOZ0gRKAhX4qNCTMM",
+          "name": "St. Mary's Pro Cathedral",
+          "price_level": 0,
+          "rating": 4.6,
+          "types": [
+            "tourist_attraction",
+            "church",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3509196,
+              "lng": -6.258848599999999
+            }
+          }
+        }
+      ],
+      [
+        {
+          "place_id": "ChIJ30HSXIUOZ0gRJNh5Fic-vUE",
+          "name": "Mulligan's",
+          "price_level": 2,
+          "rating": 4.6,
+          "types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3468933,
+              "lng": -6.255426
+            }
+          }
+        },
+        {
+          "place_id": "ChIJK-E4BIUOZ0gRd-kUnF2f98U",
+          "name": "The James Connolly Pub",
+          "price_level": 2,
+          "rating": 4.5,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3480222,
+              "lng": -6.2577973
+            }
+          }
+        },
+        {
+          "place_id": "ChIJMUXxtoUOZ0gRoBYyHe8jg64",
+          "name": "Briodys",
+          "price_level": 0,
+          "rating": 4.6,
+          "types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3495972,
+              "lng": -6.258082900000001
+            }
+          }
+        },
+        {
+          "place_id": "ChIJd-LXKoQOZ0gRKAhX4qNCTMM",
+          "name": "St. Mary's Pro Cathedral",
+          "price_level": 0,
+          "rating": 4.6,
+          "types": [
+            "tourist_attraction",
+            "church",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3509196,
+              "lng": -6.258848599999999
+            }
+          }
+        }
+      ],
+      [
+        {
+          "place_id": "ChIJ30HSXIUOZ0gRJNh5Fic-vUE",
+          "name": "Mulligan's",
+          "price_level": 2,
+          "rating": 4.6,
+          "types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3468933,
+              "lng": -6.255426
+            }
+          }
+        },
+        {
+          "place_id": "ChIJK-E4BIUOZ0gRd-kUnF2f98U",
+          "name": "The James Connolly Pub",
+          "price_level": 2,
+          "rating": 4.5,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3480222,
+              "lng": -6.2577973
+            }
+          }
+        },
+        {
+          "place_id": "ChIJMUXxtoUOZ0gRoBYyHe8jg64",
+          "name": "Briodys",
+          "price_level": 0,
+          "rating": 4.6,
+          "types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3495972,
+              "lng": -6.258082900000001
+            }
+          }
+        },
+        {
+          "place_id": "ChIJd-LXKoQOZ0gRKAhX4qNCTMM",
+          "name": "St. Mary's Pro Cathedral",
+          "price_level": 0,
+          "rating": 4.6,
+          "types": [
+            "tourist_attraction",
+            "church",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3509196,
+              "lng": -6.258848599999999
+            }
+          }
+        }
+      ],
+      [
+        {
+          "place_id": "ChIJ30HSXIUOZ0gRJNh5Fic-vUE",
+          "name": "Mulligan's",
+          "price_level": 2,
+          "rating": 4.6,
+          "types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3468933,
+              "lng": -6.255426
+            }
+          }
+        },
+        {
+          "place_id": "ChIJK-E4BIUOZ0gRd-kUnF2f98U",
+          "name": "The James Connolly Pub",
+          "price_level": 2,
+          "rating": 4.5,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3480222,
+              "lng": -6.2577973
+            }
+          }
+        },
+        {
+          "place_id": "ChIJMUXxtoUOZ0gRoBYyHe8jg64",
+          "name": "Briodys",
+          "price_level": 0,
+          "rating": 4.6,
+          "types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3495972,
+              "lng": -6.258082900000001
+            }
+          }
+        },
+        {
+          "place_id": "ChIJRR-HQ4QOZ0gRraVacloYRpo",
+          "name": "Jim Larkin Statue",
+          "price_level": 0,
+          "rating": 4.4,
+          "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3491121,
+              "lng": -6.259931499999999
+            }
+          }
+        }
+      ],
+      [
+        {
+          "place_id": "ChIJ30HSXIUOZ0gRJNh5Fic-vUE",
+          "name": "Mulligan's",
+          "price_level": 2,
+          "rating": 4.6,
+          "types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3468933,
+              "lng": -6.255426
+            }
+          }
+        },
+        {
+          "place_id": "ChIJK-E4BIUOZ0gRd-kUnF2f98U",
+          "name": "The James Connolly Pub",
+          "price_level": 2,
+          "rating": 4.5,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3480222,
+              "lng": -6.2577973
+            }
+          }
+        },
+        {
+          "place_id": "ChIJMUXxtoUOZ0gRoBYyHe8jg64",
+          "name": "Briodys",
+          "price_level": 0,
+          "rating": 4.6,
+          "types": [
+            "bar",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3495972,
+              "lng": -6.258082900000001
+            }
+          }
+        },
+        {
+          "place_id": "ChIJRR-HQ4QOZ0gRraVacloYRpo",
+          "name": "Jim Larkin Statue",
+          "price_level": 0,
+          "rating": 4.4,
+          "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3491121,
+              "lng": -6.259931499999999
+            }
+          }
+        }
+      ]
+    ]
+  },
   "dublin_4": {
     "Values": [
       [

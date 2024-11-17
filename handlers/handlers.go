@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	. "github.com/jamesk14022/barcrawler/cache"
+	// . "github.com/jamesk14022/barcrawler/cache"
 	. "github.com/jamesk14022/barcrawler/types"
 	"github.com/jamesk14022/barcrawler/utils"
 )
@@ -124,8 +124,8 @@ func CheckOverlap(path []int, R RoutesMatrix) bool {
 	return false
 }
 
-func CheckFirstLocation(path []int, _ []Location, targetFirstLocation int) bool {
-	if path[0] == targetFirstLocation {
+func CheckFirstLocation(path []int, enrichedData []Location, targetFirstLocation string) bool {
+	if enrichedData[path[0]].Name == targetFirstLocation {
 		return true
 	}
 	return false
@@ -217,21 +217,21 @@ func getEligiblePaths(size int, targetPubs int, targetAttractions int, D Distanc
 	return eligiblePaths, distances
 }
 
-func extractURLParams(r *http.Request) (int, int, int, string, error) {
+func extractURLParams(r *http.Request) (int, int, string, string, error) {
 	targetAttractions, err := strconv.Atoi(r.URL.Query().Get("target_attractions"))
 	if err != nil {
-		return 0, 0, -1, "", err
+		return 0, 0, "", "", err
 	}
 
 	targetPubs, err := strconv.Atoi(r.URL.Query().Get("target_pubs"))
 	if err != nil {
-		return 0, 0, -1, "", err
+		return 0, 0, "", "", err
 	}
 
-	targetFirstLocation, _ := strconv.Atoi(r.URL.Query().Get("target_first_location"))
+	targetFirstLocation := r.URL.Query().Get("target_first_location")
 	location := strings.ToLower((r.URL.Query().Get("location")))
 	if location == "" {
-		return 0, 0, -1, "", err
+		return 0, 0, "", "", err
 	}
 
 	return targetAttractions, targetPubs, targetFirstLocation, location, nil
@@ -253,18 +253,18 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(emptyResponse)
 	}
 
-	key := GenerateKey(location, targetPubs, targetAttractions)
+	// key := GenerateKey(location, targetPubs, targetAttractions) + "3"
 
-	item, ok := RouteCache.Load(key)
-	if ok {
-		cacheItem := item.(CacheItem)
-		if len(cacheItem.Values) >= CacheSize {
-			randomIndex := rand.Intn(len(cacheItem.Values))
-			fmt.Println("Cache hit: ", key, cacheItem.Values[randomIndex])
-			json.NewEncoder(w).Encode(cacheItem.Values[randomIndex])
-			return
-		}
-	}
+	// item, ok := RouteCache.Load(key)
+	// if ok {
+	// 	cacheItem := item.(CacheItem)
+	// 	if len(cacheItem.Values) >= CacheSize {
+	// 		randomIndex := rand.Intn(len(cacheItem.Values))
+	// 		fmt.Println("Cache hit: ", key, cacheItem.Values[randomIndex])
+	// 		json.NewEncoder(w).Encode(cacheItem.Values[randomIndex])
+	// 		return
+	// 	}
+	// }
 
 	enrichedData, D, R, err := LoadLocationInformation(location)
 	if err != nil {
@@ -284,19 +284,19 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 		for i, p := range path {
 			selectedLocations[i] = enrichedData[p]
 		}
-		AddToCache(key, selectedLocations)
-		SaveCache()
+		// AddToCache(key, selectedLocations)
+		// SaveCache()
 		json.NewEncoder(w).Encode(selectedLocations)
 	}
 }
 
-func generateRoute(enrichedData []Location, targetPubs int, targetAttractions int, targetFirstPub int, D DistanceMatrix, R RoutesMatrix) [][]int {
+func generateRoute(enrichedData []Location, targetPubs int, targetAttractions int, targetFirstLocation string, D DistanceMatrix, R RoutesMatrix) [][]int {
 	size := len(enrichedData)
 	eligiblePaths, distances := getEligiblePaths(size, targetPubs, targetAttractions, D, enrichedData)
 
-	if targetFirstPub != -1 {
+	if targetFirstLocation != "" {
 		eligiblePaths = filterPathsLocations(eligiblePaths, enrichedData, func(e []int, f []Location) bool {
-			return CheckFirstLocation(e, enrichedData, targetFirstPub)
+			return CheckFirstLocation(e, enrichedData, targetFirstLocation)
 		})
 	}
 

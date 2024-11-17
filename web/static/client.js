@@ -222,7 +222,7 @@ async function addAlternativeBarMarkers(route_points) {
           ),
       );
       currentCityPoints = waypoints;
-      populateBarStartBarEnd();
+      populateBarStart();
       map.addSource("places", convertToGeoJSON(waypoints));
       map.addLayer({
         id: "places",
@@ -269,18 +269,13 @@ async function addAlternativeBarMarkers(route_points) {
     });
 }
 
-function populateBarStartBarEnd() {
+function populateBarStart() {
   currentCityPoints.map( (waypoint, i) => {
       let optStart = document.createElement("option");
       optStart.value = i; 
       optStart.innerHTML = waypoint.name;
       selectStart.append(optStart);
-
-      const optEnd = optStart.cloneNode(true); 
-      selectEnd.appendChild(optEnd);
   });
-  // reset state when repopulating
-  selectedFirstLocation = "";
 }
 
 function renderBarInformationBox(waypoint, index) {
@@ -485,19 +480,20 @@ function buildMap() {
   fetch(url)
     .then((response) => response.json())
     .then((waypoints) => {
-      console.log(waypoints);
       renderRoute(waypoints);
     });
   updateRouteMetrics();
 }
 
 selectStart.addEventListener("change", (event) => {
-    selectedFirstLocation = event.target.value; // Update state
+    console.log(event.target)
+    selectedFirstLocation = event.target.options[event.target.selectedIndex].text;
 });
 refreshButton.addEventListener("click", buildMap);
 modalExitButton.addEventListener("click", toggleNoPubsResults);
 searchBox.addEventListener("keypress", (e) => {
   let inputVal = e.target.value;
+  selectedFirstLocation = "";
   if (inputVal in cityPoints) {
     map.flyTo({
       center: cityPoints[inputVal],
