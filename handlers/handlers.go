@@ -16,7 +16,7 @@ import (
 	"github.com/jamesk14022/barcrawler/utils"
 )
 
-const MaxReturnPaths = 17099886
+const MaxReturnPaths = 20000000
 
 var locationDataDir = os.Getenv("LOCATION_DATA_DIR")
 
@@ -153,32 +153,32 @@ func EqualLengthMeetConstraint(path []int, pathDistance float64, D DistanceMatri
 	return true
 }
 
-func checkAttractionContraints(path []int, enrichedData []Location, target_attractions int) bool {
+func checkAttractionContraints(path []int, enrichedData []Location, targetAttractions int) bool {
 	attractions := 0
 	for _, p := range path {
 		if utils.Contains(enrichedData[p].Types, "tourist_attraction") {
 			attractions++
 		}
 	}
-	return attractions == target_attractions
+	return attractions == targetAttractions
 }
 
-func GetEligiblePaths(size int, target_pubs int, target_attractions int, D DistanceMatrix, enrichedData []Location) ([][]int, []float64) {
+func getEligiblePaths(size int, targetPubs int, targetAttractions int, D DistanceMatrix, enrichedData []Location) ([][]int, []float64) {
 	var eligiblePaths [][]int
 	var distances []float64
-	var total_length = target_pubs + target_attractions
+	var totalTargetLength = targetPubs + targetAttractions
 
-	path := make([]int, total_length)
+	path := make([]int, totalTargetLength)
 	visited := make([]bool, size)
 
-	var dfs func(node, depth int, currentDist float64)
-	dfs = func(node, depth int, currentDist float64) {
+	var dfs func(node int, depth int, currentDist float64)
+	dfs = func(node int, depth int, currentDist float64) {
 		if len(eligiblePaths) >= MaxReturnPaths {
 			return
 		}
-		if depth == total_length {
-			if currentDist < markerSettings[total_length]["distanceThreshold"] && checkAttractionContraints(path, enrichedData, target_attractions) {
-				pathCopy := make([]int, total_length)
+		if depth == totalTargetLength {
+			if currentDist < markerSettings[totalTargetLength]["distanceThreshold"] && checkAttractionContraints(path, enrichedData, targetAttractions) {
+				pathCopy := make([]int, totalTargetLength)
 				copy(pathCopy, path[:depth])
 				eligiblePaths = append(eligiblePaths, pathCopy)
 				distances = append(distances, currentDist)
@@ -186,7 +186,7 @@ func GetEligiblePaths(size int, target_pubs int, target_attractions int, D Dista
 			return
 		}
 
-		if currentDist > markerSettings[total_length]["distanceThreshold"] {
+		if currentDist > markerSettings[totalTargetLength]["distanceThreshold"] {
 			return
 		}
 
@@ -211,7 +211,7 @@ func GetEligiblePaths(size int, target_pubs int, target_attractions int, D Dista
 }
 
 func extractURLParams(r *http.Request) (int, int, string, error) {
-	targetAttractions, err := strconv.Atoi(r.URL.Query().Get("target_attractions"))
+	targetAttractions, err := strconv.Atoi(r.URL.Query().Get("targetAttractions"))
 	if err != nil {
 		return 0, 0, "", err
 	}
@@ -236,6 +236,7 @@ func GetCityCoordinates(w http.ResponseWriter, r *http.Request) {
 }
 
 func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
+
 	w.Header().Set("Content-Type", "application/json")
 
 	targetAttractions, targetPubs, location, err := extractURLParams(r)
@@ -264,6 +265,7 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 	}
 
 	eligiblePaths := generateRoute(enrichedData, targetPubs, targetAttractions, D, R)
+	fmt.Println("Generated paths: ", eligiblePaths)
 
 	if len(eligiblePaths) == 0 {
 		json.NewEncoder(w).Encode(emptyResponse)
@@ -282,14 +284,14 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 
 func generateRoute(enrichedData []Location, targetPubs int, targetAttractions int, D DistanceMatrix, R RoutesMatrix) [][]int {
 	size := len(enrichedData)
-	eligiblePaths, distances := GetEligiblePaths(size, targetPubs, targetAttractions, D, enrichedData)
-	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
+	eligiblePaths, distances := getEligiblePaths(size, targetPubs, targetAttractions, D, enrichedData)
+	eligiblePaths = filterPaths(eligiblePaths, func(e []int) bool {
 		return !CheckOverlap(e, R)
 	})
-	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
+	eligiblePaths = filterPaths(eligiblePaths, func(e []int) bool {
 		return AdjacentLengthMeetConstraint(e, D, markerSettings[targetPubs+targetAttractions]["mu"])
 	})
-	eligiblePaths = FilterPathsDistances(eligiblePaths, distances, func(e []int, f float64) bool {
+	eligiblePaths = filterPathsDistances(eligiblePaths, distances, func(e []int, f float64) bool {
 		return EqualLengthMeetConstraint(e, f, D, markerSettings[targetPubs+targetAttractions]["alpha"])
 	})
 
@@ -336,7 +338,7 @@ func GetAllCityPoints(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(enrichedData)
 }
 
-func FilterPaths(paths [][]int, condition func([]int) bool) [][]int {
+func filterPaths(paths [][]int, condition func([]int) bool) [][]int {
 	var result [][]int
 	for _, path := range paths {
 		if condition(path) {
@@ -346,7 +348,7 @@ func FilterPaths(paths [][]int, condition func([]int) bool) [][]int {
 	return result
 }
 
-func FilterPathsDistances(paths [][]int, distances []float64, condition func([]int, float64) bool) [][]int {
+func filterPathsDistances(paths [][]int, distances []float64, condition func([]int, float64) bool) [][]int {
 	var result [][]int
 	for i, path := range paths {
 		if condition(path, distances[i]) {

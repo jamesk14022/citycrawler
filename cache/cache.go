@@ -65,7 +65,7 @@ func SaveCache() {
 
 	// Step 2: Convert sync.Map to a Standard Map
 	standardMap := make(map[string]interface{})
-	routeCache.Range(func(key, value interface{}) bool {
+	RouteCache.Range(func(key, value interface{}) bool {
 		standardMap[key.(string)] = value
 		return true
 	})
@@ -95,12 +95,12 @@ func SaveCache() {
 }
 
 func AddToCache(key string, value []types.Location) {
-	item, ok := routeCache.Load(key)
+	item, ok := RouteCache.Load(key)
 	if !ok {
-		routeCache.Store(key, types.CacheItem{Values: [][]types.Location{value}})
+		RouteCache.Store(key, types.CacheItem{Values: [][]types.Location{value}})
 		return
 	}
 	cacheItem := item.(types.CacheItem)
 	cacheItem.Values = append(cacheItem.Values, value)
-	routeCache.Store(key, cacheItem)
+	RouteCache.Store(key, cacheItem)
 }

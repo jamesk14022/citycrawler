@@ -7722,6 +7722,161 @@
             }
           }
         }
+      ],
+      [
+        {
+          "place_id": "ChIJW--8YIQOZ0gRi_8uV6kItkI",
+          "name": "The Oval Bar Dublin",
+          "price_level": 2,
+          "rating": 4.4,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3484027,
+              "lng": -6.2603274
+            }
+          }
+        },
+        {
+          "place_id": "ChIJY8EByoQOZ0gRSMYJds1CQHU",
+          "name": "The Palace Bar",
+          "price_level": 2,
+          "rating": 4.6,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3458882,
+              "lng": -6.259606799999999
+            }
+          }
+        },
+        {
+          "place_id": "ChIJMVe9U4MOZ0gRE1iw8A0lOkw",
+          "name": "The Auld Dubliner",
+          "price_level": 0,
+          "rating": 4.4,
+          "types": [
+            "bar",
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3456157,
+              "lng": -6.261963799999999
+            }
+          }
+        },
+        {
+          "place_id": "ChIJFXuSYYMOZ0gRb7gtcRw21Uc",
+          "name": "Ha'penny Bridge",
+          "price_level": 0,
+          "rating": 4.5,
+          "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3463347,
+              "lng": -6.2631029
+            }
+          }
+        }
+      ],
+      [
+        {
+          "place_id": "ChIJOe_6vZsOZ0gRZivVj7LCvic",
+          "name": "The Duke Dublin",
+          "price_level": 2,
+          "rating": 4.4,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3419569,
+              "lng": -6.2586996
+            }
+          }
+        },
+        {
+          "place_id": "ChIJBbfZcZsOZ0gRm1Q7jsO-MFk",
+          "name": "O'Donoghue's Bar",
+          "price_level": 2,
+          "rating": 4.4,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3434618,
+              "lng": -6.259688799999999
+            }
+          }
+        },
+        {
+          "place_id": "ChIJ8ZuR6JwOZ0gR5jtVW54gEHM",
+          "name": "The Stags Head",
+          "price_level": 2,
+          "rating": 4.5,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.343846,
+              "lng": -6.2636608
+            }
+          }
+        },
+        {
+          "place_id": "ChIJnwQ3IZ0OZ0gRW1NgrS2vROs",
+          "name": "City Hall",
+          "price_level": 0,
+          "rating": 4.4,
+          "types": [
+            "city_hall",
+            "tourist_attraction",
+            "local_government_office",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3440481,
+              "lng": -6.267214400000001
+            }
+          }
+        }
       ]
     ]
   },

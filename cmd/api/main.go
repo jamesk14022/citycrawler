@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/gorilla/mux"
+	"github.com/jamesk14022/barcrawler/cache"
 	"github.com/jamesk14022/barcrawler/handlers"
 
 	gorillaHandlers "github.com/gorilla/handlers"
@@ -30,7 +31,7 @@ func enableCORS(next http.Handler) http.Handler {
 
 func main() {
 
-	handlers.InitCache()
+	cache.InitCache()
 
 	router := mux.NewRouter()
 
@@ -51,6 +52,6 @@ func main() {
 		Handler: loggedRouter,
 	}
 
-	log.Println("Starting server on ", port)
+	log.Println("Test! Starting server on ", port)
 	log.Fatal(server.ListenAndServe())
 }
