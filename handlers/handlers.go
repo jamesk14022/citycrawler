@@ -124,6 +124,13 @@ func CheckOverlap(path []int, R RoutesMatrix) bool {
 	return false
 }
 
+func CheckFirstLocation(path []int, _ []Location, targetFirstLocation int) bool {
+	if path[0] == targetFirstLocation {
+		return true
+	}
+	return false
+}
+
 func AdjacentLengthMeetConstraint(path []int, D DistanceMatrix, mu float64) bool {
 	for i := 0; i < len(path)-1; i++ {
 		points := make([]int, len(path))
@@ -210,23 +217,24 @@ func getEligiblePaths(size int, targetPubs int, targetAttractions int, D Distanc
 	return eligiblePaths, distances
 }
 
-func extractURLParams(r *http.Request) (int, int, string, error) {
-	targetAttractions, err := strconv.Atoi(r.URL.Query().Get("targetAttractions"))
+func extractURLParams(r *http.Request) (int, int, int, string, error) {
+	targetAttractions, err := strconv.Atoi(r.URL.Query().Get("target_attractions"))
 	if err != nil {
-		return 0, 0, "", err
+		return 0, 0, -1, "", err
 	}
 
 	targetPubs, err := strconv.Atoi(r.URL.Query().Get("target_pubs"))
 	if err != nil {
-		return 0, 0, "", err
+		return 0, 0, -1, "", err
 	}
 
+	targetFirstLocation, _ := strconv.Atoi(r.URL.Query().Get("target_first_location"))
 	location := strings.ToLower((r.URL.Query().Get("location")))
 	if location == "" {
-		return 0, 0, "", err
+		return 0, 0, -1, "", err
 	}
 
-	return targetAttractions, targetPubs, location, nil
+	return targetAttractions, targetPubs, targetFirstLocation, location, nil
 }
 
 func GetCityCoordinates(w http.ResponseWriter, r *http.Request) {
@@ -239,7 +247,7 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Content-Type", "application/json")
 
-	targetAttractions, targetPubs, location, err := extractURLParams(r)
+	targetAttractions, targetPubs, targetFirstLocation, location, err := extractURLParams(r)
 	if err != nil {
 		fmt.Println("Error extracting URL params", err)
 		json.NewEncoder(w).Encode(emptyResponse)
@@ -264,7 +272,7 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(emptyResponse)
 	}
 
-	eligiblePaths := generateRoute(enrichedData, targetPubs, targetAttractions, D, R)
+	eligiblePaths := generateRoute(enrichedData, targetPubs, targetAttractions, targetFirstLocation, D, R)
 	fmt.Println("Generated paths: ", eligiblePaths)
 
 	if len(eligiblePaths) == 0 {
@@ -282,9 +290,16 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func generateRoute(enrichedData []Location, targetPubs int, targetAttractions int, D DistanceMatrix, R RoutesMatrix) [][]int {
+func generateRoute(enrichedData []Location, targetPubs int, targetAttractions int, targetFirstPub int, D DistanceMatrix, R RoutesMatrix) [][]int {
 	size := len(enrichedData)
 	eligiblePaths, distances := getEligiblePaths(size, targetPubs, targetAttractions, D, enrichedData)
+
+	if targetFirstPub != -1 {
+		eligiblePaths = filterPathsLocations(eligiblePaths, enrichedData, func(e []int, f []Location) bool {
+			return CheckFirstLocation(e, enrichedData, targetFirstPub)
+		})
+	}
+
 	eligiblePaths = filterPaths(eligiblePaths, func(e []int) bool {
 		return !CheckOverlap(e, R)
 	})
@@ -342,6 +357,16 @@ func filterPaths(paths [][]int, condition func([]int) bool) [][]int {
 	var result [][]int
 	for _, path := range paths {
 		if condition(path) {
+			result = append(result, path)
+		}
+	}
+	return result
+}
+
+func filterPathsLocations(paths [][]int, enrichedData []Location, condition func([]int, []Location) bool) [][]int {
+	var result [][]int
+	for _, path := range paths {
+		if condition(path, enrichedData) {
 			result = append(result, path)
 		}
 	}

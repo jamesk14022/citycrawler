@@ -23,6 +23,8 @@ import {
   sidebar,
   sidebarToggle,
   closeBtn,
+  selectStart,
+  selectEnd,
 } from "./constants.js";
 import { containsObject, copy, updateURL, convertToGeoJSON } from "./utils.js";
 
@@ -30,8 +32,9 @@ import { containsObject, copy, updateURL, convertToGeoJSON } from "./utils.js";
 mapboxgl.accessToken = MAPBOX_TOKEN;
 
 // appplication state
-let currentLocation = "Dublin";
+let currentLocation = "dublin";
 let currentMarkers = [];
+let selectedFirstLocation = "";
 let selectedPubs = 3;
 let selectedAttractions = 1;
 let currentCityPoints = [];
@@ -267,10 +270,6 @@ async function addAlternativeBarMarkers(route_points) {
 }
 
 function populateBarStartBarEnd() {
-
-  const selectStart = document.getElementById("pointStart");
-  const selectEnd = document.getElementById("pointEnd");
-
   currentCityPoints.map( (waypoint, i) => {
       let optStart = document.createElement("option");
       optStart.value = i; 
@@ -280,6 +279,8 @@ function populateBarStartBarEnd() {
       const optEnd = optStart.cloneNode(true); 
       selectEnd.appendChild(optEnd);
   });
+  // reset state when repopulating
+  selectedFirstLocation = "";
 }
 
 function renderBarInformationBox(waypoint, index) {
@@ -379,7 +380,7 @@ function pageStart() {
       markers.push(urlParams.get(`marker${i}`));
     }
 
-    currentLocation = location;
+    currentLocation = location.toLowerCase();
 
     map.on("load", function () {
       fetch(`${BASE_URL}/crawl?location=${currentLocation}`, {
@@ -476,9 +477,12 @@ function buildMap() {
   showLoading();
   addLocations();
 
-  fetch(
-    `${BASE_URL}/pubs?target_pubs=${selectedPubs}&target_attractions=${selectedAttractions}&location=${currentLocation}`,
-  )
+  let url = `${BASE_URL}/pubs?target_pubs=${selectedPubs}&target_attractions=${selectedAttractions}&location=${currentLocation}`
+
+  if (selectedFirstLocation) {
+    url += `&target_first_location=${selectedFirstLocation}`
+  }
+  fetch(url)
     .then((response) => response.json())
     .then((waypoints) => {
       console.log(waypoints);
@@ -487,6 +491,9 @@ function buildMap() {
   updateRouteMetrics();
 }
 
+selectStart.addEventListener("change", (event) => {
+    selectedFirstLocation = event.target.value; // Update state
+});
 refreshButton.addEventListener("click", buildMap);
 modalExitButton.addEventListener("click", toggleNoPubsResults);
 searchBox.addEventListener("keypress", (e) => {
