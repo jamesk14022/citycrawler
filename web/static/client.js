@@ -217,8 +217,8 @@ function addAlternativeBarMarkers(route_points) {
             route_points.map((x) => x.place_id),
           ),
       );
-      let convertedGEOJSON = convertToGeoJSON(waypoints);
-      map.addSource("places", convertedGEOJSON);
+      console.log("waypoints from citypoints", waypoints);  
+      map.addSource("places", convertToGeoJSON(waypoints));
       map.addLayer({
         id: "places",
         type: "circle",

@@ -7646,6 +7646,82 @@
             }
           }
         }
+      ],
+      [
+        {
+          "place_id": "ChIJOe_6vZsOZ0gRZivVj7LCvic",
+          "name": "The Duke Dublin",
+          "price_level": 2,
+          "rating": 4.4,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3419569,
+              "lng": -6.2586996
+            }
+          }
+        },
+        {
+          "place_id": "ChIJBbfZcZsOZ0gRm1Q7jsO-MFk",
+          "name": "O'Donoghue's Bar",
+          "price_level": 2,
+          "rating": 4.4,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3434618,
+              "lng": -6.259688799999999
+            }
+          }
+        },
+        {
+          "place_id": "ChIJtaDa5pwOZ0gRGE1TdBU_Y64",
+          "name": "The Dame Tavern",
+          "price_level": 2,
+          "rating": 4.6,
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.3438308,
+              "lng": -6.2638646
+            }
+          }
+        },
+        {
+          "place_id": "ChIJOWcR1pwOZ0gROrdJKmjDYng",
+          "name": "The Irish Rock 'n' Roll Museum Experience",
+          "price_level": 0,
+          "rating": 4.6,
+          "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+          ],
+          "Geometry": {
+            "Location": {
+              "lat": 53.34492600000001,
+              "lng": -6.264431800000001
+            }
+          }
+        }
       ]
     ]
   },
