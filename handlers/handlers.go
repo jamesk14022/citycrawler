@@ -4,24 +4,21 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"io/ioutil"
 	"log"
 	"math/rand"
 	"net/http"
 	"os"
 	"strconv"
 	"strings"
-	"sync"
 
-	"github.com/jamesk14022/barcrawler/types"
+	. "github.com/jamesk14022/barcrawler/cache"
 	. "github.com/jamesk14022/barcrawler/types"
 	"github.com/jamesk14022/barcrawler/utils"
 )
 
-const CacheSize = 5
+const MaxReturnPaths = 17099886
 
 var locationDataDir = os.Getenv("LOCATION_DATA_DIR")
-var cacheDataPath = os.Getenv("CACHE_DATA_PATH")
 
 var markerSettings = map[int]map[string]float64{
 	3: {
@@ -47,96 +44,6 @@ var markerSettings = map[int]map[string]float64{
 }
 
 var emptyResponse = make([]Location, 0)
-var cache sync.Map
-
-func ReadCacheJSONFile(filename string) ([]byte, error) {
-	file, err := os.Open(filename)
-	if err != nil {
-		return nil, err
-	}
-	defer file.Close()
-
-	return ioutil.ReadAll(file)
-}
-
-func UnmarshalCacheJSONToMap(data []byte) (map[string]types.CacheItem, error) {
-	var result map[string]types.CacheItem
-	err := json.Unmarshal(data, &result)
-	return result, err
-}
-
-func PopulateCacheSyncMap(source map[string]types.CacheItem) {
-	for key, value := range source {
-		cache.Store(key, value)
-	}
-}
-
-func InitCache() {
-
-	jsonData, err := ReadCacheJSONFile(cacheDataPath)
-	if err != nil {
-		fmt.Println("Error reading JSON file:", err)
-		return
-	}
-
-	// Step 2: Unmarshal the JSON data to a standard map
-	standardMap, err := UnmarshalCacheJSONToMap(jsonData)
-	if err != nil {
-		fmt.Println("Error unmarshaling JSON:", err)
-		return
-	}
-
-	// Step 3: Populate the sync.Map with the data from the standard map
-	PopulateCacheSyncMap(standardMap)
-}
-
-func generateKey(location string, markers int, attractions int) string {
-	return location + "_" + strconv.Itoa(markers) + "_" + strconv.Itoa(attractions)
-}
-
-func saveCache() {
-
-	// Step 2: Convert sync.Map to a Standard Map
-	standardMap := make(map[string]interface{})
-	cache.Range(func(key, value interface{}) bool {
-		standardMap[key.(string)] = value
-		return true
-	})
-
-	// Step 3: Marshal the Standard Map
-	jsonData, err := json.MarshalIndent(standardMap, "", "  ")
-	if err != nil {
-		fmt.Println("Error marshaling JSON:", err)
-		return
-	}
-
-	// Step 4: Write JSON to a File
-	file, err := os.Create(cacheDataPath)
-	if err != nil {
-		fmt.Println("Error creating file:", err)
-		return
-	}
-	defer file.Close()
-
-	_, err = file.Write(jsonData)
-	if err != nil {
-		fmt.Println("Error writing JSON to file:", err)
-		return
-	}
-
-	fmt.Println("JSON data successfully written to ", cacheDataPath)
-}
-
-func addToCache(key string, value []Location) {
-	item, ok := cache.Load(key)
-	if !ok {
-		cache.Store(key, CacheItem{Values: [][]Location{value}})
-		return
-	}
-	cacheItem := item.(CacheItem)
-	cacheItem.Values = append(cacheItem.Values, value)
-	cache.Store(key, cacheItem)
-}
 
 func checkAvailableLocations() map[string][2]float64 {
 
@@ -266,7 +173,7 @@ func GetEligiblePaths(size int, target_pubs int, target_attractions int, D Dista
 
 	var dfs func(node, depth int, currentDist float64)
 	dfs = func(node, depth int, currentDist float64) {
-		if len(eligiblePaths) >= 17099886 {
+		if len(eligiblePaths) >= MaxReturnPaths {
 			return
 		}
 		if depth == total_length {
@@ -337,9 +244,9 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(emptyResponse)
 	}
 
-	key := generateKey(location, targetPubs, targetAttractions)
+	key := GenerateKey(location, targetPubs, targetAttractions)
 
-	item, ok := cache.Load(key)
+	item, ok := RouteCache.Load(key)
 	if ok {
 		cacheItem := item.(CacheItem)
 		if len(cacheItem.Values) >= CacheSize {
@@ -356,6 +263,24 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(emptyResponse)
 	}
 
+	eligiblePaths := generateRoute(enrichedData, targetPubs, targetAttractions, D, R)
+
+	if len(eligiblePaths) == 0 {
+		json.NewEncoder(w).Encode(emptyResponse)
+	} else {
+		path := eligiblePaths[rand.Intn(len(eligiblePaths))]
+		var selectedLocations = make([]Location, len(path))
+
+		for i, p := range path {
+			selectedLocations[i] = enrichedData[p]
+		}
+		AddToCache(key, selectedLocations)
+		SaveCache()
+		json.NewEncoder(w).Encode(selectedLocations)
+	}
+}
+
+func generateRoute(enrichedData []Location, targetPubs int, targetAttractions int, D DistanceMatrix, R RoutesMatrix) [][]int {
 	size := len(enrichedData)
 	eligiblePaths, distances := GetEligiblePaths(size, targetPubs, targetAttractions, D, enrichedData)
 	eligiblePaths = FilterPaths(eligiblePaths, func(e []int) bool {
@@ -368,29 +293,12 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 		return EqualLengthMeetConstraint(e, f, D, markerSettings[targetPubs+targetAttractions]["alpha"])
 	})
 
-	if len(eligiblePaths) == 0 {
-		json.NewEncoder(w).Encode(emptyResponse)
-	} else {
-		path := eligiblePaths[rand.Intn(len(eligiblePaths))]
-		var selectedLocations = make([]Location, len(path))
-
-		for i, p := range path {
-			selectedLocations[i] = enrichedData[p]
-		}
-		for i := 0; i < len(selectedLocations)-1; i++ {
-			fmt.Println("Path:", i, "Dist:", D[path[i]][path[i+1]])
-		}
-		fmt.Println("Cache miss: ", key, selectedLocations)
-		addToCache(key, selectedLocations)
-		saveCache()
-		json.NewEncoder(w).Encode(selectedLocations)
-	}
+	return eligiblePaths
 }
 
 func PostCrawl(w http.ResponseWriter, r *http.Request) {
-
-	location := strings.ToLower((r.URL.Query().Get("location")))
 	var ids PlaceIDs
+	location := strings.ToLower((r.URL.Query().Get("location")))
 	err := json.NewDecoder(r.Body).Decode(&ids)
 	if err != nil {
 		fmt.Println("Error parsing markers")
