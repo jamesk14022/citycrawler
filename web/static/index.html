@@ -216,6 +216,9 @@
           width: 90%;
         }
       }
+      .bar-select{
+        width: 200px;
+      }
       .listing-group {
         font:
           15px/20px "Helvetica Neue",
@@ -499,6 +502,20 @@
             list="locations"
             placeholder="Search location..."
           />
+
+          <div class="marker-container top-bar">
+            <label for="pointStart">Starting Point:</label>
+            <select class="bar-select" id="pointStart">
+              <option value="" disabled selected>-- Please select an option --</option>
+            </select>
+          </div>
+
+          <div class="marker-container top-bar">
+            <label for="pointEnd">Finishing Point:</label>
+            <select class="bar-select" id="pointEnd">
+              <option value="" disabled selected>-- Please select an option --</option>
+            </select>
+          </div>
 
           <div class="marker-container top-bar">
             <label for="distance-slider">Pubs:</label>

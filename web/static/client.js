@@ -34,6 +34,7 @@ let currentLocation = "Dublin";
 let currentMarkers = [];
 let selectedPubs = 3;
 let selectedAttractions = 1;
+let currentCityPoints = [];
 let cityPoints = {};
 
 shareButton.addEventListener("click", copyLink);
@@ -201,7 +202,7 @@ function renderRouteMarker(waypoint, index) {
   currentMarkers.push(m);
 }
 
-function addAlternativeBarMarkers(route_points) {
+async function addAlternativeBarMarkers(route_points) {
   fetch(`${BASE_URL}/citypoints?location=${currentLocation}`, {
     method: "GET",
     headers: {
@@ -217,7 +218,8 @@ function addAlternativeBarMarkers(route_points) {
             route_points.map((x) => x.place_id),
           ),
       );
-      console.log("waypoints from citypoints", waypoints);  
+      currentCityPoints = waypoints;
+      populateBarStartBarEnd();
       map.addSource("places", convertToGeoJSON(waypoints));
       map.addLayer({
         id: "places",
@@ -262,6 +264,22 @@ function addAlternativeBarMarkers(route_points) {
     .catch((error) => {
       console.error("Error:", error);
     });
+}
+
+function populateBarStartBarEnd() {
+
+  const selectStart = document.getElementById("pointStart");
+  const selectEnd = document.getElementById("pointEnd");
+
+  currentCityPoints.map( (waypoint, i) => {
+      let optStart = document.createElement("option");
+      optStart.value = i; 
+      optStart.innerHTML = waypoint.name;
+      selectStart.append(optStart);
+
+      const optEnd = optStart.cloneNode(true); 
+      selectEnd.appendChild(optEnd);
+  });
 }
 
 function renderBarInformationBox(waypoint, index) {
