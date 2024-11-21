@@ -26,6 +26,7 @@ import {
   selectStart,
 } from "./constants.js";
 import { containsObject, copy, updateURL, convertToGeoJSON } from "./utils.js";
+import { getCityPoints, postCrawl, getCities, getPubs } from "./api.js";
 
 // token scoped and safe for FE use
 mapboxgl.accessToken = MAPBOX_TOKEN;
@@ -205,13 +206,8 @@ function renderRouteMarker(waypoint, index) {
 }
 
 async function addAlternativeBarMarkers(route_points) {
-  fetch(`${BASE_URL}/citypoints?location=${currentLocation}`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then((response) => response.json())
+
+    getCityPoints(currentLocation)
     .then((waypoints) => {
       waypoints = waypoints.filter(
         (waypoint) =>
@@ -354,7 +350,7 @@ function registerRoute(waypoints) {
 function parse URLParams() {
   const urlParams = new URLSearchParams(window.location.search);
 
-   
+
 
 function pageStart() {
   showLoading();
@@ -386,14 +382,7 @@ function pageStart() {
     currentLocation = location.toLowerCase();
 
     map.on("load", function () {
-      fetch(`${BASE_URL}/crawl?location=${currentLocation}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ place_ids: markers.filter((n) => n) }),
-      })
-        .then((response) => response.json())
+     postCrawl(currentLocation, markers) 
         .then((waypoints) => {
           selectedPubs = targetPubs;
           updateRouteMetrics();
@@ -458,10 +447,7 @@ function toggleNoCitiesResults() {
 
 function addLocations() {
   dataList.innerHTML = "";
-  fetch(
-    `${BASE_URL}/cities`,
-  )
-    .then((response) => response.json())
+  getCities()
     .then((cities) => {
 
       cityPoints = cities;
@@ -479,14 +465,7 @@ function buildMap() {
   clearExistingRoute();
   showLoading();
   addLocations();
-
-  let url = `${BASE_URL}/pubs?target_pubs=${selectedPubs}&target_attractions=${selectedAttractions}&location=${currentLocation}`
-
-  if (selectedFirstLocation) {
-    url += `&target_first_location=${selectedFirstLocation}`
-  }
-  fetch(url)
-    .then((response) => response.json())
+  getPubs(selectedPubs, selectedAttractions, currentLocation, selectedFirstLocation)
     .then((waypoints) => {
       renderRoute(waypoints);
     });

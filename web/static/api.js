@@ -1,7 +1,6 @@
+import { BASE_URL } from './constants';
 
-
-
-export async function getPubs(BASE_URL, selectedPubs, selectedAttractions, currentLocation, selectedFirstLocation) {
+export async function getPubs(selectedPubs, selectedAttractions, currentLocation, selectedFirstLocation) {
     let url = `${BASE_URL}/pubs?target_pubs=${selectedPubs}&target_attractions=${selectedAttractions}&location=${currentLocation}`
     if (selectedFirstLocation) {
         url += `&target_first_location=${selectedFirstLocation}`
@@ -15,7 +14,7 @@ export async function getPubs(BASE_URL, selectedPubs, selectedAttractions, curre
     }
 }
 
-export async function getCities(BASE_URL) { 
+export async function getCities() { 
     try {
         const data = await fetchData(`${BASE_URL}/cities`);
         console.log('GET Data:', data);
@@ -25,7 +24,7 @@ export async function getCities(BASE_URL) {
     }
 }
 
-export async function postCrawl(BASE_URL, currentLocation, markers) {
+export async function postCrawl(currentLocation, markers) {
     try {
         const data = await fetchData(`${BASE_URL}/crawl?location=${currentLocation}`, 'POST', { place_ids: markers.filter((n) => n) });
         console.log('POST Data:', data);
@@ -35,7 +34,7 @@ export async function postCrawl(BASE_URL, currentLocation, markers) {
     }
 }
 
-export async function getCityPoints(BASE_URL, currentLocation) {
+export async function getCityPoints(currentLocation) {
     try {
         const data = await fetchData(`${BASE_URL}/citypoints?location=${currentLocation}`);
         console.log('GET Data:', data);
