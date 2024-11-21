@@ -25,8 +25,8 @@ const rightBar = document.getElementById("rightBar");
 const nav = document.getElementById("listing-group");
 const dataList = document.getElementById("locations");
 
-const markerMinus = document.querySelectorAll(".marker-quantity-btn-minus");
-const markerPlus = document.querySelectorAll(".marker-quantity-btn-plus");
+const pubMinus = document.querySelectorAll(".marker-quantity-btn-minus");
+const pubPlus = document.querySelectorAll(".marker-quantity-btn-plus");
 
 const attractionMinus = document.querySelectorAll(
   ".attraction-quantity-btn-minus",
@@ -60,8 +60,8 @@ export {
   rightBar,
   nav,
   dataList,
-  markerMinus,
-  markerPlus,
+  pubMinus,
+  pubPlus,
   attractionMinus,
   attractionPlus,
   attractionCounter,

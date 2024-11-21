@@ -1,32 +1,15 @@
-import {
-  TIME_SPENT_BAR,
-  MAPBOX_TOKEN,
-  BASE_URL,
-  GOOGLE_MAP_BASE_URL,
-  INITIAL_LOCATION,
-  container,
-  refreshButton,
-  shareButton,
-  searchBox,
-  modalExitButton,
-  noPubsConent,
-  cityNotFound,
-  rightBar,
-  nav,
-  dataList,
-  markerMinus,
-  markerPlus,
-  attractionMinus,
-  attractionPlus,
-  attractionCounter,
-  markerCounter,
-  sidebar,
-  sidebarToggle,
-  closeBtn,
-  selectStart,
-} from "./constants.js";
-import { containsObject, copy, updateURL, convertToGeoJSON } from "./utils.js";
+import { TIME_SPENT_BAR, MAPBOX_TOKEN } from "./constants.js";
+import { containsObject, copy, updateURL } from "./utils.js";
 import { getCityPoints, postCrawl, getCities, getPubs } from "./api.js";
+import {
+  clearBarInformationBox,
+  clearCityList,
+  populateCityList,
+  setRouteLength,
+  setShareButtonCopied,
+  setupSelectStartEvent,
+} from "./ui.js";
+import { flyToLocation, renderAlternativeAttractionMarkers } from "./map.js";
 
 // token scoped and safe for FE use
 mapboxgl.accessToken = MAPBOX_TOKEN;
@@ -40,169 +23,70 @@ let selectedAttractions = 1;
 let currentCityPoints = [];
 let cityPoints = {};
 
-shareButton.addEventListener("click", copyLink);
+setupShareButtonEvents(() => {
+  copyShareLink();
+});
 
-markerMinus.forEach((btn) => {
-  btn.addEventListener("click", () => {
+setupPubPlusMinusEvents(
+  () => {
     if (selectedPubs === 2) {
       return;
     }
     selectedPubs -= 1;
     setMarkersDisplay(selectedPubs);
-  });
-});
-
-markerPlus.forEach((btn) => {
-  btn.addEventListener("click", () => {
+  },
+  () => {
     if (selectedPubs === 8) {
       return;
     }
     selectedPubs += parseInt(1);
     setMarkersDisplay(selectedPubs);
-  });
-});
+  },
+);
 
-attractionMinus.forEach((btn) => {
-  btn.addEventListener("click", () => {
+setupAttractionPlusMinusEvents(
+  () => {
     if (selectedAttractions === 1.0) {
       return;
     }
     selectedAttractions -= 1;
     setAttractionDisplay(selectedAttractions);
-  });
-});
-
-attractionPlus.forEach((btn) => {
-  btn.addEventListener("click", () => {
+  },
+  () => {
     if (selectedAttractions === 4) {
       return;
     }
     selectedAttractions += 1;
     setAttractionDisplay(selectedAttractions);
-  });
-});
-
-// Update the distance value display
-const map = new mapboxgl.Map({
-  container: "map",
-  style: "mapbox://styles/mapbox/streets-v11",
-  center: INITIAL_LOCATION,
-  zoom: 12,
-});
-
-const directions = new MapboxDirections({
-  accessToken: mapboxgl.accessToken,
-  unit: "metric",
-  profile: "mapbox/walking",
-});
-
-directions.on("route", (e) => {
-  console.log(e.route);
-  updateRouteMetrics(e.route);
-});
-
-map.addControl(directions, "top-left");
-
-const openSidebar = () => (sidebar.style.width = "400px");
-const closeSidebar = () => (sidebar.style.width = "0");
-sidebarToggle.addEventListener("click", openSidebar);
-closeBtn.addEventListener("click", closeSidebar);
-
-// Close sidebar when clicking outside of it
-document.addEventListener("click", function (event) {
-  if (!sidebar.contains(event.target) && event.target !== sidebarToggle) {
-    closeSidebar();
-  }
-});
-
-const setAttractionDisplay = (attractions) => {
-  attractionCounter.forEach((element) => {
-    element.textContent = parseFloat(attractions);
-  });
-};
-
-const setMarkersDisplay = (markers) => {
-  markerCounter.forEach((element) => {
-    element.textContent = markers;
-  });
-};
+  },
+);
 
 const clearExistingRoute = () => {
-  directions.removeRoutes();
-  nav.innerHTML = "";
+  clearBarInformationBox();
+  removeAlternativeAttractionMarkers();
   if (currentMarkers !== null) {
     for (let i = currentMarkers.length - 1; i >= 0; i--) {
       currentMarkers[i].remove();
     }
     currentMarkers = [];
   }
-
-  if (map.getSource("places")) {
-    map.removeLayer("places");
-    map.removeSource("places");
-  }
 };
 
-function showLoading() {
-  document.querySelector(".loading-spinner").style.display = "block";
-  document.querySelector(".loading-overlay").style.display = "block";
-  container.classList.add("blurred");
-}
-
-const hideRightBar = () => (rightBar.style.display = "none");
-const showRightBar = () => (rightBar.style.display = "block");
-
-function hideLoading() {
-  document.querySelector(".loading-spinner").style.display = "none";
-  document.querySelector(".loading-overlay").style.display = "none";
-  container.classList.remove("blurred");
-}
-
-function copyLink() {
+function copyShareLink() {
   // Get the current URL
   let url = window.location.href;
-
   // Copy the URL to the clipboard
   copy(url);
-  // Change the button text to "Copied ✔️"
-  shareButton.textContent = "Copied ✔️";
-  shareButton.classList.add("copied");
-
-  // Revert the button text after 2 seconds
-  setTimeout(function () {
-    shareButton.textContent = "Share Link";
-    shareButton.classList.remove("copied");
-  }, 2000);
+  setShareButtonCopied();
 }
 
 function updateRouteMetrics(e) {
   if (e !== undefined) {
-    const routeLengthElement = document.getElementById("route-length");
-    routeLengthElement.textContent = (e[0].distance / 1000).toFixed(2);
-
-    const routeDurationElement = document.getElementById("route-duration");
-    routeDurationElement.textContent = parseInt(
-      e[0].duration / 60 + selectedPubs * TIME_SPENT_BAR,
+    setRouteLength((e[0].distance / 1000).toFixed(2));
+    setRouteDuration(
+      parseInt(e[0].duration / 60 + selectedPubs * TIME_SPENT_BAR),
     );
   }
-}
-
-function renderRouteMarker(waypoint, index) {
-  // Create a custom marker element
-  const el = document.createElement("div");
-  el.className = "custom-marker";
-  el.textContent = String.fromCharCode(65 + index); // Labels A, B, C, etc.
-
-  // Create the marker
-  let m = new mapboxgl.Marker(el);
-  m.setLngLat([waypoint.Geometry.Location.lng, waypoint.Geometry.Location.lat])
-    .addTo(map)
-    .getElement()
-    .addEventListener("click", () => {
-      displayInfo(index);
-    });
-
-  currentMarkers.push(m);
 }
 
 async function addAlternativeBarMarkers(route_points) {
@@ -216,139 +100,18 @@ async function addAlternativeBarMarkers(route_points) {
           ),
       );
       currentCityPoints = waypoints;
-      populateBarStart();
-      map.addSource("places", convertToGeoJSON(waypoints));
-      map.addLayer({
-        id: "places",
-        type: "circle",
-        source: "places",
-        paint: {
-          "circle-color": "#4264fb",
-          "circle-radius": 6,
-          "circle-stroke-width": 2,
-          "circle-stroke-color": "#ffffff",
-        },
-      });
-
-      const popup = new mapboxgl.Popup({
-        closeButton: false,
-        closeOnClick: false,
-      });
-
-      map.on("mouseenter", "places", (e) => {
-        // Change the cursor style as a UI indicator.
-        map.getCanvas().style.cursor = "pointer";
-
-        // Copy coordinates array.
-        const coordinates = e.features[0].geometry.coordinates.slice();
-        // description to name for now
-        const description = e.features[0].properties.name;
-
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        // Populate the popup and set its coordinates
-        // based on the feature found.
-        popup.setLngLat(coordinates).setHTML(description).addTo(map);
-      });
-
-      map.on("mouseleave", "places", () => {
-        map.getCanvas().style.cursor = "";
-        popup.remove();
-      });
+      populateBarStart(currentCityPoints);
+      renderAlternativeAttractionMarkers(waypoints);
+      setupRenderAlternativeAttractionMarkesPopup();
     })
     .catch((error) => {
       console.error("Error:", error);
     });
 }
 
-function populateBarStart() {
-  selectedFirstLocation = "";
-  selectStart.innerHTML = "";
-  selectStart.innerHTML =
-    "<option value='' disabled selected>-- Please select an option --</option>";
-  currentCityPoints.map((waypoint, i) => {
-    let optStart = document.createElement("option");
-    optStart.value = i;
-    optStart.innerHTML = waypoint.name;
-    selectStart.append(optStart);
-  });
-}
-
-function renderBarInformationBox(waypoint, index) {
-  console.log(waypoint);
-
-  const input = document.createElement("input");
-  input.type = "button";
-  input.id = `marker-${index}`;
-  input.onclick = () => {
-    let url = `${GOOGLE_MAP_BASE_URL}/?api=1&query=${waypoint.Geometry.Location.lat},${waypoint.Geometry.Location.lng}&query_place_id=${waypoint.place_id}`;
-    window.open(url, "_blank").focus();
-  };
-  const label = document.createElement("label");
-  label.htmlFor = `marker-${index}`;
-  label.classList.add("marker-label");
-  label.innerHTML = `<strong>Point ${String.fromCharCode(
-    65 + index,
-  )}</strong><br>${waypoint.name}`;
-
-  if (waypoint.types.includes("tourist_attraction")) {
-    label.innerHTML = "🎡 " + label.innerHTML;
-  } else {
-    label.innerHTML = "🍺 " + label.innerHTML;
-  }
-
-  const ratingDiv = document.createElement("div");
-  for (let i = 0; i < parseFloat(waypoint.rating); i++) {
-    const starSpan = document.createElement("span");
-    starSpan.innerHTML = "&#9733;";
-    ratingDiv.appendChild(starSpan);
-  }
-
-  if (waypoint.rating != 0 && waypoint.price_level != 0) {
-    const splitSpan = document.createElement("span");
-    splitSpan.innerHTML = " | ";
-    ratingDiv.appendChild(splitSpan);
-  }
-
-  for (let i = 0; i < parseInt(waypoint.price_level); i++) {
-    const dollarSpan = document.createElement("span");
-    dollarSpan.innerHTML = "$";
-    ratingDiv.appendChild(dollarSpan);
-  }
-
-  label.innerHTML += "<br>";
-  label.innerHTML += ratingDiv.innerHTML;
-
-  nav.appendChild(input);
-  nav.appendChild(label);
-}
-
-function registerRoute(waypoints) {
-  console.log(directions);
-  directions.setOrigin([
-    waypoints[0].Geometry.Location.lng,
-    waypoints[0].Geometry.Location.lat,
-  ]);
-
-  directions.setDestination([
-    waypoints[waypoints.length - 1].Geometry.Location.lng,
-    waypoints[waypoints.length - 1].Geometry.Location.lat,
-  ]);
-
-  // Add the middle waypoints
-  waypoints.slice(1, -1).forEach((waypoint_mid, index) => {
-    directions.addWaypoint(index, [
-      waypoint_mid.Geometry.Location.lng,
-      waypoint_mid.Geometry.Location.lat,
-    ]);
-  });
-}
-
 function pageStart() {
   showLoading();
-  addLocations();
+  addCityLocations();
 
   setAttractionDisplay(selectedAttractions);
   setMarkersDisplay(selectedPubs);
@@ -398,7 +161,8 @@ function renderRoute(waypoints) {
   clearExistingRoute();
 
   waypoints.forEach((waypoint, index) => {
-    renderRouteMarker(waypoint, index);
+    m = renderRouteMarker(waypoint, index);
+    currentMarkers.push(m);
     renderBarInformationBox(waypoint, index);
   });
 
@@ -407,7 +171,7 @@ function renderRoute(waypoints) {
   hideLoading();
 
   if (waypoints.length !== 0) {
-    registerRoute(waypoints);
+    renderMapRoute(waypoints);
 
     updateURL(
       currentLocation,
@@ -421,34 +185,11 @@ function renderRoute(waypoints) {
   }
 }
 
-function toggleNoPubsResults() {
-  const modal = document.querySelector(".modal");
-  modal.classList.toggle("hidden");
-
-  noPubsConent.style.display = "block";
-  cityNotFound.style.display = "none";
-
-  hideRightBar();
-}
-
-function toggleNoCitiesResults() {
-  const modal = document.querySelector(".modal");
-  modal.classList.toggle("hidden");
-
-  noPubsConent.style.display = "none";
-  cityNotFound.style.display = "block";
-}
-
-function addLocations() {
-  dataList.innerHTML = "";
+function addCityLocations() {
+  clearCityList();
   getCities().then((cities) => {
     cityPoints = cities;
-
-    for (const city in cities) {
-      const option = document.createElement("option");
-      option.value = city;
-      dataList.appendChild(option);
-    }
+    populateCityList(cityPoints);
   });
   updateRouteMetrics();
 }
@@ -456,7 +197,7 @@ function addLocations() {
 function buildMap() {
   clearExistingRoute();
   showLoading();
-  addLocations();
+  addCityLocations();
   getPubs(
     selectedPubs,
     selectedAttractions,
@@ -468,37 +209,39 @@ function buildMap() {
   updateRouteMetrics();
 }
 
-selectStart.addEventListener("change", (event) => {
-  console.log(event.target);
+setupSelectStartEvent((event) => {
   selectedFirstLocation = event.target.options[event.target.selectedIndex].text;
 });
-refreshButton.addEventListener("click", buildMap);
-modalExitButton.addEventListener("click", toggleNoPubsResults);
-searchBox.addEventListener("keypress", (e) => {
-  let inputVal = e.target.value;
-  if (inputVal in cityPoints) {
-    map.flyTo({
-      center: cityPoints[inputVal],
-      zoom: 12,
-    });
-    currentLocation = inputVal;
-    buildMap();
-  } else {
-    if (e.code === "Enter") {
-      toggleNoCitiesResults();
+
+setupRefreshButtonEvents(() => {
+  buildMap();
+});
+
+setupModalExitButtonEvents(() => {
+  toggleNoPubsResults();
+});
+
+setupSearchBoxEvents(
+  (e) => {
+    let inputVal = e.target.value;
+    if (inputVal in cityPoints) {
+      flyToLocation(cityPoints[inputVal]);
+      currentLocation = inputVal;
+      buildMap();
+    } else {
+      if (e.code === "Enter") {
+        toggleNoCitiesResults();
+      }
     }
-  }
-});
-searchBox.addEventListener("input", (e) => {
-  let inputVal = e.target.value;
-  if (inputVal in cityPoints) {
-    map.flyTo({
-      center: cityPoints[inputVal],
-      zoom: 12,
-    });
-    currentLocation = inputVal;
-    buildMap();
-  }
-});
+  },
+  (e) => {
+    let inputVal = e.target.value;
+    if (inputVal in cityPoints) {
+      flyToLocation(cityPoints[inputVal]);
+      currentLocation = inputVal;
+      buildMap();
+    }
+  },
+);
 
 window.onload = pageStart;
