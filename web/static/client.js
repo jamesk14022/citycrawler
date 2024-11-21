@@ -351,6 +351,11 @@ function registerRoute(waypoints) {
   });
 }
 
+function parse URLParams() {
+  const urlParams = new URLSearchParams(window.location.search);
+
+   
+
 function pageStart() {
   showLoading();
   addLocations();
