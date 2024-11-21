@@ -1,4 +1,4 @@
-import { BASE_URL } from "./constants";
+import { BASE_URL } from "./constants.js";
 
 export async function getPubs(
   selectedPubs,
@@ -11,9 +11,7 @@ export async function getPubs(
     url += `&target_first_location=${selectedFirstLocation}`;
   }
   try {
-    const data = await fetchData(url);
-    console.log("GET Data:", data);
-    return data;
+    return await fetchData(url);
   } catch (error) {
     console.error("Error fetching GET data:", error);
   }
@@ -21,9 +19,7 @@ export async function getPubs(
 
 export async function getCities() {
   try {
-    const data = await fetchData(`${BASE_URL}/cities`);
-    console.log("GET Data:", data);
-    return data;
+    return await fetchData(`${BASE_URL}/cities`);
   } catch (error) {
     console.error("Error fetching GET data:", error);
   }
@@ -31,13 +27,11 @@ export async function getCities() {
 
 export async function postCrawl(currentLocation, markers) {
   try {
-    const data = await fetchData(
+    return await fetchData(
       `${BASE_URL}/crawl?location=${currentLocation}`,
       "POST",
       { place_ids: markers.filter((n) => n) },
     );
-    console.log("POST Data:", data);
-    return data;
   } catch (error) {
     console.error("Error fetching POST data:", error);
   }
@@ -45,11 +39,9 @@ export async function postCrawl(currentLocation, markers) {
 
 export async function getCityPoints(currentLocation) {
   try {
-    const data = await fetchData(
+    return await fetchData(
       `${BASE_URL}/citypoints?location=${currentLocation}`,
     );
-    console.log("GET Data:", data);
-    return data;
   } catch (error) {
     console.error("Error fetching GET data:", error);
   }
