@@ -19,7 +19,9 @@ import {
     sidebarToggle,
     closeBtn,
     selectStart,
-} from "./constants";
+} from "./constants.js";
+
+import { buildGoogleMapsUrl } from "./api.js";
 
 document.addEventListener("click", function (event) {
   if (!sidebar.contains(event.target) && event.target !== sidebarToggle) {
@@ -126,7 +128,6 @@ sidebarToggle.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
 
 export function populateBarStart(currentCityPoints) {
-  selectedFirstLocation = "";
   selectStart.innerHTML = "";
   selectStart.innerHTML =
     "<option value='' disabled selected>-- Please select an option --</option>";

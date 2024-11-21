@@ -8,11 +8,24 @@ import {
   setRouteLength,
   setShareButtonCopied,
   setupSelectStartEvent,
+  setupShareButtonEvents,
+  setupRefreshButtonEvents,
+  setupModalExitButtonEvents,
+  setupSearchBoxEvents,
+  setRouteDuration,
+  setMarkersDisplay,
+  setAttractionDisplay,
+  showRightBar,
+  hideLoading,
+  showLoading,
+  toggleNoPubsResults,
+  toggleNoCitiesResults,
+  setupPubPlusMinusEvents,
+  setupAttractionPlusMinusEvents,
+  populateBarStart,
+  renderBarInformationBox,
 } from "./ui.js";
-import { flyToLocation, renderAlternativeAttractionMarkers } from "./map.js";
-
-// token scoped and safe for FE use
-mapboxgl.accessToken = MAPBOX_TOKEN;
+import { flyToLocation, renderMapRoute, renderAlternativeAttractionMarkers, removeAlternativeAttractionMarkers,   renderRouteMarker, setupRenderAlternativeAttractionMarkersPopup, map } from "./map.js";
 
 // appplication state
 let currentLocation = "dublin";
@@ -100,9 +113,10 @@ async function addAlternativeBarMarkers(route_points) {
           ),
       );
       currentCityPoints = waypoints;
+      selectedFirstLocation = ""
       populateBarStart(currentCityPoints);
       renderAlternativeAttractionMarkers(waypoints);
-      setupRenderAlternativeAttractionMarkesPopup();
+      setupRenderAlternativeAttractionMarkersPopup();
     })
     .catch((error) => {
       console.error("Error:", error);
@@ -161,7 +175,7 @@ function renderRoute(waypoints) {
   clearExistingRoute();
 
   waypoints.forEach((waypoint, index) => {
-    m = renderRouteMarker(waypoint, index);
+    let m = renderRouteMarker(waypoint, index);
     currentMarkers.push(m);
     renderBarInformationBox(waypoint, index);
   });

@@ -1,3 +1,10 @@
+import { INITIAL_LOCATION, MAPBOX_TOKEN, TIME_SPENT_BAR } from "./constants.js";
+import { setRouteLength, setRouteDuration } from "./ui.js";
+import { convertToGeoJSON } from "./utils.js";
+
+// token scoped and safe for FE use
+mapboxgl.accessToken = MAPBOX_TOKEN;
+
 export const map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/streets-v11",
@@ -12,7 +19,12 @@ const directions = new MapboxDirections({
 });
 
 directions.on("route", (e) => {
-  updateRouteMetrics(e.route);
+    console.log(e)
+
+  setRouteLength((e["route"][0].distance / 1000).toFixed(2));
+  setRouteDuration(
+    parseInt(e["route"][0].duration / 60 + (e["route"][0]["legs"].length + 1) * TIME_SPENT_BAR),
+  );
 });
 
 map.addControl(directions, "top-left");
@@ -39,7 +51,7 @@ export function renderAlternativeAttractionMarkers(waypoints) {
   });
 }
 
-export function setupRenderAlternativeAttractionMarkesPopup() {
+export function setupRenderAlternativeAttractionMarkersPopup() {
   const popup = new mapboxgl.Popup({
     closeButton: false,
     closeOnClick: false,
