@@ -1,4 +1,25 @@
-import { dataList } from "./constants";
+import {
+    container,
+    refreshButton,
+    shareButton,
+    searchBox,
+    modalExitButton,
+    noPubsConent,
+    cityNotFound,
+    rightBar,
+    nav,
+    dataList,
+    pubMinus,
+    pubPlus,
+    attractionMinus,
+    attractionPlus,
+    attractionCounter,
+    markerCounter,
+    sidebar,
+    sidebarToggle,
+    closeBtn,
+    selectStart,
+} from "./constants";
 
 document.addEventListener("click", function (event) {
   if (!sidebar.contains(event.target) && event.target !== sidebarToggle) {
@@ -6,13 +27,13 @@ document.addEventListener("click", function (event) {
   }
 });
 
-const setAttractionDisplay = (attractions) => {
+export const setAttractionDisplay = (attractions) => {
   attractionCounter.forEach((element) => {
     element.textContent = parseFloat(attractions);
   });
 };
 
-const setMarkersDisplay = (markers) => {
+export const setMarkersDisplay = (markers) => {
   markerCounter.forEach((element) => {
     element.textContent = markers;
   });
@@ -24,7 +45,7 @@ export function showLoading() {
   container.classList.add("blurred");
 }
 
-export const hideRightBar = () => (rightBar.style.display = "none");
+const hideRightBar = () => (rightBar.style.display = "none");
 export const showRightBar = () => (rightBar.style.display = "block");
 
 export function hideLoading() {
@@ -51,7 +72,7 @@ export function toggleNoCitiesResults() {
   cityNotFound.style.display = "block";
 }
 
-export function setupPubMarkerPlusMinusEvents(onPubMinus, onPubPlus) {
+export function setupPubPlusMinusEvents(onPubMinus, onPubPlus) {
   pubMinus.forEach((btn) => {
     btn.addEventListener("click", () => {
       onPubMinus();
@@ -99,12 +120,12 @@ export function setupSearchBoxEvents(onKeyPress, onInput) {
   searchBox.addEventListener("input", onInput);
 }
 
-export const openSidebar = () => (sidebar.style.width = "400px");
-export const closeSidebar = () => (sidebar.style.width = "0");
+const openSidebar = () => (sidebar.style.width = "400px");
+const closeSidebar = () => (sidebar.style.width = "0");
 sidebarToggle.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
 
-function populateBarStart(currentCityPoints) {
+export function populateBarStart(currentCityPoints) {
   selectedFirstLocation = "";
   selectStart.innerHTML = "";
   selectStart.innerHTML =
