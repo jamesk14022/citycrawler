@@ -5,7 +5,8 @@ const MAPBOX_TOKEN =
   "pk.eyJ1IjoiamFtZXNrMTQwMjIiLCJhIjoiY2x2cnZqZnV5MHdnYTJxcXpkOHUybzdrZCJ9.UVs8BFzWjaZVrz7Gc0_Wpg";
 
 const BASE_URL =
-  window.location.host === "127.0.0.1:8080" || window.location.host === "localhost:8080"
+  window.location.host === "127.0.0.1:8080" ||
+  window.location.host === "localhost:8080"
     ? "http://localhost:8080"
     : "https://pubcrawler.app";
 

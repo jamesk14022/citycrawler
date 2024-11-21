@@ -206,8 +206,7 @@ function renderRouteMarker(waypoint, index) {
 }
 
 async function addAlternativeBarMarkers(route_points) {
-
-    getCityPoints(currentLocation)
+  getCityPoints(currentLocation)
     .then((waypoints) => {
       waypoints = waypoints.filter(
         (waypoint) =>
@@ -265,15 +264,15 @@ async function addAlternativeBarMarkers(route_points) {
 }
 
 function populateBarStart() {
-
   selectedFirstLocation = "";
   selectStart.innerHTML = "";
-  selectStart.innerHTML = "<option value='' disabled selected>-- Please select an option --</option>";
-  currentCityPoints.map( (waypoint, i) => {
-      let optStart = document.createElement("option");
-      optStart.value = i; 
-      optStart.innerHTML = waypoint.name;
-      selectStart.append(optStart);
+  selectStart.innerHTML =
+    "<option value='' disabled selected>-- Please select an option --</option>";
+  currentCityPoints.map((waypoint, i) => {
+    let optStart = document.createElement("option");
+    optStart.value = i;
+    optStart.innerHTML = waypoint.name;
+    selectStart.append(optStart);
   });
 }
 
@@ -347,11 +346,6 @@ function registerRoute(waypoints) {
   });
 }
 
-function parse URLParams() {
-  const urlParams = new URLSearchParams(window.location.search);
-
-
-
 function pageStart() {
   showLoading();
   addLocations();
@@ -382,7 +376,7 @@ function pageStart() {
     currentLocation = location.toLowerCase();
 
     map.on("load", function () {
-     postCrawl(currentLocation, markers) 
+      postCrawl(currentLocation, markers)
         .then((waypoints) => {
           selectedPubs = targetPubs;
           updateRouteMetrics();
@@ -447,17 +441,15 @@ function toggleNoCitiesResults() {
 
 function addLocations() {
   dataList.innerHTML = "";
-  getCities()
-    .then((cities) => {
+  getCities().then((cities) => {
+    cityPoints = cities;
 
-      cityPoints = cities;
-
-      for (const city in cities) {
-        const option = document.createElement("option");
-        option.value = city;
-        dataList.appendChild(option);
-      }
-    });
+    for (const city in cities) {
+      const option = document.createElement("option");
+      option.value = city;
+      dataList.appendChild(option);
+    }
+  });
   updateRouteMetrics();
 }
 
@@ -465,16 +457,20 @@ function buildMap() {
   clearExistingRoute();
   showLoading();
   addLocations();
-  getPubs(selectedPubs, selectedAttractions, currentLocation, selectedFirstLocation)
-    .then((waypoints) => {
-      renderRoute(waypoints);
-    });
+  getPubs(
+    selectedPubs,
+    selectedAttractions,
+    currentLocation,
+    selectedFirstLocation,
+  ).then((waypoints) => {
+    renderRoute(waypoints);
+  });
   updateRouteMetrics();
 }
 
 selectStart.addEventListener("change", (event) => {
-    console.log(event.target)
-    selectedFirstLocation = event.target.options[event.target.selectedIndex].text;
+  console.log(event.target);
+  selectedFirstLocation = event.target.options[event.target.selectedIndex].text;
 });
 refreshButton.addEventListener("click", buildMap);
 modalExitButton.addEventListener("click", toggleNoPubsResults);
