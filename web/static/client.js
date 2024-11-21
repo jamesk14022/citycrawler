@@ -24,7 +24,6 @@ import {
   sidebarToggle,
   closeBtn,
   selectStart,
-  selectEnd,
 } from "./constants.js";
 import { containsObject, copy, updateURL, convertToGeoJSON } from "./utils.js";
 
@@ -270,6 +269,10 @@ async function addAlternativeBarMarkers(route_points) {
 }
 
 function populateBarStart() {
+
+  selectedFirstLocation = "";
+  selectStart.innerHTML = "";
+  selectStart.innerHTML = "<option value='' disabled selected>-- Please select an option --</option>";
   currentCityPoints.map( (waypoint, i) => {
       let optStart = document.createElement("option");
       optStart.value = i; 
@@ -493,7 +496,6 @@ refreshButton.addEventListener("click", buildMap);
 modalExitButton.addEventListener("click", toggleNoPubsResults);
 searchBox.addEventListener("keypress", (e) => {
   let inputVal = e.target.value;
-  selectedFirstLocation = "";
   if (inputVal in cityPoints) {
     map.flyTo({
       center: cityPoints[inputVal],

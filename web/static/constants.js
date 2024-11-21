@@ -42,7 +42,6 @@ const sidebarToggle = document.getElementById("sidebarToggle");
 const closeBtn = sidebar.querySelector(".close-btn");
 
 const selectStart = document.getElementById("pointStart");
-const selectEnd = document.getElementById("pointEnd");
 
 export {
   TIME_SPENT_BAR,
@@ -70,5 +69,4 @@ export {
   sidebarToggle,
   closeBtn,
   selectStart,
-  selectEnd,
 };
