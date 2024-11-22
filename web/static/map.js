@@ -31,6 +31,10 @@ directions.on("route", (e) => {
 
 map.addControl(directions, "top-left");
 
+export function removeExistingRoute(){
+  directions.removeRoutes();
+}
+
 export function removeAlternativeAttractionMarkers() {
   if (map.getSource("places")) {
     map.removeLayer("places");
@@ -91,7 +95,7 @@ export function flyToLocation(location) {
 }
 
 export function renderMapRoute(waypoints) {
-  directions.removeRoutes();
+  removeExistingRoute();
 
   directions.setOrigin([
     waypoints[0].Geometry.Location.lng,

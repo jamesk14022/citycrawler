@@ -32,6 +32,7 @@ import {
   removeAlternativeAttractionMarkers,
   renderRouteMarker,
   setupRenderAlternativeAttractionMarkersPopup,
+  removeExistingRoute,
   map,
 } from "./map.js";
 
@@ -83,6 +84,7 @@ setupAttractionPlusMinusEvents(
 );
 
 const clearExistingRoute = () => {
+  removeExistingRoute();
   clearBarInformationBox();
   removeAlternativeAttractionMarkers();
   if (currentMarkers !== null) {
