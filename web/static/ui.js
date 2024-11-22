@@ -1,24 +1,24 @@
 import {
-    container,
-    refreshButton,
-    shareButton,
-    searchBox,
-    modalExitButton,
-    noPubsConent,
-    cityNotFound,
-    rightBar,
-    nav,
-    dataList,
-    pubMinus,
-    pubPlus,
-    attractionMinus,
-    attractionPlus,
-    attractionCounter,
-    markerCounter,
-    sidebar,
-    sidebarToggle,
-    closeBtn,
-    selectStart,
+  container,
+  refreshButton,
+  shareButton,
+  searchBox,
+  modalExitButton,
+  noPubsConent,
+  cityNotFound,
+  rightBar,
+  nav,
+  dataList,
+  pubMinus,
+  pubPlus,
+  attractionMinus,
+  attractionPlus,
+  attractionCounter,
+  markerCounter,
+  sidebar,
+  sidebarToggle,
+  closeBtn,
+  selectStart,
 } from "./constants.js";
 
 import { buildGoogleMapsUrl } from "./api.js";
@@ -109,7 +109,7 @@ export function setupSelectStartEvent(onSelectStart) {
   selectStart.addEventListener("change", (event) => {
     // selectStart.selectedIndex = selectStart.options[selectStart.selectedIndex].value + 1;
     onSelectStart(event);
-});
+  });
 }
 
 export function setupRefreshButtonEvents(onRefreshButtonClicked) {
@@ -131,8 +131,7 @@ sidebarToggle.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
 
 export function populateBarStart(currentCityPoints) {
-
-    console.log("populating bar start");
+  console.log("populating bar start", currentCityPoints);
 
   selectStart.innerHTML = "";
   selectStart.innerHTML =

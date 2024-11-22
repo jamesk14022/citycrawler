@@ -42,6 +42,7 @@ export async function postCrawl(currentLocation, markers) {
 }
 
 export async function getCityPoints(currentLocation) {
+  console.log("getCityPoints", currentLocation);
   try {
     return await fetchData(
       `${BASE_URL}/citypoints?location=${currentLocation}`,

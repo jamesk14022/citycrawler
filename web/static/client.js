@@ -25,7 +25,15 @@ import {
   populateBarStart,
   renderBarInformationBox,
 } from "./ui.js";
-import { flyToLocation, renderMapRoute, renderAlternativeAttractionMarkers, removeAlternativeAttractionMarkers,   renderRouteMarker, setupRenderAlternativeAttractionMarkersPopup, map } from "./map.js";
+import {
+  flyToLocation,
+  renderMapRoute,
+  renderAlternativeAttractionMarkers,
+  removeAlternativeAttractionMarkers,
+  renderRouteMarker,
+  setupRenderAlternativeAttractionMarkersPopup,
+  map,
+} from "./map.js";
 
 // appplication state
 let currentLocation = "dublin";
@@ -103,26 +111,21 @@ function updateRouteMetrics(e) {
 }
 
 async function addAlternativeBarMarkers(route_points) {
-  getCityPoints(currentLocation)
-    .then((waypoints) => {
-      waypoints = waypoints.filter(
-        (waypoint) =>
-          !containsObject(
-            waypoint.place_id,
-            route_points.map((x) => x.place_id),
-          ),
-      );
-      currentCityPoints = waypoints;
-      selectedFirstLocation = ""
-      renderAlternativeAttractionMarkers(waypoints);
-      setupRenderAlternativeAttractionMarkersPopup();
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-    });
+  let cityPoints = await getCityPoints(currentLocation);
+  cityPoints = await cityPoints.filter(
+    (cityPoint) =>
+      !containsObject(
+        cityPoint.place_id,
+        route_points.map((x) => x.place_id),
+      ),
+  );
+  currentCityPoints = cityPoints;
+  selectedFirstLocation = "";
+  renderAlternativeAttractionMarkers(cityPoints);
+  setupRenderAlternativeAttractionMarkersPopup();
 }
 
-function pageStart() {
+async function pageStart() {
   showLoading();
   addCityLocations();
 
@@ -151,18 +154,13 @@ function pageStart() {
 
     currentLocation = location.toLowerCase();
 
-    map.on("load", function () {
-      postCrawl(currentLocation, markers)
-        .then((waypoints) => {
-          selectedPubs = targetPubs;
-          updateRouteMetrics();
-          console.log("Rendering specific route");
-          renderRoute(waypoints);
-          populateBarStart(currentCityPoints);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-        });
+    map.on("load", async function () {
+      let waypoints = await postCrawl(currentLocation, markers);
+      selectedPubs = targetPubs;
+      updateRouteMetrics();
+      console.log("Rendering specific route");
+      await renderRoute(waypoints);
+      populateBarStart(currentCityPoints);
     });
   } else {
     map.on("load", function () {
@@ -171,7 +169,7 @@ function pageStart() {
   }
 }
 
-function renderRoute(waypoints) {
+async function renderRoute(waypoints) {
   clearExistingRoute();
 
   waypoints.forEach((waypoint, index) => {
@@ -180,7 +178,7 @@ function renderRoute(waypoints) {
     renderBarInformationBox(waypoint, index);
   });
 
-  addAlternativeBarMarkers(waypoints);
+  await addAlternativeBarMarkers(waypoints);
   showRightBar();
   hideLoading();
 
@@ -208,22 +206,21 @@ function addCityLocations() {
   updateRouteMetrics();
 }
 
-function buildMap() {
+async function buildMap() {
   clearExistingRoute();
   showLoading();
-  getPubs(
+  let waypoints = await getPubs(
     selectedPubs,
     selectedAttractions,
     currentLocation,
     selectedFirstLocation,
-  ).then((waypoints) => {
-    renderRoute(waypoints);
-  });
+  );
+  await renderRoute(waypoints);
   updateRouteMetrics();
 }
 
 setupSelectStartEvent((event) => {
-  console.log(event)
+  console.log(event);
   selectedFirstLocation = event.target.options[event.target.selectedIndex].text;
 });
 
@@ -236,12 +233,13 @@ setupModalExitButtonEvents(() => {
 });
 
 setupSearchBoxEvents(
-  (e) => {
+  async (e) => {
     let inputVal = e.target.value;
     if (inputVal in cityPoints) {
       flyToLocation(cityPoints[inputVal]);
       currentLocation = inputVal;
-      buildMap();
+      await buildMap();
+      console.log("current city points", currentCityPoints);
       populateBarStart(currentCityPoints);
       addCityLocations();
     } else {
@@ -250,12 +248,13 @@ setupSearchBoxEvents(
       }
     }
   },
-  (e) => {
+  async (e) => {
     let inputVal = e.target.value;
     if (inputVal in cityPoints) {
       flyToLocation(cityPoints[inputVal]);
       currentLocation = inputVal;
-      buildMap();
+      await buildMap();
+      console.log("current city points", currentCityPoints);
       populateBarStart(currentCityPoints);
       addCityLocations();
     }

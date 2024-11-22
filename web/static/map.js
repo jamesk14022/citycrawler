@@ -19,11 +19,14 @@ const directions = new MapboxDirections({
 });
 
 directions.on("route", (e) => {
-    console.log(e)
+  console.log(e);
 
   setRouteLength((e["route"][0].distance / 1000).toFixed(2));
   setRouteDuration(
-    parseInt(e["route"][0].duration / 60 + (e["route"][0]["legs"].length + 1) * TIME_SPENT_BAR),
+    parseInt(
+      e["route"][0].duration / 60 +
+        (e["route"][0]["legs"].length + 1) * TIME_SPENT_BAR,
+    ),
   );
 });
 
