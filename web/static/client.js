@@ -163,10 +163,22 @@ async function pageStart() {
       populateBarStart(currentCityPoints);
     });
   } else {
-    map.on("load", function () {
-      buildMap();
+    map.on("load", async function () {
+      await buildMap();
+      clearExistingRoute();
+      showLoading();
+      let waypoints = await getPubs(
+        selectedPubs,
+        selectedAttractions,
+        currentLocation,
+        selectedFirstLocation,
+      );
+      await renderRoute(waypoints);
+      updateRouteMetrics();
+      populateBarStart(currentCityPoints);
     });
   }
+  hideLoading();
 }
 
 async function renderRoute(waypoints) {
@@ -180,8 +192,6 @@ async function renderRoute(waypoints) {
 
   await addAlternativeBarMarkers(waypoints);
   showRightBar();
-  hideLoading();
-
   if (waypoints.length !== 0) {
     renderMapRoute(waypoints);
 
@@ -193,7 +203,6 @@ async function renderRoute(waypoints) {
     );
   } else {
     toggleNoPubsResults();
-    hideLoading();
   }
 }
 
@@ -206,7 +215,12 @@ function addCityLocations() {
   updateRouteMetrics();
 }
 
-async function buildMap() {
+setupSelectStartEvent((event) => {
+  console.log(event);
+  selectedFirstLocation = event.target.options[event.target.selectedIndex].text;
+});
+
+setupRefreshButtonEvents(async () => {
   clearExistingRoute();
   showLoading();
   let waypoints = await getPubs(
@@ -217,15 +231,7 @@ async function buildMap() {
   );
   await renderRoute(waypoints);
   updateRouteMetrics();
-}
-
-setupSelectStartEvent((event) => {
-  console.log(event);
-  selectedFirstLocation = event.target.options[event.target.selectedIndex].text;
-});
-
-setupRefreshButtonEvents(() => {
-  buildMap();
+  hideLoading();
 });
 
 setupModalExitButtonEvents(() => {
@@ -238,27 +244,25 @@ setupSearchBoxEvents(
     if (inputVal in cityPoints) {
       flyToLocation(cityPoints[inputVal]);
       currentLocation = inputVal;
-      await buildMap();
-      console.log("current city points", currentCityPoints);
+      clearExistingRoute();
+      showLoading();
+      let waypoints = await getPubs(
+        selectedPubs,
+        selectedAttractions,
+        currentLocation,
+        selectedFirstLocation,
+      );
+      await renderRoute(waypoints);
+      updateRouteMetrics();
       populateBarStart(currentCityPoints);
       addCityLocations();
+      hideLoading();
     } else {
       if (e.code === "Enter") {
         toggleNoCitiesResults();
       }
     }
-  },
-  async (e) => {
-    let inputVal = e.target.value;
-    if (inputVal in cityPoints) {
-      flyToLocation(cityPoints[inputVal]);
-      currentLocation = inputVal;
-      await buildMap();
-      console.log("current city points", currentCityPoints);
-      populateBarStart(currentCityPoints);
-      addCityLocations();
-    }
-  },
+  }
 );
 
 window.onload = pageStart;

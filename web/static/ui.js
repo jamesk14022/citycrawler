@@ -120,9 +120,9 @@ export function setupModalExitButtonEvents(onModalExitButtonClicked) {
   modalExitButton.addEventListener("click", onModalExitButtonClicked);
 }
 
-export function setupSearchBoxEvents(onKeyPress, onInput) {
+export function setupSearchBoxEvents(onKeyPress) {
   searchBox.addEventListener("keypress", onKeyPress);
-  searchBox.addEventListener("input", onInput);
+  searchBox.addEventListener("input", onKeyPress);
 }
 
 const openSidebar = () => (sidebar.style.width = "400px");
