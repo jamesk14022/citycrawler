@@ -114,7 +114,6 @@ async function addAlternativeBarMarkers(route_points) {
       );
       currentCityPoints = waypoints;
       selectedFirstLocation = ""
-      populateBarStart(currentCityPoints);
       renderAlternativeAttractionMarkers(waypoints);
       setupRenderAlternativeAttractionMarkersPopup();
     })
@@ -159,6 +158,7 @@ function pageStart() {
           updateRouteMetrics();
           console.log("Rendering specific route");
           renderRoute(waypoints);
+          populateBarStart(currentCityPoints);
         })
         .catch((error) => {
           console.error("Error:", error);
@@ -211,7 +211,6 @@ function addCityLocations() {
 function buildMap() {
   clearExistingRoute();
   showLoading();
-  addCityLocations();
   getPubs(
     selectedPubs,
     selectedAttractions,
@@ -224,6 +223,7 @@ function buildMap() {
 }
 
 setupSelectStartEvent((event) => {
+  console.log(event)
   selectedFirstLocation = event.target.options[event.target.selectedIndex].text;
 });
 
@@ -242,6 +242,8 @@ setupSearchBoxEvents(
       flyToLocation(cityPoints[inputVal]);
       currentLocation = inputVal;
       buildMap();
+      populateBarStart(currentCityPoints);
+      addCityLocations();
     } else {
       if (e.code === "Enter") {
         toggleNoCitiesResults();
@@ -254,6 +256,8 @@ setupSearchBoxEvents(
       flyToLocation(cityPoints[inputVal]);
       currentLocation = inputVal;
       buildMap();
+      populateBarStart(currentCityPoints);
+      addCityLocations();
     }
   },
 );

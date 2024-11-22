@@ -106,7 +106,10 @@ export function setupAttractionPlusMinusEvents(
 }
 
 export function setupSelectStartEvent(onSelectStart) {
-  selectStart.addEventListener("change", onSelectStart);
+  selectStart.addEventListener("change", (event) => {
+    // selectStart.selectedIndex = selectStart.options[selectStart.selectedIndex].value + 1;
+    onSelectStart(event);
+});
 }
 
 export function setupRefreshButtonEvents(onRefreshButtonClicked) {
@@ -128,9 +131,12 @@ sidebarToggle.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
 
 export function populateBarStart(currentCityPoints) {
+
+    console.log("populating bar start");
+
   selectStart.innerHTML = "";
   selectStart.innerHTML =
-    "<option value='' disabled selected>-- Please select an option --</option>";
+    "<option value='' disabled>-- Please select an option --</option>";
   currentCityPoints.map((waypoint, i) => {
     let optStart = document.createElement("option");
     optStart.value = i;
