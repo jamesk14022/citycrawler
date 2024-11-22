@@ -16,11 +16,10 @@ const directions = new MapboxDirections({
   accessToken: mapboxgl.accessToken,
   unit: "metric",
   profile: "mapbox/walking",
+  interactive: false,
 });
 
 directions.on("route", (e) => {
-  console.log(e);
-
   setRouteLength((e["route"][0].distance / 1000).toFixed(2));
   setRouteDuration(
     parseInt(

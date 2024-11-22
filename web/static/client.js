@@ -120,7 +120,6 @@ async function addAlternativeBarMarkers(route_points) {
       ),
   );
   currentCityPoints = cityPoints;
-  selectedFirstLocation = "";
   renderAlternativeAttractionMarkers(cityPoints);
   setupRenderAlternativeAttractionMarkersPopup();
 }
@@ -161,10 +160,10 @@ async function pageStart() {
       console.log("Rendering specific route");
       await renderRoute(waypoints);
       populateBarStart(currentCityPoints);
+      hideLoading();
     });
   } else {
     map.on("load", async function () {
-      await buildMap();
       clearExistingRoute();
       showLoading();
       let waypoints = await getPubs(
@@ -176,9 +175,9 @@ async function pageStart() {
       await renderRoute(waypoints);
       updateRouteMetrics();
       populateBarStart(currentCityPoints);
+      hideLoading();
     });
   }
-  hideLoading();
 }
 
 async function renderRoute(waypoints) {
@@ -216,7 +215,6 @@ function addCityLocations() {
 }
 
 setupSelectStartEvent((event) => {
-  console.log(event);
   selectedFirstLocation = event.target.options[event.target.selectedIndex].text;
 });
 
@@ -254,7 +252,11 @@ setupSearchBoxEvents(
       );
       await renderRoute(waypoints);
       updateRouteMetrics();
+
+      // reset choice for first location and repopulate select
+      selectedFirstLocation = "";
       populateBarStart(currentCityPoints);
+
       addCityLocations();
       hideLoading();
     } else {

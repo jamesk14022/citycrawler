@@ -52,6 +52,6 @@ func main() {
 		Handler: loggedRouter,
 	}
 
-	log.Println("Test! Starting server on ", port)
+	log.Println("Starting Barcrawler Server on ", port)
 	log.Fatal(server.ListenAndServe())
 }
