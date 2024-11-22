@@ -55,17 +55,19 @@
         display: none;
       }
       #controls {
+        font-size: 14px;
         position: absolute;
         top: 10px;
         left: 10px;
         display: inline-flex;
         background-color: #f4f4f4;
-        gap: 20px;
-        padding: 10px 30px;
+        gap: 2%;
+        padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
         z-index: 1;
         align-items: center;
+        width: 80%;
       }
       #route-info {
         background-color: #f4f4f4;
@@ -157,7 +159,6 @@
         filter: blur(5px);
       }
       #search-box {
-        width: 95%;
         padding: 8px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -180,6 +181,9 @@
         font-size: initial;
       }
       @media screen and (min-width: 799px) {
+        #start-label{
+          min-width: 100px;
+        }
         #rightBar {
           position: absolute;
           top: 200px;
@@ -187,33 +191,29 @@
           z-index: 1;
         }
         #refresh-button {
+          height: 50px;
+          min-width: 150px;
           background-color: #008cba;
           border: none;
           color: white;
           text-align: center;
           text-decoration: none;
-          display: inline-block;
-          font-size: 14px;
-          margin: 5px;
+          display: inline;
           cursor: pointer;
           border-radius: 5px;
-          padding: 10px;
-          width: 120%;
         }
         #shareButton {
+          height: 50px;
+          min-width: 150px;
           z-index: 1;
           background-color: #008cba;
           border: none;
           color: white;
-          padding: 10px;
           text-align: center;
           text-decoration: none;
-          display: inline-block;
-          font-size: 14px;
-          margin: 5px;
+          display: inline;
           cursor: pointer;
           border-radius: 5px;
-          width: 90%;
         }
       }
       .bar-select {
@@ -408,6 +408,17 @@
         transform: translateX(-50%);
       }
 
+      .btn-circle{
+        border-radius: 50%;
+        padding: 0.25em 0.8em;
+        }
+
+        .btn-circle:hover{
+
+        border-color: #0c3d5d;
+        color: #0c3d5d;
+        }
+
       @media screen and (max-width: 799px) {
         #refresh-button {
           background-color: #008cba;
@@ -457,9 +468,6 @@
           z-index: 1;
           width: 90%;
         }
-        #controls {
-          width: 95%;
-        }
         .listing-group {
           display: flex;
           flex-wrap: wrap;
@@ -500,26 +508,26 @@
             type="text"
             id="search-box"
             list="locations"
-            placeholder="Search location..."
+            placeholder="Search city..."
           />
 
           <div class="marker-container top-bar">
-            <label for="pointStart">Starting Point:</label>
+            <label for="pointStart" id="start-label">Starting Point:</label>
             <select class="bar-select" id="pointStart"></select>
           </div>
 
           <div class="marker-container top-bar">
             <label for="distance-slider">Pubs:</label>
-            <button class="marker-quantity-btn-minus">-</button>
+            <button class="marker-quantity-btn-minus btn-circle">-</button>
             <span class="num-markers"></span>
-            <button class="marker-quantity-btn-plus">+</button>
+            <button class="marker-quantity-btn-plus btn-circle">+</button>
           </div>
 
           <div class="marker-container top-bar">
-            <label for="distance-slider">Tourist Attractions:</label>
-            <button class="attraction-quantity-btn-minus">-</button>
+            <label for="distance-slider">Attractions:</label>
+            <button class="attraction-quantity-btn-minus btn-circle">-</button>
             <span class="num-attractions"></span>
-            <button class="attraction-quantity-btn-plus">+</button>
+            <button class="attraction-quantity-btn-plus btn-circle">+</button>
           </div>
 
           <!-- <div id="slider-container" class="top-bar">
@@ -528,9 +536,9 @@
             <span class="num-distance"></span>
             <button class="distance-quantity-btn-plus">+</button>
           </div> -->
-          <button type="button" id="shareButton">Copy sharing link</button>
+          <button type="button" id="shareButton"><i class="material-icons">content_copy</i>Copy sharing link</button>
           <button type="button" id="refresh-button">
-            <i class="material-icons">shuffle</i> Randomise Route
+            <i class="material-icons">shuffle</i>Randomise Route
           </button>
           <div id="toggleBar">
             <button id="sidebarToggle" class="toggle-btn">☰</button>
@@ -561,18 +569,18 @@
     <div id="collap-sidebar" class="sidebar">
       <div class="marker-container">
         <label class="sidebar-label" for="distance-slider">Pubs:</label>
-        <button class="btn-side marker-quantity-btn-minus">-</button>
+        <button class="btn-side marker-quantity-btn-minus btn-circle">-</button>
         <span class="num-markers"></span>
-        <button class="btn-side marker-quantity-btn-plus">+</button>
+        <button class="btn-side marker-quantity-btn-plus btn-circle">+</button>
       </div>
 
       <div class="marker-container">
         <label class="sidebar-label" for="distance-slider"
-          >Tourist Attractions:</label
+          >Attractions:</label
         >
-        <button class="btn-side attraction-quantity-btn-minus">-</button>
+        <button class="btn-side attraction-quantity-btn-minus btn-circle">-</button>
         <span class="num-attractions"></span>
-        <button class="btn-side attraction-quantity-btn-plus">+</button>
+        <button class="btn-side attraction-quantity-btn-plus btn-circle">+</button>
       </div>
       <br />
       <br />
