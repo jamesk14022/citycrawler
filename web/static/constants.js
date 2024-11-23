@@ -42,8 +42,6 @@ const sidebar = document.getElementById("collap-sidebar");
 const sidebarToggle = document.getElementById("sidebarToggle");
 const closeBtn = sidebar.querySelector(".close-btn");
 
-const selectStart = document.getElementById("pointStart");
-
 export {
   TIME_SPENT_BAR,
   MAPBOX_TOKEN,
@@ -69,5 +67,4 @@ export {
   sidebar,
   sidebarToggle,
   closeBtn,
-  selectStart,
 };

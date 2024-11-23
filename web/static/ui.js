@@ -128,21 +128,6 @@ const closeSidebar = () => (sidebar.style.width = "0");
 sidebarToggle.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
 
-export function populateBarStart(currentCityPoints) {
-//   selectStart.innerHTML =
-//     "<option value='' disabled selected>-- Please select an option --</option>";
-//   currentCityPoints.map((waypoint, i) => {
-//     let optStart = document.createElement("option");
-//     optStart.value = i;
-//     optStart.innerHTML = waypoint.name;
-//     selectStart.append(optStart);
-//   });
-}
-
-export function clearCityList() {
-  dataList.innerHTML = "";
-}
-
 export function populateCityList(cities) {
   for (const city in cities) {
     const option = document.createElement("option");
