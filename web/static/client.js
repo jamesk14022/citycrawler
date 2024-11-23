@@ -1,4 +1,4 @@
-import { TIME_SPENT_BAR, MAPBOX_TOKEN } from "./constants.js";
+import { TIME_SPENT_BAR } from "./constants.js";
 import { containsObject, copy, updateURL } from "./utils.js";
 import { getCityPoints, postCrawl, getCities, getPubs } from "./api.js";
 import {
@@ -7,7 +7,6 @@ import {
   populateCityList,
   setRouteLength,
   setShareButtonCopied,
-  setupSelectStartEvent,
   setupShareButtonEvents,
   setupRefreshButtonEvents,
   setupModalExitButtonEvents,
@@ -24,6 +23,9 @@ import {
   setupAttractionPlusMinusEvents,
   populateBarStart,
   renderBarInformationBox,
+  setupPillClosedEvents,
+  hidePill, 
+  showPill,
 } from "./ui.js";
 import {
   flyToLocation,
@@ -83,6 +85,11 @@ setupAttractionPlusMinusEvents(
   },
 );
 
+export function selectStartEvent(place_id, place_name) {
+  selectedFirstLocation = place_id;
+  showPill(place_name);
+};
+
 const clearExistingRoute = () => {
   removeExistingRoute();
   clearBarInformationBox();
@@ -123,7 +130,7 @@ async function addAlternativeBarMarkers(route_points) {
   );
   currentCityPoints = cityPoints;
   renderAlternativeAttractionMarkers(cityPoints);
-  setupRenderAlternativeAttractionMarkersPopup();
+  await setupRenderAlternativeAttractionMarkersPopup();
 }
 
 async function pageStart() {
@@ -216,8 +223,9 @@ function addCityLocations() {
   updateRouteMetrics();
 }
 
-setupSelectStartEvent((event) => {
-  selectedFirstLocation = event.target.options[event.target.selectedIndex].text;
+setupPillClosedEvents(async () => {
+  selectStartEvent("");
+  hidePill();
 });
 
 setupRefreshButtonEvents(async () => {

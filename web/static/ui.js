@@ -18,7 +18,6 @@ import {
   sidebar,
   sidebarToggle,
   closeBtn,
-  selectStart,
 } from "./constants.js";
 
 import { buildGoogleMapsUrl } from "./api.js";
@@ -105,15 +104,14 @@ export function setupAttractionPlusMinusEvents(
   });
 }
 
-export function setupSelectStartEvent(onSelectStart) {
-  selectStart.addEventListener("change", (event) => {
-    // selectStart.selectedIndex = selectStart.options[selectStart.selectedIndex].value + 1;
-    onSelectStart(event);
-  });
-}
-
 export function setupRefreshButtonEvents(onRefreshButtonClicked) {
   refreshButton.addEventListener("click", onRefreshButtonClicked);
+}
+
+export function setupPillClosedEvents(onPillClosed) {
+    document.querySelectorAll(".pill-close").forEach((btn) => {
+        btn.addEventListener("click", onPillClosed);
+    });
 }
 
 export function setupModalExitButtonEvents(onModalExitButtonClicked) {
@@ -131,14 +129,14 @@ sidebarToggle.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
 
 export function populateBarStart(currentCityPoints) {
-  selectStart.innerHTML =
-    "<option value='' disabled selected>-- Please select an option --</option>";
-  currentCityPoints.map((waypoint, i) => {
-    let optStart = document.createElement("option");
-    optStart.value = i;
-    optStart.innerHTML = waypoint.name;
-    selectStart.append(optStart);
-  });
+//   selectStart.innerHTML =
+//     "<option value='' disabled selected>-- Please select an option --</option>";
+//   currentCityPoints.map((waypoint, i) => {
+//     let optStart = document.createElement("option");
+//     optStart.value = i;
+//     optStart.innerHTML = waypoint.name;
+//     selectStart.append(optStart);
+//   });
 }
 
 export function clearCityList() {
@@ -153,13 +151,20 @@ export function populateCityList(cities) {
   }
 }
 
+export function showPill(bar_start) {
+    document.querySelector(".pill").style.display = "block";
+    document.getElementById("pill-text").innerHTML = bar_start;
+}
+
+export function hidePill() {
+    document.querySelector(".pill").style.display = "none";
+}
+
 export function clearBarInformationBox() {
   nav.innerHTML = "";
 }
 
 export function renderBarInformationBox(waypoint, index) {
-  console.log(waypoint);
-
   const input = document.createElement("input");
   input.type = "button";
   input.id = `marker-${index}`;

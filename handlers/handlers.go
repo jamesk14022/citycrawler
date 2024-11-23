@@ -125,10 +125,7 @@ func CheckOverlap(path []int, R RoutesMatrix) bool {
 }
 
 func CheckFirstLocation(path []int, enrichedData []Location, targetFirstLocation string) bool {
-	if enrichedData[path[0]].Name == targetFirstLocation {
-		return true
-	}
-	return false
+	return enrichedData[path[0]].ID == targetFirstLocation
 }
 
 func AdjacentLengthMeetConstraint(path []int, D DistanceMatrix, mu float64) bool {

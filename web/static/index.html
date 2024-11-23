@@ -69,6 +69,47 @@
         align-items: center;
         width: 80%;
       }
+
+      .pill-button {
+        display: inline-flex;
+        align-items: center;
+        background-color: #007bff;
+        color: white;
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Pill Button Hover Effect */
+      .pill-button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Text in the Pill */
+      .pill-text {
+        margin-right: 8px;
+      }
+
+      /* Close Icon */
+      .pill-close {
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      /* Close Icon Hover Effect */
+      .pill-close:hover {
+        color: #ff4757;
+      }
+
+      .marker-container.pill {
+        display: none;
+      }
+
       #route-info {
         background-color: #f4f4f4;
         padding: 10px;
@@ -181,9 +222,7 @@
         font-size: initial;
       }
       @media screen and (min-width: 799px) {
-        #start-label{
-          min-width: 100px;
-        }
+  
         #rightBar {
           position: absolute;
           top: 200px;
@@ -511,9 +550,12 @@
             placeholder="Search city..."
           />
 
-          <div class="marker-container top-bar">
-            <label for="pointStart" id="start-label">Starting Point:</label>
-            <select class="bar-select" id="pointStart"></select>
+          <div class="marker-container top-bar pill">
+            <label for="distance-slider">Starting location:</label>
+            <div class="pill-button">
+              <span id="pill-text">Button Text</span>
+              <span class="pill-close" id="pill-close">✖</span>
+            </div>
           </div>
 
           <div class="marker-container top-bar">

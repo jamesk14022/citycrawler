@@ -1,6 +1,7 @@
 import { INITIAL_LOCATION, MAPBOX_TOKEN, TIME_SPENT_BAR } from "./constants.js";
 import { setRouteLength, setRouteDuration } from "./ui.js";
 import { convertToGeoJSON } from "./utils.js";
+import {selectStartEvent} from "./client.js";
 
 // token scoped and safe for FE use
 mapboxgl.accessToken = MAPBOX_TOKEN;
@@ -43,6 +44,7 @@ export function removeAlternativeAttractionMarkers() {
 }
 
 export function renderAlternativeAttractionMarkers(waypoints) {
+  console.log(waypoints)
   map.addSource("places", convertToGeoJSON(waypoints));
   map.addLayer({
     id: "places",
@@ -57,7 +59,31 @@ export function renderAlternativeAttractionMarkers(waypoints) {
   });
 }
 
-export function setupRenderAlternativeAttractionMarkersPopup() {
+function buildAlternativeAttractionMarkerPopupDescription(waypoint) {
+  
+  let description = `<strong>${waypoint.name}</strong>`;
+  if (waypoint.rating !== 0) {
+    description += `<br>Rating: `;
+    for (let i = 0; i < parseFloat(waypoint.rating); i++) {
+      description += "&#9733;";
+    }
+  }
+  if (waypoint.price_level !== 0) {
+    description += `<br>Price Level: ${"$".repeat(waypoint.price_level)}`;
+  }
+  if (waypoint.types.includes("tourist_attraction")) {
+    description = `🎡 ${description}`;
+  }
+  else {
+    description = `🍺 ${description}`;
+  }
+
+  description += `<br><button class="select-start-button" data-id="${waypoint.place_id}" data-name="${waypoint.name}">Select as starting point</button>`;
+
+  return description;
+}
+
+export async function setupRenderAlternativeAttractionMarkersPopup() {
   const popup = new mapboxgl.Popup({
     closeButton: false,
     closeOnClick: false,
@@ -68,8 +94,7 @@ export function setupRenderAlternativeAttractionMarkersPopup() {
   let removalTimeout;
 
   // Detect mouse enter/leave on the popup itself
-  popup.on('open', () => {
-    console.log(popup)
+  popup.on('open', async () => {
     const popupElement = popup._content;
 
     popupElement.addEventListener('mouseenter', () => {
@@ -93,7 +118,7 @@ export function setupRenderAlternativeAttractionMarkersPopup() {
     }, 100); // Adjust timeout (ms) as needed
   }
 
-  map.on("mouseenter", "places", (e) => {
+  map.on("mouseenter", "places", async (e) => {
 
     isMouseOverMarker = true;
     clearTimeout(removalTimeout);
@@ -105,7 +130,7 @@ export function setupRenderAlternativeAttractionMarkersPopup() {
     // Copy coordinates array.
     const coordinates = e.features[0].geometry.coordinates.slice();
     // description to name for now
-    const description = e.features[0].properties.name;
+    const description = buildAlternativeAttractionMarkerPopupDescription(e.features[0].properties);
 
     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
       coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
@@ -114,6 +139,15 @@ export function setupRenderAlternativeAttractionMarkersPopup() {
     // Populate the popup and set its coordinates
     // based on the feature found.
     popup.setLngLat(coordinates).setHTML(description).addTo(map);
+
+    popup.on('open', () => {
+      const buttons = document.querySelectorAll('.select-start-button'); // Select all buttons with the class
+      buttons.forEach(button => {
+          button.addEventListener('click', (event) => {
+              selectStartEvent(event.target.dataset.id, event.target.dataset.name);
+          });
+      });
+  });
   });
 
   map.on("mouseleave", "places", () => {
