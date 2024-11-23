@@ -63,7 +63,42 @@ export function setupRenderAlternativeAttractionMarkersPopup() {
     closeOnClick: false,
   });
 
+  let isMouseOverMarker = false;
+  let isHoveringPopup = false;
+  let removalTimeout;
+
+  // Detect mouse enter/leave on the popup itself
+  popup.on('open', () => {
+    console.log(popup)
+    const popupElement = popup._content;
+
+    popupElement.addEventListener('mouseenter', () => {
+      isHoveringPopup = true;
+    });
+
+    popupElement.addEventListener('mouseleave', () => {
+      isHoveringPopup = false;
+      schedulePopupRemoval();
+
+    });
+  });
+
+  function schedulePopupRemoval() {
+    clearTimeout(removalTimeout);
+    removalTimeout = setTimeout(() => {
+      if (!isMouseOverMarker && !isHoveringPopup) {
+        popup.remove();
+        map.getCanvas().style.cursor = '';
+      }
+    }, 100); // Adjust timeout (ms) as needed
+  }
+
   map.on("mouseenter", "places", (e) => {
+
+    isMouseOverMarker = true;
+    clearTimeout(removalTimeout);
+
+
     // Change the cursor style as a UI indicator.
     map.getCanvas().style.cursor = "pointer";
 
@@ -82,8 +117,8 @@ export function setupRenderAlternativeAttractionMarkersPopup() {
   });
 
   map.on("mouseleave", "places", () => {
-    map.getCanvas().style.cursor = "";
-    popup.remove();
+    isMouseOverMarker = false;
+    schedulePopupRemoval();
   });
 }
 
