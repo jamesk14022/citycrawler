@@ -6,30 +6,31 @@ import os
 
 import numpy as np
 
-# CITY_COORDS = {
-#     "New York": (40.66, -73.94),
-#     "Los Angeles": (34.02, -118.41),
-#     "Chicago": (41.84, -87.68),
-#     "Houston": (29.79, -95.39),
-#     "Phoenix": (33.57, -112.09),
-#     "Philadelphia": (40.01, -75.13),
-#     "San Antonio": (29.46, -98.52),
-#     "San Diego": (32.81, -117.14),
-#     "Dallas": (32.79, -96.77),
-#     "Jacksonville": (30.34, -81.66),
-#     "Austin": (30.30, -97.75),
-#     "Fort Worth": (32.78, -97.35),
-#     "San Jose": (37.30, -121.81),
-#     "Columbus": (39.99, -82.99),
-#     "Charlotte": (35.21, -80.83),
-#     "Indianapolis": (39.78, -86.15),
-#     "San Francisco": (37.73, -123.03),
-#     "Seattle": (47.62, -122.35),
-#     "Denver": (39.76, -104.88),
-# }
+CITY_COORDS = {
+    "amsterdam": [52.3676, 4.9041],
+    # "New York": (40.66, -73.94),
+    # "Los Angeles": (34.02, -118.41),
+    # "Chicago": (41.84, -87.68),
+    # "Houston": (29.79, -95.39),
+    # "Phoenix": (33.57, -112.09),
+    # "Philadelphia": (40.01, -75.13),
+    # "San Antonio": (29.46, -98.52),
+    # "San Diego": (32.81, -117.14),
+    # "Dallas": (32.79, -96.77),
+    # "Jacksonville": (30.34, -81.66),
+    # "Austin": (30.30, -97.75),
+    # "Fort Worth": (32.78, -97.35),
+    # "San Jose": (37.30, -121.81),
+    # "Columbus": (39.99, -82.99),
+    # "Charlotte": (35.21, -80.83),
+    # "Indianapolis": (39.78, -86.15),
+    # "San Francisco": (37.73, -123.03),
+    # "Seattle": (47.62, -122.35),
+    # "Denver": (39.76, -104.88),
+}
 
-CITY_COORDS_IRELAND = {
-    "Dublin": (53.35, -6.26), 
+# CITY_COORDS_IRELAND = {
+#     "Dublin": (53.35, -6.26), 
 #     "Cork": (51.90, -8.47), 
 #     "Limerick": (52.66, -8.63), 
 #     "Galway": (53.27, -9.05), 
@@ -69,7 +70,7 @@ CITY_COORDS_IRELAND = {
 #     "Arklow": (52.80, -6.14), 
 #     "Castlebar": (53.85, -9.30), 
 #     "Wicklow": (52.98, -6.05)
-}
+# }
 
 CITY_COORDS_UK = {
     # "London": (51.5072, -0.1275),
@@ -120,8 +121,8 @@ CITY_COORDS_UK = {
     # "Chelmsford": (51.7300, 0.4800),
 }
 
-BASE_PATH = "../UK_attraction_data/"
-SEARCH_RADIUS = 1000
+BASE_PATH = "../amsterdam/"
+SEARCH_RADIUS = 1500
 
 GOOGLE_MAPS_BASE_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
 GOOGLE_MAPS_NEXT_PAGE_DELAY = 2.5
@@ -142,9 +143,7 @@ def walking_distance(start_latitude, start_longitude, end_latitude, end_longitud
     else:
         route = data["routes"][0]
     
-    walking_distance = route["distance"]  # in meters
-
-    return walking_distance / 1000, route
+    return route["distance"] / 1000, route
 
 
 def load_location_search():
@@ -174,8 +173,11 @@ def make_nearby_search_request(coords, radius, next_page_token, location_type="p
         elif location_type == "tourist_attraction":
             url = f"{GOOGLE_MAPS_BASE_URL}?location={lat}%2C{long}&radius={radius}&type=tourist_attraction&key={KEY}"
 
+    print(url)
     raw_response = requests.get(url, headers=headers)
+    print(raw_response)
     response = json.loads(raw_response.text)
+    print(response)
     results += response["results"]
 
     if "next_page_token" in response:
@@ -186,11 +188,11 @@ def make_nearby_search_request(coords, radius, next_page_token, location_type="p
 def location_search(coords, radius):
 
     results = []
-    results += make_nearby_search_request(coords, radius, None, "pub")[:30]
-    results += make_nearby_search_request(coords, radius, None, "tourist_attraction")[:10]
+    for location_type in ["pub", "tourist_attraction"]:
+        results += make_nearby_search_request(coords, radius, None, location_type)
+        results += make_nearby_search_request(coords, radius, None, location_type)
 
     return results
-
 
 def build_matrices(state):
     size = len(state)
@@ -219,6 +221,19 @@ def build_matrices(state):
                 R[j, i] = wd[1]
 
     return D, R
+
+def build_matrices_mapboxmatrix(state):
+
+    coords = []
+    for loc in state:
+        coords.append((loc["geometry"]["location"]["lng"], loc["geometry"]["location"]["lat"]))
+
+    url = f"{MAPBOX_MATRIX_BASE_URL}/mapbox/driving/{';'.join([f'{c[0]},{c[1]}' for c in coords])}&access_token={os.environ['MAPBOX_TOKEN']}"
+    response = requests.get(url)
+
+    data = response.json()
+    D = np.array(data["distances"])
+    R = np.array(data["routes"])
 
 
 def save_matrices(D, R, location_name):
@@ -252,7 +267,7 @@ def create_directory_if_not_exists(directory_path):
         print("Directory already exists:", directory_path)
 
 
-for name, coords in CITY_COORDS_UK.items():
+for name, coords in CITY_COORDS.items():
     name = name.lower()
 
     state = location_search(coords, SEARCH_RADIUS)
