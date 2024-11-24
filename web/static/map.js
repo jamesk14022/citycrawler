@@ -1,7 +1,7 @@
 import { INITIAL_LOCATION, MAPBOX_TOKEN, TIME_SPENT_BAR } from "./constants.js";
 import { setRouteLength, setRouteDuration } from "./ui.js";
 import { convertToGeoJSON } from "./utils.js";
-import {selectStartEvent} from "./client.js";
+import { selectStartEvent } from "./client.js";
 
 // token scoped and safe for FE use
 mapboxgl.accessToken = MAPBOX_TOKEN;
@@ -32,7 +32,7 @@ directions.on("route", (e) => {
 
 map.addControl(directions, "top-left");
 
-export function removeExistingRoute(){
+export function removeExistingRoute() {
   directions.removeRoutes();
 }
 
@@ -44,7 +44,7 @@ export function removeAlternativeAttractionMarkers() {
 }
 
 export function renderAlternativeAttractionMarkers(waypoints) {
-  console.log(waypoints)
+  console.log(waypoints);
   map.addSource("places", convertToGeoJSON(waypoints));
   map.addLayer({
     id: "places",
@@ -60,7 +60,6 @@ export function renderAlternativeAttractionMarkers(waypoints) {
 }
 
 function buildAlternativeAttractionMarkerPopupDescription(waypoint) {
-  
   let description = `<strong>${waypoint.name}</strong>`;
   if (waypoint.rating !== 0) {
     description += `<br>Rating: `;
@@ -73,8 +72,7 @@ function buildAlternativeAttractionMarkerPopupDescription(waypoint) {
   }
   if (waypoint.types.includes("tourist_attraction")) {
     description = `🎡 ${description}`;
-  }
-  else {
+  } else {
     description = `🍺 ${description}`;
   }
 
@@ -94,17 +92,16 @@ export async function setupRenderAlternativeAttractionMarkersPopup() {
   let removalTimeout;
 
   // Detect mouse enter/leave on the popup itself
-  popup.on('open', async () => {
+  popup.on("open", async () => {
     const popupElement = popup._content;
 
-    popupElement.addEventListener('mouseenter', () => {
+    popupElement.addEventListener("mouseenter", () => {
       isHoveringPopup = true;
     });
 
-    popupElement.addEventListener('mouseleave', () => {
+    popupElement.addEventListener("mouseleave", () => {
       isHoveringPopup = false;
       schedulePopupRemoval();
-
     });
   });
 
@@ -113,16 +110,14 @@ export async function setupRenderAlternativeAttractionMarkersPopup() {
     removalTimeout = setTimeout(() => {
       if (!isMouseOverMarker && !isHoveringPopup) {
         popup.remove();
-        map.getCanvas().style.cursor = '';
+        map.getCanvas().style.cursor = "";
       }
     }, 100); // Adjust timeout (ms) as needed
   }
 
   map.on("mouseenter", "places", async (e) => {
-
     isMouseOverMarker = true;
     clearTimeout(removalTimeout);
-
 
     // Change the cursor style as a UI indicator.
     map.getCanvas().style.cursor = "pointer";
@@ -130,7 +125,9 @@ export async function setupRenderAlternativeAttractionMarkersPopup() {
     // Copy coordinates array.
     const coordinates = e.features[0].geometry.coordinates.slice();
     // description to name for now
-    const description = buildAlternativeAttractionMarkerPopupDescription(e.features[0].properties);
+    const description = buildAlternativeAttractionMarkerPopupDescription(
+      e.features[0].properties,
+    );
 
     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
       coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
@@ -140,14 +137,14 @@ export async function setupRenderAlternativeAttractionMarkersPopup() {
     // based on the feature found.
     popup.setLngLat(coordinates).setHTML(description).addTo(map);
 
-    popup.on('open', () => {
-      const buttons = document.querySelectorAll('.select-start-button'); // Select all buttons with the class
-      buttons.forEach(button => {
-          button.addEventListener('click', (event) => {
-              selectStartEvent(event.target.dataset.id, event.target.dataset.name);
-          });
+    popup.on("open", () => {
+      const buttons = document.querySelectorAll(".select-start-button"); // Select all buttons with the class
+      buttons.forEach((button) => {
+        button.addEventListener("click", (event) => {
+          selectStartEvent(event.target.dataset.id, event.target.dataset.name);
+        });
       });
-  });
+    });
   });
 
   map.on("mouseleave", "places", () => {

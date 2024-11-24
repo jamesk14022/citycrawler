@@ -23,7 +23,7 @@ import {
   setupAttractionPlusMinusEvents,
   renderBarInformationBox,
   setupPillClosedEvents,
-  hidePill, 
+  hidePill,
   showPill,
 } from "./ui.js";
 import {
@@ -87,7 +87,7 @@ setupAttractionPlusMinusEvents(
 export function selectStartEvent(place_id, place_name) {
   selectedFirstLocation = place_id;
   showPill(place_name);
-};
+}
 
 const clearExistingRoute = () => {
   removeExistingRoute();
@@ -243,33 +243,31 @@ setupModalExitButtonEvents(() => {
   toggleNoPubsResults();
 });
 
-setupSearchBoxEvents(
-  async (e) => {
-    let inputVal = e.target.value;
-    if (inputVal in cityPoints) {
-      flyToLocation(cityPoints[inputVal]);
-      currentLocation = inputVal;
-      clearExistingRoute();
-      showLoading();
-      let waypoints = await getPubs(
-        selectedPubs,
-        selectedAttractions,
-        currentLocation,
-        selectedFirstLocation,
-      );
-      await renderRoute(waypoints);
-      updateRouteMetrics();
+setupSearchBoxEvents(async (e) => {
+  let inputVal = e.target.value;
+  if (inputVal in cityPoints) {
+    flyToLocation(cityPoints[inputVal]);
+    currentLocation = inputVal;
+    clearExistingRoute();
+    showLoading();
+    let waypoints = await getPubs(
+      selectedPubs,
+      selectedAttractions,
+      currentLocation,
+      selectedFirstLocation,
+    );
+    await renderRoute(waypoints);
+    updateRouteMetrics();
 
-      // reset choice for first location and repopulate select
-      selectedFirstLocation = "";
-      addCityLocations();
-      hideLoading();
-    } else {
-      if (e.code === "Enter") {
-        toggleNoCitiesResults();
-      }
+    // reset choice for first location and repopulate select
+    selectedFirstLocation = "";
+    addCityLocations();
+    hideLoading();
+  } else {
+    if (e.code === "Enter") {
+      toggleNoCitiesResults();
     }
   }
-);
+});
 
 window.onload = pageStart;

@@ -109,9 +109,9 @@ export function setupRefreshButtonEvents(onRefreshButtonClicked) {
 }
 
 export function setupPillClosedEvents(onPillClosed) {
-    document.querySelectorAll(".pill-close").forEach((btn) => {
-        btn.addEventListener("click", onPillClosed);
-    });
+  document.querySelectorAll(".pill-close").forEach((btn) => {
+    btn.addEventListener("click", onPillClosed);
+  });
 }
 
 export function setupModalExitButtonEvents(onModalExitButtonClicked) {
@@ -128,7 +128,6 @@ const closeSidebar = () => (sidebar.style.width = "0");
 sidebarToggle.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
 
-
 export function clearCityList() {
   dataList.innerHTML = "";
 }
@@ -142,12 +141,12 @@ export function populateCityList(cities) {
 }
 
 export function showPill(bar_start) {
-    document.querySelector(".pill").style.display = "block";
-    document.getElementById("pill-text").innerHTML = bar_start;
+  document.querySelector(".pill").style.display = "block";
+  document.getElementById("pill-text").innerHTML = bar_start;
 }
 
 export function hidePill() {
-    document.querySelector(".pill").style.display = "none";
+  document.querySelector(".pill").style.display = "none";
 }
 
 export function clearBarInformationBox() {
