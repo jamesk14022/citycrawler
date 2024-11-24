@@ -99,6 +99,7 @@
         font-size: 16px;
         font-weight: bold;
         cursor: pointer;
+        margin-left: 10px;
       }
 
       /* Close Icon Hover Effect */
@@ -550,14 +551,6 @@
             placeholder="Search city..."
           />
 
-          <div class="marker-container top-bar pill">
-            <label for="distance-slider">Starting location:</label>
-            <div class="pill-button">
-              <span id="pill-text">Button Text</span>
-              <span class="pill-close" id="pill-close">✖</span>
-            </div>
-          </div>
-
           <div class="marker-container top-bar">
             <label for="distance-slider">Pubs:</label>
             <button class="marker-quantity-btn-minus btn-circle">-</button>
@@ -572,12 +565,14 @@
             <button class="attraction-quantity-btn-plus btn-circle">+</button>
           </div>
 
-          <!-- <div id="slider-container" class="top-bar">
-            <label for="distance-slider">Distance (km):</label>
-            <button class="distance-quantity-btn-minus">-</button>
-            <span class="num-distance"></span>
-            <button class="distance-quantity-btn-plus">+</button>
-          </div> -->
+          <div class="marker-container top-bar pill">
+            <label for="distance-slider">Starting location:</label>
+            <div class="pill-button">
+              <span id="pill-text">Button Text</span>
+              <span class="pill-close" id="pill-close">✖</span>
+            </div>
+          </div>
+
           <button type="button" id="shareButton"><i class="material-icons">content_copy</i>Copy sharing link</button>
           <button type="button" id="refresh-button">
             <i class="material-icons">shuffle</i>Randomise Route

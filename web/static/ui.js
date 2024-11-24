@@ -128,16 +128,6 @@ const closeSidebar = () => (sidebar.style.width = "0");
 sidebarToggle.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
 
-export function populateBarStart(currentCityPoints) {
-//   selectStart.innerHTML =
-//     "<option value='' disabled selected>-- Please select an option --</option>";
-//   currentCityPoints.map((waypoint, i) => {
-//     let optStart = document.createElement("option");
-//     optStart.value = i;
-//     optStart.innerHTML = waypoint.name;
-//     selectStart.append(optStart);
-//   });
-}
 
 export function clearCityList() {
   dataList.innerHTML = "";
@@ -216,11 +206,9 @@ export function setupShareButtonEvents(onShareButtonClicked) {
 }
 
 export function setShareButtonCopied() {
-  // Change the button text to "Copied ✔️"
   shareButton.textContent = "Copied ✔️";
   shareButton.classList.add("copied");
 
-  // Revert the button text after 2 seconds
   setTimeout(function () {
     shareButton.textContent = "Share Link";
     shareButton.classList.remove("copied");

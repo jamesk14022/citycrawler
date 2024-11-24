@@ -21,7 +21,6 @@ import {
   toggleNoCitiesResults,
   setupPubPlusMinusEvents,
   setupAttractionPlusMinusEvents,
-  populateBarStart,
   renderBarInformationBox,
   setupPillClosedEvents,
   hidePill, 
@@ -168,7 +167,6 @@ async function pageStart() {
       updateRouteMetrics();
       console.log("Rendering specific route");
       await renderRoute(waypoints);
-      populateBarStart(currentCityPoints);
       hideLoading();
     });
   } else {
@@ -183,7 +181,6 @@ async function pageStart() {
       );
       await renderRoute(waypoints);
       updateRouteMetrics();
-      populateBarStart(currentCityPoints);
       hideLoading();
     });
   }
@@ -265,8 +262,6 @@ setupSearchBoxEvents(
 
       // reset choice for first location and repopulate select
       selectedFirstLocation = "";
-      populateBarStart(currentCityPoints);
-
       addCityLocations();
       hideLoading();
     } else {
