@@ -3,6 +3,7 @@ import { containsObject, copy, updateURL } from "./utils.js";
 import { getCityPoints, postCrawl, getCities, getPubs } from "./api.js";
 import {
   clearBarInformationBox,
+  clearCityList,
   populateCityList,
   setRouteLength,
   setShareButtonCopied,
@@ -20,6 +21,7 @@ import {
   toggleNoCitiesResults,
   setupPubPlusMinusEvents,
   setupAttractionPlusMinusEvents,
+  populateBarStart,
   renderBarInformationBox,
   setupPillClosedEvents,
   hidePill, 
@@ -133,6 +135,8 @@ async function addAlternativeBarMarkers(route_points) {
 
 async function pageStart() {
   showLoading();
+  addCityLocations();
+
   setAttractionDisplay(selectedAttractions);
   setMarkersDisplay(selectedPubs);
 
@@ -164,6 +168,7 @@ async function pageStart() {
       updateRouteMetrics();
       console.log("Rendering specific route");
       await renderRoute(waypoints);
+      populateBarStart(currentCityPoints);
       hideLoading();
     });
   } else {
@@ -178,6 +183,7 @@ async function pageStart() {
       );
       await renderRoute(waypoints);
       updateRouteMetrics();
+      populateBarStart(currentCityPoints);
       hideLoading();
     });
   }
@@ -206,6 +212,15 @@ async function renderRoute(waypoints) {
   } else {
     toggleNoPubsResults();
   }
+}
+
+function addCityLocations() {
+  clearCityList();
+  getCities().then((cities) => {
+    cityPoints = cities;
+    populateCityList(cityPoints);
+  });
+  updateRouteMetrics();
 }
 
 setupPillClosedEvents(async () => {
@@ -250,6 +265,9 @@ setupSearchBoxEvents(
 
       // reset choice for first location and repopulate select
       selectedFirstLocation = "";
+      populateBarStart(currentCityPoints);
+
+      addCityLocations();
       hideLoading();
     } else {
       if (e.code === "Enter") {
