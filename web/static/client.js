@@ -165,7 +165,6 @@ async function pageStart() {
       let waypoints = await postCrawl(currentLocation, markers);
       selectedPubs = targetPubs;
       updateRouteMetrics();
-      console.log("Rendering specific route");
       await renderRoute(waypoints);
       hideLoading();
     });

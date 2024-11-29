@@ -91,6 +91,7 @@ function convertToGeoJSON(dataArray) {
           price_level: item.price_level,
           rating: item.rating,
           types: item.types,
+          photos: item.photos,
         },
         geometry: {
           type: "Point",

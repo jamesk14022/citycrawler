@@ -2,6 +2,7 @@ import { INITIAL_LOCATION, MAPBOX_TOKEN, TIME_SPENT_BAR } from "./constants.js";
 import { setRouteLength, setRouteDuration } from "./ui.js";
 import { convertToGeoJSON } from "./utils.js";
 import { selectStartEvent } from "./client.js";
+import { getGoogleMapsPhoto } from "./api.js";
 
 // token scoped and safe for FE use
 mapboxgl.accessToken = MAPBOX_TOKEN;
@@ -44,7 +45,6 @@ export function removeAlternativeAttractionMarkers() {
 }
 
 export function renderAlternativeAttractionMarkers(waypoints) {
-  console.log(waypoints);
   map.addSource("places", convertToGeoJSON(waypoints));
   map.addLayer({
     id: "places",
@@ -59,7 +59,12 @@ export function renderAlternativeAttractionMarkers(waypoints) {
   });
 }
 
-function buildAlternativeAttractionMarkerPopupDescription(waypoint) {
+async function buildAlternativeAttractionMarkerPopupDescription(waypoint) {
+  const photoResult = await getGoogleMapsPhoto(
+    JSON.parse(waypoint.photos)[0].photo_reference,
+  );
+  const imageSrc = `data:image/jpeg;base64,${photoResult.body}`;
+
   let description = `<strong>${waypoint.name}</strong>`;
   if (waypoint.rating !== 0) {
     description += `<br>Rating: `;
@@ -76,6 +81,7 @@ function buildAlternativeAttractionMarkerPopupDescription(waypoint) {
     description = `🍺 ${description}`;
   }
 
+  description += `<br><img src="${imageSrc}" alt="Photo of ${waypoint.name}" style="width: 100%; height: auto;">`;
   description += `<br><button class="select-start-button" data-id="${waypoint.place_id}" data-name="${waypoint.name}">Select as starting point</button>`;
 
   return description;
@@ -125,7 +131,7 @@ export async function setupRenderAlternativeAttractionMarkersPopup() {
     // Copy coordinates array.
     const coordinates = e.features[0].geometry.coordinates.slice();
     // description to name for now
-    const description = buildAlternativeAttractionMarkerPopupDescription(
+    const description = await buildAlternativeAttractionMarkerPopupDescription(
       e.features[0].properties,
     );
 

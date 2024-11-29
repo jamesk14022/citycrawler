@@ -1,9 +1,11 @@
 package handlers
 
 import (
+	"encoding/base64"
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io"
 	"log"
 	"math/rand"
 	"net/http"
@@ -238,6 +240,47 @@ func GetCityCoordinates(w http.ResponseWriter, r *http.Request) {
 	cityCoordinates := checkAvailableLocations()
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(cityCoordinates)
+}
+
+func GetPhoto(w http.ResponseWriter, r *http.Request) {
+	photoReference := r.URL.Query().Get("photo_reference")
+	if photoReference == "" {
+		http.Error(w, "photo_reference is required", http.StatusBadRequest)
+		return
+	}
+
+	url := "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=" + photoReference + "&key=" + os.Getenv("GOOGLE_MAPS_API_KEY")
+	resp, err := http.Get(url)
+	if err != nil {
+		http.Error(w, "Failed to fetch photo: "+err.Error(), http.StatusInternalServerError)
+		return
+	}
+	defer resp.Body.Close()
+
+	fmt.Println("Photo response status: ", resp)
+
+	// Read the response body into a byte slice
+	bodyBytes, err := io.ReadAll(resp.Body)
+	if err != nil {
+		http.Error(w, "Failed to read response: "+err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	// Create a response object
+	responseObject := map[string]interface{}{
+		"status":  resp.StatusCode,
+		"headers": resp.Header,
+		"body":    base64.StdEncoding.EncodeToString(bodyBytes), // Include the body as a string
+	}
+
+	// Set the Content-Type as JSON
+	w.Header().Set("Content-Type", "application/json")
+
+	// Write the JSON response
+	err = json.NewEncoder(w).Encode(responseObject)
+	if err != nil {
+		http.Error(w, "Failed to encode JSON response: "+err.Error(), http.StatusInternalServerError)
+	}
 }
 
 func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {

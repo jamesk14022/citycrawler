@@ -39,6 +39,7 @@ func main() {
 	router.HandleFunc("/pubs", handlers.GetRandomCrawl).Methods("GET")
 	router.HandleFunc("/citypoints", handlers.GetAllCityPoints).Methods("GET")
 	router.HandleFunc("/crawl", handlers.PostCrawl).Methods("POST")
+	router.HandleFunc("/photo", handlers.GetPhoto).Methods("GET")
 
 	router.
 		PathPrefix("/").

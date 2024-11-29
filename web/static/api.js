@@ -42,10 +42,19 @@ export async function postCrawl(currentLocation, markers) {
 }
 
 export async function getCityPoints(currentLocation) {
-  console.log("getCityPoints", currentLocation);
   try {
     return await fetchData(
       `${BASE_URL}/citypoints?location=${currentLocation}`,
+    );
+  } catch (error) {
+    console.error("Error fetching GET data:", error);
+  }
+}
+
+export async function getGoogleMapsPhoto(photoReference) {
+  try {
+    return await fetchData(
+      `${BASE_URL}/photo?photo_reference=${photoReference}`,
     );
   } catch (error) {
     console.error("Error fetching GET data:", error);
@@ -72,8 +81,7 @@ async function fetchData(url, method = "GET", body = null, headers = {}) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
-    const data = await response.json();
-    return data; // Return the parsed JSON
+    return await response.json();
   } catch (error) {
     console.error("Error during fetch:", error);
     throw error; // Pass the error back for handling
