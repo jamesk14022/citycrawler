@@ -141,7 +141,7 @@ export function populateCityList(cities) {
 }
 
 export function showPill(bar_start) {
-  document.querySelector(".pill").style.display = "block";
+  document.querySelector(".pill").style.display = "inline";
   document.getElementById("pill-text").innerHTML = bar_start;
 }
 

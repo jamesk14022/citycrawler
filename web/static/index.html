@@ -57,19 +57,18 @@
         position: absolute;
         top: 10px;
         left: 10px;
-        display: inline-flex;
         background-color: #f4f4f4;
-        gap: 2%;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
         z-index: 1;
         align-items: center;
-        width: 80%;
+        display: inline-flex;
+        width: max-content;
       }
 
       .pill-button {
-        display: inline-flex;
+        display: inline;
         align-items: center;
         background-color: #008cba;
         color: white;
@@ -122,17 +121,19 @@
       .marker-container {
         display: inline-flex;
         align-items: center;
-        gap: 5px;
+        margin: 0px 10px;
       }
       #slider-container {
         display: inline-flex;
         align-items: center;
-        gap: 5px;
       }
       #container {
         display: flex;
         flex: 1;
         height: 100%;
+      }
+      .material-icons{
+        display: inline;
       }
       .select-start-button {
         margin: 10px auto 0px auto;
@@ -140,6 +141,12 @@
         background-color: #008cba;
         border: none;
         color: white;
+      }
+      .pubs-label {
+        margin-right: 5px;
+      }
+      .attractions-label {
+        margin-right: 5px;
       }
       #map {
         flex: 3;
@@ -226,6 +233,12 @@
       .material-icons {
         font-size: initial;
       }
+      .num-markers{
+        margin: 0px 3px;
+      }
+      .num-attractions{
+        margin: 0px 3px;
+      }
       @media screen and (min-width: 799px) {
         #rightBar {
           position: absolute;
@@ -235,7 +248,9 @@
         }
         #refresh-button {
           height: 50px;
-          min-width: 150px;
+          padding: 0px 20px;
+          margin: 0px 10px;
+          white-space: nowrap;
           background-color: #008cba;
           border: none;
           color: white;
@@ -247,7 +262,9 @@
         }
         #shareButton {
           height: 50px;
-          min-width: 150px;
+          padding: 0px 20px;
+          margin: 0px 10px;
+          white-space: nowrap;
           z-index: 1;
           background-color: #008cba;
           border: none;
@@ -386,7 +403,7 @@
         display: block;
       }
       #distance-slider {
-        margin-right: 10px;
+        margin-right: 20px;
       }
       #route-duration-paragraph {
         display: inline;
@@ -554,14 +571,14 @@
           />
 
           <div class="marker-container top-bar">
-            <label for="distance-slider">Pubs:</label>
+            <label class="pubs-label" for="distance-slider">Pubs: </label>
             <button class="marker-quantity-btn-minus btn-circle">-</button>
             <span class="num-markers"></span>
             <button class="marker-quantity-btn-plus btn-circle">+</button>
           </div>
 
           <div class="marker-container top-bar">
-            <label for="distance-slider">Attractions:</label>
+            <label class="attractions-label" for="distance-slider">Attractions: </label>
             <button class="attraction-quantity-btn-minus btn-circle">-</button>
             <span class="num-attractions"></span>
             <button class="attraction-quantity-btn-plus btn-circle">+</button>
