@@ -53,12 +53,12 @@
           <div id="exit"><input type="button" value="Close" /></div>
         </div>
       </div> -->
-      <header class="bg-blue-600 h-12 flex items-center">
+      <header class="bg-slate-600 h-12 flex items-center">
         <img src="./assets/favicon.ico" alt="BarCrawler logo" class="h-8 w-8 m-2" /> 
         <h1 class="text-white text-lg font-bold">BarCrawler</h1>
       </header>
 
-      <div class="bg-orange-600 h-30 flex flex-row justify-between">
+      <div class="bg-sky-600 h-30 flex py-2 px-1 flex-row justify-between">
           <input
             type="text"
             id="search-box"
@@ -68,15 +68,41 @@
           />
 
           <div id="toggleBar">
-            <button id="sidebarToggle" class="toggle-btn m-1">☰</button>
+            <button id="sidebarToggle" class="toggle-btn shadow bg-white rounded-lg p-2 m-1">☰</button>
           </div>
 
-          <button type="button" class="bg-slate-300 rounded-lg p-2 m-1" id="refresh-button">
+          <button type="button" class="bg-slate-600 text-white rounded-lg p-2 m-1" id="refresh-button">
             <i class="material-icons">shuffle</i>Randomise
           </button>
       </div>
 
-      <div class="bg-blue-600 h-16 flex flex-row justify-between">
+      <div class="z-0 h-64 pt-5 bg-slate-200 hidden">
+      <div class="marker-container">
+        <label class="sidebar-label" for="distance-slider">Pubs:</label>
+        <button class="btn-side rounded-full border-4	border-slate-300 marker-quantity-btn-minus btn-circle">-</button>
+        <span class="num-markers"></span>
+        <button class="btn-side rounded-full border-4	border-slate-300 marker-quantity-btn-plus btn-circle">+</button>
+      </div>
+
+      <div class="marker-container mb-5">
+        <label class="sidebar-label" for="distance-slider">Attractions:</label>
+        <button class="btn-side rounded-full border-4	border-slate-300 attraction-quantity-btn-minus btn-circle">
+          -
+        </button>
+        <span class="num-attractions"></span>
+        <button class="btn-side rounded-full border-4	border-slate-300	 attraction-quantity-btn-plus btn-circle">
+          +
+        </button>
+      </div>
+
+
+      <div class="bg-blue-600 h-16 w-55 flex flex-row justify-center gap-4 rounded border-2 	border-slate-200">
+        <button class="close-btn bg-slate-200 m-2 p-2">Reset Filters</button>
+        <button class="reset-btn bg-slate-100 m-2 p-2">Save Filters</button>
+      </div>
+    </div>
+
+      <div class="bg-slate-300 h-16 py-2 px-1 flex flex-row justify-between">
         <div class="hidden">
           <label class="pubs-label" for="distance-slider">Pubs: </label>
           <button class="marker-quantity-btn-minus btn-circle">-</button>
@@ -91,13 +117,13 @@
           <button class="attraction-quantity-btn-plus btn-circle">+</button>
         </div>
 
-        <button id="shareButton" class="bg-slate-300 rounded-lg p-2 m-1" type="button">
+        <button id="shareButton" class="bg-slate-50 rounded-lg p-2 m-1" type="button">
           <i class="material-icons">content_copy</i>Copy sharing link
         </button>
 
         <div class="flex flex-row p-1 m-1 items-center">
           <label for="distance-slider">Starting location:</label>
-          <div class="pill-button">
+          <div class="pill-button bg-sky-600">
             <span id="pill-text">TT</span>
             <span class="pill-close" id="pill-close">✖</span>
           </div>
@@ -108,7 +134,7 @@
         <datalist id="locations"></datalist>
 
         <div id="rightBar">
-          <div id="route-info">
+          <div class="bg-slate-100" id="route-info">
             <p>Total route distance is <span id="route-length">10</span>km</p>
             <p id="route-duration-paragraph">
               Total route duration is
@@ -126,28 +152,6 @@
         </div>
       </div>
     </div>
-    <!-- <div id="collap-sidebar" class="sidebar">
-      <div class="marker-container">
-        <label class="sidebar-label" for="distance-slider">Pubs:</label>
-        <button class="btn-side marker-quantity-btn-minus btn-circle">-</button>
-        <span class="num-markers"></span>
-        <button class="btn-side marker-quantity-btn-plus btn-circle">+</button>
-      </div>
-
-      <div class="marker-container">
-        <label class="sidebar-label" for="distance-slider">Attractions:</label>
-        <button class="btn-side attraction-quantity-btn-minus btn-circle">
-          -
-        </button>
-        <span class="num-attractions"></span>
-        <button class="btn-side attraction-quantity-btn-plus btn-circle">
-          +
-        </button>
-      </div>
-      <br />
-      <br />
-      <button class="close-btn">Close</button>
-    </div> -->
 
     <!-- <div class="loading-overlay"></div>
     <div class="loading-spinner"></div> -->
