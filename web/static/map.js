@@ -14,6 +14,8 @@ export const map = new mapboxgl.Map({
   zoom: 12,
 });
 
+console.log(map);
+
 const directions = new MapboxDirections({
   accessToken: mapboxgl.accessToken,
   unit: "metric",

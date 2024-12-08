@@ -9,7 +9,7 @@ import {
   setShareButtonCopied,
   setupShareButtonEvents,
   setupRefreshButtonEvents,
-  setupModalExitButtonEvents,
+  // setupModalExitButtonEvents,
   setupSearchBoxEvents,
   setRouteDuration,
   setMarkersDisplay,
@@ -238,9 +238,9 @@ setupRefreshButtonEvents(async () => {
   hideLoading();
 });
 
-setupModalExitButtonEvents(() => {
-  toggleNoPubsResults();
-});
+// setupModalExitButtonEvents(() => {
+//   toggleNoPubsResults();
+// });
 
 setupSearchBoxEvents(async (e) => {
   let inputVal = e.target.value;

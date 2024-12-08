@@ -15,18 +15,18 @@ import {
   attractionPlus,
   attractionCounter,
   markerCounter,
-  sidebar,
-  sidebarToggle,
-  closeBtn,
+  // sidebar,
+  // sidebarToggle,
+  // closeBtn,
 } from "./constants.js";
 
 import { buildGoogleMapsUrl } from "./api.js";
 
-document.addEventListener("click", function (event) {
-  if (!sidebar.contains(event.target) && event.target !== sidebarToggle) {
-    closeSidebar();
-  }
-});
+// document.addEventListener("click", function (event) {
+//   if (!sidebar.contains(event.target) && event.target !== sidebarToggle) {
+//     closeSidebar();
+//   }
+// });
 
 export const setAttractionDisplay = (attractions) => {
   attractionCounter.forEach((element) => {
@@ -41,18 +41,18 @@ export const setMarkersDisplay = (markers) => {
 };
 
 export function showLoading() {
-  document.querySelector(".loading-spinner").style.display = "block";
-  document.querySelector(".loading-overlay").style.display = "block";
-  container.classList.add("blurred");
+  // document.querySelector(".loading-spinner").style.display = "block";
+  // document.querySelector(".loading-overlay").style.display = "block";
+  // container.classList.add("blurred");
 }
 
 const hideRightBar = () => (rightBar.style.display = "none");
 export const showRightBar = () => (rightBar.style.display = "block");
 
 export function hideLoading() {
-  document.querySelector(".loading-spinner").style.display = "none";
-  document.querySelector(".loading-overlay").style.display = "none";
-  container.classList.remove("blurred");
+  // document.querySelector(".loading-spinner").style.display = "none";
+  // document.querySelector(".loading-overlay").style.display = "none";
+  // container.classList.remove("blurred");
 }
 
 export function toggleNoPubsResults() {
@@ -114,19 +114,19 @@ export function setupPillClosedEvents(onPillClosed) {
   });
 }
 
-export function setupModalExitButtonEvents(onModalExitButtonClicked) {
-  modalExitButton.addEventListener("click", onModalExitButtonClicked);
-}
+// export function setupModalExitButtonEvents(onModalExitButtonClicked) {
+//   modalExitButton.addEventListener("click", onModalExitButtonClicked);
+// }
 
 export function setupSearchBoxEvents(onKeyPress) {
   searchBox.addEventListener("keypress", onKeyPress);
   searchBox.addEventListener("input", onKeyPress);
 }
 
-const openSidebar = () => (sidebar.style.width = "400px");
-const closeSidebar = () => (sidebar.style.width = "0");
-sidebarToggle.addEventListener("click", openSidebar);
-closeBtn.addEventListener("click", closeSidebar);
+// const openSidebar = () => (sidebar.style.width = "400px");
+// const closeSidebar = () => (sidebar.style.width = "0");
+// sidebarToggle.addEventListener("click", openSidebar);
+// closeBtn.addEventListener("click", closeSidebar);
 
 export function clearCityList() {
   dataList.innerHTML = "";

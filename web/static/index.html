@@ -39,519 +39,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <style>
-      body,
-      html {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-      .mapboxgl-ctrl-top-left {
-        display: none;
-      }
-      #controls {
-        font-size: 14px;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        z-index: 1;
-        align-items: center;
-        display: inline-flex;
-        width: max-content;
-      }
-
-      .pill-button {
-        display: inline;
-        align-items: center;
-        background-color: #008cba;
-        color: white;
-        font-size: 14px;
-        padding: 6px 12px;
-        border-radius: 50px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-      }
-
-      /* Pill Button Hover Effect */
-      .pill-button:hover {
-        background-color: #0056b3;
-      }
-
-      /* Text in the Pill */
-      .pill-text {
-        margin-right: 8px;
-      }
-
-      /* Close Icon */
-      .pill-close {
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        margin-left: 10px;
-      }
-
-      /* Close Icon Hover Effect */
-      .pill-close:hover {
-        color: #ff4757;
-      }
-
-      .marker-container.pill {
-        display: none;
-      }
-
-      #route-info {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        z-index: 1;
-      }
-      #route-info p {
-        margin: 0px;
-      }
-      .marker-container {
-        display: inline-flex;
-        align-items: center;
-        margin: 0px 10px;
-      }
-      #slider-container {
-        display: inline-flex;
-        align-items: center;
-      }
-      #container {
-        display: flex;
-        flex: 1;
-        height: 100%;
-      }
-      .material-icons{
-        display: inline;
-      }
-      .select-start-button {
-        margin: 10px auto 0px auto;
-        display: block;
-        background-color: #008cba;
-        border: none;
-        color: white;
-      }
-      .pubs-label {
-        margin-right: 5px;
-      }
-      .attractions-label {
-        margin-right: 5px;
-      }
-      #map {
-        flex: 3;
-        height: 100%;
-        position: relative;
-      }
-
-      .waypoint-info {
-        border-bottom: 1px solid #ddd;
-        padding: 10px;
-      }
-
-      .custom-marker {
-        background-color: #555;
-        border-radius: 50%;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        width: 30px;
-        font-size: 14px;
-        text-align: center;
-        line-height: 30px;
-      }
-      /* Spinner and overlay */
-      .loading-spinner {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: 5px solid #f3f3f3;
-        border-top: 5px solid #555;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        animation: spin 1s linear infinite;
-        display: none;
-        z-index: 1000;
-      }
-
-      @keyframes spin {
-        0% {
-          transform: translate(-50%, -50%) rotate(0deg);
-        }
-        100% {
-          transform: translate(-50%, -50%) rotate(360deg);
-        }
-      }
-
-      .loading-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.7);
-        z-index: 500;
-        display: none;
-      }
-
-      .blurred {
-        filter: blur(5px);
-      }
-      #search-box {
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        z-index: 1;
-      }
-
-      #locations {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 200px;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        z-index: 1;
-      }
-      .material-icons {
-        font-size: initial;
-      }
-      .num-markers{
-        margin: 0px 3px;
-      }
-      .num-attractions{
-        margin: 0px 3px;
-      }
-      @media screen and (min-width: 799px) {
-        #rightBar {
-          position: absolute;
-          top: 200px;
-          right: 25px;
-          z-index: 1;
-        }
-        #refresh-button {
-          height: 50px;
-          padding: 0px 20px;
-          margin: 0px 10px;
-          white-space: nowrap;
-          background-color: #008cba;
-          border: none;
-          color: white;
-          text-align: center;
-          text-decoration: none;
-          display: inline;
-          cursor: pointer;
-          border-radius: 5px;
-        }
-        #shareButton {
-          height: 50px;
-          padding: 0px 20px;
-          margin: 0px 10px;
-          white-space: nowrap;
-          z-index: 1;
-          background-color: #008cba;
-          border: none;
-          color: white;
-          text-align: center;
-          text-decoration: none;
-          display: inline;
-          cursor: pointer;
-          border-radius: 5px;
-        }
-      }
-      .bar-select {
-        width: 200px;
-      }
-      .listing-group {
-        font:
-          15px/20px "Helvetica Neue",
-          Arial,
-          Helvetica,
-          sans-serif;
-        font-weight: 600;
-        border-radius: 3px;
-        color: #fff;
-      }
-      .listing-group input[type="button"]:first-child + label {
-        border-radius: 3px 3px 0 0;
-      }
-
-      .listing-group label:last-child {
-        border-radius: 0 0 3px 3px;
-        border: none;
-      }
-
-      .listing-group input[type="button"] {
-        display: none;
-      }
-
-      .listing-group input[type="button"] + label {
-        background-color: #3386c0;
-        display: block;
-        cursor: pointer;
-        padding: 10px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-      }
-
-      .listing-group input[type="button"] + label {
-        background-color: #3386c0;
-        text-transform: capitalize;
-      }
-
-      .listing-group input[type="button"] + label:hover,
-      .listing-group input[type="button"]:checked + label {
-        background-color: #4ea0da;
-      }
-
-      .listing-group input[type="button"]:checked + label:before {
-        content: "✔";
-        margin-right: 5px;
-      }
-      /* Style for the info emblem */
-      .info-emblem {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-      }
-
-      /* Style for the tooltip text */
-      .tooltip-text {
-        visibility: hidden;
-        width: 200px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%; /* Position the tooltip above the emblem */
-        left: 50%;
-        margin-left: -100px; /* Center the tooltip */
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-
-      /* Show the tooltip text when hovering over the info emblem */
-      .info-emblem:hover .tooltip-text {
-        visibility: visible;
-        opacity: 1;
-      }
-
-      /* Arrow below the tooltip text */
-      .tooltip-text::after {
-        content: "";
-        position: absolute;
-        top: 100%; /* At the bottom of the tooltip */
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: #555 transparent transparent transparent;
-      }
-      .marker {
-        border-radius: 50% 50% 50% 0;
-        border: 4px solid #fff;
-        width: 20px;
-        height: 20px;
-        transform: rotate(-45deg);
-        background-color: red;
-      }
-      .modal {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        justify-content: center;
-      }
-
-      .modal.hidden {
-        display: none;
-      }
-
-      .modal_content {
-        position: relative;
-        margin: auto 0;
-        width: 300px;
-        height: 200px;
-        background-color: lightgray;
-        border: 3px solid #999999;
-        text-align: center;
-        padding: 20px 40px;
-      }
-      #exit {
-        display: block;
-      }
-      #distance-slider {
-        margin-right: 20px;
-      }
-      #route-duration-paragraph {
-        display: inline;
-      }
-      .mapboxgl-popup {
-        max-width: 400px;
-        font:
-          12px/20px "Helvetica Neue",
-          Arial,
-          Helvetica,
-          sans-serif;
-      }
-      .toggle-btn {
-        background-color: #008cba;
-        color: white;
-        font-size: 30px;
-        cursor: pointer;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        display: none;
-      }
-
-      .sidebar {
-        height: 90%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: white;
-        overflow-x: hidden;
-        transition: 0.1s;
-        padding-top: 60px;
-        align-items: center;
-        box-shadow: #555;
-      }
-
-      .marker-label {
-        margin: 2px;
-        border-radius: 2px;
-      }
-
-      .sidebar button:hover {
-        color: #f1f1f1;
-      }
-
-      .sidebar .close-btn {
-        font-size: 20px;
-        text-align: center;
-        background-color: #008cba;
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-        border-radius: 5px;
-        padding: 10px;
-        margin: 10% auto;
-        width: 40%;
-        position: absolute;
-        bottom: 30%;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-
-      .btn-circle {
-        border-radius: 50%;
-        padding: 0.25em 0.8em;
-      }
-
-      .btn-circle:hover {
-        border-color: #0c3d5d;
-        color: #0c3d5d;
-      }
-
-      @media screen and (max-width: 799px) {
-        #refresh-button {
-          background-color: #008cba;
-          border: none;
-          color: white;
-          text-align: center;
-          text-decoration: none;
-          font-size: 14px;
-          margin: 8px 4px;
-          cursor: pointer;
-          border-radius: 5px;
-          padding: 10px;
-          position: absolute;
-          top: 60px; /* Adjust this value to set the distance from the top */
-          right: 0px; /* Adjust this value to set the distance from the right */
-        }
-        #shareButton {
-          z-index: 1;
-          background-color: #008cba;
-          border: none;
-          color: white;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 14px;
-          margin: 8px 4px;
-          cursor: pointer;
-          padding: 10px;
-          border-radius: 5px;
-          position: absolute;
-          top: 60px; /* Adjust this value to set the distance from the top */
-          right: 160px; /* Adjust this value to set the distance from the right */
-        }
-        .toggle-btn {
-          display: block;
-        }
-        .marker-container.top-bar {
-          display: none;
-        }
-        div#slider-container.top-bar {
-          display: none;
-        }
-        #rightBar {
-          position: absolute;
-          bottom: 10px;
-          left: 25px;
-          z-index: 1;
-          width: 90%;
-        }
-        .listing-group {
-          display: flex;
-          flex-wrap: wrap;
-        }
-        .listing-group {
-          font:
-            14px/20px "Helvetica Neue",
-            Arial,
-            Helvetica,
-            sans-serif;
-        }
-        .sidebar-label {
-          width: 200px;
-          padding-left: 10%;
-        }
-        .btn-side {
-          width: 40px;
-          height: 40px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="output.css" />
   </head>
   <body>
-    <div id="container">
-      <div class="modal hidden" id="no-results">
+    <div id="container" class="container">
+      <!-- <div class="modal hidden" id="no-results">
         <div class="modal_content">
           <p id="no_pubs">
             No routes found within the specified distance. Please try adjusting
@@ -560,49 +52,59 @@
           <p id="city_not_found">City not found. Please try again.</p>
           <div id="exit"><input type="button" value="Close" /></div>
         </div>
-      </div>
-      <div id="map">
-        <div id="controls">
+      </div> -->
+      <header class="bg-blue-600 h-12 flex items-center">
+        <img src="./assets/favicon.ico" alt="BarCrawler logo" class="h-8 w-8 m-2" /> 
+        <h1 class="text-white text-lg font-bold">BarCrawler</h1>
+      </header>
+
+      <div class="bg-orange-600 h-30 flex flex-row justify-between">
           <input
             type="text"
             id="search-box"
             list="locations"
             placeholder="Search city..."
+            class="p-2 m-1"
           />
 
-          <div class="marker-container top-bar">
-            <label class="pubs-label" for="distance-slider">Pubs: </label>
-            <button class="marker-quantity-btn-minus btn-circle">-</button>
-            <span class="num-markers"></span>
-            <button class="marker-quantity-btn-plus btn-circle">+</button>
-          </div>
-
-          <div class="marker-container top-bar">
-            <label class="attractions-label" for="distance-slider">Attractions: </label>
-            <button class="attraction-quantity-btn-minus btn-circle">-</button>
-            <span class="num-attractions"></span>
-            <button class="attraction-quantity-btn-plus btn-circle">+</button>
-          </div>
-
-          <div class="marker-container top-bar pill">
-            <label for="distance-slider">Starting location:</label>
-            <div class="pill-button">
-              <span id="pill-text">Button Text</span>
-              <span class="pill-close" id="pill-close">✖</span>
-            </div>
-          </div>
-
-          <button type="button" id="shareButton">
-            <i class="material-icons">content_copy</i>Copy sharing link
-          </button>
-          <button type="button" id="refresh-button">
-            <i class="material-icons">shuffle</i>Randomise Route
-          </button>
           <div id="toggleBar">
-            <button id="sidebarToggle" class="toggle-btn">☰</button>
+            <button id="sidebarToggle" class="toggle-btn m-1">☰</button>
           </div>
+
+          <button type="button" class="bg-slate-300 rounded-lg p-2 m-1" id="refresh-button">
+            <i class="material-icons">shuffle</i>Randomise
+          </button>
+      </div>
+
+      <div class="bg-blue-600 h-16 flex flex-row justify-between">
+        <div class="hidden">
+          <label class="pubs-label" for="distance-slider">Pubs: </label>
+          <button class="marker-quantity-btn-minus btn-circle">-</button>
+          <span class="num-markers"></span>
+          <button class="marker-quantity-btn-plus btn-circle">+</button>
         </div>
 
+        <div class="hidden">
+          <label class="attractions-label" for="distance-slider">Attractions: </label>
+          <button class="attraction-quantity-btn-minus btn-circle">-</button>
+          <span class="num-attractions"></span>
+          <button class="attraction-quantity-btn-plus btn-circle">+</button>
+        </div>
+
+        <button id="shareButton" class="bg-slate-300 rounded-lg p-2 m-1" type="button">
+          <i class="material-icons">content_copy</i>Copy sharing link
+        </button>
+
+        <div class="flex flex-row p-1 m-1 items-center">
+          <label for="distance-slider">Starting location:</label>
+          <div class="pill-button">
+            <span id="pill-text">TT</span>
+            <span class="pill-close" id="pill-close">✖</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="map" class="h-screen">
         <datalist id="locations"></datalist>
 
         <div id="rightBar">
@@ -624,7 +126,7 @@
         </div>
       </div>
     </div>
-    <div id="collap-sidebar" class="sidebar">
+    <!-- <div id="collap-sidebar" class="sidebar">
       <div class="marker-container">
         <label class="sidebar-label" for="distance-slider">Pubs:</label>
         <button class="btn-side marker-quantity-btn-minus btn-circle">-</button>
@@ -645,10 +147,10 @@
       <br />
       <br />
       <button class="close-btn">Close</button>
-    </div>
+    </div> -->
 
-    <div class="loading-overlay"></div>
-    <div class="loading-spinner"></div>
+    <!-- <div class="loading-overlay"></div>
+    <div class="loading-spinner"></div> -->
 
     <script type="module" src="utils.js"></script>
     <script type="module" src="constants.js"></script>
