@@ -38,9 +38,10 @@ const attractionPlus = document.querySelectorAll(
 const attractionCounter = document.querySelectorAll(".num-attractions");
 const markerCounter = document.querySelectorAll(".num-markers");
 
-// const sidebar = document.getElementById("collap-sidebar");
-// const sidebarToggle = document.getElementById("sidebarToggle");
+const sidebar = document.getElementById("collap-sidebar");
+const sidebarToggle = document.getElementById("sidebarToggle");
 // const closeBtn = sidebar.querySelector(".close-btn");
+const secondaryBar = document.getElementById("secondaryBar");
 
 const selectStart = document.getElementById("pointStart");
 
@@ -66,8 +67,9 @@ export {
   attractionPlus,
   attractionCounter,
   markerCounter,
-  // sidebar,
-  // sidebarToggle,
+  sidebar,
+  sidebarToggle,
   // closeBtn,
   selectStart,
+  secondaryBar
 };

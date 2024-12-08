@@ -15,8 +15,9 @@ import {
   attractionPlus,
   attractionCounter,
   markerCounter,
-  // sidebar,
-  // sidebarToggle,
+  sidebar,
+  sidebarToggle,
+  secondaryBar
   // closeBtn,
 } from "./constants.js";
 
@@ -123,9 +124,9 @@ export function setupSearchBoxEvents(onKeyPress) {
   searchBox.addEventListener("input", onKeyPress);
 }
 
-// const openSidebar = () => (sidebar.style.width = "400px");
+const openSidebar = () => (sidebar.classList.toggle("hidden"), secondaryBar.classList.toggle("hidden"));
 // const closeSidebar = () => (sidebar.style.width = "0");
-// sidebarToggle.addEventListener("click", openSidebar);
+sidebarToggle.addEventListener("click", openSidebar);
 // closeBtn.addEventListener("click", closeSidebar);
 
 export function clearCityList() {
