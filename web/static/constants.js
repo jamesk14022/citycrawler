@@ -71,5 +71,5 @@ export {
   sidebarToggle,
   // closeBtn,
   selectStart,
-  secondaryBar
+  secondaryBar,
 };
