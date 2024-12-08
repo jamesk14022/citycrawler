@@ -84,9 +84,11 @@ setupAttractionPlusMinusEvents(
   },
 );
 
-export function selectStartEvent(place_id, place_name) {
+export function selectStartEvent(place_id, place_name, toggle = true) {
   selectedFirstLocation = place_id;
-  showPill(place_name);
+  if (toggle) {
+    showPill(place_name);
+  }
 }
 
 const clearExistingRoute = () => {
@@ -220,7 +222,7 @@ function addCityLocations() {
 }
 
 setupPillClosedEvents(async () => {
-  selectStartEvent("");
+  selectStartEvent("", "", false);
   hidePill();
 });
 

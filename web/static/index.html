@@ -64,36 +64,38 @@
               id="search-box"
               list="locations"
               placeholder="Search city..."
-              class="basis-1/3 p-2 m-1"
+              class="basis-1/2 p-2 m-1"
             />
 
-          <div class="basis-1/3" id="toggleBar">
-            <button id="sidebarToggle" class="toggle-btn shadow bg-white rounded-lg p-2 m-1">☰</button>
-          </div>
+          <button id="sidebarToggle" class="toggle-btn shadow bg-white rounded-lg p-2 m-1 basis-1/4">
+            <i class="material-icons">menu</i> <span class="hidden lg:inline">Filter</span> 
+          </button>
 
-          <button type="button" class="bg-slate-600 text-white rounded-lg p-2 m-1 basis-1/3" id="refresh-button">
-            <i class="material-icons">shuffle</i>
+          <button type="button" class="bg-slate-600 text-white rounded-lg p-2 m-1 basis-1/4" id="refresh-button">
+            <i class="material-icons">shuffle</i> <span class="hidden lg:inline">Randomize</span> 
           </button>
       </div>
 
-      <div id="collap-sidebar" class="z-0 h-64 pt-5 bg-slate-200 hidden">
-      <div class="marker-container">
-        <label class="sidebar-label" for="distance-slider">Pubs:</label>
-        <button class="btn-side rounded-full border-4	border-slate-300 marker-quantity-btn-minus btn-circle">-</button>
-        <span class="num-markers"></span>
-        <button class="btn-side rounded-full border-4	border-slate-300 marker-quantity-btn-plus btn-circle">+</button>
-      </div>
+      <div id="collap-sidebar" class="z-0 bg-slate-200 hidden">
+        <div class="flex flex-col md:flex-row pl-10 py-8 gap-10">
+        <div class="marker-container">
+          <label for="distance-slider">Pubs:</label>
+          <button class="btn-side rounded-full border-4	border-slate-300 marker-quantity-btn-minus btn-circle">-</button>
+          <span class="num-markers"></span>
+          <button class="btn-side rounded-full border-4	border-slate-300 marker-quantity-btn-plus btn-circle">+</button>
+        </div>
 
-      <div class="marker-container mb-5">
-        <label class="sidebar-label" for="distance-slider">Attractions:</label>
-        <button class="btn-side rounded-full border-4	border-slate-300 attraction-quantity-btn-minus btn-circle">
-          -
-        </button>
-        <span class="num-attractions"></span>
-        <button class="btn-side rounded-full border-4	border-slate-300	 attraction-quantity-btn-plus btn-circle">
-          +
-        </button>
-      </div>
+        <div class="marker-container">
+          <label for="distance-slider">Attractions:</label>
+          <button class="btn-side rounded-full border-4	border-slate-300 attraction-quantity-btn-minus btn-circle">
+            -
+          </button>
+          <span class="num-attractions"></span>
+          <button class="btn-side rounded-full border-4	border-slate-300	 attraction-quantity-btn-plus btn-circle">
+            +
+          </button>
+        </div>
+        </div>
 
 
       <div class="bg-slate-300 h-16 w-55 flex flex-row justify-center gap-4 rounded border-2 	border-slate-200">
@@ -102,7 +104,7 @@
       </div>
     </div>
 
-      <div id="secondaryBar" class="bg-slate-300 h-16 py-2 px-1 flex flex-row justify-between text-sm">
+      <div id="secondaryBar" class="bg-slate-300 h-16 py-2 px-1 flex flex-row text-sm">
         <!-- <div class="hidden">
           <label class="pubs-label" for="distance-slider">Pubs: </label>
           <button class="marker-quantity-btn-minus btn-circle">-</button>
@@ -117,16 +119,16 @@
           <button class="attraction-quantity-btn-plus btn-circle">+</button>
         </div> -->
 
-        <button id="shareButton" class="bg-slate-50 rounded-lg p-2 m-1" type="button">
+        <button id="shareButton" class="bg-slate-50 rounded-lg p-2 m-1 md:basis-1/6" type="button">
           <i class="material-icons">content_copy</i>Copy sharing link
         </button>
 
-        <div class="flex flex-row p-1 m-1 items-center">
-          <label for="distance-slider">No starting location set</label>
-          <!-- <div class="pill-button bg-sky-600">
+        <div class="flex flex-row p-1 m-1 items-center md:basis-1/6">
+          <label id="start-location-text" for="distance-slider">No starting location set</label>
+          <div id="start-pill" class="pill-button bg-sky-600 hidden">
             <span id="pill-text">TT</span>
             <span class="pill-close" id="pill-close">✖</span>
-          </div> -->
+          </div>
         </div>
       </div>
 

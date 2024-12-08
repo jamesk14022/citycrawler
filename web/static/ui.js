@@ -141,13 +141,19 @@ export function populateCityList(cities) {
   }
 }
 
+export function setFirstLocationText(text) {
+  document.getElementById("start-location-text").textContent = text;
+}
+
 export function showPill(bar_start) {
-  document.querySelector(".pill").style.display = "inline";
+  setFirstLocationText("Starting location: ");
+  document.querySelector("#start-pill").classList.toggle("hidden");
   document.getElementById("pill-text").innerHTML = bar_start;
 }
 
 export function hidePill() {
-  document.querySelector(".pill").style.display = "none";
+  setFirstLocationText("No starting location set");
+  document.querySelector("#start-pill").classList.toggle("hidden");
 }
 
 export function clearBarInformationBox() {
