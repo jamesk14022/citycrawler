@@ -42,7 +42,9 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
-    <div id="container" class="container">
+    <div id="container" class="xl:container">
+      <div class="min-h-screen flex flex-col">
+
       <!-- <div class="modal hidden" id="no-results">
         <div class="modal_content">
           <p id="no_pubs">
@@ -132,7 +134,7 @@
 
       <div
         id="secondaryBar"
-        class="bg-slate-300 h-16 py-2 px-1 flex flex-row sm:text-xs"
+        class="bg-slate-300 py-2 px-1 flex flex-col md:flex-row sm:text-xs"
       >
         <button
           id="shareButton"
@@ -153,7 +155,7 @@
         </div>
       </div>
 
-      <div id="map" class="h-screen">
+      <div id="map" class="relative flex flex-grow">
         <datalist id="locations"></datalist>
 
         <div id="rightBar">
@@ -173,6 +175,7 @@
           </div>
           <nav id="listing-group" class="listing-group"></nav>
         </div>
+      </div>
       </div>
     </div>
 
