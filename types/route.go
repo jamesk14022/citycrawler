@@ -1,5 +1,7 @@
 package types
 
+type RoutesMatrix [][]Route
+
 type Route struct {
 	Point1     string        `json:"point1"`
 	Point2     string        `json:"point2"`

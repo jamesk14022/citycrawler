@@ -9,6 +9,7 @@ import (
 	"go.mongodb.org/mongo-driver/v2/mongo/options"
 
 	"context"
+	"errors"
 	"log"
 	"os"
 )
@@ -68,4 +69,50 @@ func (mgr *manager) AddRoute(route *types.Route) (InsertedID interface{}) {
 	}
 
 	return res.InsertedID
+}
+
+func (mgr *manager) FindRoute(start_placeID string, end_placeID string) types.Route {
+
+	collection := mgr.client.Database("dev").Collection("routes")
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+
+	var result types.Route
+
+	var filter bson.D
+	if start_place <= end_place {
+		filter = bson.D{{"point1", start_place}, {"point2", end_place}}
+	} else {
+		filter = bson.D{{"point1", end_place}, {"point2", start_place}}
+	}
+
+	err := collection.FindOne(ctx, filter).Decode(&result)
+	if errors.Is(err, mongo.ErrNoDocuments) {
+		// Do something when no record was found
+		types.Route{}
+	} else if err != nil {
+		log.Fatal(err)
+	}
+
+	return result
+}
+
+func (mgr *manager) FindPlace(placeID string) types.Place {
+
+	collection := mgr.client.Database("dev").Collection("routes")
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+
+	var result types.Place
+
+	filter := bson.D{{"placeid", placeID}}
+	err := collection.FindOne(ctx, filter).Decode(&result)
+	if errors.Is(err, mongo.ErrNoDocuments) {
+		// Do something when no record was found
+		return types.Place{}
+	} else if err != nil {
+		log.Fatal(err)
+	}
+
+	return result
 }

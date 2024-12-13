@@ -1,13 +1,13 @@
 package types
 
 type DistanceMatrix [][]float64
-type RoutesMatrix [][]Route
 
 type PlaceIDs struct {
 	PlaceIDs []string `json:"place_ids"`
 }
 
 type Place struct {
+	PlaceID             string       `json:"place_id"`
 	BusinessStatus      string       `json:"business_status"`
 	City                string       `json:"city"`
 	Geometry            Geometry     `json:"geometry"`
@@ -17,7 +17,6 @@ type Place struct {
 	Name                string       `json:"name"`
 	OpeningHours        OpeningHours `json:"opening_hours"`
 	Photos              []Photo      `json:"photos"`
-	PlaceID             string       `json:"place_id"`
 	PlusCode            PlusCode     `json:"plus_code"`
 	PriceLevel          int          `json:"price_level"`
 	Rating              float64      `json:"rating"`

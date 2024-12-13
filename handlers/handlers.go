@@ -45,7 +45,7 @@ var markerSettings = map[int]map[string]float64{
 	},
 }
 
-var emptyResponse = make([]Location, 0)
+var emptyResponse = make([]Place, 0)
 
 func CheckAvailableLocations() map[string][2]float64 {
 
@@ -78,7 +78,7 @@ func CheckAvailableLocations() map[string][2]float64 {
 	return cityCoordinates
 }
 
-func LoadLocationInformation(location string) ([]Location, DistanceMatrix, RoutesMatrix, error) {
+func LoadLocationInformation(location string) ([]Place, DistanceMatrix, RoutesMatrix, error) {
 
 	var availableLocations = utils.GetKeys(CheckAvailableLocations())
 	if !utils.Contains(availableLocations, location) {
@@ -86,7 +86,7 @@ func LoadLocationInformation(location string) ([]Location, DistanceMatrix, Route
 		return nil, nil, nil, errors.New("location not found")
 	} else {
 
-		var enrichedData []Location
+		var enrichedData []Place
 		var D DistanceMatrix
 		var R RoutesMatrix
 
@@ -126,8 +126,8 @@ func CheckOverlap(path []int, R RoutesMatrix) bool {
 	return false
 }
 
-func CheckFirstLocation(path []int, enrichedData []Location, targetFirstLocation string) bool {
-	return enrichedData[path[0]].ID == targetFirstLocation
+func CheckFirstLocation(path []int, enrichedData []Place, targetFirstLocation string) bool {
+	return enrichedData[path[0]].PlaceID == targetFirstLocation
 }
 
 func AdjacentLengthMeetConstraint(path []int, D DistanceMatrix, mu float64) bool {
@@ -159,7 +159,7 @@ func EqualLengthMeetConstraint(path []int, pathDistance float64, D DistanceMatri
 	return true
 }
 
-func checkAttractionContraints(path []int, enrichedData []Location, targetAttractions int) bool {
+func checkAttractionContraints(path []int, enrichedData []Place, targetAttractions int) bool {
 	attractions := 0
 	for _, p := range path {
 		if utils.Contains(enrichedData[p].Types, "tourist_attraction") {
@@ -169,7 +169,7 @@ func checkAttractionContraints(path []int, enrichedData []Location, targetAttrac
 	return attractions == targetAttractions
 }
 
-func getEligiblePaths(size int, targetPubs int, targetAttractions int, D DistanceMatrix, enrichedData []Location) ([][]int, []float64) {
+func getEligiblePaths(size int, targetPubs int, targetAttractions int, D DistanceMatrix, enrichedData []Place) ([][]int, []float64) {
 	var eligiblePaths [][]int
 	var distances []float64
 	var totalTargetLength = targetPubs + targetAttractions
@@ -319,7 +319,7 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(emptyResponse)
 	} else {
 		path := eligiblePaths[rand.Intn(len(eligiblePaths))]
-		var selectedLocations = make([]Location, len(path))
+		var selectedLocations = make([]Place, len(path))
 
 		for i, p := range path {
 			selectedLocations[i] = enrichedData[p]
@@ -330,12 +330,12 @@ func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func generateRoute(enrichedData []Location, targetPubs int, targetAttractions int, targetFirstLocation string, D DistanceMatrix, R RoutesMatrix) [][]int {
+func generateRoute(enrichedData []Place, targetPubs int, targetAttractions int, targetFirstLocation string, D DistanceMatrix, R RoutesMatrix) [][]int {
 	size := len(enrichedData)
 	eligiblePaths, distances := getEligiblePaths(size, targetPubs, targetAttractions, D, enrichedData)
 
 	if targetFirstLocation != "" {
-		eligiblePaths = filterPathsLocations(eligiblePaths, enrichedData, func(e []int, f []Location) bool {
+		eligiblePaths = filterPathsLocations(eligiblePaths, enrichedData, func(e []int, f []Place) bool {
 			return CheckFirstLocation(e, enrichedData, targetFirstLocation)
 		})
 	}
@@ -362,16 +362,16 @@ func PostCrawl(w http.ResponseWriter, r *http.Request) {
 	}
 
 	enrichedData, _, _, err := LoadLocationInformation(location)
-	var emptyResponse = make([]Location, 0)
+	var emptyResponse = make([]Place, 0)
 	if err != nil {
 		fmt.Println("Error loading location information")
 		json.NewEncoder(w).Encode(emptyResponse)
 	}
 
-	var selectedLocations = make([]Location, len(ids.PlaceIDs))
+	var selectedLocations = make([]Place, len(ids.PlaceIDs))
 	for i, id := range ids.PlaceIDs {
 		for _, loc := range enrichedData {
-			if loc.ID == id {
+			if loc.PlaceID == id {
 				selectedLocations[i] = loc
 				break
 			}
@@ -403,7 +403,7 @@ func filterPaths(paths [][]int, condition func([]int) bool) [][]int {
 	return result
 }
 
-func filterPathsLocations(paths [][]int, enrichedData []Location, condition func([]int, []Location) bool) [][]int {
+func filterPathsLocations(paths [][]int, enrichedData []Place, condition func([]int, []Place) bool) [][]int {
 	var result [][]int
 	for _, path := range paths {
 		if condition(path, enrichedData) {
