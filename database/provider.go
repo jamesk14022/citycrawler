@@ -4,6 +4,7 @@ import (
 	"time"
 
 	"github.com/jamesk14022/barcrawler/types"
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/v2/mongo"
 	"go.mongodb.org/mongo-driver/v2/mongo/options"
 
@@ -13,9 +14,8 @@ import (
 )
 
 type Manager interface {
-	AddPlace(place *types.Place) error
-	AddRoute(route *types.Route) error
-	// Add other methods
+	AddPlace(place *types.Place) interface{}
+	AddRoute(route *types.Route) interface{}
 }
 
 type manager struct {
@@ -32,26 +32,40 @@ func init() {
 	Mgr = &manager{client: client}
 }
 
-func (mgr *manager) AddPlace(place *types.Place) (err error) {
+func (mgr *manager) AddPlace(place *types.Place) (InsertedID interface{}) {
 
-	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
+	collection := mgr.client.Database("dev").Collection("places")
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 
-	mgr.db.Create(article)
-	if errs := mgr.db.GetErrors(); len(errs) > 0 {
-		err = errs[0]
+	doc, err := bson.Marshal(place)
+	if err != nil {
+		log.Fatal(err)
 	}
-	return
+
+	res, err := collection.InsertOne(ctx, doc)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	return res.InsertedID
 }
 
-func (mgr *manager) AddRoute(route *types.Route) (err error) {
+func (mgr *manager) AddRoute(route *types.Route) (InsertedID interface{}) {
 
-	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
+	collection := mgr.client.Database("dev").Collection("routes")
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 
-	mgr.db.Create(article)
-	if errs := mgr.db.GetErrors(); len(errs) > 0 {
-		err = errs[0]
+	doc, err := bson.Marshal(route)
+	if err != nil {
+		log.Fatal(err)
 	}
-	return
+
+	res, err := collection.InsertOne(ctx, doc)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	return res.InsertedID
 }

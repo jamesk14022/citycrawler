@@ -9,6 +9,7 @@ type PlaceIDs struct {
 
 type Place struct {
 	BusinessStatus      string       `json:"business_status"`
+	City                string       `json:"city"`
 	Geometry            Geometry     `json:"geometry"`
 	Icon                string       `json:"icon"`
 	IconBackgroundColor string       `json:"icon_background_color"`

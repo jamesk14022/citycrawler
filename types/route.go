@@ -1,6 +1,9 @@
 package types
 
 type Route struct {
+	Point1     string        `json:"point1"`
+	Point2     string        `json:"point2"`
+	City       string        `json:"city"`
 	Distance   float64       `json:"distance"`
 	Duration   float64       `json:"duration"`
 	Geometry   RouteGeometry `json:"geometry"`
