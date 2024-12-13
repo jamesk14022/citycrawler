@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func Remove(slice []int, s int) []int {
+func Remove(slice []string, s string) []string {
 	for i, v := range slice {
 		if v == s {
 			return append(slice[:i], slice[i+1:]...)

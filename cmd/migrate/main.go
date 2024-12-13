@@ -11,7 +11,7 @@ func main() {
 	locations := handlers.CheckAvailableLocations()
 	for location, _ := range locations {
 
-		enrichedData, _, R, _ := handlers.LoadLocationInformation(location)
+		enrichedData, R, _ := handlers.LoadLocationInformation(location)
 
 		for _, place := range enrichedData {
 
