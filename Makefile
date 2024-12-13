@@ -14,5 +14,5 @@ format:
 	go fmt ./...
 	npx prettier --write . --ignore-path .prettierignore 
 
-tailwind 
-  npx tailwindcss -i ./styles.css -o ./output.css --watch
+tailwind:
+	npx tailwindcss -i ./styles.css -o ./output.css --watch

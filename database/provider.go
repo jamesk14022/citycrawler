@@ -3,6 +3,7 @@ package dbprovider
 import (
 	"time"
 
+	"github.com/jamesk14022/barcrawler/types"
 	"go.mongodb.org/mongo-driver/v2/mongo"
 	"go.mongodb.org/mongo-driver/v2/mongo/options"
 
@@ -12,7 +13,8 @@ import (
 )
 
 type Manager interface {
-	AddArticle(article *article.Article) error
+	AddPlace(place *types.Place) error
+	AddRoute(route *types.Route) error
 	// Add other methods
 }
 
@@ -30,7 +32,19 @@ func init() {
 	Mgr = &manager{client: client}
 }
 
-func (mgr *manager) AddArticle(article *article.Article) (err error) {
+func (mgr *manager) AddPlace(place *types.Place) (err error) {
+
+	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
+	defer cancel()
+
+	mgr.db.Create(article)
+	if errs := mgr.db.GetErrors(); len(errs) > 0 {
+		err = errs[0]
+	}
+	return
+}
+
+func (mgr *manager) AddRoute(route *types.Route) (err error) {
 
 	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
 	defer cancel()
