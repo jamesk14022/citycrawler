@@ -83,8 +83,9 @@ async function buildAlternativeAttractionMarkerPopupDescription(waypoint) {
     description = `🍺 ${description}`;
   }
 
-  description += `<br><img src="${imageSrc}" alt="Photo of ${waypoint.name}" style="width: 100%; height: auto;">`;
-  description += `<br><button class="select-start-button" data-id="${waypoint.place_id}" data-name="${waypoint.name}">Select as starting point</button>`;
+  description += `<br><img class="mt-1" src="${imageSrc}" alt="Photo of ${waypoint.name}" style="width: 100%; height: auto;">`;
+  description += `<br><button class="select-start-button m-2 p-2 mt-1 mx-auto rounded-md" data-id="${waypoint.place_id}" data-name="${waypoint.name}">Select as starting point</button>`;
+  description = `<div class="shadow-md rounded-md p-1">${description}</div>`;
 
   return description;
 }

@@ -47,7 +47,7 @@ var markerSettings = map[int]map[string]float64{
 
 var emptyResponse = make([]Location, 0)
 
-func checkAvailableLocations() map[string][2]float64 {
+func CheckAvailableLocations() map[string][2]float64 {
 
 	jsonFile, err := os.ReadFile(locationDataDir + "cities.json")
 	if err != nil {
@@ -80,7 +80,7 @@ func checkAvailableLocations() map[string][2]float64 {
 
 func LoadLocationInformation(location string) ([]Location, DistanceMatrix, RoutesMatrix, error) {
 
-	var availableLocations = utils.GetKeys(checkAvailableLocations())
+	var availableLocations = utils.GetKeys(CheckAvailableLocations())
 	if !utils.Contains(availableLocations, location) {
 		fmt.Println("Location not found")
 		return nil, nil, nil, errors.New("location not found")
@@ -237,7 +237,7 @@ func extractURLParams(r *http.Request) (int, int, string, string, error) {
 }
 
 func GetCityCoordinates(w http.ResponseWriter, r *http.Request) {
-	cityCoordinates := checkAvailableLocations()
+	cityCoordinates := CheckAvailableLocations()
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(cityCoordinates)
 }

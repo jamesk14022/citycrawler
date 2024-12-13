@@ -145,8 +145,8 @@
 
         <div class="flex flex-row p-1 m-1 items-center md:basis-1/3">
           <label id="start-location-text" for="distance-slider"
-            >No starting location set</label
-          >
+            >No starting location set            
+          </label>
           <div id="start-pill" class="pill-button bg-sky-600 ml-2 hidden">
             <span id="pill-text">TT</span>
             <span class="pill-close" id="pill-close">✖</span>
@@ -158,19 +158,21 @@
         <datalist id="locations"></datalist>
 
         <div id="rightBar">
-          <div class="bg-slate-100" id="route-info">
-            <p>Total route distance is <span id="route-length">10</span>km</p>
-            <p id="route-duration-paragraph">
-              Total route duration is
-              <span id="route-duration">50</span> minutes
-            </p>
-            <div class="info-emblem">
+          <div class="bg-slate-100 flex flex-row" id="route-info">
+            <div class="info-emblem flex items-center pl-1 pr-2">
               <i class="fas fa-info-circle"></i>
               <span class="tooltip-text"
                 >Pub crawl distances are calculated assuming you spend 30
                 minutes at each bar / attraction.</span
               >
             </div>
+            <div>
+            <p>Total route distance is <span id="route-length">10</span>km</p>
+            <p id="route-duration-paragraph">
+              Total route duration is
+              <span id="route-duration">50</span> minutes
+            </p>
+          </div>
           </div>
           <nav id="listing-group" class="listing-group"></nav>
         </div>
