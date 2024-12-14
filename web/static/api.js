@@ -1,7 +1,7 @@
 import { BASE_URL, GOOGLE_MAP_BASE_URL } from "./constants.js";
 
 export function buildGoogleMapsUrl(waypoint) {
-  return `${GOOGLE_MAP_BASE_URL}/?api=1&query=${waypoint.Geometry.Location.lat},${waypoint.Geometry.Location.lng}&query_place_id=${waypoint.place_id}`;
+  return `${GOOGLE_MAP_BASE_URL}/?api=1&query=${waypoint.geometry.location.lat},${waypoint.geometry.location.lng}&query_place_id=${waypoint.place_id}`;
 }
 
 export async function getPubs(

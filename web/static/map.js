@@ -173,20 +173,20 @@ export function renderMapRoute(waypoints) {
   removeExistingRoute();
 
   directions.setOrigin([
-    waypoints[0].Geometry.Location.lng,
-    waypoints[0].Geometry.Location.lat,
+    waypoints[0].geometry.location.lng,
+    waypoints[0].geometry.location.lat,
   ]);
 
   directions.setDestination([
-    waypoints[waypoints.length - 1].Geometry.Location.lng,
-    waypoints[waypoints.length - 1].Geometry.Location.lat,
+    waypoints[waypoints.length - 1].geometry.location.lng,
+    waypoints[waypoints.length - 1].geometry.location.lat,
   ]);
 
   // Add the middle waypoints
   waypoints.slice(1, -1).forEach((waypoint_mid, index) => {
     directions.addWaypoint(index, [
-      waypoint_mid.Geometry.Location.lng,
-      waypoint_mid.Geometry.Location.lat,
+      waypoint_mid.geometry.location.lng,
+      waypoint_mid.geometry.location.lat,
     ]);
   });
 }
@@ -199,7 +199,7 @@ export function renderRouteMarker(waypoint, index) {
 
   // Create the marker
   let m = new mapboxgl.Marker(el);
-  m.setLngLat([waypoint.Geometry.Location.lng, waypoint.Geometry.Location.lat])
+  m.setLngLat([waypoint.geometry.location.lng, waypoint.geometry.location.lat])
     .addTo(map)
     .getElement()
     .addEventListener("click", () => {

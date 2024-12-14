@@ -5,9 +5,10 @@ import (
 	"time"
 
 	"github.com/jamesk14022/barcrawler/types"
+	"github.com/patrickmn/go-cache"
 	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/v2/mongo"
-	"go.mongodb.org/mongo-driver/v2/mongo/options"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 
 	"context"
 	"errors"
@@ -19,29 +20,44 @@ type Manager interface {
 	AddPlace(place *types.Place) interface{}
 	AddRoute(route *types.Route) interface{}
 	FindRouteBetweenPlaces(start_placeID string, end_placeID string) types.Route
+	FindCachedRouteBetweenPlaces(start_placeID string, end_placeID string) types.Route
 	FindRoutesByCity(city string) []types.Route
 	FindPlacesByCity(city string) []types.Place
 	FindPlaceByID(placeID string) types.Place
+	FindUniqueCities() []string
+	buildDistanceCache()
 }
 
 type manager struct {
-	client *mongo.Client
+	client        *mongo.Client
+	cache         *cache.Cache
+	DistanceCache map[string]map[string]types.Route
 }
 
 var Mgr Manager
 
 func init() {
-	client, err := mongo.Connect(options.Client().ApplyURI(os.Getenv("MONGO_URI")))
+	client, err := mongo.Connect(context.TODO(), options.Client().ApplyURI(os.Getenv("MONGO_URI")))
+	if err != nil {
+		panic(err)
+	}
+	// defer func() {
+	// 	if err := client.Disconnect(context.TODO()); err != nil {
+	// 		panic(err)
+	// 	}
+	// }()
+
 	if err != nil {
 		log.Fatal("Failed to init db:", err)
 	}
-	Mgr = &manager{client: client}
+	Mgr = &manager{client: client, cache: cache.New(10*time.Minute, 15*time.Minute)} // Items expire after 10 minutes, cleanup every 15 minutes
+	Mgr.buildDistanceCache()
 }
 
 func (mgr *manager) AddPlace(place *types.Place) (InsertedID interface{}) {
 
 	collection := mgr.client.Database("dev").Collection("places")
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
 	doc, err := bson.Marshal(place)
@@ -60,7 +76,7 @@ func (mgr *manager) AddPlace(place *types.Place) (InsertedID interface{}) {
 func (mgr *manager) AddRoute(route *types.Route) (InsertedID interface{}) {
 
 	collection := mgr.client.Database("dev").Collection("routes")
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
 	doc, err := bson.Marshal(route)
@@ -79,7 +95,7 @@ func (mgr *manager) AddRoute(route *types.Route) (InsertedID interface{}) {
 func (mgr *manager) FindRouteBetweenPlaces(start_placeID string, end_placeID string) types.Route {
 
 	collection := mgr.client.Database("dev").Collection("routes")
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
 	var result types.Route
@@ -104,14 +120,19 @@ func (mgr *manager) FindRouteBetweenPlaces(start_placeID string, end_placeID str
 
 func (mgr *manager) FindRoutesByCity(city string) []types.Route {
 
+	if cachedRoutes, found := mgr.cache.Get(city); found {
+		return cachedRoutes.([]types.Route)
+	}
+
 	collection := mgr.client.Database("dev").Collection("routes")
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
 	var results []types.Route
 	filter := bson.D{{"city", city}}
 	cur, err := collection.Find(ctx, filter)
 	if errors.Is(err, mongo.ErrNoDocuments) {
+		log.Fatal(err)
 		// Do something when no record was found
 		return []types.Route{}
 	} else if err != nil {
@@ -119,34 +140,48 @@ func (mgr *manager) FindRoutesByCity(city string) []types.Route {
 	}
 	defer cur.Close(ctx)
 	for cur.Next(ctx) {
-		var bson_result bson.D
 		var route_result types.Route
-		if err := cur.Decode(&bson_result); err != nil {
+		if err := cur.Decode(&route_result); err != nil {
 			log.Fatal(err)
 		}
-
-		fmt.Println(bson_result)
-		bson_data, err := bson.Marshal(bson_result) // Convert bson.D to BSON bytes
-		if err != nil {
-			log.Fatal("Error marshaling bson.D:", err)
-		}
-
-		err = bson.Unmarshal(bson_data, &route_result) // Convert BSON bytes to the struct
-		if err != nil {
-			log.Fatal("Error unmarshaling BSON to struct:", err)
-		}
-
 		results = append(results, route_result)
 		// do something with result....
 	}
 
+	mgr.cache.Set(city, results, cache.DefaultExpiration)
+
 	return results
+}
+
+func (mgr *manager) buildDistanceCache() {
+	distanceMap := make(map[string]map[string]types.Route)
+	uniqueCities := Mgr.FindUniqueCities()
+
+	for _, city := range uniqueCities {
+
+		routes := Mgr.FindRoutesByCity(city)
+
+		for _, r := range routes {
+
+			if _, ok := distanceMap[r.Point1]; !ok {
+				distanceMap[r.Point1] = make(map[string]types.Route)
+			}
+			distanceMap[r.Point1][r.Point2] = r
+		}
+
+	}
+	mgr.DistanceCache = distanceMap
+	fmt.Println("Distance cache built")
+}
+
+func (mgr *manager) FindCachedRouteBetweenPlaces(start_placeID string, end_placeID string) types.Route {
+	return mgr.DistanceCache[start_placeID][end_placeID]
 }
 
 func (mgr *manager) FindPlaceByID(placeID string) types.Place {
 
 	collection := mgr.client.Database("dev").Collection("places")
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
 	var result types.Place
@@ -166,7 +201,7 @@ func (mgr *manager) FindPlaceByID(placeID string) types.Place {
 func (mgr *manager) FindPlacesByCity(city string) []types.Place {
 
 	collection := mgr.client.Database("dev").Collection("places")
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
 	var results []types.Place
@@ -180,26 +215,32 @@ func (mgr *manager) FindPlacesByCity(city string) []types.Place {
 	}
 	defer cur.Close(ctx)
 	for cur.Next(ctx) {
-		var bson_result bson.D
 		var place_result types.Place
-		if err := cur.Decode(&bson_result); err != nil {
+		if err := cur.Decode(&place_result); err != nil {
 			log.Fatal(err)
 		}
-
-		fmt.Println(bson_result)
-		bson_data, err := bson.Marshal(bson_result) // Convert bson.D to BSON bytes
-		if err != nil {
-			log.Fatal("Error marshaling bson.D:", err)
-		}
-
-		err = bson.Unmarshal(bson_data, &place_result) // Convert BSON bytes to the struct
-		if err != nil {
-			log.Fatal("Error unmarshaling BSON to struct:", err)
-		}
-
 		results = append(results, place_result)
 		// do something with result....
 	}
 
 	return results
+}
+
+func (mgr *manager) FindUniqueCities() []string {
+
+	collection := mgr.client.Database("dev").Collection("places")
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+
+	cities, err := collection.Distinct(ctx, "city", bson.D{})
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Cities found: ", cities)
+
+	listedCities := make([]string, len(cities))
+	for i, v := range cities {
+		listedCities[i] = v.(string)
+	}
+	return listedCities
 }

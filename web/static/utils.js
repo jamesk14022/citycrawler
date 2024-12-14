@@ -95,7 +95,7 @@ function convertToGeoJSON(dataArray) {
         },
         geometry: {
           type: "Point",
-          coordinates: [item.Geometry.Location.lng, item.Geometry.Location.lat],
+          coordinates: [item.geometry.location.lng, item.geometry.location.lat],
         },
       })),
     },
