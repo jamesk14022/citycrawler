@@ -62,6 +62,7 @@ export function renderAlternativeAttractionMarkers(waypoints) {
 }
 
 async function buildAlternativeAttractionMarkerPopupDescription(waypoint) {
+  console.log(JSON.parse(waypoint.photos));
   const photoResult = await getGoogleMapsPhoto(
     JSON.parse(waypoint.photos)[0].photo_reference,
   );
@@ -83,7 +84,7 @@ async function buildAlternativeAttractionMarkerPopupDescription(waypoint) {
     description = `🍺 ${description}`;
   }
 
-  description += `<br><img class="mt-1" src="${imageSrc}" alt="Photo of ${waypoint.name}" style="width: 100%; height: auto;">`;
+  // description += `<br><img class="mt-1" src="${imageSrc}" alt="Photo of ${waypoint.name}" style="width: 100%; height: auto;">`;
   description += `<br><button class="select-start-button m-2 p-2 mt-1 mx-auto rounded-md" data-id="${waypoint.place_id}" data-name="${waypoint.name}">Select as starting point</button>`;
   description = `<div class="shadow-md rounded-md p-1">${description}</div>`;
 

@@ -251,18 +251,19 @@ func GetPhoto(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	url := "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=" + photoReference + "&key=" + os.Getenv("GOOGLE_MAPS_API_KEY")
+	url := "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=" + photoReference + "&key=" + os.Getenv("GOOGLE_MAPS_API_KEY")
+	fmt.Println(url)
 	resp, err := http.Get(url)
+	fmt.Println(resp)
 	if err != nil {
 		http.Error(w, "Failed to fetch photo: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 	defer resp.Body.Close()
 
-	fmt.Println("Photo response status: ", resp)
-
 	// Read the response body into a byte slice
 	bodyBytes, err := io.ReadAll(resp.Body)
+	fmt.Println(resp.Body)
 	if err != nil {
 		http.Error(w, "Failed to read response: "+err.Error(), http.StatusInternalServerError)
 		return
@@ -288,10 +289,10 @@ func GetPhoto(w http.ResponseWriter, r *http.Request) {
 func findPlaceByID(places []types.Place, placeID string) *types.Place {
 	for _, place := range places {
 		if place.PlaceID == placeID {
-			return &place // Return the first match
+			return &place
 		}
 	}
-	return nil // Return nil if no match is found
+	return nil
 }
 
 func GetRandomCrawl(w http.ResponseWriter, r *http.Request) {

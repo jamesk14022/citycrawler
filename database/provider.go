@@ -47,10 +47,7 @@ func init() {
 	// 	}
 	// }()
 
-	if err != nil {
-		log.Fatal("Failed to init db:", err)
-	}
-	Mgr = &manager{client: client, cache: cache.New(10*time.Minute, 15*time.Minute)} // Items expire after 10 minutes, cleanup every 15 minutes
+	Mgr = &manager{client: client, cache: cache.New(10*time.Minute, 15*time.Minute)}
 	Mgr.buildDistanceCache()
 }
 
@@ -109,7 +106,6 @@ func (mgr *manager) FindRouteBetweenPlaces(start_placeID string, end_placeID str
 
 	err := collection.FindOne(ctx, filter).Decode(&result)
 	if errors.Is(err, mongo.ErrNoDocuments) {
-		// Do something when no record was found
 		return types.Route{}
 	} else if err != nil {
 		log.Fatal(err)
@@ -133,7 +129,6 @@ func (mgr *manager) FindRoutesByCity(city string) []types.Route {
 	cur, err := collection.Find(ctx, filter)
 	if errors.Is(err, mongo.ErrNoDocuments) {
 		log.Fatal(err)
-		// Do something when no record was found
 		return []types.Route{}
 	} else if err != nil {
 		log.Fatal(err)
@@ -188,7 +183,6 @@ func (mgr *manager) FindPlaceByID(placeID string) types.Place {
 	filter := bson.D{{"placeid", placeID}}
 	err := collection.FindOne(ctx, filter).Decode(&result)
 	if errors.Is(err, mongo.ErrNoDocuments) {
-		// Do something when no record was found
 		return types.Place{}
 	} else if err != nil {
 		log.Fatal(err)
@@ -207,7 +201,6 @@ func (mgr *manager) FindPlacesByCity(city string) []types.Place {
 	filter := bson.D{{"city", city}}
 	cur, err := collection.Find(ctx, filter)
 	if errors.Is(err, mongo.ErrNoDocuments) {
-		// Do something when no record was found
 		return []types.Place{}
 	} else if err != nil {
 		log.Fatal(err)
@@ -219,7 +212,6 @@ func (mgr *manager) FindPlacesByCity(city string) []types.Place {
 			log.Fatal(err)
 		}
 		results = append(results, place_result)
-		// do something with result....
 	}
 
 	return results

@@ -48,8 +48,8 @@ type OpeningHours struct {
 
 type Photo struct {
 	Height           int      `json:"height" bson:"height"`
-	HTMLAttributions []string `json:"html_attributions" bson:"html_attributions"`
-	PhotoReference   string   `json:"photo_reference" bson:"photo_reference"`
+	HTMLAttributions []string `json:"html_attributions" bson:"htmlattributions"`
+	PhotoReference   string   `json:"photo_reference" bson:"photoreference"`
 	Width            int      `json:"width" bson:"width"`
 }
 
