@@ -145,7 +145,6 @@ func (mgr *manager) FindRoutesByCity(city string) []types.Route {
 			log.Fatal(err)
 		}
 		results = append(results, route_result)
-		// do something with result....
 	}
 
 	mgr.cache.Set(city, results, cache.DefaultExpiration)
