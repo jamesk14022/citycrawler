@@ -14,7 +14,6 @@ export const map = new mapboxgl.Map({
   zoom: 12,
 });
 
-console.log(map);
 
 const directions = new MapboxDirections({
   accessToken: mapboxgl.accessToken,
@@ -62,7 +61,6 @@ export function renderAlternativeAttractionMarkers(waypoints) {
 }
 
 async function buildAlternativeAttractionMarkerPopupDescription(waypoint) {
-  console.log(JSON.parse(waypoint.photos));
   const photoResult = await getGoogleMapsPhoto(
     JSON.parse(waypoint.photos)[0].photo_reference,
   );

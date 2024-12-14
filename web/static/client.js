@@ -21,6 +21,7 @@ import {
   toggleNoCitiesResults,
   setupPubPlusMinusEvents,
   setupAttractionPlusMinusEvents,
+  setupFilterResetEvent,
   renderBarInformationBox,
   setupPillClosedEvents,
   hidePill,
@@ -62,7 +63,7 @@ setupPubPlusMinusEvents(
     if (selectedPubs === 8) {
       return;
     }
-    selectedPubs += parseInt(1);
+    selectedPubs += 1;
     setMarkersDisplay(selectedPubs);
   },
 );
@@ -81,6 +82,16 @@ setupAttractionPlusMinusEvents(
     }
     selectedAttractions += 1;
     setAttractionDisplay(selectedAttractions);
+  },
+);
+
+setupFilterResetEvent(
+  () => {
+    selectedAttractions = 1;
+    setAttractionDisplay(selectedAttractions);
+
+    selectedPubs = 3;
+    setMarkersDisplay(selectedPubs);
   },
 );
 

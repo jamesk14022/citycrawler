@@ -35,6 +35,8 @@ const attractionPlus = document.querySelectorAll(
   ".attraction-quantity-btn-plus",
 );
 
+const filterReset = document.querySelectorAll(".filter-reset");
+
 const attractionCounter = document.querySelectorAll(".num-attractions");
 const markerCounter = document.querySelectorAll(".num-markers");
 
@@ -65,6 +67,7 @@ export {
   pubPlus,
   attractionMinus,
   attractionPlus,
+  filterReset,
   attractionCounter,
   markerCounter,
   sidebar,

@@ -14,6 +14,7 @@ import {
   attractionMinus,
   attractionPlus,
   attractionCounter,
+  filterReset,
   markerCounter,
   sidebar,
   sidebarToggle,
@@ -101,6 +102,16 @@ export function setupAttractionPlusMinusEvents(
   attractionPlus.forEach((btn) => {
     btn.addEventListener("click", () => {
       onAttractionPlus();
+    });
+  });
+}
+
+export function setupFilterResetEvent(
+  onFilterReset,
+) {
+  filterReset.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      onFilterReset();
     });
   });
 }
